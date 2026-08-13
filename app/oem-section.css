@@ -1,0 +1,19 @@
+.oem { display: grid; grid-template-columns: minmax(360px, .82fr) minmax(620px, 1.18fr); background: #f5f6f7; color: #101722; }
+.oemCopy { align-self: stretch; display: flex; flex-direction: column; padding: 108px 6vw 100px 9vw; }
+.oemCopy .eyebrow { color: #0a69cd; font-family: Manrope, Arial, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: .12em; margin-bottom: 32px; }
+.oemCopy h2 { color: #101722; font-size: clamp(58px, 5.7vw, 98px); max-width: 590px; }
+.oemCopy > p:not(.eyebrow) { color: #596a79; font-size: 16px; line-height: 1.8; margin: 34px 0 46px; max-width: 520px; }
+.oemCapabilities { border-top: 1px solid #cfd7df; display: grid; grid-template-columns: repeat(3, 1fr); margin: auto 0 46px; }
+.oemCapability { border-right: 1px solid #d7dde3; min-height: 128px; padding: 19px 16px 12px 0; }
+.oemCapability + .oemCapability { padding-left: 16px; }
+.oemCapability:last-child { border-right: 0; }
+.oemCapability b { color: #0b67c9; display: block; font: 700 10px Manrope, Arial, sans-serif; letter-spacing: .11em; margin-bottom: 16px; }
+.oemCapability strong { display: block; font-size: 13px; letter-spacing: -.02em; margin-bottom: 7px; }
+.oemCapability span { color: #667585; font-size: 11px; line-height: 1.55; }
+.oemWhatsApp { align-items: center; align-self: flex-start; background: #1eb85b; color: #fff; display: inline-flex; font-size: 16px; font-weight: 800; gap: 64px; padding: 26px 32px; }
+.oemWhatsApp b { font-size: 25px; font-weight: 400; }
+.oemShowcase { align-items: center; background: #fff; display: flex; justify-content: center; min-height: 650px; overflow: hidden; position: relative; }
+.oemPoster { aspect-ratio: 1 / 1; background: #fff; height: auto; max-width: 100%; overflow: hidden; width: 100%; }
+.oemPoster img { display: block; height: 100%; object-fit: contain; object-position: center; width: 100%; }
+@media (max-width: 900px) { .oem { grid-template-columns: 1fr; } .oemCopy { padding: 82px 8vw; } .oemShowcase { min-height: 0; } }
+@media (max-width: 560px) { .oemCapabilities { grid-template-columns: 1fr; } .oemCapability, .oemCapability + .oemCapability { border-bottom: 1px solid #d7dde3; border-right: 0; min-height: 0; padding: 17px 0; } }

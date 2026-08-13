@@ -1,0 +1,72 @@
+/* Weiboer enterprise-blue fixed navigation. */
+.homeMain {
+  padding-top: 76px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  height: 76px;
+  background: #0758ad;
+  border-bottom: 1px solid rgba(255, 255, 255, .22);
+  box-shadow: 0 10px 28px rgba(4, 42, 88, .16);
+}
+
+.header .brand {
+  color: #fff;
+  font-size: 16px;
+}
+
+.header .mark {
+  background: #fff;
+  color: #0758ad;
+}
+
+.header nav {
+  color: rgba(255, 255, 255, .82);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.header nav a {
+  padding: 28px 0 25px;
+  border-bottom: 3px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.header nav a:hover {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.headerQuote {
+  color: #0758ad;
+  background: #fff;
+  border: 0;
+  border-radius: 2px;
+  padding: 13px 17px;
+  font-size: 13px;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.headerQuote:hover {
+  background: #eaf4ff;
+  transform: translateY(-1px);
+}
+
+#top,
+#products,
+#oem,
+#factory,
+#quote {
+  scroll-margin-top: 92px;
+}
+
+@media (max-width: 900px) {
+  .homeMain { padding-top: 68px; }
+  .header { height: 68px; }
+  .headerQuote { padding: 11px 13px; }
+}

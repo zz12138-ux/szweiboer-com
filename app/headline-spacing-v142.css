@@ -1,0 +1,40 @@
+/* Version 142: restore readable spacing to the approved oversized headings. */
+.homeMain .sectionHead h2,
+.homeMain .qualityAssuranceCopy h2,
+.homeMain .emailQuoteIntro h2,
+.homeMain .siteFooter .footerLead h2 {
+  font-family:"DM Sans","Helvetica Neue",Arial,"Microsoft YaHei",sans-serif;
+  font-kerning:normal;
+  font-weight:600;
+  letter-spacing:-.022em;
+  word-spacing:.09em;
+  line-height:1.04;
+}
+
+.homeMain .qualityAssuranceCopy h2 {
+  letter-spacing:-.012em;
+  word-spacing:.12em;
+  line-height:.98;
+}
+
+.homeMain .emailQuoteIntro h2 {
+  letter-spacing:-.018em;
+  word-spacing:.1em;
+  line-height:1.05;
+}
+
+.homeMain .siteFooter .footerLead h2 {
+  letter-spacing:-.02em;
+  word-spacing:.1em;
+  line-height:1.05;
+}
+
+@media(max-width:640px){
+  .homeMain .sectionHead h2,
+  .homeMain .qualityAssuranceCopy h2,
+  .homeMain .emailQuoteIntro h2,
+  .homeMain .siteFooter .footerLead h2 {
+    word-spacing:.06em;
+    line-height:1.06;
+  }
+}

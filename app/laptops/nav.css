@@ -1,0 +1,1 @@
+.laptopNav{display:flex;gap:30px}.laptopNav a{border-bottom:2px solid transparent;color:#4b647d;font-size:12px;padding:7px 0}.laptopNav a:hover,.laptopNav a.active{border-color:#0866cb;color:#0755aa;font-weight:800}@media(max-width:800px){.laptopNav{display:none}}

@@ -1,0 +1,61 @@
+.qualityDelivery{
+  padding:clamp(36px,5vw,84px) 5vw;
+  background:#f5f9fd;
+  scroll-margin-top:78px;
+}
+
+.qualityDeliveryArtwork{
+  position:relative;
+  width:min(100%,1586px);
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:24px;
+  box-shadow:0 22px 60px rgba(7,64,126,.12);
+}
+
+.qualityDeliveryArtwork>img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.qualityWhatsAppHit{
+  position:absolute;
+  z-index:2;
+  left:82%;
+  top:3%;
+  width:15.5%;
+  height:6.2%;
+  border-radius:999px;
+  outline-offset:4px;
+}
+
+.qualityWhatsAppHit:focus-visible{
+  outline:3px solid #fff;
+}
+
+.qualityWhatsAppHit span,
+.qualitySrOnly{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+@media(max-width:700px){
+  .qualityDelivery{
+    padding:24px 0;
+    overflow-x:auto;
+    scrollbar-color:#1677ff #061d38;
+  }
+
+  .qualityDeliveryArtwork{
+    width:760px;
+    border-radius:0;
+  }
+}

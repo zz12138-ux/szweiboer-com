@@ -1,0 +1,68 @@
+.siteLogo{
+  display:block;
+  width:auto;
+  object-fit:contain;
+}
+
+.header .brandLogoWrap{
+  flex:0 0 auto;
+  min-width:132px;
+  padding:6px 16px;
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 7px 20px rgba(0,24,63,.18);
+}
+
+.header .siteLogoHeader{
+  height:62px;
+  margin:auto;
+}
+
+footer .footerLogoWrap{
+  width:max-content;
+  padding:11px 18px;
+  border-radius:8px;
+  background:#fff;
+}
+
+footer .siteLogoFooter{
+  height:78px;
+}
+
+@media(max-width:1180px) and (min-width:901px){
+  .header .brandLogoWrap{
+    min-width:112px;
+    padding:6px 12px;
+  }
+
+  .header .siteLogoHeader{
+    height:56px;
+  }
+}
+
+@media(max-width:900px){
+  .header .brandLogoWrap{
+    min-width:88px;
+    padding:4px 10px;
+    border-radius:6px;
+  }
+
+  .header .siteLogoHeader{
+    height:49px;
+  }
+
+  footer .siteLogoFooter{
+    height:66px;
+  }
+}
+
+@media(max-width:560px){
+  .header .brandLogoWrap{
+    min-width:76px;
+    padding:4px 8px;
+  }
+
+  .header .siteLogoHeader{
+    height:44px;
+  }
+}

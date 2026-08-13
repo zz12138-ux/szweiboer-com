@@ -1,0 +1,11 @@
+.exhibitionSection{padding:72px 4vw;background:linear-gradient(180deg,#f8fafc 0%,#eef4f9 100%)}
+.exhibitionArtwork{position:relative;width:min(100%,1536px);margin:0 auto;line-height:0;overflow:hidden;border-radius:18px;box-shadow:0 18px 55px rgba(7,44,82,.09)}
+.exhibitionArtwork>img{display:block;width:100%;height:auto}
+.exhibitionMeetingHit,.exhibitionWhatsAppHit{position:absolute;z-index:2;display:block;color:transparent;font-size:0;border-radius:8px;transition:background-color .2s ease,box-shadow .2s ease}
+.exhibitionMeetingHit{left:79.9%;top:10.6%;width:16.8%;height:6.1%}
+.exhibitionWhatsAppHit{left:71.3%;top:90.2%;width:15.2%;height:5.2%}
+.exhibitionMeetingHit:hover{background:rgba(8,115,216,.08);box-shadow:0 0 0 3px rgba(8,115,216,.18)}
+.exhibitionWhatsAppHit:hover{background:rgba(32,189,98,.12);box-shadow:0 0 0 3px rgba(32,189,98,.22)}
+.exhibitionMeetingHit:focus-visible,.exhibitionWhatsAppHit:focus-visible{outline:4px solid #ffb126;outline-offset:2px}
+.exhibitionMeetingHit span,.exhibitionWhatsAppHit span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:720px){.exhibitionSection{padding:38px 0}.exhibitionArtwork{border-radius:0;box-shadow:none}.exhibitionMeetingHit{left:78.6%;width:18.2%}.exhibitionWhatsAppHit{left:70%;width:18%}}

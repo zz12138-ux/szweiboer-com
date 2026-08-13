@@ -1,0 +1,76 @@
+/* Catalog-only type system. Kept separate so homepage typography stays untouched. */
+.laptopProductGrid .modelInfo {
+  font-family: Manrope, "Helvetica Neue", Arial, sans-serif;
+}
+
+.laptopProductGrid .modelCode {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.laptopProductGrid .modelInfo h2 {
+  font-family: Manrope, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(20px, 1.3vw, 25px);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+  min-height: 52px;
+  text-wrap: balance;
+}
+
+.laptopProductGrid .productSummary {
+  color: #617286;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.55;
+  margin: 17px 0 23px;
+  min-height: 64px;
+}
+
+.laptopProductGrid .productFacts span {
+  font-size: 15px;
+  font-weight: 650;
+  line-height: 1.35;
+  padding: 16px 10px 17px 0;
+}
+
+.laptopProductGrid .productFacts span + span {
+  padding-left: 17px;
+}
+
+.laptopProductGrid .productFacts b {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  margin-bottom: 7px;
+}
+
+.laptopProductGrid .modelWhatsApp {
+  font-family: Manrope, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: -.01em;
+  padding: 16px 12px;
+}
+
+@media (max-width: 1180px) {
+  .laptopProductGrid .modelInfo h2 {
+    font-size: 24px;
+    min-height: 88px;
+  }
+}
+
+@media (max-width: 620px) {
+  .laptopProductGrid .modelInfo h2 {
+    font-size: 23px;
+    min-height: auto;
+  }
+
+  .laptopProductGrid .productSummary {
+    min-height: 0;
+  }
+}

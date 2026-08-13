@@ -1,0 +1,214 @@
+/* Larger conversion hierarchy for the open space in the homepage hero. */
+.heroPanel {
+  top: 11%;
+  width: 40%;
+  max-width: 760px;
+}
+
+.heroPanel .eyebrow {
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(58px, 5.7vw, 100px);
+}
+
+.heroLead {
+  font-size: 18px;
+  line-height: 1.62;
+  max-width: 670px;
+  margin: 30px 0;
+}
+
+.heroActions {
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.heroActions .primary,
+.heroActions .whatsapp {
+  min-width: 246px;
+  padding: 24px 26px;
+  font-size: 15px;
+}
+
+.heroPartner {
+  margin-top: 58px;
+  max-width: 650px;
+  padding-top: 26px;
+}
+
+.heroPartner p {
+  font-size: 12px;
+  margin-bottom: 13px;
+}
+
+.heroPartner strong {
+  font-size: clamp(44px, 3.8vw, 66px);
+}
+
+.heroPartner small {
+  max-width: 570px;
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .heroPanel { top: 49%; }
+  .hero h1 { font-size: clamp(54px, 10vw, 78px); }
+  .heroLead { font-size: 17px; }
+  .heroActions .primary,
+  .heroActions .whatsapp { min-width: 0; font-size: 15px; }
+}
+
+@media (max-width: 560px) {
+  .heroPartner { display: none; }
+}
+
+/* Latest approved hero direction: deep-blue information layer over the real factory photo. */
+.hero {
+  height: calc(100vh - 76px);
+  min-height: 720px;
+  background: #061b3a;
+}
+
+.heroPhoto {
+  inset: 0;
+  background: url('/factory-front-hero-v104.webp') center center / cover no-repeat;
+}
+
+.heroPhoto:after {
+  background: linear-gradient(90deg,
+    rgba(3, 18, 48, .99) 0%,
+    rgba(3, 18, 48, .94) 23%,
+    rgba(3, 18, 48, .72) 39%,
+    rgba(3, 18, 48, .22) 58%,
+    rgba(3, 18, 48, 0) 77%,
+    rgba(3, 18, 48, 0) 100%);
+}
+
+.heroPanel {
+  top: 10%;
+  left: 3.8%;
+  width: 48%;
+  max-width: 760px;
+}
+
+.heroPanel .eyebrow { color: #a9d1ff; }
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(56px, 5.2vw, 94px);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.heroSubhead {
+  color: #258cff;
+  font-size: clamp(28px, 2.7vw, 48px);
+  line-height: 1.06;
+  letter-spacing: -.025em;
+  margin: 24px 0 0;
+}
+
+.heroSubhead span { color: #4ca1ff; }
+
+.heroLead {
+  color: #edf5ff;
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 28px 0;
+}
+
+.heroActions { gap: 18px; margin-top: 34px; }
+
+.heroActions .primary,
+.heroActions .whatsapp {
+  min-width: 260px;
+  padding: 22px 26px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.heroActions .primary { background: #0878ef; }
+
+.heroActions .whatsapp {
+  background: rgba(3, 18, 48, .48) !important;
+  border: 1px solid rgba(255,255,255,.9);
+  color: #fff !important;
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 0;
+  max-width: 680px;
+  margin-top: 58px;
+  border-top: 1px solid rgba(255,255,255,.34);
+}
+
+.heroStats div {
+  min-height: 106px;
+  padding: 18px 18px 0 0;
+  margin-right: 18px;
+  border-right: 1px solid rgba(255,255,255,.32);
+}
+
+.heroStats div:last-child { border-right: 0; margin-right: 0; }
+.heroStats strong { display: block; color: #fff; font-size: 27px; line-height: 1.05; font-weight: 800; }
+.heroStats span { display: block; color: #d8e8f9; font-size: 12px; line-height: 1.45; margin-top: 9px; }
+
+@media (max-width: 1180px) {
+  .heroPanel { width: 56%; }
+  .hero h1 { font-size: clamp(52px, 5.5vw, 82px); }
+}
+
+@media (max-width: 900px) {
+  .hero { min-height: 860px; }
+  .heroPhoto { background-position: center top; }
+  .heroPhoto:after { background: linear-gradient(0deg, rgba(3,18,48,.99) 0%, rgba(3,18,48,.84) 45%, rgba(3,18,48,.08) 100%); }
+  .heroPanel { top: 43%; left: 7%; width: 86%; }
+  .heroStats { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
+  .heroStats div:nth-child(2) { border-right: 0; }
+}
+
+@media (max-width: 560px) {
+  .heroPanel { top: 35%; }
+  .hero h1 { font-size: 47px; }
+  .heroSubhead { font-size: 27px; }
+  .heroLead { font-size: 15px; }
+  .heroActions { flex-direction: column; align-items: stretch; }
+  .heroActions .primary, .heroActions .whatsapp { min-width: 0; }
+  .heroStats strong { font-size: 20px; }
+  .heroStats span { font-size: 10px; }
+}
+
+/* Crisp, live desktop composition: photo stays photographic; all copy and actions are real HTML. */
+@media (min-width: 901px) {
+  .homeMain { padding-top: 90px; }
+  .header { height: 90px; padding: 0 46px; background: #003c78; border-bottom: 1px solid rgba(255,255,255,.16); box-shadow: none; }
+  .header .heroBrand { color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-style: italic; font-weight: 950; letter-spacing: -2px; line-height: 1; }
+  .header nav { display: flex; gap: 39px; margin-left: 54px; color: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 500; }
+  .header nav a { padding: 35px 0 33px; }
+  .headerQuote { min-width: 189px; padding: 14px 20px; border-radius: 9px; color: #fff; background: #0878eb; font-size: 17px; font-weight: 600; text-align: center; }
+  .headerQuote:hover { background: #1586f7; }
+
+  .hero { height: calc(100vh - 90px); min-height: 760px; background: #061b3a; }
+  .heroPhoto { background: url('/weiboer-hero-approved-opt.webp') center -90px / 100% calc(100% + 90px) no-repeat; }
+  .heroPhoto::after { display: block; background: linear-gradient(90deg, rgba(3,18,48,.985) 0%, rgba(3,18,48,.975) 42%, rgba(3,18,48,.74) 50%, rgba(3,18,48,.20) 61%, rgba(3,18,48,0) 76%); }
+  .heroPanel { display: block; top: 9.5%; left: 3.75%; width: 45%; max-width: 790px; }
+  .heroPanel .eyebrow { display: none; }
+  .hero h1 { font-size: clamp(72px, 5.6vw, 104px); line-height: 1.01; letter-spacing: -.05em; }
+  .heroSubhead { margin-top: 24px; font-size: clamp(36px, 2.75vw, 50px); font-weight: 700; letter-spacing: -.03em; }
+  .heroLead { max-width: 640px; margin: 30px 0 0; font-size: 20px; line-height: 1.58; }
+  .heroActions { gap: 26px; margin-top: 42px; }
+  .heroActions .primary, .heroActions .whatsapp { min-width: 276px; min-height: 68px; padding: 20px 28px; font-size: 18px; border-radius: 8px; }
+  .heroActions .whatsapp { background: rgba(5,28,61,.45) !important; border: 1px solid rgba(255,255,255,.9); }
+  .heroStats { max-width: 750px; margin-top: 48px; }
+  .heroStats div { min-height: 132px; padding: 20px 20px 0 0; margin-right: 20px; }
+  .heroStats strong { font-size: 32px; }
+  .heroStats span { font-size: 14px; line-height: 1.45; }
+}

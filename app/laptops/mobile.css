@@ -1,0 +1,152 @@
+.laptopMenuToggle,
+.laptopMobileQuote{
+  display:none;
+}
+
+@media(max-width:800px){
+  .laptopsPage{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .laptopHeader{
+    position:sticky;
+    top:0;
+    z-index:60;
+    height:68px;
+    box-shadow:0 8px 24px rgba(8,50,95,.1);
+  }
+
+  .backHome{
+    display:none;
+  }
+
+  .laptopMenuToggle{
+    position:relative;
+    width:48px;
+    height:44px;
+    margin-left:auto;
+    display:block;
+    border:1px solid #c9d9e9;
+    border-radius:8px;
+    background:#fff;
+  }
+
+  .laptopMenuToggle span{
+    position:absolute;
+    left:13px;
+    width:20px;
+    height:2px;
+    border-radius:2px;
+    background:#0758ad;
+    transition:transform .2s ease,top .2s ease;
+  }
+
+  .laptopMenuToggle span:first-child{top:16px}
+  .laptopMenuToggle span:last-child{top:25px}
+  .laptopHeader.menuOpen .laptopMenuToggle span:first-child{top:21px;transform:rotate(45deg)}
+  .laptopHeader.menuOpen .laptopMenuToggle span:last-child{top:21px;transform:rotate(-45deg)}
+
+  .laptopHeader .laptopNav{
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    max-height:calc(100vh - 68px);
+    padding:16px 6vw 24px;
+    display:none;
+    flex-direction:column;
+    gap:0;
+    overflow-y:auto;
+    background:#fff;
+    border-top:1px solid #dbe4ee;
+    box-shadow:0 20px 40px rgba(5,42,82,.16);
+  }
+
+  .laptopHeader.menuOpen .laptopNav{
+    display:flex;
+  }
+
+  .laptopHeader .laptopNav a{
+    padding:15px 2px;
+    border-bottom:1px solid #e3ebf3;
+    font-size:16px;
+    font-weight:700;
+  }
+
+  .laptopHeader .laptopNav .laptopMobileQuote{
+    margin-top:14px;
+    padding:17px 18px;
+    display:flex;
+    justify-content:space-between;
+    border:0;
+    border-radius:7px;
+    color:#fff;
+    background:#20b95a;
+  }
+
+  .laptopHero,
+  .catalogCta{
+    padding:72px 7vw;
+  }
+
+  .laptopHero h1,
+  .catalogHeading h2,
+  .catalogCta h2{
+    font-size:clamp(44px,12vw,64px);
+  }
+
+  .laptopCatalog{
+    padding:70px 5vw 88px;
+  }
+
+  .catalogHeading{
+    margin-bottom:42px;
+  }
+
+  .laptopProductGrid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .laptopProductGrid .modelImage{
+    aspect-ratio:1/1;
+  }
+
+  .laptopProductGrid .modelInfo{
+    padding:26px 24px 22px;
+  }
+
+  .laptopProductGrid .modelInfo h2{
+    display:block;
+    min-height:0;
+    overflow:visible;
+    font-size:24px;
+    line-height:1.18;
+    -webkit-line-clamp:unset;
+  }
+
+  .productSummary{
+    min-height:0;
+    font-size:14px;
+  }
+
+  .productFacts span{
+    font-size:14px;
+  }
+
+  .laptopProductGrid .modelWhatsApp{
+    padding:17px 14px;
+    font-size:14px;
+  }
+}
+
+@media(max-width:480px){
+  .customBar{
+    grid-template-columns:1fr;
+  }
+
+  .laptopProductGrid .modelInfo h2{
+    font-size:22px;
+  }
+}

@@ -1,0 +1,178 @@
+.buyerReviewsSection{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:clamp(700px,58vw,910px);
+  padding:clamp(72px,6.2vw,110px) 0 clamp(68px,5.6vw,96px);
+  background:#031e43;
+  color:#fff;
+  font-family:Manrope,Arial,sans-serif;
+}
+.buyerReviewsBackdrop{
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:url('/weiboer-production-line-v119.png') center 6%/cover no-repeat;
+  filter:saturate(.72) contrast(1.04);
+  transform:scale(1.01);
+}
+.buyerReviewsSection::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(90deg,rgba(1,24,55,.98) 0%,rgba(2,37,78,.88) 42%,rgba(2,37,78,.38) 78%,rgba(2,37,78,.57) 100%),
+    linear-gradient(0deg,rgba(0,26,61,.96) 0%,rgba(0,26,61,.06) 48%,rgba(0,26,61,.2) 100%);
+}
+.buyerReviewsHeading{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:40px;
+  width:min(1680px,90vw);
+  margin:0 auto clamp(38px,4vw,62px);
+}
+.buyerReviewsHeading>div{max-width:920px}
+.buyerReviewsHeading p{
+  margin:0 0 19px;
+  color:#73b9ff;
+  font:800 12px/1.2 "DM Mono",monospace;
+  letter-spacing:.18em;
+}
+.buyerReviewsHeading h2{
+  margin:0;
+  font-size:clamp(52px,5.45vw,98px);
+  font-weight:800;
+  line-height:.92;
+  letter-spacing:-.055em;
+}
+.buyerReviewsHeading h3{
+  margin:24px 0 0;
+  font-size:clamp(19px,1.55vw,27px);
+  font-weight:500;
+  line-height:1.4;
+}
+.buyerReviewsNotice{
+  display:inline-flex;
+  align-items:center;
+  max-width:500px;
+  margin-bottom:5px;
+  padding:13px 19px;
+  border:1px solid rgba(117,190,255,.72);
+  border-radius:8px;
+  color:#e7f4ff;
+  background:rgba(2,38,83,.68);
+  font:700 12px/1.4 "DM Mono",monospace;
+  letter-spacing:.06em;
+  backdrop-filter:blur(12px);
+}
+.buyerReviewsMarquee{
+  display:grid;
+  gap:clamp(14px,1.25vw,21px);
+  overflow:hidden;
+  padding:6px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+  mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+}
+.buyerReviewsLane{overflow:hidden}
+.buyerReviewsTrack{
+  display:flex;
+  width:max-content;
+  gap:clamp(14px,1.2vw,22px);
+  animation:buyerReviewsMoveLeft 52s linear infinite;
+  will-change:transform;
+}
+.buyerReviewsLane2 .buyerReviewsTrack{animation-name:buyerReviewsMoveRight;animation-duration:60s}
+.buyerReviewsLane3 .buyerReviewsTrack{animation-duration:56s}
+.buyerReviewsMarquee:hover .buyerReviewsTrack,
+.buyerReviewsMarquee:focus-within .buyerReviewsTrack{animation-play-state:paused}
+.buyerReviewPill{
+  display:flex;
+  align-items:center;
+  gap:clamp(13px,1.25vw,22px);
+  min-width:max-content;
+  min-height:76px;
+  padding:16px clamp(22px,2.2vw,38px);
+  border:2px solid rgba(133,197,255,.86);
+  border-radius:999px;
+  background:rgba(245,250,255,.94);
+  color:#082a5b;
+  box-shadow:0 0 0 1px rgba(255,255,255,.38) inset,0 8px 28px rgba(2,18,45,.23),0 0 20px rgba(65,160,255,.22);
+  backdrop-filter:blur(10px);
+}
+.buyerReviewStars{
+  color:#0876df;
+  font-size:clamp(18px,1.4vw,25px);
+  letter-spacing:.08em;
+}
+.buyerReviewPill p{
+  margin:0;
+  font-size:clamp(16px,1.18vw,21px);
+  font-weight:700;
+  letter-spacing:-.02em;
+}
+.buyerReviewPill strong{
+  color:#365875;
+  font-size:clamp(14px,.95vw,17px);
+  font-weight:650;
+}
+.buyerReviewsAction{
+  display:flex;
+  justify-content:flex-end;
+  width:min(1680px,90vw);
+  margin:clamp(32px,3.4vw,54px) auto 0;
+}
+.buyerReviewsAction a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:34px;
+  min-width:min(500px,100%);
+  padding:20px 28px;
+  border:1px solid #8fffb6;
+  border-radius:14px;
+  background:#0cbe55;
+  color:#fff;
+  font-size:clamp(17px,1.25vw,22px);
+  font-weight:800;
+  box-shadow:0 14px 34px rgba(0,167,72,.34),0 0 0 1px rgba(255,255,255,.24) inset;
+  transition:transform .2s ease,background .2s ease;
+}
+.buyerReviewsAction a:hover{background:#09a94b;transform:translateY(-2px)}
+.buyerReviewsAction a b{font-size:28px}
+@keyframes buyerReviewsMoveLeft{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(calc(-50% - 11px),0,0)}
+}
+@keyframes buyerReviewsMoveRight{
+  from{transform:translate3d(calc(-50% - 11px),0,0)}
+  to{transform:translate3d(0,0,0)}
+}
+.quoteArtworkSection{padding-top:0!important}
+.quoteArtworkSection>.emailQuote{margin-top:0!important}
+@media(max-width:900px){
+  .buyerReviewsSection{min-height:680px;padding-top:70px}
+  .buyerReviewsHeading{display:block}
+  .buyerReviewsNotice{margin-top:25px}
+  .buyerReviewPill{min-height:66px}
+  .buyerReviewsAction{justify-content:flex-start}
+}
+@media(max-width:650px){
+  .buyerReviewsSection{min-height:640px;padding:60px 0}
+  .buyerReviewsHeading{width:88vw;margin-bottom:30px}
+  .buyerReviewsHeading h2{font-size:45px}
+  .buyerReviewsHeading h3{font-size:18px}
+  .buyerReviewsNotice{font-size:10px}
+  .buyerReviewsMarquee{gap:12px;mask-image:none;-webkit-mask-image:none}
+  .buyerReviewPill{min-height:60px;padding:13px 20px}
+  .buyerReviewPill p{font-size:15px}
+  .buyerReviewPill strong{font-size:13px}
+  .buyerReviewStars{font-size:16px}
+  .buyerReviewsAction{width:88vw;margin-top:32px}
+  .buyerReviewsAction a{min-width:0;width:100%;padding:17px 20px;font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .buyerReviewsLane{overflow-x:auto;scrollbar-width:thin}
+  .buyerReviewsTrack{animation:none}
+}

@@ -1,0 +1,72 @@
+/* Version 136 — full-bleed factory film hero. This file is imported last so
+   the video layer can change the first screen without touching later modules. */
+.heroVideoHero {
+  isolation: isolate;
+  background: #041a38;
+  border: 0;
+  margin-bottom: -1px;
+}
+
+.heroVideoHero .heroVideoMedia {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #041a38 url('/weiboer-hero-video-poster-v136.webp') center center / cover no-repeat;
+}
+
+.heroVideoHero .heroVideo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.heroVideoHero .heroVideoMedia::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      rgba(2, 16, 42, .97) 0%,
+      rgba(2, 18, 47, .92) 25%,
+      rgba(2, 20, 50, .72) 43%,
+      rgba(2, 20, 50, .32) 59%,
+      rgba(2, 20, 50, .08) 78%,
+      rgba(2, 20, 50, .02) 100%),
+    linear-gradient(0deg,
+      rgba(2, 16, 42, .52) 0%,
+      rgba(2, 16, 42, 0) 46%);
+}
+
+.heroVideoHero .heroPanel {
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .heroVideoHero .heroVideo {
+    object-position: 56% center;
+  }
+
+  .heroVideoHero .heroVideoMedia::after {
+    background:
+      linear-gradient(0deg,
+        rgba(2, 16, 42, .99) 0%,
+        rgba(2, 18, 47, .93) 50%,
+        rgba(2, 20, 50, .50) 73%,
+        rgba(2, 20, 50, .12) 100%),
+      linear-gradient(90deg, rgba(2, 16, 42, .34), rgba(2, 16, 42, .08));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroVideoHero .heroVideo {
+    display: none;
+  }
+}

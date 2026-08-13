@@ -1,0 +1,247 @@
+.process.processTimeline{
+  padding:92px 4vw 0;
+  background:#f3f7fc;
+  overflow:hidden;
+}
+
+.processIntro{
+  max-width:1500px;
+  margin:0 auto 42px;
+}
+
+.processTimeline .processIntro .eyebrow{
+  margin-bottom:18px;
+  color:#0866cb;
+}
+
+.processTimeline .processIntro h2{
+  max-width:1320px;
+  font-size:clamp(48px,5vw,88px);
+  line-height:.94;
+  letter-spacing:-.07em;
+}
+
+.processTimeline .processIntro h2 span{
+  color:#0866cb;
+}
+
+.processPanorama{
+  width:calc(100% + 8vw);
+  height:clamp(330px,31vw,610px);
+  margin:0 -4vw;
+  overflow:hidden;
+  background:#dfe9f4;
+}
+
+.processPanorama img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.processTrack{
+  width:calc(100% + 8vw);
+  margin:0 -4vw;
+  padding:48px 4vw 52px;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr)) minmax(235px,.9fr);
+  gap:0;
+  align-items:start;
+  color:#fff;
+  background:linear-gradient(105deg,#075eb8 0%,#064b91 48%,#06396f 100%);
+}
+
+.processTrack article{
+  position:relative;
+  min-height:148px;
+  padding:0 28px 0 0;
+}
+
+.processTrack article:not(:last-of-type)::after{
+  content:"";
+  position:absolute;
+  top:29px;
+  left:76px;
+  right:12px;
+  height:1px;
+  background:rgba(190,226,255,.76);
+}
+
+.processTrack article b{
+  display:block;
+  position:relative;
+  z-index:2;
+  width:max-content;
+  color:#fff;
+  font-family:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:clamp(48px,4.2vw,74px);
+  font-weight:500;
+  line-height:.8;
+  letter-spacing:-.06em;
+}
+
+.processTrack article i{
+  position:absolute;
+  z-index:3;
+  top:23px;
+  right:5px;
+  width:13px;
+  height:13px;
+  border:3px solid rgba(255,255,255,.68);
+  border-radius:50%;
+  background:#27a0ff;
+  box-shadow:0 0 18px rgba(122,207,255,.9);
+}
+
+.processTrack article h3{
+  margin:24px 0 10px;
+  color:#fff;
+  font-size:clamp(17px,1.22vw,22px);
+  font-weight:650;
+  letter-spacing:-.025em;
+  text-transform:uppercase;
+}
+
+.processTrack article p{
+  max-width:245px;
+  margin:0;
+  color:#d9ecff;
+  font-size:14px;
+  line-height:1.45;
+}
+
+.processWhatsApp{
+  align-self:center;
+  min-height:74px;
+  margin:18px 0 0 10px;
+  padding:0 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  border:1px solid rgba(255,255,255,.5);
+  border-radius:10px;
+  background:#20b95a;
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  box-shadow:0 16px 34px rgba(2,46,25,.22);
+  transition:transform .25s ease,background .25s ease;
+}
+
+.processWhatsApp:hover{
+  transform:translateY(-3px);
+  background:#17a950;
+}
+
+.processWhatsApp b{
+  margin-left:auto;
+  font-size:22px;
+  font-weight:400;
+}
+
+.processWaIcon{
+  width:31px;
+  height:31px;
+  display:grid;
+  place-items:center;
+  border:2px solid currentColor;
+  border-radius:50%;
+  font-size:21px;
+  line-height:1;
+}
+
+@media(max-width:1100px){
+  .processTrack{
+    grid-template-columns:repeat(2,1fr);
+    row-gap:38px;
+  }
+
+  .processTrack article{
+    min-height:140px;
+  }
+
+  .processTrack article:nth-of-type(2)::after,
+  .processTrack article:nth-of-type(4)::after{
+    display:none;
+  }
+
+  .processWhatsApp{
+    grid-column:1/-1;
+    width:min(420px,100%);
+    margin:0;
+  }
+}
+
+@media(max-width:700px){
+  .process.processTimeline{
+    padding:72px 0 0;
+  }
+
+  .processIntro{
+    padding:0 7vw;
+    margin-bottom:30px;
+  }
+
+  .processTimeline .processIntro h2{
+    font-size:clamp(42px,12vw,62px);
+  }
+
+  .processPanorama{
+    width:100%;
+    height:320px;
+    margin:0;
+  }
+
+  .processTrack{
+    width:100%;
+    margin:0;
+    padding:38px 7vw 44px;
+    grid-template-columns:1fr;
+    row-gap:0;
+  }
+
+  .processTrack article{
+    min-height:0;
+    padding:0 0 30px 72px;
+  }
+
+  .processTrack article:not(:last-of-type)::after{
+    top:51px;
+    bottom:8px;
+    left:27px;
+    right:auto;
+    width:1px;
+    height:auto;
+  }
+
+  .processTrack article i{
+    top:42px;
+    left:21px;
+    right:auto;
+  }
+
+  .processTrack article b{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:46px;
+  }
+
+  .processTrack article h3{
+    margin:0 0 8px;
+    font-size:18px;
+  }
+
+  .processTrack article p{
+    font-size:14px;
+  }
+
+  .processWhatsApp{
+    grid-column:auto;
+    width:100%;
+    margin-top:8px;
+  }
+}

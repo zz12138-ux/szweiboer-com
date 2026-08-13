@@ -1,0 +1,280 @@
+/* Version 68: mobile-only navigation and layout safeguards. */
+.mobileMenuToggle,
+.mobileNavQuote{
+  display:none;
+}
+
+@media(max-width:900px){
+  html,
+  body,
+  .homeMain{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .homeMain .header{
+    justify-content:space-between;
+    padding:0 5vw;
+  }
+
+  .homeMain .headerQuote{
+    display:none;
+  }
+
+  .mobileMenuToggle{
+    position:relative;
+    width:48px;
+    height:44px;
+    margin-left:auto;
+    display:block;
+    border:1px solid #c9d9e9;
+    border-radius:8px;
+    background:#fff;
+  }
+
+  .mobileMenuToggle span{
+    position:absolute;
+    left:13px;
+    width:20px;
+    height:2px;
+    border-radius:2px;
+    background:#0758ad;
+    transition:transform .2s ease,top .2s ease;
+  }
+
+  .mobileMenuToggle span:first-child{top:16px}
+  .mobileMenuToggle span:last-child{top:25px}
+  .header.menuOpen .mobileMenuToggle span:first-child{top:21px;transform:rotate(45deg)}
+  .header.menuOpen .mobileMenuToggle span:last-child{top:21px;transform:rotate(-45deg)}
+
+  .homeMain .header nav{
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    max-height:calc(100vh - 68px);
+    padding:16px 5vw 24px;
+    display:none;
+    flex-direction:column;
+    gap:0;
+    overflow-y:auto;
+    color:#143b67;
+    background:#fff;
+    border-top:1px solid #dbe4ee;
+    box-shadow:0 20px 40px rgba(5,42,82,.16);
+  }
+
+  .homeMain .header.menuOpen nav{display:flex}
+
+  .homeMain .header nav a{
+    padding:15px 2px;
+    border-bottom:1px solid #e3ebf3;
+    font-size:16px;
+    font-weight:700;
+  }
+
+  .homeMain .header nav .mobileNavQuote{
+    margin-top:14px;
+    padding:17px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:0;
+    border-radius:7px;
+    color:#fff;
+    background:#0878eb;
+  }
+
+  .hero{
+    height:auto;
+    min-height:900px;
+  }
+
+  .heroPhoto{
+    inset:0;
+    background-position:52% top;
+  }
+
+  .heroPanel{
+    top:300px;
+    left:6vw;
+    width:88vw;
+  }
+
+  .hero h1{
+    font-size:clamp(44px,12.5vw,68px);
+    line-height:.98;
+  }
+
+  .heroSubhead{
+    font-size:clamp(26px,7vw,36px);
+  }
+
+  .heroLead{
+    max-width:620px;
+    font-size:16px;
+  }
+
+  .heroActions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .heroActions .primary,
+  .heroActions .whatsapp{
+    width:100%;
+    min-width:0;
+    min-height:60px;
+  }
+
+  .heroStats{
+    width:100%;
+  }
+
+  .products .productCard{
+    grid-template-columns:1fr;
+  }
+
+  .products .productImage{
+    aspect-ratio:16/10;
+    min-height:0;
+  }
+
+  .products .productInfo{
+    min-height:370px;
+  }
+
+  .products .productInfo a{
+    width:100%;
+    min-width:0;
+  }
+
+  .qualityDelivery{
+    overflow:hidden;
+  }
+
+  .qualityDeliveryArtwork{
+    width:100%;
+  }
+
+  .qualityDeliveryArtwork>img{
+    width:100%;
+    height:auto;
+  }
+}
+
+@media(max-width:560px){
+  .homeMain .header{
+    height:66px;
+  }
+
+  .homeMain{
+    padding-top:66px;
+  }
+
+  .homeMain .header nav{
+    top:66px;
+    max-height:calc(100vh - 66px);
+  }
+
+  .hero{
+    min-height:940px;
+  }
+
+  .heroPanel{
+    top:250px;
+  }
+
+  .heroPanel .eyebrow{
+    margin-bottom:16px;
+  }
+
+  .hero h1{
+    font-size:clamp(42px,13vw,56px);
+  }
+
+  .heroSubhead{
+    margin-top:16px;
+    font-size:26px;
+  }
+
+  .heroLead{
+    margin-top:18px;
+    font-size:15px;
+    line-height:1.55;
+  }
+
+  .heroActions{
+    grid-template-columns:1fr;
+    gap:11px;
+    margin-top:24px;
+  }
+
+  .heroStats{
+    margin-top:28px;
+  }
+
+  .heroStats div{
+    min-height:94px;
+    margin-right:10px;
+    padding:14px 10px 0 0;
+  }
+
+  .heroStats strong{
+    font-size:21px;
+  }
+
+  .heroStats span{
+    font-size:11px;
+  }
+
+  .sectionHead h2,
+  .oemCopy h2{
+    font-size:clamp(44px,13vw,60px);
+  }
+
+  .products .productInfo{
+    min-height:350px;
+    padding:30px 24px;
+  }
+
+  .products .productInfo h3{
+    font-size:34px;
+  }
+
+  .products .productInfo h4{
+    font-size:17px;
+  }
+
+  .products .productInfo>span{
+    font-size:14px;
+  }
+
+  .oemCopy{
+    padding:70px 7vw;
+  }
+
+  .oemWhatsApp{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .oemPoster{
+    aspect-ratio:1/1;
+  }
+
+  .factory.factoryShowcase,
+  .qualityDelivery{
+    padding:20px 0;
+  }
+
+  .qualityDeliveryArtwork{
+    border-radius:0;
+    box-shadow:none;
+  }
+
+  footer{
+    gap:22px;
+    padding:42px 7vw 24px;
+  }
+}

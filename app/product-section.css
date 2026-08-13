@@ -1,0 +1,83 @@
+.productImage.laptopVisual { background: #e8e9eb; }
+.productImage.laptopVisual img { object-fit: cover; }
+.productImage.seriesProduct { background: transparent; }
+.productImage.seriesProduct img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.productImage.tabletSeries img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.productImage.tabletSeries { background: transparent; padding: 0; }
+.productImage.projectorSeries { background: transparent; }
+.productImage.monitorSeries { background: transparent; }
+.productImage.monitorSeries img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.productImage.gamingSeries,
+.productImage.miniPcSeries {
+  padding: 0;
+}
+.productImage.gamingSeries,
+.productImage.miniPcSeries { background: transparent; }
+.productImage.gamingSeries img,
+.productImage.miniPcSeries img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.productImage.monitorSeries img {
+  object-position: center;
+  transform: none;
+}
+.productCard:hover .productImage img { transform: none; }
+
+/* Lock every homepage category image to one shared size while retaining the full product. */
+.products .productGrid { grid-auto-rows: auto; }
+.products .productCard { grid-template-columns: 50% 50%; height: auto; min-height: 0; }
+.products .productImage { aspect-ratio: 1 / 1; height: auto; min-height: 0; padding: 0; overflow: hidden; }
+.products .productInfo { min-height: 0; padding: 43px 40px 34px; }
+.products .productInfo > p { font-size: 11px; margin-bottom: 25px; }
+.products .productInfo h3 { font-size: clamp(32px, 2.2vw, 44px); line-height: .98; margin-bottom: 20px; }
+.products .productInfo h4 { font-size: 18px; line-height: 1.4; margin-bottom: 15px; }
+.products .productInfo > span { font-size: 14px; line-height: 1.75; }
+.products .productInfo em { font-size: 11px; margin-top: 21px; }
+.products .productInfo a { align-items: center; background: #0866cb; border: 0; color: #fff; display: inline-flex; font-size: 16px; justify-content: space-between; margin-top: auto; min-width: 264px; padding: 20px 22px; }
+.products .productInfo a b { font-size: 24px; line-height: 1; margin-left: 32px; }
+
+@media (max-width: 900px) {
+  .products .productGrid { grid-auto-rows: auto; }
+  .products .productCard { height: auto; }
+  .products .productImage { aspect-ratio: 1 / 1; height: auto; }
+  .products .productInfo { padding: 34px 30px; }
+}
+.productImage.singleProduct { background: #eee9e4; }
+.productImage.singleProduct img { object-fit: cover; }
+.productImage.tabletVisual,
+.productImage.projectorVisual,
+.productImage.monitorVisual { background: #edf0f4; }
+.productImage.tabletVisual img,
+.productImage.projectorVisual img,
+.productImage.monitorVisual img { width: 100%; max-width: none; object-fit: cover; }
+.productImage.tabletVisual img { object-position: 39% center; }
+.productImage.projectorVisual img { object-position: 67% center; }
+.productImage.monitorVisual img { object-position: 100% center; }
+.productInfo em {
+  color: #0866cb;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin-top: 18px;
+  text-transform: uppercase;
+}

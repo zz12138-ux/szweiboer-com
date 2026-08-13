@@ -1,0 +1,149 @@
+/* Homepage type refinement: a restrained, editorial B2B system inspired by premium packaging sites. */
+
+.homeMain,
+.homeMain button,
+.homeMain input,
+.homeMain textarea,
+.homeMain select {
+  font-family: "DM Sans", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.homeMain .eyebrow,
+.homeMain .productInfo > p,
+.homeMain .steps b {
+  font-family: "DM Mono", "SFMono-Regular", Consolas, monospace;
+  font-weight: 500;
+}
+
+.homeMain .header .heroBrand {
+  font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: -.065em;
+}
+
+.homeMain .header nav {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -.012em;
+}
+
+.homeMain .headerQuote {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -.01em;
+}
+
+.homeMain .hero h1,
+.homeMain .sectionHead h2,
+.homeMain .oem h2,
+.homeMain .factory h2,
+.homeMain .process h2,
+.homeMain .quote h2,
+.homeMain .faq h2 {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -.065em;
+}
+
+.homeMain .heroSubhead {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -.045em;
+}
+
+.homeMain .heroLead,
+.homeMain .oemCopy > p:not(.eyebrow),
+.homeMain .factoryCopy > p:not(.eyebrow),
+.homeMain .quote > div > p:not(.eyebrow),
+.homeMain .faq details p {
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: -.012em;
+}
+
+.homeMain .primary,
+.homeMain .whatsapp,
+.homeMain .oemWhatsApp,
+.homeMain .waBig,
+.homeMain .send,
+.homeMain .textLink {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 650;
+  letter-spacing: -.012em;
+}
+
+.homeMain .productInfo h3,
+.homeMain .steps h3,
+.homeMain .faq summary,
+.homeMain .facts strong {
+  font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -.045em;
+}
+
+.homeMain .productInfo h4 {
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+
+.homeMain .productInfo > span,
+.homeMain .facts span,
+.homeMain .steps p,
+.homeMain footer p {
+  font-weight: 450;
+  letter-spacing: -.008em;
+}
+
+@media (min-width: 901px) {
+  .homeMain .header nav { font-size: 15px; }
+  .homeMain .headerQuote { font-size: 15px; }
+}
+
+/* Keep the approved oversized hero hierarchy on narrower desktop windows. */
+@media (min-width: 901px) and (max-width: 1180px) {
+  .homeMain .heroPanel {
+    top: 4%;
+    left: 4%;
+    width: 82%;
+    max-width: 790px;
+  }
+
+  .homeMain .hero h1 {
+    font-size: clamp(96px, 11vw, 108px);
+    line-height: .96;
+  }
+
+  .homeMain .heroSubhead {
+    margin-top: 25px;
+    font-size: clamp(48px, 5.5vw, 56px);
+  }
+
+  .homeMain .heroLead {
+    max-width: 720px;
+    margin-top: 28px;
+    font-size: 22px;
+    line-height: 1.55;
+  }
+
+  .homeMain .heroActions {
+    margin-top: 35px;
+  }
+
+  .homeMain .heroActions .primary,
+  .homeMain .heroActions .whatsapp {
+    min-width: 292px;
+    min-height: 72px;
+    font-size: 20px;
+  }
+
+  .homeMain .heroStats {
+    max-width: 780px;
+    margin-top: 42px;
+  }
+
+  .homeMain .heroStats strong { font-size: 36px; }
+  .homeMain .heroStats span { font-size: 15px; }
+}

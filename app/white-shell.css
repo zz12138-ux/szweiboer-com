@@ -1,0 +1,60 @@
+/* Version 66: white navigation and footer shell. */
+.homeMain .header{
+  background:#fff;
+  border-bottom:1px solid #dbe4ee;
+  box-shadow:0 8px 28px rgba(8,50,95,.10);
+}
+
+.homeMain .header .brandLogoWrap{
+  min-width:auto;
+  padding:3px 0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+}
+
+.homeMain .header nav{
+  color:#183653;
+}
+
+.homeMain .header nav a:hover{
+  color:#086fd6;
+  border-bottom-color:#086fd6;
+}
+
+.homeMain .headerQuote{
+  color:#fff;
+  background:#0878eb;
+  border:1px solid #0878eb;
+  box-shadow:0 8px 20px rgba(8,120,235,.18);
+}
+
+.homeMain .headerQuote:hover{
+  color:#fff;
+  background:#0668cf;
+}
+
+.homeMain footer{
+  background:#fff;
+  color:#123252;
+  border-top:1px solid #dbe4ee;
+}
+
+.homeMain footer .footerLogoWrap{
+  padding:0;
+  border-radius:0;
+  background:transparent;
+}
+
+.homeMain footer p{
+  color:#4d647b;
+}
+
+.homeMain footer>a:not(.footerLogoWrap){
+  color:#087d42;
+}
+
+.homeMain footer small{
+  color:#718296;
+  border-top-color:#dbe4ee;
+}

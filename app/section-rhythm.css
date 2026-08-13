@@ -1,0 +1,84 @@
+:root{
+  --weiboer-surface:#f3f7fc;
+  --weiboer-divider:#dbe7f3;
+  --weiboer-navy:#061d38;
+}
+
+.homeMain{
+  background:var(--weiboer-surface);
+}
+
+/* Use one continuous surface across every content section. */
+.products{
+  background:var(--weiboer-surface);
+  border-bottom:1px solid var(--weiboer-divider);
+}
+
+.oem{
+  background:var(--weiboer-surface);
+  border-bottom:1px solid var(--weiboer-divider);
+}
+
+.oemShowcase,
+.oemPoster{
+  background:var(--weiboer-surface);
+}
+
+.factory.factoryShowcase{
+  background:var(--weiboer-surface);
+}
+
+/* The approved navy quality artwork now sits on the same site-wide surface. */
+.qualityDelivery{
+  background:var(--weiboer-surface);
+}
+
+.process{
+  background:var(--weiboer-surface);
+  border-bottom:1px solid var(--weiboer-divider);
+}
+
+.quote{
+  background:var(--weiboer-surface);
+  color:#101722;
+  border-bottom:1px solid var(--weiboer-divider);
+}
+
+.quote .eyebrow{
+  color:#0866cb;
+}
+
+.quote>div>p:not(.eyebrow){
+  color:#52677c;
+}
+
+.quote h2 span{
+  color:#0866cb;
+}
+
+.quote .waBig{
+  color:#0755aa;
+  border-color:#9bbbdc;
+}
+
+.quote form{
+  box-shadow:0 24px 60px rgba(27,77,126,.12);
+}
+
+.faq{
+  background:var(--weiboer-surface);
+}
+
+footer{
+  background:var(--weiboer-navy);
+}
+
+@media(max-width:700px){
+  .factory.factoryShowcase{
+    background:var(--weiboer-surface);
+  }
+
+  .process{
+    background:var(--weiboer-surface);
+  }
+}
