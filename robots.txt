@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /track/
+Disallow: /whatsapp-stats/
+
+Sitemap: https://www.szweiboer.com/sitemap.xml
