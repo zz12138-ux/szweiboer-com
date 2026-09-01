@@ -1,3 +1,3 @@
 :HL["/_next/static/chunks/0gmxjt8f4o3bd.css","style"]
 :HL["/_next/static/chunks/0~tm9q.pdnhu2.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"choose-oem-gaming-laptop-manufacturer","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"lnPvrnJVUzw9-4QCo1rvN"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"choose-oem-gaming-laptop-manufacturer","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"egmyAceusCUuftVxVBdLE"}
