@@ -1,4 +1,3 @@
 :HL["/_next/static/chunks/0l2.jom7gw.lo.css","style"]
-:HL["/_next/static/chunks/0ex254y-zu6nr.css","style"]
-:HL["/_next/static/chunks/04jcjes76_6zr.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"portable-monitors","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"wb-mn-04","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"8RyM_FEGh57Ukk0U6xIAi"}
+:HL["/_next/static/chunks/031dc8ml7_h-m.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"portable-monitors","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"wb-mn-04","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"VwtS5V_kfZBWuUcPAOWUc"}
