@@ -20,7 +20,7 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const week = new Date(now.getTime() - 7 * 86400000).toISOString();
   const month = new Date(now.getTime() - 30 * 86400000).toISOString();
 
-  const [totals, byProduct, byEvent] = await Promise.all([
+  const [totals, byProduct, byEvent, byDate] = await Promise.all([
     env.DB.prepare(
       `SELECT
         SUM(CASE WHEN created_at >= ? THEN 1 ELSE 0 END) AS today,
@@ -37,7 +37,15 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
       `SELECT event_key AS eventKey, page_path AS pagePath, COUNT(*) AS clicks
        FROM whatsapp_clicks GROUP BY event_key, page_path ORDER BY clicks DESC LIMIT 100`,
     ).all(),
+    env.DB.prepare(
+      `SELECT strftime('%Y-%m-%d', created_at) AS date, COUNT(*) AS clicks
+       FROM whatsapp_clicks
+       WHERE created_at >= ?
+       GROUP BY date
+       ORDER BY date DESC
+       LIMIT 100`,
+    ).bind(month).all(),
   ]);
 
-  return Response.json({ totals, byProduct: byProduct.results, byEvent: byEvent.results });
+  return Response.json({ totals, byProduct: byProduct.results, byEvent: byEvent.results, byDate: byDate.results });
 };
