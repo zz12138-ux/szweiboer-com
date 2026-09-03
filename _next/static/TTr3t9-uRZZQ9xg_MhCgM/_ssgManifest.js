@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fblog\u002F[slug]","\u002Flaptops\u002F[slug]","\u002Flaptops\u002Fdual-screen\u002F[slug]","\u002Fportable-monitors\u002F[slug]","\u002Fprojectors\u002F[slug]","\u002Ftablets\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
