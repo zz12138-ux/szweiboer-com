@@ -1,4 +1,0 @@
-:HL["/_next/static/chunks/0gmxjt8f4o3bd.css","style"]
-:HL["/_next/static/chunks/0p33l071b57yx.css","style"]
-:HL["/weiboer-logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"dual-screen-laptop-oem","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"kJTkL_jJ-68UrhEeI3Vy1"}
