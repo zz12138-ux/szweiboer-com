@@ -49,10 +49,10 @@ export const dualProducts: Record<string, DualScreenLaptop> = {
   "fd14": {
     code: "FD14",
     sourceId: "1601014739516",
-    title: "14.1-inch Dual-Screen Touch Laptop OEM | Intel N100, 2K IPS | Weiboer",
+    title: "FD14 Foldable Dual-Screen Laptop OEM | 14.1-inch 2K Touch | Weiboer",
     h1: "14.1-inch Dual-Screen Touch Laptop — OEM / ODM Ready",
     eyebrow: "DUAL 14.1-INCH · INTEL N100 · 360° YOGA TOUCH",
-    description: "A foldable dual 14.1-inch touch laptop platform for private-label brands, distributors and mobile productivity programs that need two integrated 2K displays.",
+    description: "Source the FD14 foldable dual-screen laptop for OEM/ODM programs: dual 14.1-inch 2K touch displays, Intel N100, 360° Yoga hinge and DDR4 up to 32GB. Confirm the final configuration before production.",
     highlights: ["Dual 14.1-inch 2K touch displays", "Intel Alder Lake-N N100", "360° Yoga hinge", "DDR4 up to 32GB", "Windows 10 / 11"],
     specs: [["Display", "Dual 14.1-inch IPS touch displays, 2240 × 1440, 16:10"], ["CPU", "Intel Alder Lake-N N100, quad core, 2.0–3.4GHz"], ["Graphics", "Intel UHD Graphics"], ["Memory", "DDR4 8GB / 16GB / 32GB"], ["Storage", "M.2 SSD, 128GB to 2TB options"], ["Operating System", "Windows 10 / Windows 11"], ["Wireless", "2.4G / 5G Wi-Fi 802.11ac and Bluetooth 4.2"], ["Ports", "Full-function Type-C ×1, USB 3.0 ×2, HDMI ×1, DC and audio"], ["Battery", "7.4V / 5000mAh"], ["Camera", "1MP"], ["Weight", "1.5kg listed"], ["Warranty", "2 years listed"], ["OEM Options", "Logo, configuration, multi-language keyboard and packaging"]],
     faqs: commonFaqs,
