@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Weiboer Buyer Guides | OEM Consumer Electronics", description: "Practical buyer guides for OEM laptops, mini PCs, tablets, projectors and portable monitors from Weiboer.", alternates: { canonical: "/blog" }, openGraph: { title: "Weiboer Buyer Guides | OEM Consumer Electronics", description: "Practical buyer guides for OEM laptops, mini PCs, tablets, projectors and portable monitors from Weiboer.", url: "/blog", type: "website" } };
+export default function BlogLayout({ children }: Readonly<{ children: React.ReactNode }>) { return children; }

@@ -1,0 +1,51 @@
+/* Shared homepage-matching navigation for catalog pages. */
+.productMenu { position: relative; display: flex; align-items: stretch; height: 100%; }
+.productMenu > .productMenuTrigger { display: inline-flex; align-items: center; gap: 7px; background: none; border: 0; cursor: pointer; color: inherit; font: inherit; }
+.productMenuTrigger::after { content: "⌄"; font-size: 13px; line-height: 1; transform: translateY(-1px); }
+.productMenuList { position: absolute; top: calc(100% - 1px); left: 50%; z-index: 80; display: grid; min-width: 224px; padding: 10px; gap: 2px; opacity: 0; visibility: hidden; transform: translate(-50%, -7px); transition: opacity .18s ease, transform .18s ease, visibility .18s ease; background: #fff; border: 1px solid #dbe4ee; box-shadow: 0 16px 34px rgba(3,35,73,.18); }
+.productMenu:hover .productMenuList, .productMenu:focus-within .productMenuList, .productMenu.isOpen .productMenuList { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+.productMenuList a { display: block; padding: 10px 12px !important; border: 0 !important; color: #183653 !important; font-size: 15px !important; font-weight: 500 !important; letter-spacing: -.012em; white-space: nowrap; }
+.productMenuList a:hover, .productMenuList a:focus-visible { color: #086fd6 !important; background: #eaf4ff; }
+
+/* Exact homepage desktop geometry: white shell, DM Sans scale, 15px nav. */
+.laptopHeader { position: fixed; top: 0; right: 0; left: 0; z-index: 70; background: #fff; border-bottom: 1px solid #dbe4ee; box-shadow: 0 8px 28px rgba(8,50,95,.10); height: 76px; padding: 0 4.5vw; }
+.laptopsPage { padding-top: 90px; }
+.laptopHeader + .laptopHero { margin-top: 0; }
+.laptopHeader .laptopBrand img { height: 58px; }
+.laptopHeader .laptopNav { align-items: stretch; color: #183653; display: flex; font-family: "DM Sans", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif; font-size: 15px; font-weight: 500; gap: 30px; height: 100%; letter-spacing: -.012em; }
+.laptopHeader .laptopNav > a, .laptopHeader .laptopNav > .productMenu > .productMenuTrigger { padding: 28px 0 25px; border-bottom: 3px solid transparent; color: inherit; font-size: 15px; font-weight: 500; line-height: 1; transition: color .2s ease, border-color .2s ease; }
+.laptopHeader .laptopNav > a:hover, .laptopHeader .laptopNav > a.active, .laptopHeader .laptopNav > .productMenu:hover > .productMenuTrigger, .laptopHeader .laptopNav > .productMenu.isOpen > .productMenuTrigger { color: #086fd6; border-bottom-color: #086fd6; }
+.laptopHeader .backHome { color: #183653; border-bottom-color: #183653; font-size: 12px; }
+
+/* Keep homepage nav scale and colors, including the product dropdown. */
+.header .productMenu { height: 76px; }
+.header .productMenu > .productMenuTrigger { padding: 28px 0 25px; border-bottom: 3px solid transparent; color: #183653; font-family: "DM Sans", "Helvetica Neue", Arial, sans-serif; font-size: 15px; font-weight: 500; letter-spacing: -.012em; transition: color .2s ease, border-color .2s ease; }
+.header .productMenu:hover > .productMenuTrigger, .header .productMenu:focus-within > .productMenuTrigger, .header .productMenu.isOpen > .productMenuTrigger { color: #086fd6; border-bottom-color: #086fd6; }
+.header .productMenuList { top: 100%; }
+
+@media (max-width: 900px) {
+  .laptopHeader { height: 68px; }
+  .laptopHeader .laptopBrand img { height: 50px; }
+  .laptopsPage { padding-top: 78px; }
+}
+
+/* Keep the homepage dropdown attached to the full 72px header, not the trigger's line box. */
+@media (min-width: 801px) {
+  .homeMain .header { overflow: visible; isolation: isolate; }
+  .homeMain .header nav { height: 100%; align-items: stretch; position: static; }
+  .homeMain .header .productMenu { height: 100%; align-self: stretch; }
+  .homeMain .header .productMenuList { top: 90px; background: #fff !important; opacity: 0; pointer-events: none; transform: translate(-50%, -6px); }
+  .homeMain .header .productMenu:hover .productMenuList,
+  .homeMain .header .productMenu:focus-within .productMenuList,
+  .homeMain .header .productMenu.isOpen .productMenuList { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+}
+
+@media (max-width: 800px) {
+  .laptopHeader .laptopNav { height: auto; }
+  .laptopHeader .laptopNav > a, .laptopHeader .laptopNav > .productMenu > .productMenuTrigger { padding: 15px 2px; border-bottom: 1px solid #dbe4ee; font-size: 16px; }
+  .laptopHeader .productMenu { display: block; height: auto; }
+  .laptopHeader .productMenuList, .header .productMenuList { position: static; min-width: 0; padding: 0 0 8px 14px; opacity: 1; visibility: visible; transform: none; background: transparent; border: 0; box-shadow: none; }
+  .laptopHeader .productMenuList a, .header .productMenuList a { padding: 11px 2px !important; color: #183653 !important; font-size: 14px !important; }
+  .laptopHeader .productMenuList a:hover, .header .productMenuList a:hover { background: transparent; color: #086fd6 !important; }
+  .header .productMenu { display: block; height: auto; }
+}

@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Gaming Laptop OEM Manufacturer | RTX 5060, 5070 Ti & 5090 Platforms | Weiboer", description: "Compare OEM gaming laptop platforms with RTX 5060, RTX 5070 Ti and RTX 5090 options. Confirm configuration, branding, sample requirements, MOQ and packaging with Weiboer.", alternates: { canonical: "/gaming-laptops" }, openGraph: { title: "Gaming Laptop OEM Manufacturer | RTX Platforms", description: "RTX gaming laptop platforms for brands, distributors and private-label programs.", url: "/gaming-laptops", type: "website" } };
+export default function GamingLaptopsLayout({children}:{children:React.ReactNode}){return children;}

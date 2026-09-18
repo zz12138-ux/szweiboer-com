@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import "./product-section.css";
 import "./oem-section.css";
 import "./navigation.css";
+import "./product-nav.css";
 import "./hero-scale.css";
 import "./premium-type.css";
 import "./factory-showcase.css";
@@ -23,17 +24,18 @@ import "./hero-video-v136.css";
 import "./factory-tour-v137.css";
 import "./headline-spacing-v142.css";
 import "./hero-copy-v145.css";
-import SpecTable from "./components/SpecTable";
 
 const whatsapp = "https://wa.me/8613556351212?text=Hello%20Weiboer%2C%20I%20would%20like%20a%20quotation.";
 
 const products = [
   { number: "01", name: "Laptops", title: "Fully customizable laptop solutions", text: "Logo, CPU, memory, storage, keyboard layout, ports, OS and packaging.", image: "/category-laptop-v94.webp", visual: "seriesProduct", link: "/laptops" },
-  { number: "02", name: "Android Tablets", title: "Flexible tablets for your market", text: "Display, memory, connectivity, software, color and private-label packaging.", image: "/category-tablet-v94.webp", visual: "seriesProduct tabletSeries", link: "#quote" },
-  { number: "03", name: "LED Projectors", title: "Projectors made to your brief", text: "Brightness, interfaces, system, accessories, logo and retail-ready packaging.", image: "/category-projector-v94.webp", visual: "seriesProduct projectorSeries", link: "#quote" },
-  { number: "04", name: "Portable Monitors", title: "Built for flexible workspaces", text: "Screen options, ports, custom logo and retail-ready packaging for your project.", image: "/category-portable-monitor-v94.webp", visual: "seriesProduct monitorSeries", link: "#quote" },
-  { number: "05", name: "Gaming Laptops", title: "Performance platforms for gaming brands", text: "CPU, dedicated graphics, cooling, display, memory, storage, keyboard and private-label packaging.", image: "/category-gaming-laptop-v94.webp", visual: "seriesProduct gamingSeries", link: "#quote" },
-  { number: "06", name: "Mini PCs", title: "Compact computing for every market", text: "Processor, memory, storage, connectivity, enclosure color, logo and retail-ready packaging.", image: "/category-mini-pc-v94.webp", visual: "seriesProduct miniPcSeries", link: "#quote" },
+  { number: "02", name: "Android Tablets", title: "Flexible tablets for your market", text: "Display, memory, connectivity, software, color and private-label packaging.", image: "/category-tablet-v94.webp", visual: "seriesProduct tabletSeries", link: "/tablets" },
+  { number: "03", name: "LED Projectors", title: "Projectors made to your brief", text: "Brightness, interfaces, system, accessories, logo and retail-ready packaging.", image: "/category-projector-v94.webp", visual: "seriesProduct projectorSeries", link: "/projectors" },
+  { number: "04", name: "Portable Monitors", title: "Built for flexible workspaces", text: "Screen options, ports, custom logo and retail-ready packaging for your project.", image: "/category-portable-monitor-v94.webp", visual: "seriesProduct monitorSeries", link: "/portable-monitors" },
+  { number: "05", name: "Gaming Laptops", title: "Performance platforms for gaming brands", text: "CPU, dedicated graphics, cooling, display, memory, storage, keyboard and private-label packaging.", image: "/category-gaming-laptop-v94.webp", visual: "seriesProduct gamingSeries", link: "/gaming-laptops" },
+  { number: "06", name: "Mini PCs", title: "Compact computing for every market", text: "AMD Ryzen 5 / Ryzen 7, DDR5 memory, WiFi 6, enclosure color, logo and retail-ready packaging.", image: "/category-mini-pc-v94.webp", visual: "seriesProduct miniPcSeries", link: "/mini-pcs" },
+  { number: "07", name: "Phones", title: "6.65-inch Android 12 4G Dual-SIM Phone", text: "6.65-inch display, Android 12 and 4G dual-SIM connectivity for private-label mobile programs.", image: "/category-phone-premium.png", visual: "phoneSeries", link: "/phones" },
+  { number: "08", name: "All-in-One PCs", title: "Integrated desktop platforms", text: "Display, integrated computer housing, stand, configuration, branding and retail-ready packaging for your project.", image: "/category-aio-premium.png", visual: "allInOneSeries", link: "/all-in-one-pcs" },
 ];
 
 const faqs = [
@@ -88,8 +90,9 @@ export default function Home() {
   const submitEmailQuote = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    const subject = `Weiboer quotation request - ${data.get("company") || "New buyer"}`;
-    const body = [
+    const message = [
+      "Hello Weiboer, I would like a quotation.",
+      "",
       `Name: ${data.get("name") || ""}`,
       `Company: ${data.get("company") || ""}`,
       `Email: ${data.get("email") || ""}`,
@@ -99,13 +102,13 @@ export default function Home() {
       "Project requirements:",
       `${data.get("requirements") || ""}`,
     ].join("\n");
-    window.location.href = `mailto:l474419569@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(`https://wa.me/8613556351212?text=${encodeURIComponent(message)}`, "_blank");
   };
   return <main className="homeMain">
     <header className={`header${menuOpen ? " menuOpen" : ""}`}>
       <a className="brand heroBrand brandLogoWrap" href="#top" aria-label="Weiboer home" onClick={() => setMenuOpen(false)}><img className="siteLogo siteLogoHeader" src="/weiboer-logo.png" alt="Weiboer" /></a>
       <button className="mobileMenuToggle" type="button" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="home-navigation" onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
-      <nav id="home-navigation"><a href="/" onClick={() => setMenuOpen(false)}>Home</a><a href="#about" onClick={() => setMenuOpen(false)}>About Us</a><a href="#about" onClick={() => setMenuOpen(false)}>Capabilities</a><a href="/laptops" onClick={() => setMenuOpen(false)}>Products</a><a href="#factory" onClick={() => setMenuOpen(false)}>Factory</a><a href="#quality" onClick={() => setMenuOpen(false)}>Quality</a><a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a><a href="#quote" onClick={() => setMenuOpen(false)}>Contact Us</a><a className="mobileNavQuote" href="#email-quote" onClick={() => setMenuOpen(false)}>Get a Quotation <b>↗</b></a></nav>
+      <nav id="home-navigation"><a href="/" onClick={() => setMenuOpen(false)}>Home</a><a href="#about" onClick={() => setMenuOpen(false)}>About Us</a><a href="#about" onClick={() => setMenuOpen(false)}>Capabilities</a><div className="productMenu"><button className="productMenuTrigger" type="button">Products</button><div className="productMenuList"><a href="/laptops" onClick={() => setMenuOpen(false)}>Laptops</a><a href="/gaming-laptops" onClick={() => setMenuOpen(false)}>Gaming Laptops</a><a href="/mini-pcs" onClick={() => setMenuOpen(false)}>Mini PCs</a><a href="/tablets" onClick={() => setMenuOpen(false)}>Android Tablets</a><a href="/projectors" onClick={() => setMenuOpen(false)}>Projectors</a><a href="/portable-monitors" onClick={() => setMenuOpen(false)}>Portable Monitors</a><a href="/phones" onClick={() => setMenuOpen(false)}>Phones</a><a href="/all-in-one-pcs" onClick={() => setMenuOpen(false)}>All-in-One PCs</a></div></div><a href="#factory" onClick={() => setMenuOpen(false)}>Factory</a><a href="#quality" onClick={() => setMenuOpen(false)}>Quality</a><a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a><a href="/blog" onClick={() => setMenuOpen(false)}>Buyer Guides</a><a href="#quote" onClick={() => setMenuOpen(false)}>Contact Us</a><a className="mobileNavQuote" href="#email-quote" onClick={() => setMenuOpen(false)}>Get a Quotation <b>↗</b></a></nav>
       <a className="headerQuote" href="#email-quote">Get a Quotation</a>
     </header>
 
@@ -159,8 +162,7 @@ export default function Home() {
 
     <section id="products" className="products">
       <div className="sectionHead"><div><p className="eyebrow ink">PRODUCT CATEGORIES</p><h2>Start with a platform.<br /><span>Make it your own.</span></h2></div><a href="#quote" className="textLink">Need a custom shortlist <b>↗</b></a></div>
-      <div className="productGrid">{products.map(p => <article className="productCard" key={p.name}><div className={`productImage ${p.visual}`}><img src={p.image} alt={p.name} width="1000" height="1000" loading="lazy" decoding="async" /></div><div className="productInfo"><p>{p.number} / PRODUCT CATEGORY</p><h3>{p.name}</h3><h4>{p.title}</h4><span>{p.text}</span><em>OEM / ODM customization available</em><a href={p.link}>{p.link === "/laptops" ? "Explore laptops" : "Request specifications"} <b>↗</b></a></div></article>)}</div>
-      <SpecTable />
+      <div className="productGrid">{products.map(p => { const hasCatalog = p.link === "/laptops" || p.link === "/mini-pcs"; return <article className="productCard" key={p.name}><div className={`productImage ${p.visual}`}><img src={p.image} alt={p.name} width="1000" height="1000" loading="lazy" decoding="async" /></div><div className="productInfo"><p>{p.number} / PRODUCT CATEGORY</p><h3>{p.name}</h3><h4>{p.title}</h4><span>{p.text}</span><em>OEM / ODM customization available</em><a href={p.link}>{hasCatalog ? `Explore ${p.name.toLowerCase()}` : "Request specifications"} <b>↗</b></a></div></article>; })}</div>
     </section>
 
     <section id="about" className="factory factoryShowcase" aria-label="About Weiboer and factory capabilities">
@@ -217,7 +219,7 @@ export default function Home() {
           <label><span>Your name</span><input name="name" type="text" autoComplete="name" required placeholder="John Smith" /></label>
           <label><span>Company</span><input name="company" type="text" autoComplete="organization" required placeholder="Company name" /></label>
           <label><span>Business email</span><input name="email" type="email" autoComplete="email" required placeholder="name@company.com" /></label>
-          <label><span>Product category</span><select name="product" defaultValue="Laptops"><option>Laptops</option><option>Android Tablets</option><option>LED Projectors</option><option>Portable Monitors</option><option>Gaming Laptops</option><option>Mini PCs</option><option>Other electronics</option></select></label>
+          <label><span>Product category</span><select name="product" defaultValue="Laptops"><option>Laptops</option><option>Android Tablets</option><option>LED Projectors</option><option>Portable Monitors</option><option>Gaming Laptops</option><option>Mini PCs</option><option>Phones</option><option>All-in-One PCs</option><option>Other electronics</option></select></label>
           <label><span>Estimated quantity</span><input name="quantity" type="text" inputMode="numeric" placeholder="e.g. 100 pcs" /></label>
           <label className="full"><span>Customization &amp; project requirements</span><textarea name="requirements" rows={5} required placeholder="Specifications, logo, packaging, destination market and any other requirements..." /></label>
           <button type="submit">Get a Quote by Email <b>↗</b></button>
