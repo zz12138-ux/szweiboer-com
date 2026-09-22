@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "RTX 5070 Mini Gaming PC OEM | i9-14900F, DDR5 | Weiboer", description: "Shenzhen OEM/ODM mini gaming PC with Intel Core i5-14400F / i7-14700F / i9-14900F, RTX 4060 Ti or RTX 5070, DDR5 up to 64GB and dual LAN.", alternates: { canonical: "/mini-pcs/wb-mc-04" }, openGraph: { title: "RTX 5070 Mini Gaming PC OEM/ODM — Weiboer", description: "Discrete-GPU mini PC platform for gaming, workstation and project buyers.", url: "/mini-pcs/wb-mc-04", type: "article" } };
+export default function WBMC04Layout({ children }: Readonly<{ children: React.ReactNode }>) { return children; }

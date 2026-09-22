@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Portable Monitor OEM Manufacturer | USB-C IPS Displays | Weiboer", description: "Shenzhen OEM/ODM portable monitor supplier with 13.3 to 16-inch IPS displays, USB-C, 1920×1200 and custom logo/private-label options.", alternates: { canonical: "/portable-monitors" }, openGraph: { title: "Portable Monitor OEM/ODM — Weiboer", description: "Custom portable monitors for laptop extension and multi-screen workstations.", url: "/portable-monitors", type: "website" } };
+export default function PortableMonitorsLayout({ children }: Readonly<{ children: React.ReactNode }>) { return children; }

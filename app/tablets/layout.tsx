@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Android Tablet OEM Supplier | Private Label Tablets | Weiboer", description: "Android tablet OEM supplier for business, education, retail and kids learning programs. Compare WiFi and 4G platforms, then confirm logo, packaging and final configuration.", alternates: { canonical: "/tablets" }, openGraph: { title: "Android Tablet OEM Supplier | Weiboer", description: "Private-label Android tablet platforms for distributors, education programs and retail buyers.", url: "/tablets", type: "website" } };
+export default function TabletsLayout({ children }: Readonly<{ children: React.ReactNode }>) { return children; }

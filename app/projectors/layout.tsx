@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Smart LED Projector OEM Manufacturer | Weiboer", description: "Shenzhen OEM/ODM smart LED projector supplier for home theater, portable entertainment and private-label programs. 720P, Android and mini projector platforms.", alternates: { canonical: "/projectors" }, openGraph: { title: "Smart LED Projector OEM/ODM — Weiboer", description: "Custom smart LED projectors for distributors and global brands.", url: "/projectors", type: "website" } };
+export default function ProjectorsLayout({ children }: Readonly<{ children: React.ReactNode }>) { return children; }
