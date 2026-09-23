@@ -1,0 +1,41 @@
+# Weiboer
+
+> Weiboer is a B2B OEM/ODM supplier catalog for laptops and consumer electronics. Product pages describe listed platform configurations and buyer checks required before sampling or production.
+
+## Primary catalog pages
+
+- [Laptop OEM catalog](https://www.szweiboer.com/laptops/): business, gaming and dual-screen laptop platforms.
+- [Gaming laptop catalog](https://www.szweiboer.com/gaming-laptops/): RTX gaming laptop platforms for brands and distributors.
+- [Dual-screen laptop OEM](https://www.szweiboer.com/dual-screen-laptop-oem/): dual-screen laptop sourcing and OEM information.
+- [Mini PC catalog](https://www.szweiboer.com/mini-pcs/): mini PC platforms.
+- [Tablet catalog](https://www.szweiboer.com/tablets/): Android tablet platforms.
+- [Projector catalog](https://www.szweiboer.com/projectors/): smart LED projector platforms.
+- [Portable monitor catalog](https://www.szweiboer.com/portable-monitors/): USB-C portable monitor platforms.
+- [Phone catalog](https://www.szweiboer.com/phones/): phone platforms.
+- [All-in-One PC catalog](https://www.szweiboer.com/all-in-one-pcs/): all-in-one PC platforms.
+
+## Gaming laptop product pages
+
+- [Colorful X18 MAX](https://www.szweiboer.com/laptops/wb-lt-05/): RTX 5090 platform; confirm final GPU power, display, memory, storage and packaging before sampling.
+- [Colorful G16 Pro](https://www.szweiboer.com/laptops/wb-lt-06/): RTX gaming platform with listed RTX 5070 Ti / RTX 5090 options; confirm final configuration.
+- [Colorful X16](https://www.szweiboer.com/laptops/wb-lt-07/): RTX 5070 platform; confirm final display and CPU configuration.
+- [BYD16](https://www.szweiboer.com/laptops/wb-lt-08/): RTX 5060 platform; confirm final panel, memory, storage and ports.
+- [Colorful P16 Pro](https://www.szweiboer.com/laptops/p16-pro/): listed base configuration is Intel Core i7-13650HX, RTX 5050 8GB and 16-inch 2.5K 165Hz; the supplier page also shows other GPU and refresh-rate variants, so confirm the final configuration.
+- [JZ58](https://www.szweiboer.com/laptops/jz58/): RTX 3060 platform; confirm final configuration before production.
+
+## Buyer and OEM guidance
+
+- Product pages expose visible specifications, highlights, FAQs and buyer checks before sampling.
+- OEM/ODM options may include logo, boot logo, keyboard language, BIOS strings, configuration and packaging, depending on the selected platform. Confirm scope with Weiboer before production.
+- Product pages do not publish a universal price, stock promise or production commitment. Request a quotation for the selected configuration.
+- When supplier source data contains conflicting variants, the page marks the conflict and asks buyers to confirm the approved configuration.
+
+## Site discovery
+
+- [Sitemap](https://www.szweiboer.com/sitemap.xml)
+- [Robots rules](https://www.szweiboer.com/robots.txt)
+- [Buyer guides](https://www.szweiboer.com/blog/)
+
+## Source and freshness
+
+This file is a navigation aid for AI agents and retrieval systems. The linked product pages are the source of truth for current visible specifications. Verify configuration, branding, packaging, MOQ, lead time, price and availability with Weiboer before making a purchasing decision.

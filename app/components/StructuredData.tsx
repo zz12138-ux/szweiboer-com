@@ -45,6 +45,19 @@ export function productJsonLd(product: ProductLike, category: string, slug: stri
   return { "@context": "https://schema.org", "@graph": options.includeProduct === false ? [breadcrumb] : [productEntity, breadcrumb] };
 }
 
+export function productFaqJsonLd(product: ProductLike, category: string, slug: string, faqs: [string, string][], options: ProductJsonLdOptions = {}) {
+  const productData = productJsonLd(product, category, slug, options);
+  const faqEntity = {
+    "@type": "FAQPage",
+    mainEntity: faqs.map(([question, answer]) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  };
+  return { "@context": "https://schema.org", "@graph": [...productData["@graph"], faqEntity] };
+}
+
 export function JsonLd({ data }: { data: unknown }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
