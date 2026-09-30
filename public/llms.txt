@@ -20,7 +20,7 @@
 - [Colorful G16 Pro](https://www.szweiboer.com/laptops/wb-lt-06/): RTX gaming platform with listed RTX 5070 Ti / RTX 5090 options; confirm final configuration.
 - [Colorful X16](https://www.szweiboer.com/laptops/wb-lt-07/): RTX 5070 platform; confirm final display and CPU configuration.
 - [BYD16](https://www.szweiboer.com/laptops/wb-lt-08/): RTX 5060 platform; confirm final panel, memory, storage and ports.
-- [Colorful P16 Pro](https://www.szweiboer.com/laptops/p16-pro/): listed base configuration is Intel Core i7-13650HX, RTX 5050 8GB and 16-inch 2.5K 165Hz; the supplier page also shows other GPU and refresh-rate variants, so confirm the final configuration.
+- [Colorful P16 Pro](https://www.szweiboer.com/laptops/p16-pro/): listed CPU/GPU options are Core i7-13650HX with RTX 5050 8GB, Core i9-13900HX with RTX 5070 8GB, and Core i9-13900HX with RTX 5070 Ti 12GB. The listing shows 165Hz / 300Hz display options; confirm the panel pairing for the selected configuration.
 - [JZ58](https://www.szweiboer.com/laptops/jz58/): RTX 3060 platform; confirm final configuration before production.
 
 ## Buyer and OEM guidance
