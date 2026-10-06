@@ -32,6 +32,7 @@ export default function BusinessDetail({ product, slug }: { product: GamingLapto
         <div className="detailHighlights">{product.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
         {product.cpuOptions?.length ? <div className="configurationOptions"><p className="detailEyebrow">CPU OPTIONS · CONFIRM ON QUOTATION</p>{product.cpuOptions.map((cpu) => <dl key={cpu}><dt>{cpu}</dt><dd>Listed option; confirm availability and final configuration before sampling.</dd></dl>)}</div> : null}
         {product.sourceUrl ? <p className="detailRelatedLinks"><a href={product.sourceUrl} target="_blank" rel="noreferrer">View Alibaba product source ↗</a></p> : null}
+        {product.sourceUrls?.length ? <p className="detailRelatedLinks">{product.sourceUrls.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{label} ↗</a>)}</p> : null}
         <div className="detailFacts"><div><b>MOQ</b><strong>{product.catalogMoq || "Confirm"}</strong></div><div><b>WARRANTY</b><strong>{product.warranty || "Confirm"}</strong></div></div>
         <a className="detailPrimaryCta" href={inquiry} target="_blank" rel="noreferrer">Get Specs & OEM Quote ↗</a>
         <p className="detailCtaNote">Product logo · Boot logo · Memory and storage configuration · Keyboard language · Retail packaging</p>

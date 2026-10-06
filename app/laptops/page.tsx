@@ -45,6 +45,24 @@ const models: Array<{code:string;displayName:string;title:string;main:string;spe
     detail: "/laptops/wb-lt-04",
   },
   {
+    code: "AMD-156", displayName: "AMD-156 Ryzen 7 Business Laptop", title: "15.6-inch FHD business laptop with AMD Ryzen 7 2700U", main: "/laptops/amd-156/gallery/01-main.png", tone: "directTone", tags: ["15.6-inch 1920 × 1080", "AMD Ryzen 7 2700U", "Radeon Vega graphics"], detail: "/laptops/amd-156", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-Rayzen-7-AMD156-15-6_1601965589630.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "P15", displayName: "P15 Intel N95 Laptop", title: "15.6-inch FHD Intel N95 laptop with two product styles", main: "/laptops/p15/gallery/01-business.jpg", tone: "nucTone", tags: ["15.6-inch 1920 × 1080", "Intel N95", "Business and pink student styles"], detail: "/laptops/p15", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-Under-10000-P15-15-6_1601964743426.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "FD15", displayName: "FD15 Dual 14-inch Touch Laptop", title: "Dual 14-inch Yoga touch laptop with Intel N150", main: "/laptops/fd15/gallery/01-main.jpg", tone: "dualTone", tags: ["Dual 14-inch 1920 × 1200 touch screens", "Intel N150", "Wi-Fi 6 + Bluetooth 5.2"], detail: "/laptops/fd15", sourceUrl: "https://www.alibaba.com/product-detail/WIFI-6-5-2-14-Inch_1601014733639.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "YG10", displayName: "YG10 11-inch Yoga Touch Laptop", title: "11-inch 1920 × 1280 Yoga touch laptop with Intel N100", main: "/laptops/yg10/gallery/01-main.jpg", tone: "directTone", tags: ["11-inch Yoga touchscreen", "Intel N100", "DDR4 up to 32GB"], detail: "/laptops/yg10", sourceUrl: "https://www.alibaba.com/product-detail/2024-11-Inch-Slim-Yoga-Touch_1601338668387.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "YG14", displayName: "YG14 14-inch Yoga Business Laptop", title: "14-inch 1080p Yoga touch laptop with Intel N95", main: "/laptops/yg14/gallery/01-main.png", tone: "directTone", tags: ["14-inch 1920 × 1080 touchscreen", "Intel N95", "DDR4 16GB / 32GB"], detail: "/laptops/yg14", sourceUrl: "https://www.alibaba.com/product-detail/New-14-Inch-YOGA-Touch-Screen_1600822039182.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "A7", displayName: "A7 14-inch Student Laptop", title: "14-inch entry-level laptop with Intel Celeron N3350", main: "/laptops/a7/gallery/01-main.jpg", tone: "nucTone", tags: ["14-inch 1366 × 768", "Intel Celeron N3350", "6GB RAM listed"], detail: "/laptops/a7", sourceUrl: "https://www.alibaba.com/product-detail/Cheapest-OEM-14-Inch-Ordenador-Portatil_1600108497920.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "5 pieces listed",
+  },
+  {
     code: "MAX16", displayName: "MAX16 Triple-Screen Laptop", title: "16-inch + dual 10.5-inch triple-screen laptop, Core i5-12450H / i7-12700H", main: "/laptops/max16/gallery/01-main.jpg", tone: "directTone", tags: ["16-inch + dual 10.5-inch IPS displays", "Core i5-12450H / i7-12700H options", "Windows 11 Pro listed"], detail: "/laptops/max16", sourceUrl: "https://www.alibaba.com/product-detail/Tri-Screen-for-Laptop-MAX16-16_1601971801368.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 pc listed", leadTime: "8 days listed",
   },
   {
