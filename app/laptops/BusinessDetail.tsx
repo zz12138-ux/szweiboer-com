@@ -30,14 +30,16 @@ export default function BusinessDetail({ product, slug }: { product: GamingLapto
         <h1>{product.h1}</h1>
         <p className="detailLead">{product.description}</p>
         <div className="detailHighlights">{product.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
-        <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>WARRANTY</b><strong>{product.warranty || "Confirm"}</strong></div></div>
+        {product.cpuOptions?.length ? <div className="configurationOptions"><p className="detailEyebrow">CPU OPTIONS · CONFIRM ON QUOTATION</p>{product.cpuOptions.map((cpu) => <dl key={cpu}><dt>{cpu}</dt><dd>Listed option; confirm availability and final configuration before sampling.</dd></dl>)}</div> : null}
+        {product.sourceUrl ? <p className="detailRelatedLinks"><a href={product.sourceUrl} target="_blank" rel="noreferrer">View Alibaba product source ↗</a></p> : null}
+        <div className="detailFacts"><div><b>MOQ</b><strong>{product.catalogMoq || "Confirm"}</strong></div><div><b>WARRANTY</b><strong>{product.warranty || "Confirm"}</strong></div></div>
         <a className="detailPrimaryCta" href={inquiry} target="_blank" rel="noreferrer">Get Specs & OEM Quote ↗</a>
         <p className="detailCtaNote">Product logo · Boot logo · Memory and storage configuration · Keyboard language · Retail packaging</p>
       </div>
     </section>
 
     <section className="detailIntro"><p>PRODUCT DETAILS</p><h2>Configurable hardware.<br />Ready for your <span>laptop line.</span></h2></section>
-    <section className="detailImageStack">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section>
+    {details.length ? <section className="detailImageStack">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section> : null}
 
     <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {product.code}</p><h2>Configurations you can<br /><span>tune to your market.</span></h2></div><div className="specGrid">{product.specs.map(([label, value]) => <div key={label}><b>{label}</b><span>{value}</span></div>)}</div></section>
     <section className="detailFaq"><div className="specHead"><p>FAQ · {product.code} OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{product.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>

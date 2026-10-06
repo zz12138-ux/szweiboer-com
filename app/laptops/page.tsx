@@ -13,7 +13,7 @@ import CategorySeoContent from "../CategorySeoContent";
 
 const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 
-const models = [
+const models: Array<{code:string;displayName:string;title:string;main:string;specs?:string;tone:string;tags:string[];detail:string;sourceUrl?:string;moq?:string;leadTime?:string}> = [
   {
     code: "NUC GR180",
     displayName: "15.6-inch Intel Business Laptop",
@@ -45,6 +45,18 @@ const models = [
     detail: "/laptops/wb-lt-04",
   },
   {
+    code: "MAX16", displayName: "MAX16 Triple-Screen Laptop", title: "16-inch + dual 10.5-inch triple-screen laptop, Core i5-12450H / i7-12700H", main: "/laptops/max16/gallery/01-main.jpg", tone: "directTone", tags: ["16-inch + dual 10.5-inch IPS displays", "Core i5-12450H / i7-12700H options", "Windows 11 Pro listed"], detail: "/laptops/max16", sourceUrl: "https://www.alibaba.com/product-detail/Tri-Screen-for-Laptop-MAX16-16_1601971801368.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 pc listed", leadTime: "8 days listed",
+  },
+  {
+    code: "S15", displayName: "S15 15.6-inch Laptop", title: "15.6-inch IPS FHD student and business laptop, Intel N5095", main: "/laptops/s15/gallery/01-main.jpg", tone: "nucTone", tags: ["15.6-inch IPS FHD", "Intel Celeron N5095", "Memory configuration to confirm"], detail: "/laptops/s15", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-for-Students-and-Education-S15_1601967837686.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "P10", displayName: "P10 10.1-inch Yoga 2-in-1 Laptop", title: "10.1-inch 1920 × 1200 Yoga 2-in-1 touch laptop, Core i3-1215U", main: "/laptops/p10/gallery/01-main.jpg", tone: "directTone", tags: ["10.1-inch IPS touchscreen", "1920 × 1200", "Intel Core i3-1215U"], detail: "/laptops/p10", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-Book-P10-10-Inch-Yoga_1601966720231.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
+    code: "P8", displayName: "P8 8-inch Yoga 2-in-1 Laptop", title: "8-inch Yoga 2-in-1 touch laptop, Intel N95 / N100", main: "/laptops/p8/gallery/01-main.jpg", tone: "nucTone", tags: ["8-inch 1280 × 800 touchscreen", "Intel N95 / N100 options", "DDR5 12GB listed"], detail: "/laptops/p8", sourceUrl: "https://www.alibaba.com/product-detail/P8-8-Inch-Yoga-2-in_1601966652704.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 unit listed", leadTime: "7 days listed",
+  },
+  {
     code: "FD16", displayName: "16-inch Dual-Screen i5 Laptop", title: "16-inch Dual-Screen Laptop OEM with Intel Core i5-12450H", main: "/laptops/wb-lt-09/gallery/01-main.webp", tone: "dualTone", tags: ["Dual 16-inch touch displays", "Intel Core i5-12450H", "DDR4 up to 64GB"], detail: "/laptops/dual-screen/wb-lt-09",
   },
   {
@@ -69,7 +81,7 @@ export default function LaptopsPage() {
     <section className="customBar"><b>LOW MOQ</b><b>LOGO &amp; BOOT LOGO</b><b>HARDWARE CONFIGURATION</b><b>KEYBOARD &amp; PACKAGING</b></section>
     <section className="laptopCatalog"><div className="catalogHeading"><p>AVAILABLE MODELS</p><h2>Choose your next<br/><span>laptop platform.</span></h2><span className="catalogIntro">Low-MOQ laptop platforms for distributors, retailers and private-label brands. Add future models to this product wall without changing the layout.</span></div>      <div className="laptopProductGrid">{models.map((model, index) => { const inquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like a quotation for ${model.code}.`)}`; const detailUrl = model.detail; return <article className={`modelCard${detailUrl ? " modelCardClickable" : ""}`} key={model.code} role={detailUrl ? "link" : undefined} tabIndex={detailUrl ? 0 : undefined} onClick={() => { if (detailUrl) window.location.href = detailUrl; }} onKeyDown={(event) => { if (detailUrl && (event.key === "Enter" || event.key === " ")) window.location.href = detailUrl; }}>
       <div className="modelImage"><img src={model.main} alt={model.title} loading="lazy" decoding="async"/><span>{String(index + 1).padStart(2, "0")}</span></div>
-      <div className="modelInfo" data-track-scope="laptops-model"><p className="modelCode">{model.code} · OEM / ODM READY</p><h2>{model.displayName}</h2><p className="productSummary">{model.tags.slice(0, 3).join(" · ")}. Built for custom branding and global B2B supply.</p>{detailUrl && <a className="viewDetails" href={detailUrl} onClick={(event) => event.stopPropagation()}>View product details ↗</a>}<div className="productFacts"><span><b>MOQ</b>1 pc</span><span><b>LEAD TIME</b>7 days</span></div><a className="modelWhatsApp" href={inquiry} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>Quote This Product on WhatsApp <b>↗</b></a></div>
+      <div className="modelInfo" data-track-scope="laptops-model"><p className="modelCode">{model.code} · OEM / ODM READY</p><h2>{model.displayName}</h2><p className="productSummary">{model.tags.slice(0, 3).join(" · ")}. Built for custom branding and global B2B supply.</p>{model.sourceUrl && <a className="viewDetails" href={model.sourceUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>Alibaba source ↗</a>}{detailUrl && <a className="viewDetails" href={detailUrl} onClick={(event) => event.stopPropagation()}>View product details ↗</a>}<div className="productFacts"><span><b>MOQ</b>{model.moq || "Confirm"}</span><span><b>LEAD TIME</b>{model.leadTime || "Confirm"}</span></div><a className="modelWhatsApp" href={inquiry} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>Quote This Product on WhatsApp <b>↗</b></a></div>
     </article>; })}</div></section>
     <CategorySeoContent category="laptops" />
     <section className="catalogCta" data-track-scope="laptops-catalog"><p>CAN&apos;T FIND THE EXACT CONFIGURATION?</p><h2>Tell us your target.<br/><span>We will match the platform.</span></h2><a href={`${whatsapp}${encodeURIComponent("Hello Weiboer, I need help choosing a laptop platform.")}`} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a></section>
