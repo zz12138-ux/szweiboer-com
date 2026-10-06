@@ -45,6 +45,9 @@ const models: Array<{code:string;displayName:string;title:string;main:string;spe
     detail: "/laptops/wb-lt-04",
   },
   {
+    code: "GA10", displayName: "GA10 10.5-inch 3-in-1 Mini Laptop", title: "10.5-inch touch tablet, mini laptop and handheld gaming device with Intel N95", main: "/laptops/ga10/gallery/01-main.jpg", tone: "directTone", tags: ["10.5-inch 1920 × 1280 touchscreen", "Intel N95", "Removable keyboard and controller handles"], detail: "/laptops/ga10", sourceUrl: "https://www.alibaba.com/product-detail/10-5-Inch-Windows11-Intel-N95_1601313748327.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+  },
+  {
     code: "AMD-156", displayName: "AMD-156 Ryzen 7 Business Laptop", title: "15.6-inch FHD business laptop with AMD Ryzen 7 2700U", main: "/laptops/amd-156/gallery/01-main.png", tone: "directTone", tags: ["15.6-inch 1920 × 1080", "AMD Ryzen 7 2700U", "Radeon Vega graphics"], detail: "/laptops/amd-156", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-Rayzen-7-AMD156-15-6_1601965589630.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
   },
   {
@@ -66,7 +69,7 @@ const models: Array<{code:string;displayName:string;title:string;main:string;spe
     code: "MAX16", displayName: "MAX16 Triple-Screen Laptop", title: "16-inch + dual 10.5-inch triple-screen laptop, Core i5-12450H / i7-12700H", main: "/laptops/max16/gallery/01-main.jpg", tone: "directTone", tags: ["16-inch + dual 10.5-inch IPS displays", "Core i5-12450H / i7-12700H options", "Windows 11 Pro listed"], detail: "/laptops/max16", sourceUrl: "https://www.alibaba.com/product-detail/Tri-Screen-for-Laptop-MAX16-16_1601971801368.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 pc listed", leadTime: "8 days listed",
   },
   {
-    code: "S15", displayName: "S15 15.6-inch Laptop", title: "15.6-inch IPS FHD student and business laptop, Intel N5095", main: "/laptops/s15/gallery/01-main.jpg", tone: "nucTone", tags: ["15.6-inch IPS FHD", "Intel Celeron N5095", "Memory configuration to confirm"], detail: "/laptops/s15", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-for-Students-and-Education-S15_1601967837686.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
+    code: "S15", displayName: "S15 15.6-inch Student Laptop", title: "15.6-inch student laptop with Intel N5095 / Celeron J4105 versions", main: "/laptops/s15/gallery/01-main.jpg", tone: "nucTone", tags: ["Two S15 product versions", "Intel N5095 / Celeron J4105", "Memory and display vary by version"], detail: "/laptops/s15", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-for-Students-and-Education-S15_1601967837686.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",
   },
   {
     code: "P10", displayName: "P10 10.1-inch Yoga 2-in-1 Laptop", title: "10.1-inch 1920 × 1200 Yoga 2-in-1 touch laptop, Core i3-1215U", main: "/laptops/p10/gallery/01-main.jpg", tone: "directTone", tags: ["10.1-inch IPS touchscreen", "1920 × 1200", "Intel Core i3-1215U"], detail: "/laptops/p10", sourceUrl: "https://www.alibaba.com/product-detail/Laptop-Book-P10-10-Inch-Yoga_1601966720231.html?spm=a2747.product_manager.0.0.3a0d71d2L7JdBO", moq: "1 piece listed",

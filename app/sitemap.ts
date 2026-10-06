@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/laptops/s15`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/p10`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/p8`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/laptops/ga10`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/amd-156`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/p15`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/fd15`, changeFrequency: "monthly", priority: 0.8 },
