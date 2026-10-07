@@ -14,6 +14,20 @@
 - [Phone catalog](https://www.szweiboer.com/phones/): phone platforms.
 - [All-in-One PC catalog](https://www.szweiboer.com/all-in-one-pcs/): all-in-one PC platforms.
 
+## Business laptop product pages
+
+- [GA10](https://www.szweiboer.com/laptops/ga10/): 10.5-inch 3-in-1 touch platform with Intel N95; confirm memory, storage and included accessories before sampling.
+- [AMD-156](https://www.szweiboer.com/laptops/amd-156/): 15.6-inch AMD Ryzen 7 business laptop platform; confirm final memory, storage and operating-system image.
+- [P15](https://www.szweiboer.com/laptops/p15/): 15.6-inch Intel N95 platform shown in business and pink student styles; confirm the selected style and configuration.
+- [FD15](https://www.szweiboer.com/laptops/fd15/): dual 14-inch touch-screen platform with Intel N150; confirm the final display, memory and storage configuration.
+- [YG10](https://www.szweiboer.com/laptops/yg10/): 11-inch Yoga touch platform with Intel N100; confirm the final configuration before sampling.
+- [YG14](https://www.szweiboer.com/laptops/yg14/): 14-inch Yoga touch business laptop with Intel N95; confirm memory and storage options.
+- [A7](https://www.szweiboer.com/laptops/a7/): 14-inch entry-level student laptop platform; confirm the approved configuration before production.
+- [MAX16](https://www.szweiboer.com/laptops/max16/): triple-screen platform with a 16-inch main display, dual 10.5-inch side displays and listed Core i5 / Core i7 options.
+- [S15](https://www.szweiboer.com/laptops/s15/): two 15.6-inch student laptop versions with Intel N5095 or Celeron J4105; confirm which version is required.
+- [P10](https://www.szweiboer.com/laptops/p10/): compact Yoga 2-in-1 touch platform listed with Intel Core i3-1215U.
+- [P8](https://www.szweiboer.com/laptops/p8/): 8-inch Yoga 2-in-1 touch platform with listed Intel N95 / N100 options.
+
 ## Gaming laptop product pages
 
 - [Colorful X18 MAX](https://www.szweiboer.com/laptops/wb-lt-05/): RTX 5090 platform; confirm final GPU power, display, memory, storage and packaging before sampling.
@@ -21,6 +35,7 @@
 - [Colorful X16](https://www.szweiboer.com/laptops/wb-lt-07/): RTX 5070 platform; confirm final display and CPU configuration.
 - [BYD16](https://www.szweiboer.com/laptops/wb-lt-08/): RTX 5060 platform; confirm final panel, memory, storage and ports.
 - [Colorful P16 Pro](https://www.szweiboer.com/laptops/p16-pro/): listed CPU/GPU options are Core i7-13650HX with RTX 5050 8GB, Core i9-13900HX with RTX 5070 8GB, and Core i9-13900HX with RTX 5070 Ti 12GB. The listing shows 165Hz / 300Hz display options; confirm the panel pairing for the selected configuration.
+- [NH60](https://www.szweiboer.com/laptops/nh60/): 17.3-inch 144Hz gaming laptop platform listed with Core i7-12650H and RTX 4050 6GB; confirm the final barebone configuration.
 - [JZ58](https://www.szweiboer.com/laptops/jz58/): RTX 3060 platform; confirm final configuration before production.
 
 ## Buyer and OEM guidance
