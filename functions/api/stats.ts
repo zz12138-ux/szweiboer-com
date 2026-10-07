@@ -69,5 +69,85 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
     ).bind(month).all(),
   ]);
 
-  return Response.json({ totals, quality, byProduct: byProduct.results, byEvent: byEvent.results, byDate: byDate.results });
+  let traffic = {
+    available: false,
+    totals: { visits30Days: 0, visitors30Days: 0, aiVisits30Days: 0, whatsappClicks30Days: 0 },
+    bySource: [] as unknown[],
+    byLandingPage: [] as unknown[],
+    byDate: [] as unknown[],
+  };
+
+  try {
+    const clickSessions = `SELECT session_id, COUNT(*) AS clicks
+      FROM whatsapp_clicks
+      WHERE session_id IS NOT NULL AND created_at >= ?
+      GROUP BY session_id`;
+    const [trafficTotals, trafficBySource, trafficByLandingPage, trafficByDate] = await Promise.all([
+      env.DB.prepare(
+        `SELECT
+          COUNT(*) AS visits30Days,
+          COUNT(DISTINCT visitor_id) AS visitors30Days,
+          SUM(CASE WHEN source_type = 'ai' THEN 1 ELSE 0 END) AS aiVisits30Days,
+          COALESCE(SUM(clicks.clicks), 0) AS whatsappClicks30Days
+         FROM traffic_visits AS visits
+         LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
+         WHERE visits.created_at >= ?`,
+      ).bind(month, month).first(),
+      env.DB.prepare(
+        `SELECT
+          source_type AS sourceType,
+          source_label AS sourceLabel,
+          COUNT(*) AS visits,
+          COUNT(DISTINCT visitor_id) AS visitors,
+          COALESCE(SUM(clicks.clicks), 0) AS whatsappClicks
+         FROM traffic_visits AS visits
+         LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
+         WHERE visits.created_at >= ?
+         GROUP BY source_type, source_label
+         ORDER BY visits DESC, visitors DESC
+         LIMIT 100`,
+      ).bind(month, month).all(),
+      env.DB.prepare(
+        `SELECT
+          landing_path AS landingPath,
+          COUNT(*) AS visits,
+          COUNT(DISTINCT visitor_id) AS visitors,
+          COALESCE(SUM(clicks.clicks), 0) AS whatsappClicks
+         FROM traffic_visits AS visits
+         LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
+         WHERE visits.created_at >= ?
+         GROUP BY landing_path
+         ORDER BY visits DESC, visitors DESC
+         LIMIT 100`,
+      ).bind(month, month).all(),
+      env.DB.prepare(
+        `SELECT
+          strftime('%Y-%m-%d', created_at) AS date,
+          COUNT(*) AS visits,
+          COUNT(DISTINCT visitor_id) AS visitors,
+          SUM(CASE WHEN source_type = 'ai' THEN 1 ELSE 0 END) AS aiVisits
+         FROM traffic_visits
+         WHERE created_at >= ?
+         GROUP BY date
+         ORDER BY date DESC
+         LIMIT 100`,
+      ).bind(month).all(),
+    ]);
+    traffic = {
+      available: true,
+      totals: {
+        visits30Days: Number(trafficTotals?.visits30Days || 0),
+        visitors30Days: Number(trafficTotals?.visitors30Days || 0),
+        aiVisits30Days: Number(trafficTotals?.aiVisits30Days || 0),
+        whatsappClicks30Days: Number(trafficTotals?.whatsappClicks30Days || 0),
+      },
+      bySource: trafficBySource.results,
+      byLandingPage: trafficByLandingPage.results,
+      byDate: trafficByDate.results,
+    };
+  } catch {
+    // Keep the existing click dashboard available before the traffic table is migrated.
+  }
+
+  return Response.json({ totals, quality, byProduct: byProduct.results, byEvent: byEvent.results, byDate: byDate.results, traffic });
 };

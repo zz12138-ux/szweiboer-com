@@ -53,6 +53,7 @@ const RESOLVERS: Resolver[] = [
 
 const VISITOR_STORAGE_KEY = "weiboer_wa_visitor_v1";
 const SESSION_STORAGE_KEY = "weiboer_wa_session_v1";
+const TRAFFIC_RECORDED_KEY = "weiboer_traffic_recorded_v1";
 
 function createAnonymousId() {
   if (typeof crypto !== "undefined" && "randomUUID" in crypto) return crypto.randomUUID();
@@ -84,6 +85,41 @@ function resolveProductCode(trigger: HTMLElement) {
   const path = detailPath || window.location.pathname;
   const slug = path.split("/").filter(Boolean).at(-1) || "";
   return /^wb-(?:lt|mc|tb|pj|mn)-\d{2}$/i.test(slug) ? slug.toUpperCase() : null;
+}
+
+function recordTrafficVisit() {
+  const visitorId = getStoredId(window.localStorage, VISITOR_STORAGE_KEY);
+  const sessionId = getStoredId(window.sessionStorage, SESSION_STORAGE_KEY);
+  try {
+    if (window.sessionStorage.getItem(TRAFFIC_RECORDED_KEY)) return;
+    window.sessionStorage.setItem(TRAFFIC_RECORDED_KEY, "1");
+  } catch {
+    /* record once per mount when session storage is unavailable */
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  let referrerHost = "";
+  try {
+    if (document.referrer) referrerHost = new URL(document.referrer).hostname;
+    if (referrerHost === window.location.hostname) referrerHost = "";
+  } catch {
+    referrerHost = "";
+  }
+
+  void fetch("/api/traffic-visit", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      visitorId,
+      sessionId,
+      landingPath: window.location.pathname,
+      referrerHost,
+      utmSource: params.get("utm_source"),
+      utmMedium: params.get("utm_medium"),
+      utmCampaign: params.get("utm_campaign"),
+    }),
+    keepalive: true,
+  }).catch(() => {});
 }
 
 function recordWhatsAppClick(eventKey: string, trigger: HTMLElement) {
@@ -121,6 +157,8 @@ function pingVirtualPage(url: string) {
 
 export default function AnalyticsEvents() {
   useEffect(() => {
+    recordTrafficVisit();
+
     const handleClick = (event: MouseEvent) => {
       const trigger = (event.target as HTMLElement | null)?.closest("a, button") as HTMLElement | null;
       if (!trigger) return;

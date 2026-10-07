@@ -1,13 +1,17 @@
+import { classifyTrafficSource } from "../../lib/traffic-attribution";
+
 interface Env {
   DB: D1Database;
 }
 
 type Payload = {
-  eventKey?: unknown;
-  pagePath?: unknown;
-  productCode?: unknown;
   visitorId?: unknown;
   sessionId?: unknown;
+  landingPath?: unknown;
+  referrerHost?: unknown;
+  utmSource?: unknown;
+  utmMedium?: unknown;
+  utmCampaign?: unknown;
 };
 
 const text = (value: unknown, fallback: string, max = 160) => {
@@ -24,33 +28,31 @@ const anonymousId = (value: unknown) => {
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   try {
     const body = (await request.json()) as Payload;
-    const eventKey = text(body.eventKey, "whatsapp-other");
-    const pagePath = text(body.pagePath, "/");
-    const productCode = text(body.productCode, "", 80) || null;
     const visitorId = anonymousId(body.visitorId);
     const sessionId = anonymousId(body.sessionId);
+    if (!visitorId || !sessionId) return Response.json({ ok: false }, { status: 400 });
+
+    const landingPath = text(body.landingPath, "/", 240);
+    const referrerHost = text(body.referrerHost, "", 160) || null;
+    const utmSource = text(body.utmSource, "", 100) || null;
+    const utmMedium = text(body.utmMedium, "", 100) || null;
+    const utmCampaign = text(body.utmCampaign, "", 160) || null;
+    const attribution = classifyTrafficSource(referrerHost, utmSource);
 
     await env.DB.prepare(
-      `INSERT INTO whatsapp_clicks (event_key, page_path, product_code, visitor_id, session_id, is_effective)
-       SELECT ?, ?, ?, ?, ?,
-         CASE WHEN ? IS NOT NULL AND NOT EXISTS (
-           SELECT 1 FROM whatsapp_clicks
-           WHERE visitor_id = ?
-             AND ((? IS NOT NULL AND product_code = ?) OR (? IS NULL AND product_code IS NULL AND page_path = ?))
-             AND created_at >= datetime('now', '-24 hours')
-         ) THEN 1 ELSE 0 END`,
+      `INSERT OR IGNORE INTO traffic_visits
+        (visitor_id, session_id, landing_path, referrer_host, source_type, source_label, utm_source, utm_medium, utm_campaign)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ).bind(
-      eventKey,
-      pagePath,
-      productCode,
       visitorId,
       sessionId,
-      visitorId,
-      visitorId,
-      productCode,
-      productCode,
-      productCode,
-      pagePath,
+      landingPath,
+      referrerHost,
+      attribution.sourceType,
+      attribution.sourceLabel,
+      utmSource,
+      utmMedium,
+      utmCampaign,
     ).run();
 
     return Response.json({ ok: true });
