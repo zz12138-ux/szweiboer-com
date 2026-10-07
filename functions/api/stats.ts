@@ -91,7 +91,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
           COALESCE(SUM(clicks.clicks), 0) AS whatsappClicks30Days
          FROM traffic_visits AS visits
          LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
-         WHERE visits.created_at >= ?`,
+         WHERE visits.created_at >= ?
+           AND visits.landing_path NOT LIKE '/api/%'
+           AND visits.landing_path NOT LIKE '/track/%'
+           AND visits.landing_path NOT IN ('/privacy', '/privacy/', '/whatsapp-stats', '/whatsapp-stats/')`,
       ).bind(month, month).first(),
       env.DB.prepare(
         `SELECT
@@ -103,6 +106,9 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
          FROM traffic_visits AS visits
          LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
          WHERE visits.created_at >= ?
+           AND visits.landing_path NOT LIKE '/api/%'
+           AND visits.landing_path NOT LIKE '/track/%'
+           AND visits.landing_path NOT IN ('/privacy', '/privacy/', '/whatsapp-stats', '/whatsapp-stats/')
          GROUP BY source_type, source_label
          ORDER BY visits DESC, visitors DESC
          LIMIT 100`,
@@ -116,6 +122,9 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
          FROM traffic_visits AS visits
          LEFT JOIN (${clickSessions}) AS clicks ON clicks.session_id = visits.session_id
          WHERE visits.created_at >= ?
+           AND visits.landing_path NOT LIKE '/api/%'
+           AND visits.landing_path NOT LIKE '/track/%'
+           AND visits.landing_path NOT IN ('/privacy', '/privacy/', '/whatsapp-stats', '/whatsapp-stats/')
          GROUP BY landing_path
          ORDER BY visits DESC, visitors DESC
          LIMIT 100`,
@@ -128,6 +137,9 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
           SUM(CASE WHEN source_type = 'ai' THEN 1 ELSE 0 END) AS aiVisits
          FROM traffic_visits
          WHERE created_at >= ?
+           AND landing_path NOT LIKE '/api/%'
+           AND landing_path NOT LIKE '/track/%'
+           AND landing_path NOT IN ('/privacy', '/privacy/', '/whatsapp-stats', '/whatsapp-stats/')
          GROUP BY date
          ORDER BY date DESC
          LIMIT 100`,

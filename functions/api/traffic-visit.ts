@@ -1,4 +1,4 @@
-import { classifyTrafficSource } from "../../lib/traffic-attribution";
+import { classifyTrafficSource, shouldTrackTrafficPath } from "../../lib/traffic-attribution";
 
 interface Env {
   DB: D1Database;
@@ -33,6 +33,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     if (!visitorId || !sessionId) return Response.json({ ok: false }, { status: 400 });
 
     const landingPath = text(body.landingPath, "/", 240);
+    if (!shouldTrackTrafficPath(landingPath)) return Response.json({ ok: true, tracked: false });
     const referrerHost = text(body.referrerHost, "", 160) || null;
     const utmSource = text(body.utmSource, "", 100) || null;
     const utmMedium = text(body.utmMedium, "", 100) || null;

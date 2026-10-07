@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { shouldTrackTrafficPath } from "../../lib/traffic-attribution";
 
 type Resolver = (element: HTMLElement) => string | null;
 
@@ -88,6 +89,7 @@ function resolveProductCode(trigger: HTMLElement) {
 }
 
 function recordTrafficVisit() {
+  if (!shouldTrackTrafficPath(window.location.pathname)) return;
   const visitorId = getStoredId(window.localStorage, VISITOR_STORAGE_KEY);
   const sessionId = getStoredId(window.sessionStorage, SESSION_STORAGE_KEY);
   try {

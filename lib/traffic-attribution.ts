@@ -8,6 +8,12 @@ const normalize = (value: string | null | undefined) => (value || "").trim().toL
 const includesAny = (value: string, candidates: string[]) =>
   candidates.some((candidate) => value.includes(candidate));
 
+const EXCLUDED_PATH_PREFIXES = ["/api", "/privacy", "/track", "/whatsapp-stats"];
+
+export function shouldTrackTrafficPath(pathname: string) {
+  return !EXCLUDED_PATH_PREFIXES.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
+}
+
 export function classifyTrafficSource(referrerHost?: string | null, utmSource?: string | null): TrafficAttribution {
   const source = normalize(utmSource);
   const host = normalize(referrerHost).replace(/^www\./, "");

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { classifyTrafficSource } from "../lib/traffic-attribution.ts";
+import { classifyTrafficSource, shouldTrackTrafficPath } from "../lib/traffic-attribution.ts";
 
 test("classifies AI referrals", () => {
   assert.deepEqual(classifyTrafficSource("chatgpt.com"), { sourceType: "ai", sourceLabel: "AI - ChatGPT" });
@@ -17,4 +17,13 @@ test("classifies search, social, referral and direct traffic", () => {
 
 test("uses UTM source when supplied", () => {
   assert.deepEqual(classifyTrafficSource("example.com", "chatgpt"), { sourceType: "ai", sourceLabel: "AI - ChatGPT" });
+});
+
+test("excludes analytics and system routes", () => {
+  assert.equal(shouldTrackTrafficPath("/"), true);
+  assert.equal(shouldTrackTrafficPath("/laptops/ga10/"), true);
+  assert.equal(shouldTrackTrafficPath("/api/traffic-visit"), false);
+  assert.equal(shouldTrackTrafficPath("/privacy/"), false);
+  assert.equal(shouldTrackTrafficPath("/track/event/whatsapp-nav/"), false);
+  assert.equal(shouldTrackTrafficPath("/whatsapp-stats/"), false);
 });
