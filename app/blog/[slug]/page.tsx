@@ -11,7 +11,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = blogPosts[slug];
   if (!post) notFound();
-  const dualScreenSlugs = ["dual-screen-laptop-vs-portable-monitor", "dual-screen-laptop-productivity-buyer-guide", "choose-dual-screen-laptop-oem-manufacturer", "dual-screen-laptop-oem-sampling-checklist", "dual-16-inch-vs-16-plus-14-dual-screen-laptop", "dual-screen-laptop-display-modes-oem-testing", "dual-screen-laptop-oem-quote-configuration-sheet"];
+  const dualScreenSlugs = ["dual-screen-laptop-vs-portable-monitor", "dual-screen-laptop-productivity-buyer-guide", "choose-dual-screen-laptop-oem-manufacturer", "dual-screen-laptop-oem-sampling-checklist", "dual-16-inch-vs-16-plus-14-dual-screen-laptop", "dual-screen-laptop-display-modes-oem-testing", "dual-screen-laptop-oem-quote-configuration-sheet", "dual-screen-laptop-battery-thermal-oem-guide"];
   const relatedLinks = dualScreenSlugs.includes(slug) ? [
     ["Dual-Screen Laptop OEM Manufacturer", "/dual-screen-laptop-oem/"],
     ["Dual-Screen Laptop OEM Guide", "/blog/choose-dual-screen-laptop-oem-manufacturer/"],

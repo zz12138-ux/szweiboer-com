@@ -87,6 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/android-tablet-oem-sampling-checklist`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/mini-pc-oem-supplier-deployment-checklist`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-oem-quote-configuration-sheet`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/blog/dual-screen-laptop-battery-thermal-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
