@@ -9,15 +9,17 @@ const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 
 export default function TabletDetail({ product, slug }: { product: TabletProduct; slug: string }) {
   const [active, setActive] = useState(0);
-  const gallery = Array.from({ length: product.galleryCount }, (_, index) => `/tablets/${slug}/gallery/${String(index + 1).padStart(2, "0")}-${["main", "front", "back", "side", "ports", "angle"][index] || `view-${index + 1}`}.webp`);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const gallery = product.galleryImages || Array.from({ length: product.galleryCount }, (_, index) => `/tablets/${slug}/gallery/${String(index + 1).padStart(2, "0")}-${["main", "front", "back", "side", "ports", "angle"][index] || `view-${index + 1}`}.webp`);
   const details = Array.from({ length: product.detailCount }, (_, index) => `/tablets/${slug}/detail/${String(index + 1).padStart(2, "0")}-detail-${String(index + 1).padStart(2, "0")}.webp`);
   const inquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like a quotation for ${product.code}.`)}`;
 
   return (
     <>
       <main className="detailPage">
-      <header className="detailHeader">
+      <header className={`detailHeader${menuOpen ? " menuOpen" : ""}`}>
         <a className="detailLogo" href="/"><img src="/weiboer-logo.png" alt="Weiboer" /></a>
+        <button className="detailMenuToggle" type="button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}><span /><span /></button>
         <nav><a href="/">Home</a><a href="/tablets">Products</a><a href="/#about">OEM / ODM</a><a href="/#factory">Factory</a></nav>
         <a className="detailQuote" href={inquiry} target="_blank" rel="noreferrer">Get a Quotation</a>
       </header>
@@ -32,7 +34,7 @@ export default function TabletDetail({ product, slug }: { product: TabletProduct
           <h1>{product.h1}</h1>
           <p className="detailLead">{product.description}</p>
           <div className="detailHighlights">{product.highlights.map((item) => <span key={item}>{item}</span>)}</div>
-          <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>LEAD TIME</b><strong>Confirm</strong></div></div>
+          <div className="detailFacts"><div><b>MOQ</b><strong>{product.moq || "1 pc"}</strong></div><div><b>LEAD TIME</b><strong>Confirm</strong></div></div>
           <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
           <p className="customizationNote">Product logo · Boot logo · Hardware configuration · Language · Retail packaging</p>
         </div>

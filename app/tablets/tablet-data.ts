@@ -10,9 +10,17 @@ export type TabletProduct = {
   specs: [string, string][];
   faqs: [string, string][];
   kids?: boolean;
+  moq?: string;
+  galleryImages?: string[];
+  imagePath?: string;
 };
 
 export const tabletProducts: Record<string, TabletProduct> = {
+  "gr8": {
+    code: "GR8", title: "8-Inch Android 11 Kids Tablet OEM | 3GB/32GB | Weiboer", h1: "8-inch Android 11 Kids Tablet — OEM / ODM Ready", eyebrow: "ANDROID 11 · 8-INCH KIDS TABLET", description: "An 8-inch Android 11 tablet for kids and learning programs, with 3GB RAM and 32GB storage listed. Confirm final configuration and regional requirements before ordering.", highlights: ["Android 11", "8-inch IPS display", "3GB RAM + 32GB storage", "4G + WiFi calling"], galleryCount: 1, detailCount: 0, kids: true, moq: "50 pcs", galleryImages: ["/tablets/gr8/gallery/01-main.jpg"], imagePath: "/tablets/gr8/gallery/01-main.jpg",
+    specs: [["Display", "8-inch IPS"], ["Operating System", "Android 11"], ["Memory", "3GB RAM"], ["Storage", "32GB"], ["Front Camera", "2MP"], ["Rear Camera", "5MP"], ["Connectivity", "4G phone call + WiFi listed"], ["Processor", "Confirm with supplier"], ["MOQ", "50 pieces listed; confirm current terms"]],
+    faqs: [["What is the screen size and memory?", "The listing describes an 8-inch IPS Android 11 tablet with 3GB RAM and 32GB storage."], ["Which processor does it use?", "The source detail available for this listing does not specify the processor. Please confirm the final chipset before ordering."], ["What is the listed minimum order?", "The source lists a minimum order of 50 pieces; confirm current ordering terms before purchase."], ["Can it be customized for a kids tablet program?", "Discuss logo, packaging and final hardware configuration with Weiboer before production."]]
+  },
   "wb-tb-01": {
     code: "GT35", title: "10.95\" Android Tablet OEM | Android 14, 4GB/128GB | Weiboer", h1: "10.95-inch Android Learning Tablet — OEM / ODM Ready", eyebrow: "ANDROID 14 · 10.95-INCH LEARNING TABLET", description: "A practical Android learning tablet for training rooms, business deployment and education programs. Configure storage, camera, logo and packaging for your market.", highlights: ["Android 14", "10.95-inch display", "4GB RAM + 128GB storage", "WiFi + Bluetooth"], galleryCount: 6, detailCount: 10,
     specs: [["Display", "10.95-inch display, 1280 × 800 listed resolution"], ["Operating System", "Android 14"], ["CPU", "Spreadtrum T606, 1.6GHz"], ["Graphics", "Dual A75 1.6GHz + six A55 1.6GHz cores listed"], ["Memory", "4GB RAM"], ["Storage", "128GB"], ["Wireless", "WiFi + Bluetooth"], ["Battery", "3.8V / 6000mAh, 4-5 hours listed"], ["Use Case", "Business, training and education"], ["Condition", "New"], ["Customization", "Private mold, logo and packaging options"], ["MOQ", "1 pc for sample · bulk pricing available"]],

@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/mini-pcs/wb-mc-03`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/mini-pcs/wb-mc-04`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/tablets`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/tablets/gr8`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/tablets/wb-tb-01`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/tablets/wb-tb-02`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/tablets/wb-tb-03`, changeFrequency: "monthly", priority: 0.8 },
