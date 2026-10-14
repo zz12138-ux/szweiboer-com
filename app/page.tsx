@@ -73,7 +73,7 @@ const faqs = [
     number: "06",
     label: "PRODUCTS",
     question: "Which electronics can Weiboer supply?",
-    answer: "Our main categories include laptops, Android tablets, LED projectors and portable monitors, with flexible configurations for different markets.",
+    answer: "Our main categories include laptops, Android tablets, LED projectors, portable monitors, gaming laptops, mini PCs, phones and all-in-one PCs. Available configurations and OEM/ODM options vary by platform; confirm the final specifications and order quantity for the selected model.",
   },
   {
     number: "07",
