@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [
     { url: base, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/laptops`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/laptops/fd16`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/dual-screen-laptop-oem`, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/laptops/wb-lt-02`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/laptops/wb-lt-03`, changeFrequency: "monthly", priority: 0.8 },
@@ -89,8 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/mini-pc-oem-supplier-deployment-checklist`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-oem-quote-configuration-sheet`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-battery-thermal-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/blog/dual-screen-laptop-hinge-durability-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/blog/dual-screen-laptop-panel-color-calibration-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/blog/dual-screen-laptop-hinge-durability-oem-guide`, changeFrequency: "monthly", priority: 0.85 }
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
