@@ -9,7 +9,7 @@ const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 
 export default function AioDetail({ product, slug }: { product: AioProduct; slug: string }) {
   const [active, setActive] = useState(0);
-  const gallery = Array.from({ length: product.galleryCount }, (_, index) => `/all-in-one-pcs/${slug}/gallery/${String(index + 1).padStart(2, "0")}-gallery.webp`);
+  const gallery = product.galleryUrls ?? Array.from({ length: product.galleryCount }, (_, index) => `/all-in-one-pcs/${slug}/gallery/${String(index + 1).padStart(2, "0")}-gallery.webp`);
   const details = Array.from({ length: product.detailCount }, (_, index) => `/all-in-one-pcs/${slug}/detail/${String(index + 1).padStart(2, "0")}-detail.webp`);
   const inquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like specs and an OEM quote for ${product.code}.\n\nTarget configuration:\nEstimated quantity:\nTarget market:\nNeed logo, packaging or graphic customization:`)}`;
 
