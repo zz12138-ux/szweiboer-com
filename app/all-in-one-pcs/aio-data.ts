@@ -98,6 +98,39 @@ export const aioProducts: Record<string, AioProduct> = {
     specs: [["Model", "D3"], ["Display", "24-inch touch option / 27-inch non-touch; 16:9 LED / IPS"], ["Resolution", "1920 × 1080 in title; 2560 × 1440 also appears in description; confirm exact panel"], ["CPU", "Intel Core i3 / i5 / i7 options"], ["Memory", "DDR4 8GB / 16GB / 32GB"], ["Storage", "SSD 128GB / 256GB / 512GB / 1TB / 2TB"], ["Graphics", "Integrated graphics; GTX 1650 4GB / RTX 3060 12GB options mentioned in listing; verify exact SKU, power and cooling"], ["Operating System", "Windows 10 / Windows 11"], ["Camera", "Pop-up privacy camera and dual microphones listed"], ["Wireless", "Bluetooth 4.2 + Wi-Fi; optional Bluetooth 5.2 + Wi-Fi 6 listed"], ["Interfaces", "HDMI, VGA / COM, LAN and 6 × USB listed"], ["Customization", "Size, touch, resolution, CPU, GPU, RAM, SSD, camera, wireless, color and branding"], ["MOQ", "1 piece listed on supplier page"]],
     faqs: baseFaqs, moq: "1 pc", sourceUrl: "https://www.alibaba.com/product-detail/All-In-One-Computers-D3-24_1601971676965.html",
   },
+  d4: {
+    code: "D4",
+    title: "D4 24 / 27-inch Intel All-in-One PC OEM | Full HD IPS | Weiboer",
+    h1: "D4 24 / 27-inch All-in-One PC — OEM / ODM Ready",
+    eyebrow: "D4 · 24 / 27-INCH · FULL HD IPS",
+    description: "A 24- or 27-inch all-in-one PC platform with Intel Core i3/i5/i7 options, configurable DDR4 memory and SSD storage. Confirm touch support and the exact panel and port configuration on the approved sample.",
+    highlights: ["24-inch / 27-inch; touch optional", "1920 × 1080 IPS display", "Intel Core i3 / i5 / i7 options", "DDR4 up to 32GB and SSD up to 2TB listed", "Windows 10 / 11 options"],
+    galleryCount: 4, galleryUrls: ["/all-in-one-pcs/d4/gallery/01-gallery.png", "/all-in-one-pcs/d4/gallery/02-gallery.png", "/all-in-one-pcs/d4/gallery/03-gallery.png", "/all-in-one-pcs/d4/gallery/04-gallery.png"], detailCount: 0,
+    specs: [["Model", "D4"], ["Display", "24 / 27-inch, 1920 × 1080, IPS; touch optional"], ["Panel", "1000:1 contrast, 5 ms response listed"], ["CPU", "Intel Core i3 / i5 / i7; 2.4GHz listed"], ["Memory", "DDR4 8GB / 16GB / 32GB"], ["Storage", "SSD 128GB / 256GB / 512GB / 1TB / 2TB"], ["Graphics", "Integrated graphics"], ["Operating System", "Windows 10 / Windows 11"], ["Wireless", "Bluetooth 4.2 + Wi-Fi; optional Bluetooth 5.2 + Wi-Fi 6"], ["Interfaces", "HDMI, VGA / COM, LAN and six USB listed in description; confirm final I/O"], ["Color / Accessories", "Black; keyboard and mouse listed"], ["Customization", "Minor, drawing-based, sample-based and full customization options listed"], ["MOQ", "1 piece listed on supplier page"]],
+    faqs: baseFaqs, moq: "1 pc", sourceUrl: "https://www.alibaba.com/product-detail/D4-All-in-One-Desktop-PC_1601961464203.html",
+  },
+  d1: {
+    code: "D1",
+    title: "D1 24 / 27 / 32-inch Intel All-in-One PC OEM | Weiboer",
+    h1: "D1 24 / 27 / 32-inch All-in-One PC — OEM / ODM Ready",
+    eyebrow: "D1 · 24 / 27 / 32-INCH · GAMING-READY PLATFORM",
+    description: "A 24-, 27- or 32-inch all-in-one PC platform with Intel Core i3/i5/i7 options and configurable DDR4 memory and SSD storage. The listing mentions discrete-GPU readiness but does not specify a confirmed discrete GPU configuration; verify the exact BOM before sampling.",
+    highlights: ["24 / 27 / 32-inch options", "1920 × 1080 IPS display; no touch listed", "Intel Core i3 / i5 / i7 options", "DDR4 up to 32GB and SSD up to 2TB listed", "Discrete-GPU-ready wording only; GPU SKU not confirmed"],
+    galleryCount: 4, galleryUrls: ["/all-in-one-pcs/d1/gallery/01-gallery.png", "/all-in-one-pcs/d1/gallery/02-gallery.png", "/all-in-one-pcs/d1/gallery/03-gallery.png", "/all-in-one-pcs/d1/gallery/04-gallery.png"], detailCount: 0,
+    specs: [["Model", "D1"], ["Display", "24 / 27 / 32-inch, 1920 × 1080, IPS; no touch listed"], ["Panel", "1000:1 contrast, 5 ms response listed"], ["CPU", "Intel Core i3 / i5 / i7; 2.4GHz listed"], ["Memory", "DDR4 8GB / 16GB / 32GB"], ["Storage", "SSD 128GB / 256GB / 512GB / 1TB / 2TB"], ["Graphics", "Integrated graphics listed; separate GPU not specified despite discrete-GPU-ready wording"], ["Operating System", "Windows 10 / Windows 11"], ["Wireless", "Bluetooth 4.2 + Wi-Fi; optional Bluetooth 5.2 + Wi-Fi 6"], ["Interfaces", "HDMI, VGA / COM, LAN and six USB listed in description; confirm final I/O"], ["Chassis", "Aluminum-alloy stand and ABS enclosure"], ["Customization", "Minor, drawing-based, sample-based and full customization options listed"], ["MOQ", "1 piece listed on supplier page"]],
+    faqs: baseFaqs, moq: "1 pc", sourceUrl: "https://www.alibaba.com/product-detail/All-in-One-Gaming-PC-24_1601961263499.html",
+  },
+  hwc: {
+    code: "HWC",
+    title: "HWC 22 / 24 / 27-inch Intel All-in-One PC OEM | Metal Stand | Weiboer",
+    h1: "HWC 22 / 24 / 27-inch All-in-One PC — OEM / ODM Ready",
+    eyebrow: "HWC · 22 / 24 / 27-INCH · METAL STAND",
+    description: "A configurable 22-, 24- or 27-inch all-in-one PC family with Intel Core options, DDR4 memory and SSD storage. Confirm the exact CPU, touch, stand and port configuration on the approved sample.",
+    highlights: ["22 / 24 / 27-inch options", "22-inch and 27-inch non-touch; 24-inch touch optional", "1920 × 1080 IPS display", "Intel Core i3 / i5 / i7 options", "Metal stand; gray or white options listed"],
+    galleryCount: 4, galleryUrls: ["/all-in-one-pcs/hwc/gallery/01-gallery.png", "/all-in-one-pcs/hwc/gallery/02-gallery.png", "/all-in-one-pcs/hwc/gallery/03-gallery.png", "/all-in-one-pcs/hwc/gallery/04-gallery.png"], detailCount: 0,
+    specs: [["Model", "HWC"], ["Display", "22-inch non-touch / 24-inch touch optional / 27-inch non-touch; 1920 × 1080 IPS"], ["Panel", "1000:1 contrast, 5 ms response listed"], ["CPU", "Intel Core i3 / i5 / i7; 2.0–3.9GHz options listed; i5 highlighted in title"], ["Memory", "DDR4 8GB / 16GB / 32GB"], ["Storage", "SSD 128GB / 256GB / 512GB / 1TB / 2TB"], ["Graphics", "Integrated graphics"], ["Operating System", "Windows 10 / Windows 11"], ["Interfaces", "USB port listed; HDMI, VGA / COM, LAN, USB and Type-C appear in description; verify configuration"], ["Stand / Chassis", "Metal stand; ABS enclosure listed"], ["Color", "Gunmetal gray or white"], ["Power", "100–240V AC, 50/60Hz universal input listed"], ["Customization", "Minor, drawing-based, sample-based and full customization options listed"], ["MOQ", "1 piece listed on supplier page"]],
+    faqs: baseFaqs, moq: "1 pc", sourceUrl: "https://www.alibaba.com/product-detail/All-in-One-Desktop-PC-with_1601961028795.html",
+  },
   uw30: {
     code: "UW30",
     title: "UW30 34-inch Curved All-in-One PC OEM | Weiboer",
@@ -155,4 +188,4 @@ export const aioProducts: Record<string, AioProduct> = {
   },
 };
 
-export const publishedAioSlugs = ["uw30", "k2", "k4", "z5", "k7", "f1-y", "uw-2", "f6-st", "t3", "t1-s", "n-s", "d3"] as const;
+export const publishedAioSlugs = ["uw30", "k2", "k4", "z5", "k7", "f1-y", "uw-2", "f6-st", "t3", "t1-s", "n-s", "d3", "d4", "d1", "hwc"] as const;
