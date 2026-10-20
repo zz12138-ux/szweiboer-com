@@ -103,6 +103,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/dual-screen-laptop-hinge-durability-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-panel-color-calibration-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-virtual-keyboard-input-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/blog/dual-screen-laptop-stylus-digitizer-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
