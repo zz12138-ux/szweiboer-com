@@ -107,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/dual-screen-laptop-window-management-utility-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-ports-display-expansion-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/blog/dual-screen-laptop-bios-ec-firmware-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/blog/dual-screen-laptop-packaging-drop-test-oem-guide`, changeFrequency: "monthly", priority: 0.85 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
