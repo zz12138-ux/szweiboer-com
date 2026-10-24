@@ -92,6 +92,15 @@ const models: Array<{code:string;displayName:string;title:string;main:string;spe
   {
     code: "N16", displayName: "16-inch Intel N5095 Business Laptop", title: "16-inch Intel N5095 Business Laptop OEM with 12GB RAM", main: "/laptops/n16/gallery/01-product.jpg", tone: "nucTone", tags: ["16-inch IPS display", "Intel Celeron N5095", "Backlit keyboard"], detail: "/laptops/n16",
   },
+  {
+    code: "AI-156", displayName: "AI-156 15.6-inch Intel Core Ultra AI Laptop", title: "AI-156 15.6-inch Intel Core Ultra Laptop OEM with DDR5 and Wi-Fi 6", main: "/assets/images/ai-156-main.jpg", tone: "directTone", tags: ["15.6-inch FHD IPS", "Intel Core Ultra options; confirm exact CPU", "DDR5 24GB / 32GB listed", "Wi-Fi 6"], detail: "/laptops/ai-156", sourceUrl: "https://www.alibaba.com/product-detail/Brand-New-15-6-Inch-Intel_1600821915618.html?spm=a2747.product_manager.0.0.408071d2CkJiDh", moq: "1 piece listed", leadTime: "31 days for one piece listed",
+  },
+  {
+    code: "F158G", displayName: "F158G 15.6-inch Intel Core i7 Business Laptop", title: "F158G 15.6-inch FHD Intel Core i7-1165G7 Business Laptop", main: "/assets/images/f158g-main.jpg", tone: "nucTone", tags: ["15.6-inch FHD IPS", "Intel Core i7-1165G7", "DDR4 up to 32GB", "M.2 SSD up to 2TB"], detail: "/laptops/f158g", sourceUrl: "https://www.alibaba.com/product-detail/Wholesale-15-6-Inch-FHD-Laptop_1601991753548.html?spm=a2747.product_manager.0.0.408071d2CkJiDh", moq: "1 piece listed",
+  },
+  {
+    code: "A9", displayName: "A9 14-inch Intel N5095 Business Laptop", title: "A9 14-inch FHD Intel N5095 Business Laptop with Windows 11", main: "/assets/images/a9-main.jpg", tone: "directTone", tags: ["14-inch FHD IPS", "Intel Jasper Lake N5095", "DDR4 up to 32GB", "M.2 SSD up to 2TB"], detail: "/laptops/a9", sourceUrl: "https://www.alibaba.com/product-detail/14-Inch-FHD-Windows-11-Laptop_1600854276913.html?spm=a2747.product_manager.0.0.408071d2CkJiDh", moq: "1 piece listed",
+  },
 ];
 
 export default function LaptopsPage() {
