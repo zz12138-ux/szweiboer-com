@@ -37,7 +37,7 @@ export default function AioDetail({ product, slug }: { product: AioProduct; slug
     </section>
 
     <section className="detailIntro"><p>PRODUCT DETAILS</p><h2>Configurable hardware.<br />Ready for your <span>desktop line.</span></h2></section>
-    <section className="detailImageStack">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section>
+    {details.length ? <section className="detailImages">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section> : null}
     <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {product.code}</p><h2>Configurations you can<br /><span>tune to your market.</span></h2></div><div className="specGrid">{product.specs.map(([label, value]) => <div key={label}><b>{label}</b><span>{value}</span></div>)}</div></section>
     <section className="detailFaq"><div className="specHead"><p>FAQ · {product.code} OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{product.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
     <section className="detailBottomCta"><p>LOW MOQ · OEM / ODM · FACTORY DIRECT</p><h2>Ready to source your<br /><span>AIO platform?</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Ask for {product.code} specifications on WhatsApp ↗</a></section>
