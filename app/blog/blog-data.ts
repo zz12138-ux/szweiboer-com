@@ -2136,5 +2136,80 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer F1-Y Product Specifications", "/all-in-one-pcs/f1-y/"],
       ["Weiboer UW-2 30-inch Product Specifications", "/all-in-one-pcs/uw-2/"]
     ]
+  },
+  "compact-touch-laptop-pos-classroom-pick": {
+    slug: "compact-touch-laptop-pos-classroom-pick",
+    title: "Compact Touch Laptops for POS and Classroom Use: 8 to 14 Inches Compared",
+    description: "A practical pick guide for retail POS, education and field service: compare 8-inch, 10.5-inch, 10-inch, 11-inch and 14-inch touch laptops on screen, CPU, memory, battery and warranty.",
+    published: "2026-10-27",
+    updated: "2026-10-27",
+    intro: "A touch laptop that lives on a retail counter, a classroom cart or a service van faces a different job from an office notebook. It is touched all day, mounted or carried, and expected to boot fast and run one or two front-of-house applications reliably. Weiboer's compact touch lineup covers 8-inch to 14-inch platforms, and the right pick depends on where the device sits and who touches it.",
+    sections: [
+      {
+        heading: "Start from the counter, not the spec sheet",
+        paragraphs: [
+          "Front-of-house devices fail for physical reasons before they fail for performance reasons: a screen too small to read at arm's length, a hinge that cannot hold a viewing angle, a battery that dies mid-shift, or a keyboard that nobody uses because the workflow is touch-first. Fix those four first, then compare CPUs.",
+          "Once the placement is clear, the size range narrows quickly. Hand-held and pocket workflows sit at 8 to 10.5 inches; shared counters and classroom carts sit at 11 to 14 inches."
+        ],
+        bullets: [
+          "Reading distance and glove or stylus use decide the minimum screen size.",
+          "Counter-mounted devices benefit from 180-degree or yoga hinges that fold flat or face the customer.",
+          "Shift length decides whether battery capacity or mains power matters more.",
+          "Touch-first workflows can skip numeric keypads; cashier workflows often need them."
+        ]
+      },
+      {
+        heading: "8-inch: the pocket-size field and counter assistant",
+        paragraphs: [
+          "The P8 8-inch Yoga 2-in-1 touch laptop lists a 1280 x 800 touchscreen with Intel N95 in the product title and an Intel N100 option shown, DDR5 12GB listed, M.2 storage up to 2TB and Windows 10 Pro in the key attributes, with a listed weight around 0.78kg and a 2-year warranty listed. At this size the device behaves like a ruggedised tablet with a real keyboard attached, which suits field service checklists, inventory counts and queue-busting on the shop floor."
+        ]
+      },
+      {
+        heading: "10 to 10.5-inch: handheld, tablet and laptop in one",
+        paragraphs: [
+          "The GA10 10.5-inch 3-in-1 lists a 1920 x 1280 touchscreen, Intel N95, DDR4 up to 32GB and M.2 up to 2TB, with a 4500mAh battery and removable controller handles shown, so the same unit can be a handheld console, a stand-mounted display or a keyboard laptop. The P10 10-inch Yoga 2-in-1 lists a 1920 x 1200 touchscreen and Intel Core i3-1215U in the product title for buyers who need more CPU headroom in the same footprint.",
+          "This band is the sweet spot for pop-up retail, trade-show demos and training rooms where the device changes role several times a day."
+        ]
+      },
+      {
+        heading: "11 to 14-inch: classroom carts and service desks",
+        paragraphs: [
+          "The YG10 11-inch Yoga touch lists a 1920 x 1280 display, Intel N100, DDR4 up to 32GB and a listed weight around 1kg with a 2-year warranty listed, which makes it easy to move between desks on a cart. The YG14 14-inch Yoga touch lists a 1920 x 1080 IPS touchscreen, Intel N95, DDR4 16GB or 32GB, a 5000mAh battery and fingerprint unlock, closer to a mainstream notebook while keeping the fold-flat touch behaviour.",
+          "For shared devices, fingerprint unlock and a written OS image matter as much as the panel: they decide how fast a class or a shift can start without shared passwords."
+        ]
+      },
+      {
+        heading: "Configuration and sampling checklist",
+        paragraphs: [
+          "Every compact touch platform above is offered for OEM and ODM programs, so the quotation should freeze the variables that change the daily experience.",
+          "Confirm the following in writing before sampling, and re-test them on the approved sample."
+        ],
+        bullets: [
+          "Touch type (capacitive multi-touch), stylus support and palm rejection behaviour.",
+          "Hinge range: 180-degree, 360-degree yoga or stand mode, and holding strength at the intended angle.",
+          "CPU variant, memory capacity and SSD size per deployment role.",
+          "Keyboard language and layout, or keyboard-less operation for touch-first roles.",
+          "Operating-system image, boot logo and device-management enrolment method.",
+          "Warranty term and RMA workflow per destination market."
+        ]
+      }
+    ],
+    faq: [
+      ["Which size suits a fixed retail POS counter?", "A 10.5 to 14-inch touch unit with a stable hinge or stand mode is usually easier for cashiers and customers to read than an 8-inch device; confirm the mounting plan on the quotation."],
+      ["Are these touch laptops suitable for classroom carts?", "The 11-inch and 14-inch yoga touch platforms list light bodies and multi-hour batteries, which suit cart deployment; confirm battery capacity and warranty per batch."],
+      ["Can Weiboer brand these compact touch laptops?", "Yes. Logo, boot logo, keyboard language, configuration and retail packaging can be discussed for OEM and ODM programs on each platform."]
+    ],
+    links: [
+      ["GA10 10.5-inch 3-in-1 Mini Laptop", "/laptops/ga10/"],
+      ["P8 8-inch Yoga 2-in-1 Touch Laptop", "/laptops/p8/"],
+      ["YG14 14-inch Yoga Touch Laptop", "/laptops/yg14/"],
+      ["Business Laptops Catalog", "/laptops/"],
+      ["Contact Weiboer OEM Team", "/#quote"]
+    ],
+    sources: [
+      ["Intel Processor N-series product information", "https://www.intel.com/"],
+      ["Weiboer Compact Touch Laptop Catalog", "/laptops/"],
+      ["Weiboer GA10 Product Specifications", "/laptops/ga10/"]
+    ]
   }
 };
