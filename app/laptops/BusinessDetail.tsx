@@ -31,16 +31,14 @@ export default function BusinessDetail({ product, slug }: { product: GamingLapto
         <p className="detailLead">{product.description}</p>
         <div className="detailHighlights">{product.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
         {product.cpuOptions?.length ? <div className="configurationOptions"><p className="detailEyebrow">CPU OPTIONS · CONFIRM ON QUOTATION</p>{product.cpuOptions.map((cpu) => <dl key={cpu}><dt>{cpu}</dt><dd>Listed option; confirm availability and final configuration before sampling.</dd></dl>)}</div> : null}
-        {product.sourceUrl ? <p className="detailRelatedLinks"><a href={product.sourceUrl} target="_blank" rel="noreferrer">View Alibaba product source ↗</a></p> : null}
-        {product.sourceUrls?.length ? <p className="detailRelatedLinks">{product.sourceUrls.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{label} ↗</a>)}</p> : null}
-        <div className="detailFacts"><div><b>MOQ</b><strong>{product.catalogMoq || "Confirm"}</strong></div><div><b>WARRANTY</b><strong>{product.warranty || "Confirm"}</strong></div></div>
-        <a className="detailPrimaryCta" href={inquiry} target="_blank" rel="noreferrer">Get Specs & OEM Quote ↗</a>
-        <p className="detailCtaNote">Product logo · Boot logo · Memory and storage configuration · Keyboard language · Retail packaging</p>
+        <div className="detailFacts"><div><b>MOQ</b><strong>{product.catalogMoq || "1 pc"}</strong></div><div><b>LEAD TIME</b><strong>{product.catalogLeadTime || "7-15 days"}</strong></div></div>
+        <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
+        <p className="customizationNote">Product logo · Boot logo · Hardware configuration · Keyboard language · Retail packaging</p>
       </div>
     </section>
 
     <section className="detailIntro"><p>PRODUCT DETAILS</p><h2>Configurable hardware.<br />Ready for your <span>laptop line.</span></h2></section>
-    {details.length ? <section className="detailImageStack">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section> : null}
+    <section className="detailImages">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} width="1400" height="1400" loading="lazy" decoding="async" />)}</section>
 
     <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {product.code}</p><h2>Configurations you can<br /><span>tune to your market.</span></h2></div><div className="specGrid">{product.specs.map(([label, value]) => <div key={label}><b>{label}</b><span>{value}</span></div>)}</div></section>
     <section className="detailFaq"><div className="specHead"><p>FAQ · {product.code} OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{product.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
