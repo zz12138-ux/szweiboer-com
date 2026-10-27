@@ -1,0 +1,84 @@
+{
+  "property": "sc-domain:szweiboer.com",
+  "lastChecked": "2026-10-27T13:56:23+08:00",
+  "sitemapStatus": {
+    "url": "https://www.szweiboer.com/sitemap.xml",
+    "status": "Success",
+    "discoveredPages": 110,
+    "lastRead": "2026-10-25"
+  },
+  "indexSnapshots": [
+    {
+      "date": "2026-10-16",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-16T15:10:00+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-17",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-17T10:06:00+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-19",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-19T10:06:00+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-20",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-20T10:06:00+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-21",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-21T10:00:40+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-22",
+      "indexedCount": 30,
+      "notIndexedCount": 70,
+      "reportUpdatedAt": "2026/10/12",
+      "checkedAt": "2026-10-22T10:00:13+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-24",
+      "indexedCount": 39,
+      "notIndexedCount": 61,
+      "reportUpdatedAt": "2026/10/16",
+      "checkedAt": "2026-10-24T10:24:00+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-26",
+      "indexedCount": 42,
+      "notIndexedCount": 64,
+      "reportUpdatedAt": "2026/10/19",
+      "checkedAt": "2026-10-26T10:22:45+08:00",
+      "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-27",
+      "indexedCount": 42,
+      "notIndexedCount": 64,
+      "reportUpdatedAt": "2026/10/19",
+      "checkedAt": "2026-10-27T13:56:23+08:00",
+      "property": "sc-domain:szweiboer.com"
+    }
+  ]
+}
