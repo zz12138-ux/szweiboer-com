@@ -2294,5 +2294,87 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer A56 Product Specifications", "/phones/phone-1601928829240/"],
       ["Weiboer Phone Catalog", "/phones/"]
     ]
+  },
+  "mini-pc-picks-by-use-case": {
+    slug: "mini-pc-picks-by-use-case",
+    title: "Mini PC OEM Picks by Use Case: N150, Ryzen 7 8745HS and RTX 5070 Builds",
+    description: "Scenario shortlist of Weiboer's four mini PC platforms: N150 office boxes, Ryzen 7 8745HS workstations, RTX 5070 gaming builds, and the specs that matter per deployment.",
+    published: "2026-10-28",
+    updated: "2026-10-28",
+    intro: "A mini PC that is perfect at a reception desk can be the wrong box next to a video wall. Weiboer's catalog lists four mini PC platforms, from an Intel N150 office box to an RTX 5070 gaming build, and each one answers a different deployment. This shortlist maps common B2B scenarios to the platform that fits, using only the specifications published on each product page.",
+    sections: [
+      {
+        heading: "How to read this shortlist",
+        paragraphs: [
+          "Start from the workload, not the price tag. Office productivity, multi-display signage, engineering multitasking and GPU gaming place very different demands on CPU class, memory type, storage expansion and display outputs. The four platforms below are grouped by the job they do best, and every specification quoted is listed on the corresponding Weiboer product page."
+        ],
+        bullets: [
+          "WB-MC-03: compact Intel N150 box for front-office and light commercial duty.",
+          "WB-MC-02: Intel N-series platform with triple-screen 4K output for signage and kiosks.",
+          "WB-MC-01: AMD Ryzen platform with DDR5 and 2.5G LAN for heavy multitasking.",
+          "WB-MC-04: Core i5/i7/i9 plus RTX graphics for gaming and GPU workloads."
+        ]
+      },
+      {
+        heading: "Front office and everyday business: WB-MC-03",
+        paragraphs: [
+          "For reception desks, back-office clerks and meeting rooms, the WB-MC-03 lists an Intel N150 quad-core processor, DDR4 memory up to 64GB, WiFi 6 with dual HDMI output and an M.2 slot up to 2TB. Dual HDMI covers the classic office pair of monitor plus presentation display without a dock, and the compact chassis hides behind a monitor or under a desk.",
+          "Choose this platform when the workload is browser, office suite, POS or video conferencing. It is the lowest-complexity option in the lineup and the easiest to standardize across a fleet."
+        ]
+      },
+      {
+        heading: "Multi-display signage and kiosks: WB-MC-02",
+        paragraphs: [
+          "Digital signage rewards display outputs and network redundancy more than raw CPU speed. The WB-MC-02 lists Intel N95, N100 or N150 options, 12GB LPDDR5, WiFi 6 with dual RJ45 LAN and triple-screen 4K output. Three 4K streams suit video walls, wayfinding boards and retail menu runs from a single box.",
+          "The dual RJ45 ports also let integrators separate content traffic from management traffic, which matters in malls, stations and chain stores where the signage VLAN is isolated from guest WiFi."
+        ]
+      },
+      {
+        heading: "Engineering and heavy multitasking: WB-MC-01",
+        paragraphs: [
+          "When the box replaces a desktop tower for CAD viewers, large spreadsheets, virtual machines or dozens of browser tabs, move to the WB-MC-01. It lists AMD Ryzen 5 7640HS or Ryzen 7 8745HS processors, DDR5 memory up to 64GB, WiFi 6 with 2.5G LAN and dual M.2 NVMe storage. The 2.5G LAN keeps file transfers to a local NAS off the bottleneck that 1G ports create.",
+          "Dual M.2 slots also allow a clean split between system drive and project drive, which simplifies imaging and data recovery in shared studio environments."
+        ]
+      },
+      {
+        heading: "Compact gaming and GPU workloads: WB-MC-04",
+        paragraphs: [
+          "The WB-MC-04 is the lineup's GPU platform: Intel Core i5, i7 or i9 paired with RTX 4060 Ti or RTX 5070 graphics, DDR5 up to 64GB and dual LAN. It targets gaming lounge fleets, esports training rooms, cloud gaming terminals and GPU-accelerated workloads such as rendering previews or inference at the edge.",
+          "Because thermals and power delivery define a gaming mini PC's real-world behavior, request the configured wattage and fan curve documentation with the quote, and validate sustained performance on your own benchmark during sampling."
+        ]
+      },
+      {
+        heading: "Configuration and sampling checklist",
+        paragraphs: [
+          "Whichever platform you shortlist, freeze the following points on the configuration sheet and re-verify each one on the approved sample before production:"
+        ],
+        bullets: [
+          "CPU tier and memory type: DDR4 on WB-MC-03, LPDDR5 on WB-MC-02, DDR5 up to 64GB on WB-MC-01 and WB-MC-04.",
+          "Storage layout: single M.2 up to 2TB on WB-MC-03 versus dual M.2 NVMe on WB-MC-01.",
+          "Display outputs: dual HDMI on WB-MC-03, triple-screen 4K on WB-MC-02, GPU-driven outputs on WB-MC-04.",
+          "Network: WiFi 6 across the lineup, dual RJ45 on WB-MC-02 and WB-MC-04, 2.5G LAN on WB-MC-01.",
+          "OS image, language, boot logo and preinstalled software for managed fleets.",
+          "Logo, packaging, accessories, warranty terms and per-market RMA workflow."
+        ]
+      }
+    ],
+    faq: [
+      ["Which mini PC fits a reception desk with two displays?", "The WB-MC-03 lists an Intel N150 quad-core CPU with dual HDMI output and DDR4 up to 64GB, which covers a monitor plus presentation display without extra hardware."],
+      ["Can one mini PC drive three 4K screens?", "The WB-MC-02 lists triple-screen 4K output with Intel N95/N100/N150 options and dual RJ45 LAN, making it the signage-oriented choice in the lineup."],
+      ["Which model should I choose for CAD or heavy multitasking?", "The WB-MC-01 lists AMD Ryzen 5 7640HS or Ryzen 7 8745HS with DDR5 up to 64GB, 2.5G LAN and dual M.2 NVMe; for GPU-accelerated work the WB-MC-04 adds RTX 4060 Ti or RTX 5070 graphics."],
+      ["What must I confirm before placing an order?", "Confirm the final quote, lead time and batch configuration in writing, then re-verify CPU tier, memory, storage, display outputs, network ports and OS image on the approved sample."]
+    ],
+    links: [
+      ["Mini PC OEM / ODM Catalog", "/mini-pcs/"],
+      ["WB-MC-03 Intel N150 Mini PC", "/mini-pcs/wb-mc-03/"],
+      ["WB-MC-02 Intel N-Series Mini PC", "/mini-pcs/wb-mc-02/"],
+      ["WB-MC-01 AMD Ryzen Mini PC", "/mini-pcs/wb-mc-01/"],
+      ["WB-MC-04 RTX Mini Gaming PC", "/mini-pcs/wb-mc-04/"]
+    ],
+    sources: [
+      ["Weiboer Mini PC Catalog", "/mini-pcs/"],
+      ["Weiboer WB-MC-01 Product Specifications", "/mini-pcs/wb-mc-01/"],
+      ["Weiboer WB-MC-04 Product Specifications", "/mini-pcs/wb-mc-04/"]
+    ]
   }
 };
