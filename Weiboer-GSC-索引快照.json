@@ -1,6 +1,6 @@
 {
   "property": "sc-domain:szweiboer.com",
-  "lastChecked": "2026-10-27T13:56:23+08:00",
+  "lastChecked": "2026-10-28T10:34:18+08:00",
   "sitemapStatus": {
     "url": "https://www.szweiboer.com/sitemap.xml",
     "status": "Success",
@@ -79,6 +79,15 @@
       "reportUpdatedAt": "2026/10/19",
       "checkedAt": "2026-10-27T13:56:23+08:00",
       "property": "sc-domain:szweiboer.com"
+    },
+    {
+      "date": "2026-10-28",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-10-28T10:34:18+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "note": "本轮 browser 子代理只读读取，数值与截图一致；同日 10:00 时段续跑第二次只读核验数值相同（64/65，报告更新于 2026/10/23）。注意：2026-10-26/10-27 两条记录的 42/64 为之前错误数据，待用户确认后更正。"
     }
   ]
 }

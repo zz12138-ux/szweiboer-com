@@ -2211,5 +2211,88 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer Compact Touch Laptop Catalog", "/laptops/"],
       ["Weiboer GA10 Product Specifications", "/laptops/ga10/"]
     ]
+  },
+  "rugged-android-phone-oem-buying-guide": {
+    slug: "rugged-android-phone-oem-buying-guide",
+    title: "Rugged Android Phone OEM Buying Guide: IP68, Battery & Network Bands",
+    description: "Compare rugged IP68 Android phones and standard 4G dual-SIM models for field programs: protection ratings, battery capacity, network bands, Android version, MOQ and sampling.",
+    published: "2026-10-28",
+    updated: "2026-10-28",
+    intro: "A phone that lives on a construction site, in a delivery van or on a farm has a different job from a phone sold for everyday use. Field programs usually choose between rugged IP68 platforms such as Weiboer's X27 and X16 and standard 4G dual-SIM models such as the A56. This guide explains what protection ratings, battery capacity, network bands and Android versions actually mean in a B2B deployment, using the published specifications of these platforms.",
+    sections: [
+      {
+        heading: "Start from the deployment environment",
+        paragraphs: [
+          "Before comparing spec sheets, write down where the phones will work and what can damage them. Outdoor and industrial environments bring dust, water and drops; vehicle-based and shift work bring long hours away from a charger; cross-border deployments bring network-band and language requirements. The environment decides whether a rugged platform is necessary or an unnecessary cost."
+        ],
+        bullets: [
+          "Exposure: dust, water, drops and the temperature range of the work site.",
+          "Shift length: whether devices must run a full day or several days between charges.",
+          "Network: 4G bands supported by carriers in the destination countries and how many SIMs each user needs.",
+          "Software: the apps the team must run, the OS image, languages and device management."
+        ]
+      },
+      {
+        heading: "What IP68 protection actually means",
+        paragraphs: [
+          "IP68 is an ingress-protection rating: the first digit (6) describes dust-tight protection and the second digit (8) describes protection against water immersion under defined test conditions. The X27 and X16 rugged platforms list IP68 water-resistant, shock-resistant and dust-resistant features. Because the test conditions are set by the manufacturer, ask the supplier for the exact test parameters and whether the warranty covers water exposure in real use.",
+          "Operating temperature deserves the same scrutiny. The standard A56 model lists a -10°C to 60°C temperature range. If devices will work in cold storage, in desert vehicles or on winter sites, confirm the range on the quotation and re-test it on the approved sample."
+        ]
+      },
+      {
+        heading: "Battery capacity and shift length",
+        paragraphs: [
+          "The X27 and X16 list 10000mAh batteries, more than double the 4500mAh listed for the A56. A larger battery keeps tracking, scanning and messaging apps running through long field shifts without charging stops, at the cost of extra weight and thickness. Match capacity to the real duty cycle: daily use with overnight charging rarely needs a 10000mAh pack, while multi-day remote work often does.",
+          "Verify charging behaviour on the sample as well: charging time, whether the device can charge while the workload runs, and how the listed capacity is measured."
+        ]
+      },
+      {
+        heading: "Network bands and dual-SIM for the destination market",
+        paragraphs: [
+          "A 4G phone only works where its bands work. The A56 lists 4G LTE dual-SIM support on bands B1/B2/B3/B4/B5/B7/B8/B12/B17/B20/B28A/B28B, and the X27 and X16 list 4G LTE dual-SIM. Check the band list against the carriers in every destination country before production, and confirm the SIM combinations the final software image supports.",
+          "Also confirm the secondary radios and features the workflow depends on. The A56 lists Bluetooth, GPS and a G-sensor; the X27 additionally lists NFC, a night vision camera and an infrared remote, and the X16 lists NFC. If the field workflow uses card taps, night inspections or remote control of site equipment, these items belong on the configuration sheet."
+        ]
+      },
+      {
+        heading: "Android version and software lifecycle",
+        paragraphs: [
+          "The X27 and X16 list Android 14, while the A56 lists Android 12. A newer Android version usually offers a longer window of app compatibility, which matters when devices stay in the field for years. Ask which OS image ships to production, which languages it includes, whether the boot logo and preinstalled apps can be customized, and how software updates are delivered after purchase.",
+          "For managed fleets, also confirm how the devices enrol in your device-management tooling, and record the answer during sample approval rather than after mass production."
+        ]
+      },
+      {
+        heading: "MOQ, sampling and the configuration checklist",
+        paragraphs: [
+          "The listed minimum order quantities differ by platform: 1 piece for the X27 and X16, and 10 pieces for the A56, so a trial batch is practical before committing to a full program. Confirm the final quotation, lead time and batch configuration in writing.",
+          "Freeze the following points on the configuration sheet and re-verify each one on the approved sample:"
+        ],
+        bullets: [
+          "Chipset, memory, storage and expansion: the X27/X16 list a G85 octa-core CPU with 8GB + 128GB and TF expansion up to 512GB; the A56 lists an octa-core CPU with 4GB + 64GB and hybrid TF expansion up to 128GB.",
+          "Display: the rugged platforms list a 6.8-inch 1640 × 720 panel; the A56 lists a 6.65-inch Incell punch-hole display at 720 × 1600.",
+          "Cameras: the X27/X16 list 32MP front and 64MP rear; the A56 lists 5MP front and 16MP rear autofocus cameras.",
+          "Network bands and dual-SIM behaviour for the destination market.",
+          "OS image, languages, boot logo and unlock methods: the rugged platforms list fingerprint and face unlock.",
+          "Logo, packaging, accessories, warranty term and the RMA workflow per market."
+        ]
+      }
+    ],
+    faq: [
+      ["What does IP68 mean on a rugged phone?", "IP68 combines dust-tight protection (6) with water-immersion protection (8) under defined test conditions. The X27 and X16 list IP68 water-resistant, shock-resistant and dust-resistant features; ask the supplier for the exact test conditions and whether the warranty covers water exposure in real use."],
+      ["How much battery does a field phone need?", "Match capacity to the duty cycle. The X27 and X16 list 10000mAh batteries for outdoor and demanding mobile programs, while the standard A56 lists 4500mAh, which suits daily use with regular charging."],
+      ["What is the MOQ for these phones?", "The X27 and X16 list a 1-piece MOQ and the A56 lists a 10-piece MOQ. Confirm the final quotation and lead time with Weiboer before production."],
+      ["Can I customize the phone with my brand?", "The supplier lists light customization, artwork customization, sample-based customization and on-demand customization. Confirm the final logo, packaging and configuration on the approved sample."]
+    ],
+    links: [
+      ["Phone OEM / ODM Catalog", "/phones/"],
+      ["X27 Rugged Android 14 Phone", "/phones/x27/"],
+      ["X16 Rugged Android 14 Phone", "/phones/x16/"],
+      ["A56 Android 12 4G Dual-SIM Phone", "/phones/phone-1601928829240/"],
+      ["Contact Weiboer OEM Team", "/#quote"]
+    ],
+    sources: [
+      ["Weiboer X27 Product Specifications", "/phones/x27/"],
+      ["Weiboer A56 Product Specifications", "/phones/phone-1601928829240/"],
+      ["Weiboer Phone Catalog", "/phones/"]
+    ]
   }
 };
