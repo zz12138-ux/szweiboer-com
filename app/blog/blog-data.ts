@@ -2376,5 +2376,75 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer WB-MC-01 Product Specifications", "/mini-pcs/wb-mc-01/"],
       ["Weiboer WB-MC-04 Product Specifications", "/mini-pcs/wb-mc-04/"]
     ]
+  },
+  "projector-native-resolution-screen-size-guide": {
+    slug: "projector-native-resolution-screen-size-guide",
+    title: "Projector Native Resolution Guide: Match 720P and 1080P to Screen Size",
+    description: "Native vs supported resolution explained for LED projectors, and how to match 320x240, 720P and 1080P platforms to screen sizes and venues using Weiboer's listed specs.",
+    published: "2026-10-29",
+    updated: "2026-10-29",
+    intro: "Two projectors with the same brightness can look completely different on the same wall, and the reason is usually native resolution. It defines how many physical pixels the projector can actually throw, while the screen size decides how large each pixel becomes. This guide explains the difference between native and supported resolution and maps Weiboer's four listed projector platforms, from the 320x240 YG300 to the 1080P HY300 Pro, to the venues and screen sizes where each one makes sense.",
+    sections: [
+      {
+        heading: "Native resolution is the spec that matters",
+        paragraphs: [
+          "Native resolution is the physical pixel count of the projector's imaging panel. A 1080P panel has about 2.1 million pixels; a 720P panel about 0.9 million; a 320x240 panel fewer than 80 thousand. Supported resolution, by contrast, only tells you which input signals the projector accepts and rescales. A projector that 'supports 4K input' but lists 720P native still displays a 720P image.",
+          "In Weiboer's catalog the HY300 Pro lists 1920x1080, the HY320 and M6 list 720P native, and the entry-level YG300 lists 320x240 native. When you compare quotations, ask for the native figure in writing, because marketing sheets often lead with the supported number."
+        ]
+      },
+      {
+        heading: "Screen size spreads the same pixels wider",
+        paragraphs: [
+          "Every projector also lists a projection size range. The HY300 Pro lists 30 to 120 inches, the M6 lists 32 to 150 inches and the YG300 lists 24 to 60 inches. The range tells you what the optics can fill, not what will look sharp: the same pixel grid stretched over 120 inches produces pixels four times larger in area than at 60 inches.",
+          "As a planning rule, keep the native pixel count proportional to the diagonal you actually use. A 320x240 platform is comfortable in its listed 24 to 60 inch window for casual viewing; a 720P platform covers typical meeting-room and bedroom sizes; and 1080P is the sensible floor when the image regularly exceeds 100 inches or viewers sit close, such as classroom front rows."
+        ]
+      },
+      {
+        heading: "Brightness and resolution must be balanced together",
+        paragraphs: [
+          "Resolution decides detail; brightness decides whether that detail survives ambient light. The listed platforms span 10 to 20 ANSI lumens on the YG300, 130 ANSI on the HY300 Pro, 200 ANSI on the HY320 and 380 ANSI on the M6. A dim room forgives low brightness, but a lit retail space or classroom erases contrast long before it erases resolution.",
+          "Pair the two specs per venue: dark home-theater and travel use can work with modest brightness, while daytime meeting rooms and storefront demos need the higher-ANSI platforms. Weiboer's separate brightness guide covers the lumen side of this equation in more depth."
+        ]
+      },
+      {
+        heading: "Smart platform and installation flexibility",
+        paragraphs: [
+          "For standalone signage and hospitality use, the onboard OS matters as much as the optics. The HY300 Pro lists Android 13 and the HY320 lists Android 11, which lets venues run streaming and casting apps without an external player. The HY320 additionally lists 180 degree rotation, useful for ceiling-free setups and pop-up booths.",
+          "Where a venue already runs a media player or PC, the projector's smart platform becomes optional, and buyers can prioritize native resolution, brightness and lens placement instead."
+        ]
+      },
+      {
+        heading: "Configuration and sampling checklist",
+        paragraphs: [
+          "Before committing a projector program, freeze these points on the configuration sheet and re-verify each on the approved sample:"
+        ],
+        bullets: [
+          "Native resolution in writing: 1920x1080 on HY300 Pro, 720P on HY320 and M6, 320x240 on YG300.",
+          "Projection size range matched to the venue: 30-120 inches, 32-150 inches or 24-60 inches as listed.",
+          "ANSI lumens against real ambient light: 130, 200, 380 or 10-20 as listed per platform.",
+          "Onboard OS version where the unit runs standalone: Android 13 or Android 11 as listed.",
+          "Keystone, focus type and mounting or rotation options for the installation.",
+          "Logo, packaging, accessories, warranty terms and the final quote; the YG300 lists an MOQ of 10 sets."
+        ]
+      }
+    ],
+    faq: [
+      ["What does native resolution mean on a projector?", "It is the physical pixel count of the imaging panel. The HY300 Pro lists 1920x1080 native, the HY320 and M6 list 720P native and the YG300 lists 320x240 native; 'supported' resolutions are only input signals that get rescaled."],
+      ["Is 720P enough for a 100-inch screen?", "It depends on viewing distance. At 100 inches a 720P grid shows visible pixels up close, so front-row classroom or desktop-style viewing is better served by the 1080P HY300 Pro, while rear-of-room viewing tolerates 720P."],
+      ["Which Weiboer projector suits travel and small rooms?", "The M6 lists 380 ANSI lumens with a 32-150 inch range in a pocket design, and the HY320 adds 180 degree rotation with 200 ANSI lumens; both fit travel, bedrooms and pop-up demos."],
+      ["What should buyers confirm before ordering?", "Confirm native resolution, projection range, ANSI lumens, OS version and final quote in writing, then re-verify image sharpness and brightness on the approved sample in the venue's real lighting."]
+    ],
+    links: [
+      ["Projector OEM / ODM Catalog", "/projectors/"],
+      ["HY300 Pro 1080P Android 13 Projector", "/projectors/wb-pj-01/"],
+      ["M6 Pocket 380 ANSI Projector", "/projectors/wb-pj-04/"],
+      ["Projector Brightness Buying Guide", "/blog/projector-brightness-guide/"],
+      ["Contact Weiboer OEM Team", "/#quote"]
+    ],
+    sources: [
+      ["Weiboer Projector Catalog", "/projectors/"],
+      ["Weiboer HY300 Pro Product Specifications", "/projectors/wb-pj-01/"],
+      ["Weiboer M6 Product Specifications", "/projectors/wb-pj-04/"]
+    ]
   }
 };

@@ -1,6 +1,6 @@
 {
   "property": "sc-domain:szweiboer.com",
-  "lastChecked": "2026-10-28T10:34:18+08:00",
+  "lastChecked": "2026-10-29T10:06:35+08:00",
   "sitemapStatus": {
     "url": "https://www.szweiboer.com/sitemap.xml",
     "status": "Success",
@@ -88,6 +88,15 @@
       "checkedAt": "2026-10-28T10:34:18+08:00",
       "property": "sc-domain:szweiboer.com",
       "note": "本轮 browser 子代理只读读取，数值与截图一致；同日 10:00 时段续跑第二次只读核验数值相同（64/65，报告更新于 2026/10/23）。注意：2026-10-26/10-27 两条记录的 42/64 为之前错误数据，待用户确认后更正。"
+    },
+    {
+      "date": "2026-10-29",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-10-29T10:06:35+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "note": "GSC 报告尚未重新处理（仍为 2026/10/23）；站点地图状态：成功，GSC 上次读取 2026/10/25。本轮提交 /blog/all-in-one-pc-oem-buyer-guide/ 至优先抓取队列；/portable-monitors/ 与 /blog/projector-brightness-guide/ 已收录，按规则跳过。"
     }
   ]
 }

@@ -121,6 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/compact-touch-laptop-pos-classroom-pick`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/rugged-android-phone-oem-buying-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/mini-pc-picks-by-use-case`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/projector-native-resolution-screen-size-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
