@@ -2520,5 +2520,79 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer GR8 Product Specifications", "/tablets/gr8/"],
       ["Weiboer GT70 Product Specifications", "/tablets/wb-tb-02/"]
     ]
+  },
+  "aio-touch-size-configuration-guide": {
+    slug: "aio-touch-size-configuration-guide",
+    title: "All-in-One PC Touch Options: Why Touch Clusters on 24-Inch Models",
+    description: "Why all-in-one PC touch options cluster on 24-inch platforms, what touch changes in the panel and stand design, and how to confirm the configuration before sampling.",
+    published: "2026-10-30",
+    updated: "2026-10-30",
+    intro: "Buyers who compare all-in-one PCs by specification often assume touch is a checkbox they can add to any screen size. In Weiboer's catalog the pattern is more specific: touch appears on the 24-inch configuration of most families, while 22-inch and 27-inch configurations are commonly listed as non-touch. This guide explains where touch is listed across the lineup and what to confirm before committing to a touch program.",
+    sections: [
+      {
+        heading: "Where touch actually appears in the catalog",
+        paragraphs: [
+          "Reading the published specifications model by model shows a consistent pattern. The F1-Y family lists a 22-inch non-touch configuration and a 24-inch touch option. N-S follows the same split, and its stand supports 90-degree rotation. T3 lists 22-, 24- and 27-inch sizes with a 24-inch touch option and asks buyers to confirm touch availability by size. HWC lists 22-inch and 27-inch configurations as non-touch with 24-inch touch optional. D3 lists a 24-inch touch option against a 27-inch non-touch configuration."
+        ],
+        bullets: [
+          "24-inch touch listed: F1-Y, N-S, T3, HWC, D3.",
+          "Touch listed as an option without a size split: T1-S, F6-ST, D4; confirm per size on the sample.",
+          "No touch listed at all: D1, whose 24-, 27- and 32-inch configurations are quoted as 1920 × 1080 IPS without touch."
+        ]
+      },
+      {
+        heading: "Why 24 inches is the practical touch size",
+        paragraphs: [
+          "Touch usability depends on reach. A 24-inch screen sitting at normal desk depth puts the top corners within comfortable arm range for a seated operator, so a shop-floor terminal, clinic check-in counter or classroom lectern can be used standing up without stepping forward. On a 27-inch panel the same physical gesture covers more distance, and on a 32-inch panel the far corner is effectively out of reach for many operators.",
+          "The 22-inch configuration sits at the other end. It is close enough to touch comfortably, but the smaller canvas makes on-screen keyboards and split forms tight, so suppliers commonly keep the 22-inch configuration as a non-touch office display and reserve touch for the 24-inch chassis."
+        ]
+      },
+      {
+        heading: "What touch changes in the build",
+        paragraphs: [
+          "A touch layer is not a software option. It adds a sensor stack to the panel, which changes lamination, weight and the load carried by the stand and hinge. That is why touch availability and stand specification appear together in the catalog: N-S pairs its 24-inch touch option with a 90-degree rotation stand, HWC pairs the same option with a metal stand in gray or white, and F1-Y lists a stand with wireless phone charging on the touch-capable configuration.",
+          "Touch also affects the front glass. Extra layers can alter reflectance and perceived contrast, so a buyer who chooses touch for a bright lobby should judge the finished sample in the actual lighting rather than on a spec sheet alone."
+        ]
+      },
+      {
+        heading: "When non-touch is the better buy",
+        paragraphs: [
+          "Most all-in-one deployments do not need touch at all. Back-office data entry, reception displays that face customers, kitchen order screens operated by keyboard and 32-inch family displays are usually non-touch programs, and skipping the touch layer keeps cost, weight and glare down. D1 is the clearest example: 24-, 27- and 32-inch configurations are listed as 1920 × 1080 IPS with no touch configuration at all.",
+          "Treat touch as a decision tied to the operator's task. If staff interact standing up, in gloves, or on a shared terminal with no keyboard, touch on 24 inches earns its cost. If the screen shows information and the input happens elsewhere, it does not."
+        ]
+      },
+      {
+        heading: "Configure the rest of the platform at the same time",
+        paragraphs: [
+          "Touch is one line on a longer configuration sheet, and the surrounding choices matter just as much for total cost. Most of this lineup lists Intel Core i3 / i5 / i7 processor options, DDR4 memory from 8GB to 32GB and SSD storage from 128GB up to 2TB. Where the program needs more, specific families add their own options: F6-ST lists a 2.5-inch drive bay for storage expansion plus USB-C and a card reader, T1-S and D3 list a pop-up privacy camera with optional face unlock, and D3 mentions optional discrete graphics with GTX 1650 or RTX 3060, which must be verified as an exact SKU before ordering.",
+          "Mounting is the other line to freeze early. T3 lists VESA-compatible stand options, HWC lists a metal stand, and N-S lists 90-degree rotation. A touch terminal that also rotates needs the combination confirmed on the sample, because the stand and cable routing carry both loads."
+        ],
+        bullets: [
+          "Confirm touch availability for the exact size in writing, not only for the model family.",
+          "Confirm the panel resolution for the chosen size. D3 lists 1920 × 1080 in its title while 2560 × 1440 also appears in its description, so the exact panel must be fixed on the quote.",
+          "Confirm stand type, VESA pattern and rotation if the terminal will be used standing up.",
+          "Confirm camera option, storage expansion and graphics SKU where the program depends on them.",
+          "Confirm MOQ, lead time and the approved sample configuration. Most models list an MOQ of 1 pc; the UW30, K2 and K4 families list 5 pcs."
+        ]
+      }
+    ],
+    faq: [
+      ["Which all-in-one sizes offer a touch option?", "In the published specifications, touch is listed on the 24-inch configuration of the F1-Y, N-S, T3, HWC and D3 families, while their 22-inch and 27-inch configurations are commonly listed as non-touch. The D1 family lists no touch configuration across 24, 27 and 32 inches. Always confirm availability for the exact size you order."],
+      ["Can a touch all-in-one also rotate?", "The N-S family lists a stand that supports 90-degree rotation alongside its 24-inch touch option. Confirm the touch-plus-rotation combination on the approved sample, since both the panel stack and cable routing change."],
+      ["Why do some models list touch as optional without a size?", "T1-S, F6-ST and D4 list touch as an option without splitting it by size. That wording means availability varies by configuration, so it has to be fixed in writing on the quotation and verified on the sample."],
+      ["What is the minimum order for these platforms?", "Most models in the lineup list an MOQ of 1 pc. The UW30, K2 and K4 families list 5 pcs. Confirm the final MOQ, lead time and configuration sheet with Weiboer before production."]
+    ],
+    links: [
+      ["All-in-One PC OEM / ODM Catalog", "/all-in-one-pcs/"],
+      ["F1-Y 22 / 24-inch Touch-Option AIO", "/all-in-one-pcs/f1-y/"],
+      ["T3 22 / 24 / 27-inch AIO", "/all-in-one-pcs/t3/"],
+      ["N-S 22 / 24-inch Rotating-Stand AIO", "/all-in-one-pcs/n-s/"],
+      ["Contact Weiboer OEM Team", "/#quote"]
+    ],
+    sources: [
+      ["Weiboer All-in-One PC Catalog", "/all-in-one-pcs/"],
+      ["Weiboer F1-Y Product Specifications", "/all-in-one-pcs/f1-y/"],
+      ["Weiboer D1 Product Specifications", "/all-in-one-pcs/d1/"]
+    ]
   }
 };

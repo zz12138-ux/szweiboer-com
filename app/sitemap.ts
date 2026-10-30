@@ -123,6 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/mini-pc-picks-by-use-case`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/projector-native-resolution-screen-size-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/android-tablet-picks-by-program`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/aio-touch-size-configuration-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
