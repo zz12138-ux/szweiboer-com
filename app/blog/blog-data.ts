@@ -2667,5 +2667,92 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer WB-MN-02 Product Specifications", "/portable-monitors/wb-mn-02/"],
       ["Weiboer WB-MN-05 Product Specifications", "/portable-monitors/wb-mn-05/"]
     ]
+  },
+  "tablet-battery-runtime-oem-guide": {
+    slug: "tablet-battery-runtime-oem-guide",
+    title: "Tablet Battery Runtime: Reading mAh and Listed Hours in OEM Data",
+    description: "How to read tablet battery capacity and rated hours in OEM listings, why 6000mAh can mean 4-5 hours, and what to test before committing to a fleet order.",
+    published: "2026-10-31",
+    updated: "2026-10-31",
+    intro: "A buyer comparing tablet listings sees two numbers that look comparable and usually are not: the battery capacity in mAh and the runtime in hours. In Weiboer's own catalog, a 6000mAh platform is listed at 4-5 hours while an 8000mAh platform is listed at 6-10 hours, and one 5000mAh model carries no hour figure at all. This guide explains what those fields actually describe and how to turn them into a testable requirement for a fleet order.",
+    sections: [
+      {
+        heading: "Why mAh alone does not set runtime",
+        paragraphs: [
+          "Milliamp-hours measure charge, not energy and not time. To compare two platforms you also need the cell voltage and the power the device actually draws. The GT35 is listed at 3.8V / 6000mAh with 4-5 hours of use; the GT70 is listed at 8000mAh / 3.8V with 6-10 hours. Both figures are consistent with the same voltage and a similar workload, but neither tells you what will happen on your own application.",
+          "Screen brightness is the single largest variable in tablet runtime. A 10.95-inch panel at 1280 x 800 driven at low brightness and a 11.97-inch 1200 x 2000 panel at full brightness draw very different power even from the same battery. Treat the listed hour figure as a reference condition, not a guarantee for your deployment."
+        ],
+        bullets: [
+          "Record cell voltage and capacity together, never capacity alone.",
+          "Ask which brightness level and which workload produced the listed hours.",
+          "Expect a shorter runtime on 4G models than on WiFi-only models in the same program."
+        ]
+      },
+      {
+        heading: "What the catalog actually lists",
+        paragraphs: [
+          "Reading the published specifications side by side shows how much the runtime field varies between platforms that look similar on a comparison sheet. The GT35 lists 3.8V / 6000mAh with 4-5 hours. The GT70 lists 8000mAh at 3.8V with 6-10 hours, on a 11.97-inch 1200 x 2000 panel. The IP17 lists 6000mAh with no hour figure, and notes that the final battery should be confirmed. The R17 lists 5000mAh with no hour figure. The KM03 lists 3000mAh with no hour figure. The GR8 does not state a battery capacity in the available product data at all.",
+          "That spread is the practical lesson: a listing that states capacity but not hours has not told you the runtime, and a listing that states neither cannot be planned against. Both are normal in OEM catalogs, but the gap has to be closed before a fleet order rather than after delivery."
+        ]
+      },
+      {
+        heading: "Match runtime to the shift, not to the number",
+        paragraphs: [
+          "The right runtime target comes from the deployment, not from the listing. A classroom tablet that returns to a charging cart every evening has a different requirement from a field tablet that stays with a driver for a full shift, and a kiosk unit that is plugged in continuously needs a battery for ride-through rather than for hours of use.",
+          "Write the requirement as a scenario instead of a number: screen brightness, wireless state, the applications that must run, and how long the device must operate between charges. That sentence can be tested on a sample; a bare hour figure cannot."
+        ],
+        bullets: [
+          "Classroom or training room: one session between charges, plus a cart or cabinet.",
+          "Field and logistics: full shift on 4G with screen on, plus a spare or in-vehicle charger.",
+          "Kiosk and fixed installation: continuous power with battery as ride-through, not as runtime."
+        ]
+      },
+      {
+        heading: "Charging is part of the runtime story",
+        paragraphs: [
+          "A platform that runs eight hours but takes six hours to recharge is a problem for two-shift operations. Ask for charge time from empty with the supplied adapter, whether the device charges over USB Type-C, and whether it can run while charging. The IP17 lists a USB Type-C interface; confirm the charging behaviour on the final configuration rather than assuming it.",
+          "For multi-shift use, the practical answer is often a charging cabinet or a swap battery process. Both need to be defined before the order, because they change the accessory list and the packaging."
+        ]
+      },
+      {
+        heading: "What to test on a sample",
+        paragraphs: [
+          "Run the same repeatable test on every candidate so the results are comparable. Record the OS build, brightness setting, wireless state and application mix with the result, because a runtime figure without its conditions cannot be reproduced or defended in a tender.",
+          "Test at the temperature the product will actually see. Battery runtime falls in cold conditions, and a device specified for outdoor winter use needs to be checked in that environment rather than on a laboratory bench."
+        ],
+        bullets: [
+          "Full charge, then continuous video playback at a fixed brightness.",
+          "Full charge, then the actual application workflow the fleet will use.",
+          "Charge time from empty with the shipping adapter.",
+          "Standby drain over 24 hours with wireless enabled.",
+          "One repeat run at the low end of the operating temperature range."
+        ]
+      },
+      {
+        heading: "Putting it into the specification",
+        paragraphs: [
+          "Once the test results are in, fix the battery and runtime line in the configuration sheet that goes with the quotation. State capacity, voltage, tested hours under named conditions, charge time and the adapter. Anything that is still open should be marked as pending rather than carried as an assumed standard.",
+          "This matters most for private-label programs, where the buyer's own specification sheet is what the factory builds against. A runtime claim that only exists in a chat message cannot be enforced later."
+        ]
+      }
+    ],
+    faq: [
+      ["Does a bigger mAh always mean longer runtime?", "No. Runtime depends on battery voltage, screen size and brightness, wireless state and the workload. Compare capacity and tested hours together, on the same conditions."],
+      ["Why do some tablets list hours and others do not?", "The hour figure comes from the supplier's own test conditions, which are not standardised across listings. Where no figure is listed, runtime has to be established on a sample."],
+      ["Can I use the listed hours as a warranty figure?", "Treat it as a reference condition. If runtime is critical to the program, define a tested value with named conditions in the configuration sheet and agree how it will be verified."],
+      ["What about 4G models?", "Mobile data radios draw additional power. Expect a shorter runtime than a WiFi-only platform on the same battery, and test with the SIM active if the fleet will run on 4G."]
+    ],
+    links: [
+      ["Android Tablets", "/tablets/"],
+      ["GT35 10.95-inch Android 14 Tablet", "/tablets/wb-tb-01/"],
+      ["GT70 11.97-inch 4G Tablet", "/tablets/wb-tb-02/"],
+      ["R17 10.1-inch Business Tablet", "/tablets/wb-tb-04/"],
+      ["Contact Weiboer", "/#quote"]
+    ],
+    sources: [
+      ["Weiboer Android Tablet Catalog", "/tablets/"],
+      ["Weiboer GT35 Product Specifications", "/tablets/wb-tb-01/"],
+      ["Weiboer GT70 Product Specifications", "/tablets/wb-tb-02/"]
+    ]
   }
 };
