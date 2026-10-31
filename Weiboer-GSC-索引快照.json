@@ -1,11 +1,11 @@
 {
   "property": "sc-domain:szweiboer.com",
-  "lastChecked": "2026-10-29T10:06:35+08:00",
+  "lastChecked": "2026-10-31T10:04:00+08:00",
   "sitemapStatus": {
     "url": "https://www.szweiboer.com/sitemap.xml",
     "status": "Success",
-    "discoveredPages": 110,
-    "lastRead": "2026-10-25"
+    "discoveredPages": 119,
+    "lastRead": "2026-10-31"
   },
   "indexSnapshots": [
     {
@@ -97,6 +97,24 @@
       "checkedAt": "2026-10-29T10:06:35+08:00",
       "property": "sc-domain:szweiboer.com",
       "note": "GSC 报告尚未重新处理（仍为 2026/10/23）；站点地图状态：成功，GSC 上次读取 2026/10/25。本轮提交 /blog/all-in-one-pc-oem-buyer-guide/ 至优先抓取队列；/portable-monitors/ 与 /blog/projector-brightness-guide/ 已收录，按规则跳过。"
+    },
+    {
+      "date": "2026-10-30",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-10-30T10:05:52+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "note": "GSC 报告仍未重新处理（2026/10/23）；站点地图状态：成功，GSC 上次读取 2026/10/25，已发现 110 个网页。本轮提交 /blog/projector-native-resolution-screen-size-guide/ 与 /blog/android-tablet-picks-by-program/ 至优先抓取队列；/projectors/ 已收录，跳过。无可见验证码。"
+    },
+    {
+      "date": "2026-10-31",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-10-31T10:04:00+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "note": "GSC 报告仍为 2026/10/23；站点地图：成功，GSC 上次读取 2026/10/31，已发现 119 个网页（前次 110）。本轮提交 /blog/aio-touch-size-configuration-guide/ 至优先抓取队列；/all-in-one-pcs/t3/、/all-in-one-pcs/n-s/ 已收录，跳过。无可见验证码。"
     }
   ]
 }

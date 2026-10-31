@@ -2594,5 +2594,78 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer F1-Y Product Specifications", "/all-in-one-pcs/f1-y/"],
       ["Weiboer D1 Product Specifications", "/all-in-one-pcs/d1/"]
     ]
+  },
+  "portable-monitor-picks-by-setup": {
+    slug: "portable-monitor-picks-by-setup",
+    title: "Portable Monitor Picks by Setup: Travel, Desk Extension & Triple-Laptop",
+    description: "Which Weiboer portable monitor fits a travel kit, a laptop desk extension or a triple-screen workstation program, compared by size, ports and MOQ.",
+    published: "2026-10-31",
+    updated: "2026-10-31",
+    intro: "Every portable monitor in Weiboer's lineup shares the same core panel: 1920 × 1200 IPS at 60Hz and 250 cd/m². What separates the six platforms is size range, port layout, minimum order and how they are meant to sit next to a laptop. This guide groups them by the setup a buyer is actually selling into, so a distributor or private-label brand can start a sample order with the right model instead of the first listing.",
+    sections: [
+      {
+        heading: "Travel and mobile kits: the 13.3-inch platforms",
+        paragraphs: [
+          "For a monitor that has to fit beside a 13- or 14-inch laptop in a backpack, the WB-MN-05 and WB-MN-06 are the natural picks. Both are 13.3-inch IPS panels at 1920 × 1200, both list USB-C plus USB 3.0 connectivity, and both list an MOQ of 1 piece, which makes them the easiest way to test a travel-accessory listing before committing to volume.",
+          "The difference is positioning. WB-MN-05 is described for laptop extension and mobile workstations with custom logo, private mold and packaging options. WB-MN-06 is described for business, gaming and laptop multi-screen use with OEM logo and private-label packaging. Note that both listings show 16:10 and 16:9 values, so the final panel aspect ratio has to be fixed on the sample."
+        ],
+        bullets: [
+          "Pick WB-MN-05 for a travel or mobile-office accessory line.",
+          "Pick WB-MN-06 for a business or casual gaming accessory line.",
+          "Confirm the aspect ratio and the exact USB-A count before sampling."
+        ]
+      },
+      {
+        heading: "Desk extension for any laptop size: WB-MN-02",
+        paragraphs: [
+          "When a buyer wants one model that covers several laptop sizes, WB-MN-02 has the widest range in the lineup: 13.3, 14, 15.6 and 16 inches on the same platform. It lists 2 × USB-C plus USB 3.0, with USB-A options that vary by configuration, and an MOQ of 1 piece.",
+          "That combination suits a retailer who wants to offer a matching second screen for each laptop size they already stock, and test demand per size with small sample quantities before standardising."
+        ]
+      },
+      {
+        heading: "Larger 14 to 16-inch programs: WB-MN-01",
+        paragraphs: [
+          "WB-MN-01 is the slim multi-size platform for 14, 15.6 and 16-inch programs, with 2 × USB-C and an MOQ of 10 pieces. It suits buyers who already know their target size and want a clean USB-C-only design for laptop extension and dual-screen desks."
+        ]
+      },
+      {
+        heading: "Triple and four-screen workstations: WB-MN-03 and WB-MN-04",
+        paragraphs: [
+          "For multi-screen laptop workstations, where one or two panels attach beside the laptop display, the WB-MN-03 and WB-MN-04 platforms are built around that use. Both list 14, 15.6 and 16-inch options, 2 × USB-C and an MOQ of 10 pieces.",
+          "WB-MN-03 is presented as a Full HD triple-laptop extender for dual, triple and four-screen setups with custom logo and private mold listed. WB-MN-04 is presented as an extender for laptop gaming, business and multi-screen deployments with OEM logo and private mold options. Either works for traders, analysts and remote teams; the choice usually comes down to the branding and mold option the program needs."
+        ]
+      },
+      {
+        heading: "What to confirm on any pick",
+        paragraphs: [
+          "Because the panel is shared across the lineup, the confirmation list is short but strict. The product data lists no built-in speakers, so audio stays on the source laptop. Touch and battery are not stated for any platform and must not be advertised until the final configuration confirms them."
+        ],
+        bullets: [
+          "Exact size, bezel and hinge or mounting layout for the target laptop.",
+          "USB-C port layout and whether a USB-A port is included.",
+          "Touch and battery: not stated in the product data; confirm before listing.",
+          "Case finish, logo position and retail packaging.",
+          "MOQ for the chosen platform: 1 piece for WB-MN-02, WB-MN-05 and WB-MN-06; 10 pieces for WB-MN-01, WB-MN-03 and WB-MN-04."
+        ]
+      }
+    ],
+    faq: [
+      ["Do all Weiboer portable monitors use the same panel?", "The product data lists a 1920 × 1200 IPS panel at 60Hz and 250 cd/m² across the lineup. Size, port layout, MOQ and customization options differ by platform."],
+      ["Which portable monitor can I order as a single sample?", "WB-MN-02, WB-MN-05 and WB-MN-06 list an MOQ of 1 piece. WB-MN-01, WB-MN-03 and WB-MN-04 list 10 pieces."],
+      ["Which model covers the most laptop sizes?", "WB-MN-02 lists 13.3, 14, 15.6 and 16-inch options on one platform."],
+      ["Do these monitors have speakers, touch or a battery?", "No built-in speakers are listed. Touch and battery are not stated in the product data, so confirm them on the final configuration before advertising either feature."]
+    ],
+    links: [
+      ["Portable Monitor OEM Catalog", "/portable-monitors/"],
+      ["WB-MN-02 13.3-16-inch USB-C Monitor", "/portable-monitors/wb-mn-02/"],
+      ["WB-MN-05 13.3-inch Portable Monitor", "/portable-monitors/wb-mn-05/"],
+      ["WB-MN-03 Triple-Laptop Monitor", "/portable-monitors/wb-mn-03/"],
+      ["USB-C Portable Monitor Buying Guide", "/blog/usb-c-portable-monitor-buying-guide/"]
+    ],
+    sources: [
+      ["Weiboer Portable Monitor Catalog", "/portable-monitors/"],
+      ["Weiboer WB-MN-02 Product Specifications", "/portable-monitors/wb-mn-02/"],
+      ["Weiboer WB-MN-05 Product Specifications", "/portable-monitors/wb-mn-05/"]
+    ]
   }
 };
