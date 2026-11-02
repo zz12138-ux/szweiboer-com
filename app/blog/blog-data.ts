@@ -2754,5 +2754,101 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer GT35 Product Specifications", "/tablets/wb-tb-01/"],
       ["Weiboer GT70 Product Specifications", "/tablets/wb-tb-02/"]
     ]
+  },
+  "all-in-one-pc-picks-by-workspace": {
+    slug: "all-in-one-pc-picks-by-workspace",
+    title: "All-in-One PC Picks by Workspace: Reception, Office, Studio & Desk",
+    description: "Which Weiboer all-in-one PC fits a reception counter, an office fleet, an expandable workstation or an ultrawide studio desk, compared by size, stand, ports and MOQ.",
+    published: "2026-11-02",
+    updated: "2026-11-02",
+    intro: "An all-in-one PC is bought for a desk, not for a spec sheet. A reception counter, a call-centre row, an engineering bench and a design studio each reward a different combination of screen size, stand, camera and expansion. This shortlist matches five platforms from Weiboer's all-in-one catalog to the workspace they suit best, using only the specifications published on each product page.",
+    sections: [
+      {
+        heading: "Reception and front desk: N-S",
+        paragraphs: [
+          "A reception screen is turned toward visitors as often as toward staff. The N-S lists a stand that supports 90-degree rotation, with a 22-inch non-touch or 24-inch touch option on a 1920 x 1080 LED / IPS panel. Intel Core i3 / i5 / i7 options, DDR4 up to 32GB and SSD up to 2TB are listed, which is more headroom than check-in and visitor-management software usually needs.",
+          "The 24-inch touch option is the one to sample for self-service sign-in. Confirm the stand movement and touch availability on the approved sample, as the product page itself advises."
+        ],
+        bullets: [
+          "Rotating stand listed for counter use.",
+          "24-inch touch option for visitor self-service.",
+          "MOQ listed at 1 pc, so a single counter can be trialled first."
+        ]
+      },
+      {
+        heading: "Shared and hybrid offices: T1-S",
+        paragraphs: [
+          "Desks that run video calls all day need a camera people trust. The T1-S lists a pop-up privacy camera with optional face unlock, on a 24- or 27-inch 1920 x 1080 panel with a touch option. Intel Core i3 / i5 / i7, DDR4 up to 32GB and SSD up to 2TB are listed.",
+          "For a hot-desking floor, the privacy camera is the feature staff notice first; face unlock is optional, so decide whether it belongs in the fleet configuration before quoting."
+        ],
+        bullets: [
+          "Pop-up privacy camera listed; face unlock optional.",
+          "24 / 27-inch sizes for standard and wider desks.",
+          "MOQ listed at 1 pc."
+        ]
+      },
+      {
+        heading: "Budget office fleets with legacy displays: K7",
+        paragraphs: [
+          "Large office rollouts often still connect a second monitor or projector over VGA. The K7 lists USB, HDMI, VGA and LAN on a 24-inch 1920 x 1080 display, with Intel Core i3 / i5 / i7 / i9 options, DDR3 4GB / 8GB and SSD up to 1TB, running Windows 10.",
+          "It is the straightforward choice for a fleet that values wired ports and a single 24-inch size over newer memory types. Note that memory is listed as DDR3 and the OS as Windows 10; confirm both against your IT policy before ordering."
+        ],
+        bullets: [
+          "HDMI and VGA both listed for second-screen setups.",
+          "Wired LAN listed for managed office networks.",
+          "MOQ listed at 1 pc."
+        ]
+      },
+      {
+        heading: "Engineering and data-heavy desks: F6-ST",
+        paragraphs: [
+          "Some desks outgrow a single SSD quickly. The F6-ST lists an internal 2.5-inch drive bay for storage expansion, plus USB-C and a card reader, on a 24- or 27-inch 1920 x 1080 LED / IPS panel with a touch option. Intel Core i3 / i5 / i7 and DDR4 up to 32GB are listed.",
+          "The drive bay lets a project archive or a local dataset sit next to the system SSD without an external enclosure. The card reader suits teams that ingest camera or instrument media every day."
+        ],
+        bullets: [
+          "2.5-inch drive bay listed for added storage.",
+          "USB-C and card reader listed.",
+          "MOQ listed at 1 pc."
+        ]
+      },
+      {
+        heading: "Design studios and trading desks: UW30",
+        paragraphs: [
+          "Timelines, spreadsheets and multi-window trading layouts benefit from width more than height. The UW30 lists a 34-inch 21:9 ultrawide curved panel at 3440 x 1440 with a 1500R curve, Intel Core i3 / i5 / i7 options, DDR4 options up to 32GB and SSD up to 2TB.",
+          "It replaces a two-monitor setup with one cable-free unit. The listed MOQ is 5 pcs, so it fits a studio or desk team order rather than a single seat."
+        ],
+        bullets: [
+          "34-inch 3440 x 1440 ultrawide, 1500R curve.",
+          "One unit instead of a dual-monitor arrangement.",
+          "MOQ listed at 5 pcs."
+        ]
+      },
+      {
+        heading: "Before you order",
+        paragraphs: [
+          "Every platform above lists several CPU, memory and storage options, so the same model can be built for very different budgets. Fix the exact configuration, panel, stand and camera on a written configuration sheet, and approve a sample before production.",
+          "If one workspace type dominates your rollout, start with the matching platform at its listed MOQ, test it on a real desk for a week, then scale. Weiboer can quote mixed-model orders through the contact page."
+        ]
+      }
+    ],
+    faq: [
+      ["Which all-in-one suits a reception counter?", "The N-S lists a stand with 90-degree rotation and a 24-inch touch option, which suits counters that face visitors. Confirm stand movement and touch on the approved sample."],
+      ["Which model has a privacy camera?", "The T1-S lists a pop-up privacy camera with optional face unlock on a 24- or 27-inch panel."],
+      ["Can I add more storage to an all-in-one?", "The F6-ST lists an internal 2.5-inch drive bay for storage expansion, alongside USB-C and a card reader."],
+      ["What is the MOQ?", "The N-S, T1-S, K7 and F6-ST list an MOQ of 1 pc. The UW30 lists 5 pcs. Confirm the final quantity and configuration in the quotation."]
+    ],
+    links: [
+      ["All-in-One PCs", "/all-in-one-pcs/"],
+      ["N-S Rotating-Stand All-in-One", "/all-in-one-pcs/n-s/"],
+      ["T1-S Privacy Camera All-in-One", "/all-in-one-pcs/t1-s/"],
+      ["F6-ST Expandable All-in-One", "/all-in-one-pcs/f6-st/"],
+      ["UW30 34-inch Curved All-in-One", "/all-in-one-pcs/uw30/"]
+    ],
+    sources: [
+      ["Weiboer All-in-One PC Catalog", "/all-in-one-pcs/"],
+      ["Weiboer N-S Product Specifications", "/all-in-one-pcs/n-s/"],
+      ["Weiboer K7 Product Specifications", "/all-in-one-pcs/k7/"],
+      ["Weiboer UW30 Product Specifications", "/all-in-one-pcs/uw30/"]
+    ]
   }
 };
