@@ -2850,5 +2850,87 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer K7 Product Specifications", "/all-in-one-pcs/k7/"],
       ["Weiboer UW30 Product Specifications", "/all-in-one-pcs/uw30/"]
     ]
+  },
+  "mini-pc-ram-storage-upgrade-guide": {
+    slug: "mini-pc-ram-storage-upgrade-guide",
+    title: "Mini PC RAM and Storage: Soldered LPDDR5 vs Slots and M.2 Bays",
+    description: "Why a 12GB soldered mini PC and a 64GB slot-based one are different purchases, and how to read DDR4, DDR5, LPDDR5 and M.2 storage lines before ordering a fleet.",
+    published: "2026-11-02",
+    updated: "2026-11-02",
+    intro: "Two mini PCs can list the same CPU generation and still be completely different purchases, because memory and storage decide whether the unit can grow with the deployment or must be replaced when requirements change. Weiboer's mini PC catalog shows both architectures side by side: fixed LPDDR5 on one platform, socketed DDR4 or DDR5 with M.2 slots on the others. This guide explains how to read those lines and what to confirm before placing a volume order.",
+    sections: [
+      {
+        heading: "Why the memory line matters more than the capacity number",
+        paragraphs: [
+          "A capacity figure tells you what the machine ships with. The memory type and the way it is attached tells you what the machine can become. Soldered LPDDR5 is fixed at manufacture: it cannot be increased later, and a fleet bought at 12GB stays at 12GB for its whole service life. Socketed DDR4 or DDR5 can be specified higher at build time or upgraded in the field, provided the platform lists the maximum capacity.",
+          "That difference changes the purchase decision. For a fixed-function device such as a signage player, fixed memory is fine and often cheaper. For an office or engineering fleet where software requirements grow, upgrade headroom prevents an early replacement cycle."
+        ],
+        bullets: [
+          "Capacity: what ships in the box today.",
+          "Memory type: LPDDR5 (soldered) versus DDR4 / DDR5 (slot-based).",
+          "Listed maximum: the ceiling the platform supports, not the configured size."
+        ]
+      },
+      {
+        heading: "The fixed-memory platform: N5",
+        paragraphs: [
+          "The N5 lists Intel N95 / N100 / N150 processors with 12GB LPDDR5, WiFi 6 and dual RJ45, and triple-screen 4K output. That combination points to a specific role: a compact player or thin-client style device that drives displays and sits on a wired network.",
+          "Because the memory is LPDDR5 and listed as a fixed 12GB, treat 12GB as the permanent ceiling when you plan the deployment. Size the workload for that figure at the start, not after the fleet is installed."
+        ]
+      },
+      {
+        heading: "The socketed entry platform: N1",
+        paragraphs: [
+          "The N1 lists an Intel N150 4C/4T processor with DDR4 up to 64GB, WiFi 6, dual HDMI and M.2 storage up to 2TB. The same small chassis now offers a memory ceiling roughly five times its likely shipping configuration, plus a storage slot that can be specified from small to large.",
+          "This is the platform to choose when a buyer cannot predict the final workload: an office PC that may later run a heavier local application, or a branch device that may need more local storage after deployment."
+        ]
+      },
+      {
+        heading: "The performance platform: EXR1",
+        paragraphs: [
+          "The EXR1 lists AMD Ryzen 5 7640HS or Ryzen 7 8745HS processors with DDR5 up to 64GB, WiFi 6 plus 2.5G LAN, and dual M.2 NVMe storage. Two NVMe slots are the practical detail here: one drive for the operating system and one for project data, or a mirrored pair for machines that cannot afford a rebuild.",
+          "DDR5 instead of DDR4 matters when the workload is memory-bandwidth sensitive. If the deployment is document work only, the N1's DDR4 ceiling is usually enough; if it includes local processing, the EXR1 platform is the one to sample."
+        ]
+      },
+      {
+        heading: "How to specify memory and storage for a fleet",
+        paragraphs: [
+          "Write the specification as three separate lines rather than one: the configured capacity you are buying, the type and whether it is soldered or socketed, and the listed maximum. Then state whether field upgrades are expected during the service life.",
+          "Storage deserves the same treatment. M.2 capacity, the number of slots, and whether the second slot is populated at delivery all affect the total cost of the rollout, not just the unit price. Confirm the drive type and interface in the quotation rather than assuming from the slot name."
+        ],
+        bullets: [
+          "Configured memory and storage per unit.",
+          "Memory type, soldered or socketed, and listed maximum.",
+          "Number of M.2 slots and which are populated.",
+          "Whether field upgrades are part of the deployment plan."
+        ]
+      },
+      {
+        heading: "What to verify on the sample",
+        paragraphs: [
+          "On an approved sample, confirm that the reported memory and storage match the configuration sheet, that the platform reports the full installed capacity, and that any second slot is usable. For socketed platforms, ask whether an upgrade voids the warranty and whether the supplier supports field service in your market.",
+          "Weiboer can quote each platform at different memory and storage configurations through the product pages. Fix the final numbers in writing before production, because memory type and slot population are not visible in a finished unit from the outside."
+        ]
+      }
+    ],
+    faq: [
+      ["Can soldered LPDDR5 memory be upgraded later?", "No. The N5 lists 12GB LPDDR5, which is fixed at manufacture. Plan the workload around that capacity from the start."],
+      ["Which mini PC allows the largest memory?", "The N1 lists DDR4 up to 64GB and the EXR1 lists DDR5 up to 64GB. Both are slot-based platforms with a listed ceiling well above typical shipping configurations."],
+      ["Does the mini PC support two storage drives?", "The EXR1 lists dual M.2 NVMe storage. The N1 lists M.2 storage up to 2TB. Confirm how many slots are populated at delivery in the quotation."],
+      ["What should a buyer confirm before ordering?", "The configured capacity, the memory type and whether it is soldered or socketed, the listed maximum, the number of M.2 slots, and whether field upgrades are supported in the destination market."]
+    ],
+    links: [
+      ["Mini PC Catalog", "/mini-pcs/"],
+      ["EXR1 AMD Ryzen Mini PC", "/mini-pcs/wb-mc-01/"],
+      ["N5 Intel N-Series Mini PC", "/mini-pcs/wb-mc-02/"],
+      ["N1 Intel N150 Mini PC", "/mini-pcs/wb-mc-03/"],
+      ["N100 vs Ryzen Mini PC for Office", "/blog/n100-vs-ryzen-mini-pc-office/"]
+    ],
+    sources: [
+      ["Weiboer Mini PC Catalog", "/mini-pcs/"],
+      ["Weiboer EXR1 Product Specifications", "/mini-pcs/wb-mc-01/"],
+      ["Weiboer N5 Product Specifications", "/mini-pcs/wb-mc-02/"],
+      ["Weiboer N1 Product Specifications", "/mini-pcs/wb-mc-03/"]
+    ]
   }
 };
