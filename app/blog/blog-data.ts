@@ -2932,5 +2932,66 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer N5 Product Specifications", "/mini-pcs/wb-mc-02/"],
       ["Weiboer N1 Product Specifications", "/mini-pcs/wb-mc-03/"]
     ]
+  },
+  "projector-picks-by-room": {
+    slug: "projector-picks-by-room",
+    title: "Projector Picks by Room: Bedroom, Living Room, Outdoor & Gift",
+    description: "Match Weiboer's HY300 Pro, HY320, M6 and YG300 projectors to bedrooms, living rooms, outdoor nights and gift bundles using listed lumens, resolution and throw data.",
+    published: "2026-11-03",
+    updated: "2026-11-03",
+    intro: "Most projector returns come from a mismatch between the room and the model, not from a faulty unit. A projector chosen for a dark bedroom disappoints in a bright living room, and a heavy mains-powered unit is the wrong pick for a gift box. Weiboer's projector catalog covers four distinct platforms. This guide pairs each one with the room or program it fits best, using only the specifications listed on the product pages.",
+    sections: [
+      {
+        heading: "Start with the room, not the spec sheet",
+        paragraphs: ["Three listed numbers decide most of the fit: ANSI lumens for how much ambient light the image can survive, native resolution for how sharp a large image looks up close, and throw distance for whether the room is deep enough for the image size the customer wants.", "Write down the room depth, how dark it can be made, and the target screen size first. Then shortlist the platform. Picking the model first and hoping the room fits is how mismatched SKUs end up in a catalog."],
+        bullets: [
+          "Dark bedroom or small room: compact Android unit, modest lumens are acceptable.",
+          "Living room with some ambient light: highest listed lumens in the range.",
+          "Outdoor or flexible placement: rotation and wireless matter more than ports.",
+          "Gift or entry bundle: low MOQ and small size, with honest specification wording."
+        ]
+      },
+      {
+        heading: "Bedroom and small rooms: HY300 Pro",
+        paragraphs: ["The HY300 Pro lists Android 13, 1920 x 1080 resolution, 130 ANSI lumens, a 30-120 inch image, a 1-2.5m throw distance and a 0.65kg weight, with automatic keystone and a built-in 3W speaker.", "That profile suits a bedroom or a small apartment wall: the short throw range fits shallow rooms, the listed 1080P panel keeps text and subtitles readable, and Android 13 removes the need for a separate streaming stick. At 130 ANSI lumens it is best positioned for rooms that can be darkened, not for daylight viewing."]
+      },
+      {
+        heading: "Living room and larger images: M6",
+        paragraphs: ["The M6 pocket projector lists 380 ANSI lumens, 1280 x 720 native resolution, a 32-150 inch image, a 1.0-4.5m throw distance and 2000:1 contrast. It runs on 70W AC power and lists HDMI 1.4, VGA, AV, USB 2.0, TF card and 3.5mm audio.", "Of the projectors in the catalog, M6 has the highest listed brightness and the longest throw range, which makes it the living-room and family-room pick where some ambient light is unavoidable. The wide port set also suits buyers who need to connect consoles, set-top boxes or older laptops over VGA. Present it as 720P native in listings; any 4K wording refers to supported input."]
+      },
+      {
+        heading: "Outdoor nights and flexible placement: HY320",
+        paragraphs: ["The HY320 lists Android 11, 1280 x 720 native resolution, 200 ANSI lumens, a 30-150 inch image, 180-degree rotation, dual-band WiFi 6 plus Bluetooth 5.0, automatic keystone and a 1kg weight.", "The rotating body lets the user project onto a wall, a sheet or the ceiling without a stand, and WiFi 6 with Bluetooth keeps cables to a minimum, which is what matters on a patio or a camping trip after dark. One point to confirm before production: the listing shows two projection-distance ranges, 0.8-2m and 1-4m, so fix the lens version in writing."]
+      },
+      {
+        heading: "Gift boxes and entry bundles: YG300",
+        paragraphs: ["The YG300 is a low-cost pocket LED unit listing a 24-60 inch image, 0.8-2m projection distance, manual focus, a 2W speaker and a 10-set MOQ. Its detailed table lists 320 x 240 native resolution and 10-20 ANSI lumens; other rows mention 1080P and 600 LED lumens, which appear to describe supported input and a different rating method.", "Position it as a gift, kids' or novelty projector for short-distance, small-image viewing in a dark room, and use the conservative native figures in your own listings. Confirm brightness and resolution on a sample before you print packaging."]
+      },
+      {
+        heading: "How to build the assortment",
+        paragraphs: ["A practical two- or three-SKU line covers most customers: HY300 Pro for bedrooms and small spaces, the M6 for living rooms, and HY320 or YG300 depending on whether the program leans toward outdoor use or low-price gifting.", "Logo, packaging and language customization are listed on HY300 Pro and HY320; M6 lists light customization and logo from artwork, and YG300 lists light customization, artwork and OEM options. Confirm the final configuration, accessories and packaging artwork in the quotation before production."]
+      }
+    ],
+    faq: [
+      ["Which Weiboer projector is brightest?", "M6 lists 380 ANSI lumens, the highest in the catalog. HY320 lists 200 ANSI lumens and HY300 Pro lists 130 ANSI lumens."],
+      ["Which projector suits a small bedroom?", "HY300 Pro lists a 1-2.5m throw distance, 30-120 inch image, 1920 x 1080 resolution and 0.65kg weight, which fits shallow rooms that can be darkened."],
+      ["Which projector is best for outdoor use?", "HY320 lists 180-degree rotation, dual-band WiFi 6 and Bluetooth 5.0, which suits flexible placement outdoors. Confirm the lens version because two projection ranges are listed."],
+      ["Is the YG300 a 1080P projector?", "Its detailed table lists 320 x 240 native resolution; 1080P appears to be supported input. Use the native figure in listings and confirm on a sample."],
+      ["What is the MOQ?", "HY300 Pro and M6 list a 1-piece MOQ, HY320 lists 1 set and YG300 lists 10 sets."]
+    ],
+    links: [
+      ["Projector Catalog", "/projectors/"],
+      ["HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"],
+      ["M6 Pocket LED Projector", "/projectors/wb-pj-04/"],
+      ["HY320 Rotating Android Projector", "/projectors/wb-pj-03/"],
+      ["Projector Native Resolution Guide", "/blog/projector-native-resolution-screen-size-guide/"]
+    ],
+    sources: [
+      ["Weiboer Projector Catalog", "/projectors/"],
+      ["Weiboer HY300 Pro Product Specifications", "/projectors/wb-pj-01/"],
+      ["Weiboer M6 Product Specifications", "/projectors/wb-pj-04/"],
+      ["Weiboer HY320 Product Specifications", "/projectors/wb-pj-03/"],
+      ["Weiboer YG300 Product Specifications", "/projectors/wb-pj-05/"]
+    ]
   }
 };
