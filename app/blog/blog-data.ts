@@ -2993,5 +2993,69 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer HY320 Product Specifications", "/projectors/wb-pj-03/"],
       ["Weiboer YG300 Product Specifications", "/projectors/wb-pj-05/"]
     ]
+  },
+  "gaming-laptop-gpu-tgp-guide": {
+    slug: "gaming-laptop-gpu-tgp-guide",
+    title: "Gaming Laptop GPU TGP: What 115W, 140W and 175W Mean in OEM Specs",
+    description: "How to read GPU model, VRAM and TGP together on Weiboer's BYD16, Colorful X16, G16 Pro and X18 MAX gaming laptops, and what to confirm about cooling and power.",
+    published: "2026-11-03",
+    updated: "2026-11-03",
+    intro: "Two laptops can carry the same GPU name and still be configured very differently. The number that usually explains the gap is TGP, the total graphics power the laptop is designed to give the GPU. Weiboer's gaming laptop range lists TGP alongside the GPU model, which makes it possible to compare platforms on more than the badge. This guide explains how to read those lines using the four gaming platforms on the site.",
+    sections: [
+      {
+        heading: "What TGP means on a laptop spec sheet",
+        paragraphs: ["On a desktop, a graphics card model mostly defines its power budget. On a laptop, the manufacturer sets the GPU power limit to fit the chassis, cooling and adapter. TGP is that designed power figure, written in watts next to the GPU model.", "For a buyer, TGP is a configuration attribute, not a marketing extra. It tells you how the platform was designed to run the GPU, and it should appear on the quotation together with the GPU model and VRAM so that the sample and the production units can be matched against the same line."],
+        bullets: [
+          "GPU model: the chip family and tier.",
+          "VRAM: listed capacity and memory type, such as 8GB GDDR7.",
+          "TGP: the designed graphics power in watts.",
+          "Cooling and adapter: the hardware that has to sustain that power."
+        ]
+      },
+      {
+        heading: "How the Weiboer gaming platforms are listed",
+        paragraphs: [
+          "The BYD16 lists an RTX 5060 8GB GDDR7 at 115W TGP with an Intel Core i7-13620H. The Colorful X16 lists an RTX 5070 8GB GDDR7, also at 115W TGP, with an Intel Core i9-13900HK.",
+          "The Colorful G16 Pro is listed in two GPU options: RTX 5070 Ti 12GB GDDR7 at 140W, or RTX 5090 24GB GDDR7 at 175W, with Intel Core i9-13900HX or i9-14900HX. The Colorful X18 MAX lists an RTX 5090 24GB GDDR7 at 175W TGP with an Intel Core Ultra 9 275HX.",
+          "Read this way, the range has three power levels: 115W on the BYD16 and X16, 140W on the G16 Pro 5070 Ti option, and 175W on the G16 Pro 5090 option and the X18 MAX."
+        ]
+      },
+      {
+        heading: "Same TGP, different GPU tier",
+        paragraphs: ["The BYD16 and X16 share a 115W TGP figure but list different GPU tiers, RTX 5060 and RTX 5070, both with 8GB GDDR7. A shared TGP does not make two platforms equivalent; the GPU tier, the processor and the cooling design still differ.", "When two quotations show the same wattage, compare the GPU tier, VRAM and processor line by line rather than treating the power figure as a shortcut for performance."]
+      },
+      {
+        heading: "Same GPU family, different VRAM and power",
+        paragraphs: ["The G16 Pro shows why the GPU option has to be written in full. Its two listed options differ in tier, VRAM and power at once: 12GB at 140W for the RTX 5070 Ti, and 24GB at 175W for the RTX 5090.", "If a purchase order only says G16 Pro, the factory and the buyer can each assume a different build. Write the GPU model, VRAM and TGP together on the order so the configuration is unambiguous."]
+      },
+      {
+        heading: "Cooling, adapter and battery lines to read next",
+        paragraphs: ["Higher designed power has to be removed as heat, so the cooling line matters. The G16 Pro lists dual-fan Hurricane Cooling 2.0 with 6 heat pipes, and the BYD16 lists a VC heat plate with dual fans and four vents. The X16 lists high-performance dual-fan cooling with the heat-pipe count to confirm, and the X18 MAX lists multi-fan cooling with the final heat-pipe configuration to confirm.", "Among the four, only the BYD16 lists its adapter, at 230W. For the other platforms, confirm the adapter rating in the quotation, because the charger is part of how the platform sustains its listed power. Listed batteries range from approx. 61-63Wh on the G16 Pro to 98Wh on the X18 MAX, and weights from approx. 2.1kg on the X16 to approx. 3.6kg on the X18 MAX."]
+      },
+      {
+        heading: "What to confirm on the quotation and sample",
+        paragraphs: ["Put the GPU model, VRAM, TGP, processor, cooling description and adapter rating on the configuration sheet. On the approved sample, check that the GPU and VRAM reported by the system match the sheet, and keep the sample as the reference for production.", "Weiboer's gaming platforms list a 1-piece MOQ with OEM/ODM logo, BIOS and packaging options. Confirm final memory, storage and any items marked to confirm on the product pages before production."]
+      }
+    ],
+    faq: [
+      ["What does TGP mean on a gaming laptop?", "TGP is the total graphics power the laptop is designed to give the GPU, in watts. It is set by the laptop design, so it should be listed together with the GPU model and VRAM."],
+      ["Which Weiboer gaming laptops list 175W TGP?", "The Colorful X18 MAX lists an RTX 5090 24GB GDDR7 at 175W, and the Colorful G16 Pro offers an RTX 5090 24GB GDDR7 option at 175W."],
+      ["Do the BYD16 and X16 have the same GPU?", "No. Both list 115W TGP and 8GB GDDR7, but the BYD16 lists an RTX 5060 and the X16 lists an RTX 5070."],
+      ["What should a buyer confirm about power?", "Confirm the GPU model, VRAM, TGP, cooling description and adapter rating in the quotation. Only the BYD16 lists its adapter, at 230W."],
+      ["What is the MOQ for these gaming laptops?", "The listed MOQ is 1 piece, with OEM/ODM logo, BIOS and packaging options."]
+    ],
+    links: [
+      ["Gaming Laptops", "/gaming-laptops/"],
+      ["Colorful X18 MAX RTX 5090", "/laptops/wb-lt-05/"],
+      ["Colorful G16 Pro RTX 5070 Ti / 5090", "/laptops/wb-lt-06/"],
+      ["Colorful X16 RTX 5070", "/laptops/wb-lt-07/"],
+      ["BYD16 RTX 5060", "/laptops/wb-lt-08/"]
+    ],
+    sources: [
+      ["Weiboer X18 MAX Product Specifications", "/laptops/wb-lt-05/"],
+      ["Weiboer G16 Pro Product Specifications", "/laptops/wb-lt-06/"],
+      ["Weiboer X16 Product Specifications", "/laptops/wb-lt-07/"],
+      ["Weiboer BYD16 Product Specifications", "/laptops/wb-lt-08/"]
+    ]
   }
 };
