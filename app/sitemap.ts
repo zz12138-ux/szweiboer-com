@@ -130,6 +130,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/mini-pc-ram-storage-upgrade-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/projector-picks-by-room`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/gaming-laptop-gpu-tgp-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/student-laptop-picks-by-budget`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }

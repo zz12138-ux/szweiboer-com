@@ -3057,5 +3057,87 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer X16 Product Specifications", "/laptops/wb-lt-07/"],
       ["Weiboer BYD16 Product Specifications", "/laptops/wb-lt-08/"]
     ]
+  },
+  "student-laptop-picks-by-budget": {
+    slug: "student-laptop-picks-by-budget",
+    title: "Student and Entry Office Laptop Picks by Budget: A7, S15, A9, N16, P15",
+    description: "Pick a 14- to 16-inch student or entry office laptop from Weiboer's A7, S15, A9, N16 and P15 by processor tier, panel, memory and listed MOQ, using site specs only.",
+    published: "2026-11-04",
+    updated: "2026-11-04",
+    intro: "Schools, training centres and small offices often buy the same laptop in tens or hundreds. The right pick is rarely the fastest model; it is the cheapest one that still runs the workload for the whole term. This guide places Weiboer's 14-inch to 16-inch entry laptops on a simple budget ladder, using only the specifications listed on their product pages.",
+    sections: [
+      {
+        heading: "Pick the screen and CPU tier before anything else",
+        paragraphs: [
+          "School and entry office laptops are bought in batches, so the cost of a wrong pick multiplies. The two choices that are hardest to change after ordering are the panel and the processor; memory and storage can usually be adjusted in the quotation. Weiboer's 14-inch to 16-inch entry range spans four processor tiers, from Celeron N3350 to Intel N95, so the useful question is which tier the curriculum or office workload actually needs."
+        ],
+        bullets: [
+          "Typing, documents, browser and video calls run on every tier listed here.",
+          "Resolution matters more than CPU for reading-heavy work: 1366 x 768 versus 1920 x 1080 is the visible difference.",
+          "Memory is the cheapest upgrade lever on models that list 8GB to 32GB options.",
+          "Confirm Windows edition per version, because some platforms list Windows 10 and others Windows 11."
+        ]
+      },
+      {
+        heading: "Lowest entry point: A7 14-inch for basic lessons",
+        paragraphs: [
+          "The A7 14-inch student laptop lists an Intel Celeron N3350 with integrated Intel HD Graphics, 6GB RAM in the product title, a 1366 x 768 panel, a 5000mAh battery, Windows 10 and a listed weight of 1.74kg. Storage is listed as an SSD plus HDD category, so capacity must be confirmed in the quotation.",
+          "It is the only model in this group with a listed MOQ of 5 pieces and a 2-year warranty listed. It suits starter programs where typing practice, web lessons and offline documents are the whole workload, and where budget matters more than screen sharpness."
+        ]
+      },
+      {
+        heading: "Mid entry: S15 15.6-inch with two processor versions",
+        paragraphs: [
+          "The S15 is offered in two versions. Version 1 lists an Intel N5095 with an IPS FHD panel, DDR4 up to 32GB, M.2 storage up to 2TB, a 2MP camera, Wi-Fi 5 and Windows 11 Pro. Version 2 lists an Intel Celeron J4105, a 15.6-inch 1920 x 1280 IPS panel, 8GB RAM, a 2MP camera, dual-band Wi-Fi and Windows 10.",
+          "Both versions list a 5000mAh battery and an MOQ of 1 piece. The N5095 version is the one to specify when the program expects Windows 11 or more memory headroom; the J4105 version is the fixed 8GB option."
+        ]
+      },
+      {
+        heading: "Office-ready 14-inch: A9 with FHD IPS",
+        paragraphs: [
+          "The A9 14-inch lists an Intel Jasper Lake N5095, 4-core and 4-thread at 2.0 to 2.9GHz, a 1920 x 1080 IPS panel, DDR4 8GB, 16GB or 32GB, M.2 SSD from 128GB to 2TB, dual-band Wi-Fi with Bluetooth 4.2, two USB 3.0 ports and a 1MP camera, with Windows 10 or Windows 11 listed.",
+          "The A9 also lists a 2-year warranty, an MOQ of 1 piece and a lead time of 7 days for 1 piece, with larger quantities taking longer or requiring negotiation. That combination makes it a practical sampling pick for small offices and older students who need a sharper 14-inch screen."
+        ]
+      },
+      {
+        heading: "Bigger screen: N16 16-inch and P15 15.6-inch",
+        paragraphs: [
+          "The N16 16-inch business laptop lists an Intel Celeron N5095 quad core, a 1920 x 1080 IPS panel at 65Hz, DDR4 12GB, SSD options from 128GB to 2TB, a backlit keyboard in the product title, a 7.6V 5000mAh battery and a built-in 2MP camera. Its port list is the broadest in this group: two USB 3.0, Type-C, USB 3.1, HDMI, SD and audio. A 2-year warranty is listed.",
+          "The P15 15.6-inch is the newest processor in the group, with Intel N95 listed on both product sources and a 1920 x 1080 IPS panel. Its business style lists DDR4 up to 16GB, dual M.2 slots, a 5000mAh battery and a backlit keyboard; the student style shows a pink finish with 256GB, 512GB and 1TB SSD options. MOQ is 1 piece on both sources."
+        ],
+        bullets: [
+          "N16 fits desk-based office and administration roles that use HDMI projectors or SD cards.",
+          "P15 business style fits staff laptops; the student style fits programs that want a distinct colour.",
+          "Both run Windows 10 or Windows 11 as listed; confirm the edition in the quotation."
+        ]
+      },
+      {
+        heading: "How to turn the pick into a quotation",
+        paragraphs: [
+          "Write one line per model with processor version, panel resolution, memory, storage, Windows edition, keyboard language, logo and packaging, then ask for a sample of the exact line before the batch. Items listed as to confirm on the product pages, such as A7 storage capacity, should be fixed in writing before production."
+        ]
+      }
+    ],
+    faq: [
+      ["Which Weiboer student laptop has the lowest specification?", "The A7 14-inch lists an Intel Celeron N3350, 6GB RAM in the product title, a 1366 x 768 panel and Windows 10, with an MOQ of 5 pieces."],
+      ["Does the S15 come with Windows 11?", "The S15 N5095 version lists Windows 11 Pro. The J4105 version lists Windows 10."],
+      ["Which model has the most ports?", "The N16 16-inch lists two USB 3.0, Type-C, USB 3.1, HDMI, SD and audio."],
+      ["Is there a coloured student version?", "The P15 student style shows a pink finish with 256GB, 512GB and 1TB SSD options."],
+      ["What lead time is listed?", "The A9 lists 7 days for 1 piece, with larger quantities taking longer or requiring negotiation. Confirm lead time for other models in the quotation."]
+    ],
+    links: [
+      ["Laptops", "/laptops/"],
+      ["A7 14-inch Student Laptop", "/laptops/a7/"],
+      ["S15 15.6-inch Student Laptop", "/laptops/s15/"],
+      ["A9 14-inch N5095 Laptop", "/laptops/a9/"],
+      ["N16 16-inch Business Laptop", "/laptops/n16/"]
+    ],
+    sources: [
+      ["Weiboer A7 Product Specifications", "/laptops/a7/"],
+      ["Weiboer S15 Product Specifications", "/laptops/s15/"],
+      ["Weiboer A9 Product Specifications", "/laptops/a9/"],
+      ["Weiboer N16 Product Specifications", "/laptops/n16/"],
+      ["Weiboer P15 Product Specifications", "/laptops/p15/"]
+    ]
   }
 };
