@@ -3139,5 +3139,88 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer N16 Product Specifications", "/laptops/n16/"],
       ["Weiboer P15 Product Specifications", "/laptops/p15/"]
     ]
+  },
+  "laptop-screen-resolution-panel-guide": {
+    slug: "laptop-screen-resolution-panel-guide",
+    title: "Laptop Screen Specs Explained: 1366x768 to 2560x1600, 16:10 and IPS vs TN",
+    description: "How to read laptop panel lines in OEM quotes: resolution, aspect ratio, IPS vs TN and refresh rate, using listed panels on Weiboer's A7, YG11, A9, YG10 and JZ58.",
+    published: "2026-11-04",
+    updated: "2026-11-04",
+    intro: "A laptop quotation usually lists the panel in one short line, for example 14-inch FHD IPS or 11.6-inch 1366 x 768 TN. That line decides how much fits on screen, how text looks and how the display behaves on a shared desk. This guide explains each part of the panel line using the panels listed on Weiboer's laptop product pages.",
+    sections: [
+      {
+        heading: "Why panel lines deserve their own row in the quote",
+        paragraphs: [
+          "Processor names get most of the attention in laptop quotations, but the panel is what every user looks at for the whole working day. It is also hard to change after a batch is built. Weiboer's laptop range lists panels from 1366 x 768 TN to 2560 x 1600 IPS, so reading the panel line correctly is the quickest way to avoid a mismatch between the order and the job."
+        ],
+        bullets: [
+          "Resolution: how many pixels the panel has.",
+          "Aspect ratio: the shape, such as 16:9 or 16:10, which is set by the resolution.",
+          "Panel type: IPS or TN, which affects viewing angles.",
+          "Refresh rate: 65Hz on office models, 144Hz to 300Hz on gaming models."
+        ]
+      },
+      {
+        heading: "1366 x 768: the entry tier",
+        paragraphs: [
+          "Two platforms on the site list 1366 x 768. The A7 14-inch student laptop lists a 1366 x 768 panel with an Intel Celeron N3350, and the YG11 11.6-inch folding touch laptop lists a 1366 x 768 TN touch display at 65Hz with an Intel Celeron N4020.",
+          "At this resolution fewer lines of a document or spreadsheet fit on screen, and text is less sharp on a 14-inch panel than on an 11.6-inch one. It fits typing practice, web lessons and single-window tasks where cost matters most."
+        ]
+      },
+      {
+        heading: "1920 x 1080: the 16:9 office standard",
+        paragraphs: [
+          "Most of the 14-inch to 16-inch business range lists 1920 x 1080. The A9 14-inch lists a 1920 x 1080 IPS panel, the N16 16-inch lists 1920 x 1080 IPS at 65Hz, and the P15, AMD-156 and F158G 15.6-inch models list 1920 x 1080 IPS.",
+          "1920 x 1080 is a 16:9 shape. It matches most projectors and external monitors, which makes it the low-risk choice for offices and classrooms that present or mirror screens."
+        ]
+      },
+      {
+        heading: "1920 x 1200 and 1920 x 1280: taller screens on compact and dual-screen models",
+        paragraphs: [
+          "Several compact and dual-screen platforms list taller panels. The P10 10-inch Yoga lists 1920 x 1200, the FD15 lists dual 14-inch touch screens at 1920 x 1200, and the YG10 11-inch and GA10 10.5-inch list 1920 x 1280. 1920 x 1200 is a 16:10 shape; 1920 x 1280 is 3:2.",
+          "The extra vertical pixels show more lines of a document, web page or form without scrolling, which is why taller panels are common on small touch devices. When a buyer needs a projector-friendly 16:9 output, confirm how the device handles mirroring."
+        ]
+      },
+      {
+        heading: "2560 x 1600 and high refresh: the gaming end",
+        paragraphs: [
+          "The JZ58 16.1-inch gaming laptop lists a 2560 x 1600 IPS panel in 16:10, and the P16 Pro lists a 16-inch 2560 x 1600 IPS QHD panel with 165Hz and 300Hz options shown, with a note to confirm the matching panel for the selected CPU and GPU. The NH60 17.3-inch lists 1920 x 1080 IPS at 144Hz.",
+          "For gaming and creative work, refresh rate and resolution both matter, and the panel option is tied to the CPU and GPU configuration on some models. Write the exact panel line into the quotation rather than assuming the highest option."
+        ]
+      },
+      {
+        heading: "IPS versus TN",
+        paragraphs: [
+          "Most Weiboer laptops list IPS panels. IPS keeps colour and brightness more consistent when the screen is viewed from the side, which helps on shared desks and in classrooms. The YG11 lists a TN touch display; TN panels shift in colour and contrast more at off-angle views, which matters less for a single user looking straight at a small screen.",
+          "If a listing does not state the panel type, ask for it in writing, together with resolution and refresh rate."
+        ],
+        bullets: [
+          "Shared viewing or presentation: prefer IPS.",
+          "Single-user, low-budget, small screen: TN can be acceptable.",
+          "Always confirm the type, resolution and refresh rate in the sample before batch production."
+        ]
+      }
+    ],
+    faq: [
+      ["Which Weiboer laptops list 1366 x 768?", "The A7 14-inch and the YG11 11.6-inch list 1366 x 768. The YG11 lists a TN touch panel at 65Hz."],
+      ["Is 1920 x 1200 the same as 1920 x 1080?", "No. 1920 x 1200 is 16:10 and has 120 more vertical pixels than 1920 x 1080, which is 16:9."],
+      ["Which models list 2560 x 1600?", "The JZ58 16.1-inch and the P16 Pro 16-inch list 2560 x 1600 IPS. The P16 Pro shows 165Hz and 300Hz options to confirm per configuration."],
+      ["Do most Weiboer laptops use IPS?", "Most listed laptop panels are IPS. The YG11 lists a TN touch display."],
+      ["What panel details should a buyer confirm?", "Confirm panel type, resolution, refresh rate and touch support in the quotation and check them on the sample."]
+    ],
+    links: [
+      ["Laptops", "/laptops/"],
+      ["A7 14-inch Student Laptop", "/laptops/a7/"],
+      ["A9 14-inch FHD IPS Laptop", "/laptops/a9/"],
+      ["YG10 11-inch Yoga Touch Laptop", "/laptops/yg10/"],
+      ["JZ58 16.1-inch 2560 x 1600 Gaming Laptop", "/laptops/jz58/"]
+    ],
+    sources: [
+      ["Weiboer A7 Product Specifications", "/laptops/a7/"],
+      ["Weiboer YG11 Product Specifications", "/laptops/yg11/"],
+      ["Weiboer A9 Product Specifications", "/laptops/a9/"],
+      ["Weiboer YG10 Product Specifications", "/laptops/yg10/"],
+      ["Weiboer JZ58 Product Specifications", "/laptops/jz58/"]
+    ]
   }
 };
