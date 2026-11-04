@@ -87,22 +87,35 @@ export default function Home() {
   const [openFaq, setOpenFaq] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [factoryVideoActive, setFactoryVideoActive] = useState(false);
-  const submitEmailQuote = (event: FormEvent<HTMLFormElement>) => {
+  const [quoteState, setQuoteState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [quoteRef, setQuoteRef] = useState("");
+  const submitEmailQuote = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const message = [
-      "Hello Weiboer, I would like a quotation.",
-      "",
-      `Name: ${data.get("name") || ""}`,
-      `Company: ${data.get("company") || ""}`,
-      `Email: ${data.get("email") || ""}`,
-      `Product: ${data.get("product") || ""}`,
-      `Estimated quantity: ${data.get("quantity") || ""}`,
-      "",
-      "Project requirements:",
-      `${data.get("requirements") || ""}`,
-    ].join("\n");
-    window.open(`https://wa.me/8613556351212?text=${encodeURIComponent(message)}`, "_blank");
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    setQuoteState("sending");
+    try {
+      const response = await fetch("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name") ?? "",
+          company: data.get("company") ?? "",
+          email: data.get("email") ?? "",
+          product: data.get("product") ?? "",
+          quantity: data.get("quantity") ?? "",
+          requirements: data.get("requirements") ?? "",
+          pagePath: window.location.pathname,
+        }),
+      });
+      const result = (await response.json()) as { ok?: boolean; reference?: string; error?: string };
+      if (!response.ok || !result.ok) throw new Error(result.error || "Submission failed.");
+      setQuoteRef(result.reference ?? "");
+      setQuoteState("sent");
+      form.reset();
+    } catch {
+      setQuoteState("error");
+    }
   };
   return <main className="homeMain">
     <header className={`header${menuOpen ? " menuOpen" : ""}`}>
@@ -216,14 +229,21 @@ export default function Home() {
           <a href="mailto:l474419569@gmail.com">l474419569@gmail.com <b>↗</b></a>
         </div>
         <form className="emailQuoteForm" onSubmit={submitEmailQuote}>
+          <label style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }} aria-hidden="true"><span>Website</span><input name="website" type="text" tabIndex={-1} autoComplete="off" /></label>
           <label><span>Your name</span><input name="name" type="text" autoComplete="name" required placeholder="John Smith" /></label>
           <label><span>Company</span><input name="company" type="text" autoComplete="organization" required placeholder="Company name" /></label>
           <label><span>Business email</span><input name="email" type="email" autoComplete="email" required placeholder="name@company.com" /></label>
           <label><span>Product category</span><select name="product" defaultValue="Laptops"><option>Laptops</option><option>Android Tablets</option><option>LED Projectors</option><option>Portable Monitors</option><option>Gaming Laptops</option><option>Mini PCs</option><option>Phones</option><option>All-in-One PCs</option><option>Other electronics</option></select></label>
           <label><span>Estimated quantity</span><input name="quantity" type="text" inputMode="numeric" placeholder="e.g. 100 pcs" /></label>
           <label className="full"><span>Customization &amp; project requirements</span><textarea name="requirements" rows={5} required placeholder="Specifications, logo, packaging, destination market and any other requirements..." /></label>
-          <button type="submit">Get a Quote by Email <b>↗</b></button>
-          <p className="emailQuoteNote">Submitting opens your email app with the inquiry ready to send.</p>
+          <button type="submit" disabled={quoteState === "sending"}>{quoteState === "sending" ? "Sending…" : "Send Inquiry to B2B Team"}</button>
+          {quoteState === "sent" ? (
+            <p className="emailQuoteNote">Received{quoteRef ? ` (${quoteRef})` : ""} — our B2B team will reply to your business email within one working day. Need it faster? <a href={whatsapp} target="_blank" rel="noreferrer">Chat on WhatsApp</a>.</p>
+          ) : quoteState === "error" ? (
+            <p className="emailQuoteNote">Submission failed. Please retry, or reach us via <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a> or <a href="mailto:l474419569@gmail.com">l474419569@gmail.com</a>.</p>
+          ) : (
+            <p className="emailQuoteNote">Your requirements go straight to our B2B team; we reply by email within one working day.</p>
+          )}
         </form>
       </div>
     </section>

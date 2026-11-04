@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: "*", allow: "/", disallow: ["/track/", "/whatsapp-stats/"] },
+    rules: { userAgent: "*", allow: "/", disallow: ["/track/", "/whatsapp-stats/", "/leads/"] },
     sitemap: "https://www.szweiboer.com/sitemap.xml",
   };
 }
