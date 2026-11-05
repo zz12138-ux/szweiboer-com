@@ -1,6 +1,6 @@
 {
   "property": "sc-domain:szweiboer.com",
-  "lastChecked": "2026-11-04T10:05:00+08:00",
+  "lastChecked": "2026-11-05T10:05:00+08:00",
   "sitemapStatus": {
     "url": "https://www.szweiboer.com/sitemap.xml",
     "status": "Success",
@@ -142,6 +142,20 @@
       "checkedAt": "2026-11-04T10:05:00+08:00",
       "property": "sc-domain:szweiboer.com",
       "note": "索引报告仍为 2026/10/23；sitemap 成功，上次读取 2026/10/31，已发现 119（线上 sitemap 125）。提交 /blog/projector-picks-by-room/、/blog/gaming-laptop-gpu-tgp-guide/、/projectors/wb-pj-04/（已发现-尚未编入索引）至优先抓取队列；无可见验证码。"
+    },
+    {
+      "date": "2026-11-05",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-11-05T10:05:00+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "sitemap": {
+        "status": "成功",
+        "lastRead": "2026-11-05",
+        "discovered": 127
+      },
+      "note": "索引汇总报告仍为 2026/10/23；sitemap 上次读取更新为 2026/11/05，已发现 127（与线上一致）。URL 检查：laptop-screen-resolution-panel-guide、projector-picks-by-room、gaming-laptop-gpu-tgp-guide 均显示已收录；提交 /blog/student-laptop-picks-by-budget/（已发现-尚未编入索引）至优先抓取队列；无可见验证码或额度提示。"
     }
   ]
 }

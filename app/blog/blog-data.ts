@@ -3222,5 +3222,89 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer YG10 Product Specifications", "/laptops/yg10/"],
       ["Weiboer JZ58 Product Specifications", "/laptops/jz58/"]
     ]
+  },
+  "dual-screen-laptop-picks-by-role": {
+    slug: "dual-screen-laptop-picks-by-role",
+    title: "Dual-Screen Laptop Picks by Role: Support Desk, Teacher, Analyst & Desk Staff",
+    description: "Match Weiboer's four dual-screen laptops to real roles: WB-LT-04 for monitoring, FD14 for teaching, WB-LT-09 for analysts and WB-LT-10 for desk work, from listed specs.",
+    published: "2026-11-05",
+    updated: "2026-11-05",
+    intro: "A second screen only pays off when its size and position fit the job. Weiboer lists four dual-screen laptop platforms with four different layouts, from a 7-inch side panel to two full 16-inch screens. This guide pairs each layout with the roles that gain the most from it, so a buyer can shortlist the right sample before asking for a quotation.",
+    sections: [
+      {
+        heading: "Four dual-screen layouts, four different jobs",
+        paragraphs: [
+          "Weiboer's dual-screen range is not one product in four sizes. Each platform uses a different screen layout, and the layout decides who it suits. This guide matches the four listed platforms to the roles that benefit most, using only the specifications on their product pages."
+        ],
+        bullets: [
+          "WB-LT-04: 15.6-inch main screen plus a 7-inch touch secondary screen.",
+          "FD14: two 14.1-inch 2240 x 1440 touch screens on a 360-degree Yoga hinge.",
+          "WB-LT-09 (FD16): two 16-inch 1920 x 1200 IPS touch screens.",
+          "WB-LT-10 (DS16): a 16.1-inch 1920 x 1200 IPS main screen plus a 14-inch secondary screen."
+        ]
+      },
+      {
+        heading: "Support desks, cashiers and traders who watch one extra panel: WB-LT-04",
+        paragraphs: [
+          "The WB-LT-04 keeps a standard 15.6-inch IPS 1920 x 1080 main display and adds a 7-inch touch secondary display at 1200 x 1080 with 10-point touch. The small panel suits a chat window, ticket queue, price watch list or media controls while the main screen stays on the core application.",
+          "It lists an Intel N100 or N150 4-core processor, DDR4 from 8GB to 32GB, an M.2 2280 SSD from 128GB to 2TB, a full-size RGB backlit keyboard with numeric keypad, fingerprint unlock and a pluggable magnetic 2MP webcam. Weight is listed at 1.7kg net. The numeric keypad and the small side panel make it a practical pick for data entry and monitoring roles rather than heavy computation."
+        ]
+      },
+      {
+        heading: "Teachers, trainers and presenters: FD14",
+        paragraphs: [
+          "The FD14 lists two 14.1-inch IPS touch displays at 2240 x 1440 in 16:10 and a 360-degree Yoga hinge. The two equal screens can face the user for side-by-side documents, or fold so one screen faces a student or customer across a table.",
+          "It lists an Intel N100 quad-core, DDR4 up to 32GB, M.2 SSD options from 128GB to 2TB, Wi-Fi 802.11ac with Bluetooth 4.2, a full-function Type-C port, two USB 3.0 ports and HDMI, a 7.4V 5000mAh battery and a 1.5kg weight. It is the only platform here with a listed 2-year warranty. For one-to-one explanation, tutoring and sales demos, the fold-to-share layout matters more than raw processor speed."
+        ]
+      },
+      {
+        heading: "Analysts, developers and operators who need two full work areas: WB-LT-09",
+        paragraphs: [
+          "The WB-LT-09 lists two 16-inch IPS touch displays at 1920 x 1200 and 65Hz, driven by an Intel Core i5-12450H listed with 12 cores at 2.0 to 4.4GHz. Two full-size panels give two complete work areas: a spreadsheet beside a dashboard, code beside documentation, or a ticketing system beside a monitoring view.",
+          "Memory is listed as DDR4 8GB to 64GB, with Windows 10 or Windows 11 Pro, three USB 3.0 ports, Type-C and HDMI. The battery is listed at 7.4V 3800mAh, so plan it as a desk-first machine that moves between rooms rather than a full day off the charger. A side-by-side comparison with the WB-LT-10 is covered in our dual 16-inch vs 16 + 14-inch guide."
+        ]
+      },
+      {
+        heading: "Desk staff who want one main screen and a large reference screen: WB-LT-10",
+        paragraphs: [
+          "The WB-LT-10 lists a 16.1-inch IPS 1920 x 1200 main display and an integrated 14-inch secondary touch display, with DDR4 from 8GB to 64GB and a 1-year warranty. The larger main screen keeps the primary application dominant while the 14-inch panel holds reference material, messaging or a video call.",
+          "The product page states that CPU, graphics, storage, wireless module and display behaviour must be confirmed on the approved sample, so treat this platform as configurable and write the chosen CPU and storage into the quotation."
+        ]
+      },
+      {
+        heading: "Quick picker and what to confirm",
+        paragraphs: [
+          "All four platforms list a 1-piece sample. Use the table of roles below as a starting point, then confirm the details that change between configurations."
+        ],
+        bullets: [
+          "Monitoring, data entry, cashier support: WB-LT-04.",
+          "Teaching, tutoring, customer-facing demos: FD14.",
+          "Two full work areas for analysis or development: WB-LT-09.",
+          "One dominant screen plus a reference screen: WB-LT-10.",
+          "Before bulk orders: confirm CPU, memory, storage, secondary-screen driver and touch behaviour, keyboard language and written warranty on the sample."
+        ]
+      }
+    ],
+    faq: [
+      ["Which Weiboer dual-screen laptop has a small secondary screen?", "The WB-LT-04 pairs a 15.6-inch 1920 x 1080 IPS main display with a 7-inch 1200 x 1080 touch secondary display."],
+      ["Which model has two equal screens and a fold-over hinge?", "The FD14 lists two 14.1-inch 2240 x 1440 touch displays and a 360-degree Yoga hinge."],
+      ["Which platform lists the most processor power?", "The WB-LT-09 lists an Intel Core i5-12450H with 12 cores; the WB-LT-04 and FD14 list Intel N-series processors."],
+      ["Which dual-screen model lists a 2-year warranty?", "The FD14 lists a 2-year warranty. WB-LT-09 and WB-LT-10 list 1 year."],
+      ["Can I order a single sample?", "Yes. The dual-screen platforms list sample orders from 1 piece; confirm the bulk MOQ and lead time in the quotation."]
+    ],
+    links: [
+      ["Dual-Screen Laptops", "/laptops/dual-screen/"],
+      ["WB-LT-04 15.6-inch + 7-inch Dual-Screen Laptop", "/laptops/wb-lt-04/"],
+      ["FD14 Dual 14.1-inch Yoga Touch Laptop", "/laptops/dual-screen/fd14/"],
+      ["WB-LT-09 Dual 16-inch Touch Laptop", "/laptops/dual-screen/wb-lt-09/"],
+      ["WB-LT-10 16-inch + 14-inch Dual-Screen Laptop", "/laptops/dual-screen/wb-lt-10/"],
+      ["Dual 16-inch vs 16 + 14-inch Comparison", "/blog/dual-16-inch-vs-16-plus-14-dual-screen-laptop/"]
+    ],
+    sources: [
+      ["Weiboer WB-LT-04 Product Specifications", "/laptops/wb-lt-04/"],
+      ["Weiboer FD14 Product Specifications", "/laptops/dual-screen/fd14/"],
+      ["Weiboer WB-LT-09 Product Specifications", "/laptops/dual-screen/wb-lt-09/"],
+      ["Weiboer WB-LT-10 Product Specifications", "/laptops/dual-screen/wb-lt-10/"]
+    ]
   }
 };
