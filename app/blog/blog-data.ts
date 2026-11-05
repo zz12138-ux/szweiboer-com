@@ -3306,5 +3306,94 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer WB-LT-09 Product Specifications", "/laptops/dual-screen/wb-lt-09/"],
       ["Weiboer WB-LT-10 Product Specifications", "/laptops/dual-screen/wb-lt-10/"]
     ]
+  },
+  "android-tablet-version-oem-guide": {
+    slug: "android-tablet-version-oem-guide",
+    title: "Android Version on OEM Tablets: Reading Android 9 to 14 Before You Order",
+    description: "How to read the Android version on an OEM tablet quote: app support, memory, conflicting supplier data and sample checks, using Weiboer's Android 9 to 14 tablets.",
+    published: "2026-11-05",
+    updated: "2026-11-05",
+    intro: "Two tablets can look identical on a quotation and still run different Android versions. That difference decides which apps a program can run and what has to be tested before shipment. This guide explains how to read the version line on an OEM tablet quote, using the versions listed across Weiboer's tablet catalog.",
+    sections: [
+      {
+        heading: "Why the Android version belongs on the quotation",
+        paragraphs: [
+          "On an OEM tablet, the Android version is part of the configuration rather than a detail to check after delivery. It decides which apps a program can run and what the software team has to test. Weiboer's tablet catalog currently lists six platforms running versions from Android 9 to Android 14, so the version is a real point of difference when building a shortlist."
+        ],
+        bullets: [
+          "Android 14: GT35 (WB-TB-01), 10.95-inch, 4GB + 128GB.",
+          "Android 13: GT70 (WB-TB-02), 11.97-inch, 6GB + 128GB or 256GB.",
+          "Android 12: IP17 (WB-TB-03), 10.1-inch, 4GB + 32GB, 64GB or 128GB.",
+          "Android 11: GR8, 8-inch, 3GB + 32GB.",
+          "Android 10: R17 (WB-TB-04), 10.1-inch, 3GB + 32GB.",
+          "Android 9: KM03 (WB-TB-05), 7-inch, 1GB + 16GB."
+        ]
+      },
+      {
+        heading: "Start from the apps, not the version number",
+        paragraphs: [
+          "A higher number is not automatically the right answer. The useful question is which minimum Android version your apps support today, and how long the devices must keep running them. Check this against your own app or vendor documentation, because a tablet's listed version cannot tell you whether a specific app will install and run correctly.",
+          "Install the real app set on the approved sample before bulk production. Test login, camera, printing, device management and any other function the program depends on."
+        ],
+        bullets: [
+          "Confirm the minimum Android version required by every app in the program.",
+          "Ask your software vendor which versions it tests against.",
+          "Record the tested OS image on the sample approval sheet."
+        ]
+      },
+      {
+        heading: "Read the version together with memory and storage",
+        paragraphs: [
+          "The version should be read alongside the hardware that runs it. On Weiboer's listed platforms, the newer versions come with larger configurations: the GT35 lists Android 14 with 4GB RAM and 128GB storage, and the GT70 lists Android 13 with 6GB RAM and up to 256GB. At the other end, the KM03 lists Android 9 with 1GB RAM and 16GB storage for a compact kids learning program.",
+          "If a program runs several apps at once or stores offline content, compare memory and storage first and treat the Android version as a second filter. If it runs one or two light learning apps, a smaller configuration may be enough, provided those apps support the listed version."
+        ]
+      },
+      {
+        heading: "Check for conflicting version data",
+        paragraphs: [
+          "Supplier data does not always agree with itself. The IP17 page shows this clearly: the primary product data lists Android 12, while one embedded description table shows Android 11. The page tells buyers to confirm the final OS image before production, and that is the correct response whenever two sources disagree.",
+          "Do not rely on a listing title or a single image. Ask for the version in writing, then open the settings screen on the sample and compare the version shown with the quotation."
+        ]
+      },
+      {
+        heading: "Questions to settle before production",
+        paragraphs: [
+          "The listed version describes the platform as supplied. It does not by itself state what happens to the software after delivery, so settle these points directly with the supplier."
+        ],
+        bullets: [
+          "Which exact OS image will ship in production, and does it match the approved sample?",
+          "Which languages are included in the image?",
+          "Can the boot logo and preinstalled apps be customized?",
+          "Will any software updates be provided after delivery, and how would they be delivered?",
+          "If the final image changes, how will you be notified before shipment?"
+        ]
+      },
+      {
+        heading: "Matching the version to the program",
+        paragraphs: [
+          "For training rooms and education programs that want the newest listed version, begin with the GT35. For field reporting and mobile staff who need 4G and a larger screen, the GT70 lists Android 13, WiFi + 4G and a 13MP rear camera. For a kids program built around 4G calling and an 8-inch screen, the GR8 lists Android 11, but its processor is not specified and its listed MOQ is 50 pieces, so confirm both before ordering.",
+          "GT35 and GT70 list sample orders from 1 piece, which makes it practical to test your apps on a real unit before committing to a bulk order. Our Android tablet picks by program guide compares the same catalog by use case."
+        ]
+      }
+    ],
+    faq: [
+      ["Which Weiboer tablet lists the newest Android version?", "The GT35 (WB-TB-01) lists Android 14 with a 10.95-inch display, 4GB RAM and 128GB storage."],
+      ["Which Android versions does the tablet catalog cover?", "The six listed platforms run Android 9, 10, 11, 12, 13 and 14, one version per platform."],
+      ["Is the newest Android version always the right choice?", "No. Start from the minimum version your apps support and the memory and storage they need, then test them on a sample."],
+      ["What if a listing shows two different Android versions?", "Confirm the final OS image in writing and check the version on the approved sample. The IP17 page, for example, flags Android 12 and Android 11 in different data."],
+      ["Can I test my apps on one unit first?", "GT35 and GT70 list sample orders from 1 piece. Confirm the sample configuration and OS image with Weiboer before ordering."]
+    ],
+    links: [
+      ["Android Tablets", "/tablets/"],
+      ["GT35 10.95-inch Android 14 Tablet", "/tablets/wb-tb-01/"],
+      ["GT70 11.97-inch Android 13 4G Tablet", "/tablets/wb-tb-02/"],
+      ["GR8 8-inch Android 11 Kids Tablet", "/tablets/gr8/"],
+      ["Android Tablet Picks by Program", "/blog/android-tablet-picks-by-program/"]
+    ],
+    sources: [
+      ["Weiboer GT35 Product Specifications", "/tablets/wb-tb-01/"],
+      ["Weiboer GT70 Product Specifications", "/tablets/wb-tb-02/"],
+      ["Weiboer GR8 Product Specifications", "/tablets/gr8/"]
+    ]
   }
 };
