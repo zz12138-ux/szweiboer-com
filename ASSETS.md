@@ -1,5 +1,11 @@
 # Image Manifest
 
+## Industrial equipment category
+
+| Asset | Source | Usage | Status |
+| --- | --- | --- | --- |
+| `public/assets/images/industrial-equipment-pda.webp` | AI category illustration generated from the user-supplied industrial PDA image (asset `image_ask_08607fa413081ab3e4d42df1`); all source copy and marks excluded at the user's direction. | Homepage category card and `/industrial-equipment/` category page. | 832x800 WebP. Illustrative only; no model, certification, accessory, or specifications verified. |
+
 ## Current product-add batch
 
 Generated count: 0. No AI-generated images were used.

@@ -30,9 +30,11 @@
 .productImage.gamingSeries,
 .productImage.miniPcSeries { background: transparent; }
 .productImage.phoneSeries,
-.productImage.allInOneSeries { background: #eef2f5; padding: 0; }
+.productImage.allInOneSeries,
+.productImage.industrialSeries { background: #eef2f5; padding: 0; }
 .productImage.phoneSeries img,
-.productImage.allInOneSeries img { height: 100%; object-fit: contain; object-position: center; width: 100%; }
+.productImage.allInOneSeries img,
+.productImage.industrialSeries img { height: 100%; object-fit: contain; object-position: center; width: 100%; }
 .productImage.gamingSeries img,
 .productImage.miniPcSeries img {
   height: 100%;

@@ -1,0 +1,17 @@
+.industrialPage{overflow-x:hidden}
+.industrialCatalog{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);max-width:1400px;margin:0 auto;padding:88px 5vw 110px;gap:clamp(36px,5vw,80px);align-items:center}
+.industrialVisual{background:#eaf1f8;min-width:0;aspect-ratio:1.04;overflow:hidden}
+.industrialVisual img{display:block;width:100%;height:100%;object-fit:contain}
+.industrialCopy{min-width:0}
+.industrialEyebrow{font-size:11px;font-weight:800;letter-spacing:.17em;color:#0866cb;margin:0 0 20px}
+.industrialCopy h2{font-size:clamp(34px,3.8vw,58px);line-height:1.04;letter-spacing:-.045em;margin:0 0 26px;color:#102e54}
+.industrialCopy h2 span{color:#0866cb}
+.industrialCopy>p:not(.industrialEyebrow){font-size:16px;line-height:1.75;color:#50677e}
+.industrialCopy ul{margin:22px 0 24px;padding-left:20px;line-height:1.9;color:#193c60}
+.industrialCopy .industrialDisclosure{font-size:13px!important;color:#637587!important;padding:14px 0;border-top:1px solid #cdd8e3}
+.industrialWhatsapp{display:flex;justify-content:space-between;align-items:center;max-width:365px;padding:19px 22px;background:#1eb85b;color:#fff!important;font-size:16px;font-weight:800}
+.industrialWhatsapp b{font-size:22px}
+.industrialWhatsapp:hover{background:#158f45}
+.industrialQuote{display:inline-block;margin-top:20px;color:#0866cb!important;font-weight:700;border-bottom:1px solid currentColor}
+@media(max-width:850px){.industrialCatalog{grid-template-columns:1fr;padding:54px 5vw 78px;gap:34px}.industrialVisual{max-width:650px;width:100%;margin:0 auto}.industrialWhatsapp{max-width:none}}
+@media(max-width:600px){.industrialPage .laptopHero{padding:74px 6vw 70px}.industrialPage .laptopHero h1{font-size:clamp(39px,11vw,58px)}.industrialPage .laptopHeader{padding:0 5vw}.industrialPage .backHome{font-size:11px}.industrialCatalog{padding:35px 5vw 70px}.industrialCopy h2{font-size:36px}}

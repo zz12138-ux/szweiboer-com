@@ -26,6 +26,7 @@ export default function BlogShell({ children }: { children: React.ReactNode }) {
                 <a href="/portable-monitors">Portable Monitors</a>
                 <a href="/phones">Phones</a>
                 <a href="/all-in-one-pcs">All-in-One PCs</a>
+                <a href="/industrial-equipment">Industrial equipment</a>
               </div>
           </div>
           <a href="/#factory">Factory</a>

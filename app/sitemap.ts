@@ -63,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/phones/phone-1601928846599`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/phones/x27`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/phones/x16`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/industrial-equipment`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${base}/all-in-one-pcs`, changeFrequency: "weekly", priority: 0.95 },
     { url: `${base}/all-in-one-pcs/uw30`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/all-in-one-pcs/k2`, changeFrequency: "monthly", priority: 0.8 },

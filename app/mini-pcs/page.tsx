@@ -73,6 +73,7 @@ export default function MiniPcsPage() {
               <a href="/portable-monitors" onClick={() => setMenuOpen(false)}>Portable Monitors</a>
               <a href="/phones" onClick={() => setMenuOpen(false)}>Phones</a>
               <a href="/all-in-one-pcs" onClick={() => setMenuOpen(false)}>All-in-One PCs</a>
+              <a href="/industrial-equipment" onClick={() => setMenuOpen(false)}>Industrial equipment</a>
               <a href="/blog" onClick={() => setMenuOpen(false)}>Buyer Guides</a>
             </div>
           </div>
