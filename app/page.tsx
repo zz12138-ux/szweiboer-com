@@ -36,7 +36,7 @@ const products = [
   { number: "06", name: "Mini PCs", title: "Compact computing for every market", text: "AMD Ryzen 5 / Ryzen 7, DDR5 memory, WiFi 6, enclosure color, logo and retail-ready packaging.", image: "/category-mini-pc-v94.webp", visual: "seriesProduct miniPcSeries", link: "/mini-pcs" },
   { number: "07", name: "Phones", title: "6.65-inch Android 12 4G Dual-SIM Phone", text: "6.65-inch display, Android 12 and 4G dual-SIM connectivity for private-label mobile programs.", image: "/category-phone-premium.png", visual: "phoneSeries", link: "/phones" },
   { number: "08", name: "All-in-One PCs", title: "Integrated desktop platforms", text: "Display, integrated computer housing, stand, configuration, branding and retail-ready packaging for your project.", image: "/category-aio-premium.png", visual: "allInOneSeries", link: "/all-in-one-pcs" },
-  { number: "09", name: "Industrial equipment", title: "Rugged handhelds for field workflows", text: "Explore industrial PDA projects; request verified specifications and configurations before sampling.", image: "/assets/images/industrial-equipment-pda.webp", visual: "industrialSeries", link: "/industrial-equipment" },
+  { number: "09", name: "Industrial equipment", title: "Rugged devices for demanding workflows", text: "Explore industrial handhelds, tablets and laptops; confirm model specifications before sampling.", image: "/assets/images/industrial-equipment-pda.webp", visual: "industrialSeries", link: "/industrial-equipment" },
 ];
 
 const faqs = [

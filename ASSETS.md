@@ -6,6 +6,13 @@
 | --- | --- | --- | --- |
 | `public/assets/images/industrial-equipment-pda.webp` | AI category illustration generated from the user-supplied industrial PDA image (asset `image_ask_08607fa413081ab3e4d42df1`); all source copy and marks excluded at the user's direction. | Homepage category card and `/industrial-equipment/` category page. | 832x800 WebP. Illustrative only; no model, certification, accessory, or specifications verified. |
 
+## Industrial equipment product batch
+
+| Asset | Source | Usage | Status |
+| --- | --- | --- | --- |
+| `public/assets/images/industrial-equipment/common-01.webp` – `common-04.webp` | AI category concepts approved by the user: industrial PDA, industrial tablet, industrial laptop and mixed-device setting. | Last four images on each industrial equipment product page. | Illustrations, not actual models or proof of stock, hardware features or certification. |
+| `public/assets/images/industrial-equipment/ks-20-*`, `kp-68-*`, `kp-58-*`, `kp-26-*`, `kp-36-*`, `kp-18-*`, `ks-10-*` | The eight Alibaba.com listings supplied by the user and individually inspected for model relevance; two KS20 listings are merged. | First two gallery images per model and product-focused detail art only. | User approved this batch's image exception: original supplier brand and marketing copy may remain. Cross-model collage, certification wall and standalone factory/OEM images are excluded. Model/configuration-specific claims in the artwork require sample confirmation. One KS10 alternate was cropped to exclude a top row of certification logos. |
+
 ## Current product-add batch
 
 Generated count: 0. No AI-generated images were used.
