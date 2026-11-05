@@ -10,7 +10,8 @@ const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 export default function TabletDetail({ product, slug }: { product: TabletProduct; slug: string }) {
   const [active, setActive] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
-  const gallery = product.galleryImages || Array.from({ length: product.galleryCount }, (_, index) => `/tablets/${slug}/gallery/${String(index + 1).padStart(2, "0")}-${["main", "front", "back", "side", "ports", "angle"][index] || `view-${index + 1}`}.webp`);
+  const galleryNames = slug === "wb-tb-02" ? ["main", "front", "camera", "side", "ports", "angle"] : slug === "wb-tb-03" ? ["main", "front", "rear", "side", "ports", "angle"] : ["main", "front", "back", "side", "ports", "angle"];
+  const gallery = product.galleryImages || Array.from({ length: product.galleryCount }, (_, index) => `/tablets/${slug}/gallery/${String(index + 1).padStart(2, "0")}-${galleryNames[index] || `view-${index + 1}`}.webp`);
   const details = Array.from({ length: product.detailCount }, (_, index) => `/tablets/${slug}/detail/${String(index + 1).padStart(2, "0")}-detail-${String(index + 1).padStart(2, "0")}.webp`);
   const inquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like a quotation for ${product.code}.`)}`;
 

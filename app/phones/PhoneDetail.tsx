@@ -30,14 +30,14 @@ export default function PhoneDetail({ product, slug }: { product: PhoneProduct; 
         <h1>{product.h1}</h1>
         <p className="detailLead">{product.description}</p>
         <div className="detailHighlights">{product.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
-        <div className="detailFacts"><div><b>MOQ</b><strong>{product.moq}</strong></div><div><b>MODEL</b><strong>{product.code}</strong></div></div>
-        <a className="detailPrimaryCta" href={inquiry} target="_blank" rel="noreferrer">Get Specs & OEM Quote ↗</a>
-        <p className="detailCtaNote">Logo · Graphic customization · Packaging · Network and configuration confirmation</p>
+        <div className="detailFacts"><div><b>MOQ</b><strong>{product.moq}</strong></div><div><b>LEAD TIME</b><strong>Confirm on quote</strong></div></div>
+        <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
+        <p className="customizationNote">Logo · Graphic customization · Packaging · Network and configuration confirmation</p>
       </div>
     </section>
 
     <section className="detailIntro"><p>PRODUCT DETAILS</p><h2>Configurable hardware.<br />Ready for your <span>phone line.</span></h2></section>
-    <section className="detailImageStack">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section>
+    <section className="detailImages">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" decoding="async" />)}</section>
     <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {product.code}</p><h2>Configurations you can<br /><span>tune to your market.</span></h2></div><div className="specGrid">{product.specs.map(([label, value]) => <div key={label}><b>{label}</b><span>{value}</span></div>)}</div></section>
     <section className="detailFaq"><div className="specHead"><p>FAQ · {product.code} OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{product.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
     <section className="detailBottomCta"><p>LOW MOQ · OEM / ODM · FACTORY DIRECT</p><h2>Ready to source your<br /><span>phone platform?</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Ask for {product.code} specifications on WhatsApp ↗</a></section>
