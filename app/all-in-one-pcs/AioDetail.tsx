@@ -4,13 +4,14 @@ import { useState } from "react";
 import "../laptops/fd16/product-detail.css";
 import "../laptops/product-spec.css";
 import type { AioProduct } from "./aio-data";
+import { aioDetailImages } from "./aio-detail-images";
 
 const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 
 export default function AioDetail({ product, slug }: { product: AioProduct; slug: string }) {
   const [active, setActive] = useState(0);
   const gallery = product.galleryUrls ?? Array.from({ length: product.galleryCount }, (_, index) => `/all-in-one-pcs/${slug}/gallery/${String(index + 1).padStart(2, "0")}-gallery.webp`);
-  const details = Array.from({ length: product.detailCount }, (_, index) => `/all-in-one-pcs/${slug}/detail/${String(index + 1).padStart(2, "0")}-detail.webp`);
+  const details = aioDetailImages(slug);
   const inquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like specs and an OEM quote for ${product.code}.\n\nTarget configuration:\nEstimated quantity:\nTarget market:\nNeed logo, packaging or graphic customization:`)}`;
 
   return <main className="detailPage">
@@ -30,14 +31,14 @@ export default function AioDetail({ product, slug }: { product: AioProduct; slug
         <h1>{product.h1}</h1>
         <p className="detailLead">{product.description}</p>
         <div className="detailHighlights">{product.highlights.map((highlight) => <span key={highlight}>{highlight}</span>)}</div>
-        <div className="detailFacts"><div><b>MOQ</b><strong>{product.moq}</strong></div><div><b>MODEL</b><strong>{product.code}</strong></div></div>
-        <a className="detailPrimaryCta" href={inquiry} target="_blank" rel="noreferrer">Get Specs & OEM Quote ↗</a>
-        <p className="detailCtaNote">Logo · Graphic customization · Packaging · CPU, memory and storage confirmation</p>
+        <div className="detailFacts"><div><b>MOQ</b><strong>{product.moq}</strong></div><div><b>LEAD TIME</b><strong>Confirm on quote</strong></div></div>
+        <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
+        <p className="customizationNote">Product logo · Boot logo · CPU / memory / storage · Retail packaging</p>
       </div>
     </section>
 
     <section className="detailIntro"><p>PRODUCT DETAILS</p><h2>Configurable hardware.<br />Ready for your <span>desktop line.</span></h2></section>
-    {details.length ? <section className="detailImages">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" />)}</section> : null}
+    {details.length ? <section className="detailImages">{details.map((image, index) => <img key={image} src={image} alt={`${product.code} product detail ${index + 1}`} loading="lazy" decoding="async" />)}</section> : null}
     <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {product.code}</p><h2>Configurations you can<br /><span>tune to your market.</span></h2></div><div className="specGrid">{product.specs.map(([label, value]) => <div key={label}><b>{label}</b><span>{value}</span></div>)}</div></section>
     <section className="detailFaq"><div className="specHead"><p>FAQ · {product.code} OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{product.faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
     <section className="detailBottomCta"><p>LOW MOQ · OEM / ODM · FACTORY DIRECT</p><h2>Ready to source your<br /><span>AIO platform?</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Ask for {product.code} specifications on WhatsApp ↗</a></section>
