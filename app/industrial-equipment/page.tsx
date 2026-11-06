@@ -1,35 +1,36 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import "../laptops/laptops.css";
 import "../laptops/nav.css";
 import "../product-nav.css";
+import "../laptops/mobile.css";
 import "./industrial-equipment.css";
 import { industrialProducts } from "./product-data";
 
 const inquiry = "https://api.whatsapp.com/send/?phone=8613556351212&text=" + encodeURIComponent("Hello Weiboer, I would like to discuss an industrial device project. Please confirm available models, specifications, minimum order quantity and lead time.");
 
-export const metadata: Metadata = {
-  title: "Industrial Equipment | Rugged Handhelds, Tablets & Laptops | Weiboer",
-  description: "Explore rugged handhelds KS-20, KS-10, KP-68, KP-58, KP-26, KP-36 and KP-18. Ask Weiboer to confirm configuration before sampling. Industrial tablets and laptops are also in scope.",
-  alternates: { canonical: "/industrial-equipment/" },
-};
-
 export default function IndustrialEquipmentPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return <main className="laptopsPage industrialPage">
-    <header className="laptopHeader">
-      <a href="/" className="laptopBrand" aria-label="Weiboer home"><img src="/weiboer-logo.png" alt="Weiboer" /></a>
-      <nav className="laptopNav" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="/#products">Products</a>
-        <a href="/#about">OEM / ODM</a>
-        <a href="/#factory">Factory</a>
+    <header className={`laptopHeader${menuOpen ? " menuOpen" : ""}`}>
+      <a href="/" className="laptopBrand" aria-label="Weiboer home" onClick={() => setMenuOpen(false)}><img src="/weiboer-logo.png" alt="Weiboer" /></a>
+      <button className="laptopMenuToggle" type="button" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="industrial-navigation" onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
+      <nav id="industrial-navigation" className="laptopNav" aria-label="Main navigation">
+        <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
+        <div className="productMenu"><button className="productMenuTrigger" type="button">Products</button><div className="productMenuList"><a href="/laptops/">Laptops</a><a href="/gaming-laptops/">Gaming Laptops</a><a href="/mini-pcs/">Mini PCs</a><a href="/tablets/">Android Tablets</a><a href="/projectors/">Projectors</a><a href="/portable-monitors/">Portable Monitors</a><a href="/phones/">Phones</a><a href="/all-in-one-pcs/">All-in-One PCs</a><a href="/industrial-equipment/" onClick={() => setMenuOpen(false)} aria-current="page">Industrial equipment</a><a href="/blog/">Buyer Guides</a></div></div>
+        <a href="/#about" onClick={() => setMenuOpen(false)}>OEM / ODM</a>
+        <a href="/#factory" onClick={() => setMenuOpen(false)}>Factory</a>
+        <a className="laptopMobileQuote" href={inquiry} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>Ask on WhatsApp ↗</a>
       </nav>
       <a href="/" className="backHome">← Back to home</a>
     </header>
     <section className="laptopHero">
-      <p>INDUSTRIAL EQUIPMENT / B2B CATEGORY</p>
+      <p>INDUSTRIAL EQUIPMENT / B2B PRODUCT CATALOG</p>
       <h1>Industrial equipment.<br /><em>Ready for your brief.</em></h1>
       <span>Browse our rugged handheld models below. Industrial tablets and laptops are also in scope for project inquiries. The hero device is an illustrative category visual, not a listed model.</span>
     </section>
+    <section className="customBar"><b>RUGGED HANDHELDS</b><b>CONFIGURATION CHECK</b><b>BRANDING OPTIONS</b><b>PROJECT INQUIRIES</b></section>
     <section className="industrialCatalog" aria-labelledby="industrial-title">
       <div className="industrialVisual"><img src="/assets/images/industrial-equipment-pda.webp" alt="Illustrative rugged industrial PDA category visual" width="832" height="800" /></div>
       <div className="industrialCopy">
