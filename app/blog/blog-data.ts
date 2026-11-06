@@ -3483,5 +3483,95 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer F158G Product Specifications", "/laptops/f158g/"],
       ["Weiboer AMD-156 Product Specifications", "/laptops/amd-156/"]
     ]
+  },
+  "all-in-one-pc-configuration-guide": {
+    slug: "all-in-one-pc-configuration-guide",
+    title: "All-in-One PC Configuration Explained: CPU Tier, DDR3 vs DDR4, Storage and GPU",
+    description: "How to read an all-in-one PC configuration sheet: CPU tier vs model, DDR3 or DDR4 memory, SSD and drive bays, and optional GPUs across Weiboer's AIO platforms.",
+    published: "2026-11-06",
+    updated: "2026-11-06",
+    intro: "All-in-one PC quotes often look alike: a screen size, an Intel Core tier and an SSD. The lines that actually separate one platform from another are the processor model, the memory generation, the storage layout and the graphics. This guide explains how to read each line, using the configurations listed across Weiboer's all-in-one PC catalog.",
+    sections: [
+      {
+        heading: "Why the configuration lines matter more than the screen size",
+        paragraphs: [
+          "An all-in-one PC quotation usually leads with screen size, but the lines underneath decide how the machine performs and what can be changed after delivery. Weiboer's all-in-one catalog lists 15 platforms, and most of them share the same headline options: Intel Core i3, i5 or i7, a 1920 x 1080 panel and SSD storage. The real differences sit in the processor wording, the memory generation, the storage layout and whether a graphics card is actually specified. This guide explains how to read each of those lines."
+        ]
+      },
+      {
+        heading: "CPU: a tier is not a model",
+        paragraphs: [
+          "Most platforms list \"Intel Core i3 / i5 / i7 options\". That describes a tier, not a specific processor or generation, so two quotes that both say i5 can carry quite different chips. Ask for the exact processor model on the quotation and check that it matches the approved sample.",
+          "A few listings go further or wider. The K7 adds an i9 option, while the Z5 lists i5 and i7 only. The K2 and K4 also list Intel J1900 and AMD A6, A8 and A10 options alongside Core processors. Where clock speeds appear, they are ranges or single figures, such as 2.0 to 3.9GHz on the T3 and HWC and 2.4GHz on the D4 and D1, which again need to be tied to a named model."
+        ],
+        bullets: [
+          "Write the exact CPU model, not only the tier, on the quotation.",
+          "Confirm the same model is fitted in the approved sample and in production.",
+          "If a listing mixes Intel Core, J1900 and AMD A-series options, state which family you are ordering."
+        ]
+      },
+      {
+        heading: "Memory: DDR3 and DDR4 are both in the catalog",
+        paragraphs: [
+          "The memory line shows a real split. The K2, K4, Z5 and K7 list DDR3, with the K7 listing 4GB or 8GB and the Z5 listing up to 32GB. Most of the newer platforms, including the F1-Y, T3, T1-S, N-S, F6-ST, D3, D4, D1, HWC and UW-2, list DDR4 in 8GB, 16GB or 32GB.",
+          "DDR3 and DDR4 modules are not interchangeable, so the memory type determines which spare parts and upgrades a fleet can use later. Choose the capacity your software needs at the quotation stage, and record the memory type so service teams order the right modules. Where a listing is inconsistent, as on the UW30, where the highlights show 4GB to 16GB and the specification table also lists 32GB, confirm the maximum in writing."
+        ]
+      },
+      {
+        heading: "Storage: SSD sizes, HDD options and drive bays",
+        paragraphs: [
+          "Most platforms list SSD options from 128GB to 2TB. The K7 lists SSD up to 1TB. The K2 and K4 list SSDs up to 512GB plus HDD options of 500GB, 1TB and 2TB, and the UW30 also lists HDD options. The F6-ST is the platform built around expansion: it lists a 2.5-inch drive bay in addition to the SSD.",
+          "For office fleets, a single SSD sized to local files is usually simplest. If users store large archives locally, ask whether a second drive can be fitted, and on which platforms, before ordering."
+        ]
+      },
+      {
+        heading: "Graphics: integrated unless a card is named",
+        paragraphs: [
+          "Nearly every listing shows integrated graphics. Only two platforms mention discrete cards: the UW-2 mentions a GTX 1650 4GB option, and the D3 mentions GTX 1650 4GB and RTX 3060 12GB options. In both cases the product pages ask buyers to verify the exact SKU, power and cooling, because an all-in-one chassis has limited room for heat.",
+          "Wording such as \"discrete-GPU-ready\" is not the same as a fitted card. The D1 listing uses that phrase but lists integrated graphics and specifies no GPU, so treat it as an integrated-graphics platform unless a card is confirmed in writing."
+        ]
+      },
+      {
+        heading: "Operating system and minimum order",
+        paragraphs: [
+          "Most platforms list Windows 10 or Windows 11. The Z5 lists Windows 10 or Linux, the K2 and K4 list Windows 7, 8 and 10 with Linux compatibility, and the UW30 lists Windows 7, 10 and 11 with Linux compatibility. Confirm which image and licence will actually ship.",
+          "MOQ is listed at 1 piece on most platforms, while the UW30, K2 and K4 list 5 pieces for logo, packaging and graphic customization. Confirm current terms with your quotation."
+        ]
+      },
+      {
+        heading: "A configuration checklist before sampling",
+        paragraphs: [
+          "Use the configuration sheet to remove ambiguity before the sample is built, not after the bulk order arrives."
+        ],
+        bullets: [
+          "Exact CPU model and generation, not only i3, i5 or i7.",
+          "Memory type and capacity: DDR3 or DDR4, and how many slots.",
+          "SSD size, any HDD option and whether a second drive bay exists.",
+          "Integrated graphics or a named discrete GPU, with power and cooling confirmed.",
+          "Operating system image, language and licence.",
+          "Touch, camera, stand and the final port list, which vary by platform."
+        ]
+      }
+    ],
+    faq: [
+      ["Does \"Intel Core i5\" on an all-in-one quote identify the processor?", "No. It identifies a tier. Ask for the exact processor model and confirm it matches the approved sample."],
+      ["Which Weiboer all-in-one PCs list DDR3 memory?", "The K2, K4, Z5 and K7 list DDR3. Most newer platforms, including the F1-Y, T3, D3, D4 and HWC, list DDR4 in 8GB, 16GB or 32GB."],
+      ["Which platforms mention a discrete graphics card?", "The UW-2 mentions a GTX 1650 4GB option and the D3 mentions GTX 1650 4GB and RTX 3060 12GB options. Verify the exact SKU, power and cooling."],
+      ["Which all-in-one PC has room for an extra drive?", "The F6-ST lists a 2.5-inch drive bay in addition to SSD storage."],
+      ["What is the MOQ for these all-in-one PCs?", "Most platforms list 1 piece; the UW30, K2 and K4 list 5 pieces for customization. Confirm current terms with your quotation."]
+    ],
+    links: [
+      ["All-in-One PCs", "/all-in-one-pcs/"],
+      ["K7 24-inch Intel Core All-in-One PC", "/all-in-one-pcs/k7/"],
+      ["Z5 24 / 27-inch All-in-One PC", "/all-in-one-pcs/z5/"],
+      ["F6-ST Expandable All-in-One PC", "/all-in-one-pcs/f6-st/"],
+      ["D3 All-in-One PC with Optional Discrete Graphics", "/all-in-one-pcs/d3/"],
+      ["All-in-One PC Picks by Workspace", "/blog/all-in-one-pc-picks-by-workspace/"]
+    ],
+    sources: [
+      ["Weiboer All-in-One PC Catalog", "/all-in-one-pcs/"],
+      ["Weiboer D3 Product Specifications", "/all-in-one-pcs/d3/"],
+      ["Weiboer F6-ST Product Specifications", "/all-in-one-pcs/f6-st/"]
+    ]
   }
 };
