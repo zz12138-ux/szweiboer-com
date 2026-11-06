@@ -3395,5 +3395,93 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer GT70 Product Specifications", "/tablets/wb-tb-02/"],
       ["Weiboer GR8 Product Specifications", "/tablets/gr8/"]
     ]
+  },
+  "business-laptop-picks-by-workload": {
+    slug: "business-laptop-picks-by-workload",
+    title: "15.6-Inch Business Laptop Picks by Workload: AI-156, F158G & AMD-156",
+    description: "Match Weiboer's AI-156 Core Ultra, F158G Core i7 and AMD-156 Ryzen 7 business laptops to management, office and budget fleets using listed CPU, memory and storage.",
+    published: "2026-11-06",
+    updated: "2026-11-06",
+    intro: "Three of Weiboer's 15.6-inch business laptops share the same screen size and a 1920 x 1080 IPS panel, yet they suit very different desks. This guide sorts the AI-156, F158G and AMD-156 by the work they will do, using the processor, memory and storage listed on each product page, and flags what to confirm before ordering.",
+    sections: [
+      {
+        heading: "Three 15.6-inch business laptops, three processor tiers",
+        paragraphs: [
+          "Weiboer's 15.6-inch business range is easier to buy from when the models are sorted by the work they will do rather than by screen size, because all three below share a 15.6-inch 1920 x 1080 IPS panel. What separates them is the processor generation, the memory type and how much of the configuration is already fixed in the listing. This guide matches each platform to a workload using only the specifications on its product page."
+        ],
+        bullets: [
+          "AI-156: Intel Core Ultra options, onboard DDR5, Wi-Fi 6, metal body.",
+          "F158G: Intel Core i7-1165G7, DDR4 up to 32GB, M.2 SSD up to 2TB.",
+          "AMD-156: AMD Ryzen 7 2700U, Radeon Vega graphics, DDR4 up to 32GB, 5000mAh battery."
+        ]
+      },
+      {
+        heading: "AI-156 for management and heavier multitasking",
+        paragraphs: [
+          "The AI-156 is the newest platform in the group. Its visible configuration options include Core Ultra 5 125H and 225H, Core Ultra 7 255H and Core Ultra 9 285H, paired with onboard DDR5 memory in 24GB or 32GB and M.2 NVMe storage from 128GB to 2TB. It lists Wi-Fi 6, Bluetooth 5.2, Windows 10 or 11 Pro, a metal body, fingerprint unlock and a backlit keyboard.",
+          "That combination suits managers, consultants and staff who keep many applications, browser tabs and video calls open at once, and who want a metal finish for client-facing work. Because the memory is onboard DDR5, choose the 24GB or 32GB option at the quotation stage; it is not something to plan on upgrading later.",
+          "The listing is not fully consistent. The title also mentions a 185H that does not appear in the visible options, the graphics fields list both Intel Arc 130T and Intel UHD Graphics, and the panel is described as both 16:10 and 16:9. Confirm the exact CPU SKU, graphics and panel ratio in writing. The listing shows an MOQ of 1 piece and a lead time of 31 days for one piece, with larger quantities negotiated."
+        ]
+      },
+      {
+        heading: "F158G for standard office and finance desks",
+        paragraphs: [
+          "The F158G uses a fixed Intel Core i7-1165G7 with Intel UHD Graphics, DDR4 memory in 8GB, 16GB or 32GB, and M.2 SSD storage from 128GB to 2TB, running Windows 10 or 11. Having one named processor makes it straightforward to standardize: every unit in the order carries the same CPU, which keeps imaging and support simple.",
+          "It fits office administration, finance and sales desks running spreadsheets, ERP clients, email and browser-based tools. For these roles, 16GB of DDR4 is a sensible starting point to discuss, and the storage can be scaled to the volume of local files. The listing mentions USB 3.0 and HDMI and lists Wi-Fi without a specific standard, so confirm the full port layout, the Wi-Fi standard and the Bluetooth version on the quotation. MOQ is listed at 1 piece."
+        ]
+      },
+      {
+        heading: "AMD-156 for budget fleets that still want an AMD platform",
+        paragraphs: [
+          "The AMD-156 lists an AMD Ryzen 7 2700U with Radeon Vega integrated graphics, DDR4 in 8GB, 16GB or 32GB, M.2 storage up to 2TB, a 5000mAh battery and dual-band Wi-Fi with Bluetooth. Windows 10 is the operating system listed.",
+          "It is a practical option for programs that prefer an AMD platform for document work, browser tools and light multimedia, and for buyers who want a stated battery capacity on the specification sheet. Because the listing shows Windows 10, confirm which Windows edition will be supplied before you build your software image. MOQ is listed at 1 piece."
+        ]
+      },
+      {
+        heading: "How to choose between them",
+        paragraphs: [
+          "Start with the workload and the procurement constraint, then narrow the configuration on the quotation."
+        ],
+        bullets: [
+          "Heavy multitasking, frequent video meetings or a premium metal finish: shortlist the AI-156 and lock the CPU SKU and memory size up front.",
+          "A uniform office fleet with one fixed processor: the F158G keeps every unit on the same Core i7-1165G7.",
+          "An AMD preference or a stated battery capacity on the spec sheet: the AMD-156 lists Ryzen 7 2700U and 5000mAh.",
+          "Lighter student or entry office roles: compare the N5095 and N95 models in our student and entry office laptop guide instead."
+        ]
+      },
+      {
+        heading: "Points to confirm before ordering",
+        paragraphs: [
+          "All three listings leave some details to the quotation, so put these items in writing before approving a sample."
+        ],
+        bullets: [
+          "The exact processor SKU and graphics, especially on the AI-156.",
+          "Memory size and type: onboard DDR5 on the AI-156 versus DDR4 options on the F158G and AMD-156.",
+          "Storage capacity and whether a second M.2 slot is available.",
+          "The Windows edition and language image.",
+          "The complete port layout, Wi-Fi standard and Bluetooth version.",
+          "Lead time for your quantity; only the AI-156 lists one, for a single unit."
+        ]
+      }
+    ],
+    faq: [
+      ["Which Weiboer 15.6-inch business laptop has the newest processor?", "The AI-156 lists Intel Core Ultra options, including Core Ultra 5 125H and 225H, Core Ultra 7 255H and Core Ultra 9 285H. Confirm the exact SKU in writing."],
+      ["Can I upgrade memory on the AI-156 later?", "The AI-156 lists onboard DDR5 memory in 24GB or 32GB, so choose the size at the quotation stage rather than planning a later upgrade."],
+      ["Which model is easiest to standardize across a fleet?", "The F158G uses one fixed processor, the Intel Core i7-1165G7, with DDR4 and storage options chosen per order."],
+      ["Does the AMD-156 list a battery capacity?", "Yes. The AMD-156 lists a 5000mAh battery alongside the Ryzen 7 2700U and DDR4 options up to 32GB."],
+      ["What is the minimum order for these models?", "All three listings show an MOQ of 1 piece. Confirm current terms and lead time for your quantity with Weiboer."]
+    ],
+    links: [
+      ["Business & Student Laptops", "/laptops/"],
+      ["AI-156 Intel Core Ultra Laptop", "/laptops/ai-156/"],
+      ["F158G Intel Core i7 Business Laptop", "/laptops/f158g/"],
+      ["AMD-156 Ryzen 7 Business Laptop", "/laptops/amd-156/"],
+      ["Student and Entry Office Laptop Picks by Budget", "/blog/student-laptop-picks-by-budget/"]
+    ],
+    sources: [
+      ["Weiboer AI-156 Product Specifications", "/laptops/ai-156/"],
+      ["Weiboer F158G Product Specifications", "/laptops/f158g/"],
+      ["Weiboer AMD-156 Product Specifications", "/laptops/amd-156/"]
+    ]
   }
 };

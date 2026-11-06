@@ -1,6 +1,6 @@
 {
   "property": "sc-domain:szweiboer.com",
-  "lastChecked": "2026-11-05T10:05:00+08:00",
+  "lastChecked": "2026-11-06T10:05:00+08:00",
   "sitemapStatus": {
     "url": "https://www.szweiboer.com/sitemap.xml",
     "status": "Success",
@@ -156,6 +156,20 @@
         "discovered": 127
       },
       "note": "索引汇总报告仍为 2026/10/23；sitemap 上次读取更新为 2026/11/05，已发现 127（与线上一致）。URL 检查：laptop-screen-resolution-panel-guide、projector-picks-by-room、gaming-laptop-gpu-tgp-guide 均显示已收录；提交 /blog/student-laptop-picks-by-budget/（已发现-尚未编入索引）至优先抓取队列；无可见验证码或额度提示。"
+    },
+    {
+      "date": "2026-11-06",
+      "indexedCount": 64,
+      "notIndexedCount": 65,
+      "reportUpdatedAt": "2026/10/23",
+      "checkedAt": "2026-11-06T10:05:00+08:00",
+      "property": "sc-domain:szweiboer.com",
+      "sitemap": {
+        "status": "成功",
+        "lastRead": "2026-11-05",
+        "discovered": 127
+      },
+      "note": "索引汇总报告仍为 2026/10/23；sitemap 上次读取 2026/11/05，已发现 127（线上 sitemap 现为 137，新增工业设备类目 8 条尚未被读取）。提交 /industrial-equipment/、/blog/android-tablet-version-oem-guide/、/blog/dual-screen-laptop-picks-by-role/（均为“网址尚未收录到 Google”）至优先抓取队列；无可见验证码、无额度提示。"
     }
   ]
 }
