@@ -144,6 +144,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/android-tablet-version-oem-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/business-laptop-picks-by-workload`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/all-in-one-pc-configuration-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/portable-monitor-port-size-layout-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }

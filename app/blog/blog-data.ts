@@ -3573,5 +3573,73 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer D3 Product Specifications", "/all-in-one-pcs/d3/"],
       ["Weiboer F6-ST Product Specifications", "/all-in-one-pcs/f6-st/"]
     ]
+  },
+  "portable-monitor-port-size-layout-guide": {
+    slug: "portable-monitor-port-size-layout-guide",
+    title: "Portable Monitor Port Layouts Compared: Two USB-C vs USB-C Plus USB 3.0",
+    description: "How to read the port line on Weiboer's six portable monitor platforms: two USB-C versus USB-C plus USB 3.0, MOQ and carton differences, and the power details the listings leave open.",
+    published: "2026-11-07",
+    updated: "2026-11-07",
+    intro: "Six portable monitor platforms on Weiboer's catalog look similar on screen, but the port line on each quotation is not identical. This guide compares the two port layouts, explains why size matters less than ports, and flags the power details that the listings do not state.",
+    sections: [
+      {
+        heading: "Two port layouts across six listed models",
+        paragraphs: [
+          "Weiboer's six portable monitor platforms fall into two port layouts. WB-MN-01, WB-MN-03 and WB-MN-04 list two USB-C ports and nothing else. WB-MN-02, WB-MN-05 and WB-MN-06 list two USB-C ports plus USB 3.0, and the product data for WB-MN-05 and WB-MN-06 also lists USB-A options that vary by build. Choosing between the two layouts is the first port decision, because a second USB-C port on its own does not give you a USB-A port for a legacy peripheral."
+        ]
+      },
+      {
+        heading: "Size changes the port decision less than you might expect",
+        paragraphs: [
+          "The 14, 15.6 and 16-inch models share the same 1920 x 1200 IPS panel and the same listed port set on WB-MN-01, WB-MN-03 and WB-MN-04, so size is mainly a choice of desk footprint and hinge layout. The 13.3-inch WB-MN-05 and WB-MN-06 are the compact options, and they carry the USB 3.0 port as well.",
+          "Confirm the exact size, bezel and hinge layout on the sample before production, because the product data for each platform leaves that detail to the final configuration."
+        ]
+      },
+      {
+        heading: "What the listings do not state: power",
+        paragraphs: [
+          "Power is the item the listings are least specific about. Every platform's common specification sheet reads \"Battery: Not stated; confirm the final configuration\", and none of the six pages gives a power rating for the USB-C connection. Do not assume a single USB-C cable will both carry the picture and power the panel on your laptop. Test the exact cable and laptop port combination on the approved sample, and record the result in writing.",
+          "Audio follows the same pattern. The product data lists no built-in speakers, so sound still has to come from the source laptop or another device."
+        ],
+        bullets: [
+          "Ask for the power requirement of the final configuration in writing.",
+          "Test each sample with the cable you intend to ship, on the laptop models your customers use.",
+          "Record whether the display is powered over the video cable alone, or needs a separate power connection."
+        ]
+      },
+      {
+        heading: "Pricing and minimum order, as listed",
+        paragraphs: [
+          "The listings are not consistent on MOQ. WB-MN-01, WB-MN-03 and WB-MN-04 list 10 pieces, while WB-MN-02, WB-MN-05 and WB-MN-06 list 1 piece. WB-MN-02, WB-MN-05 and WB-MN-06 also show a price reference of US$352 for 1 to 9 pieces, with bulk tiers listed on the page. Treat these as starting references and confirm current terms for your quantity with Weiboer.",
+          "Package sizes also differ: the 14 to 16-inch models list 46.5 x 34 x 12cm at 3.4kg, while the 13.3-inch models list 36 x 23.3 x 10cm at 5kg. Use the carton size in your freight plan, not the display size."
+        ]
+      },
+      {
+        heading: "Matching a layout to a use",
+        paragraphs: [
+          "For a laptop user who needs one more screen and one legacy USB device, the two-USB-C-plus-USB-3.0 layout on WB-MN-02 covers both needs at 13.3 to 16 inches. For a triple-laptop or four-screen setup built around USB-C only, WB-MN-03 is the listed custom-logo option with a 14 to 16-inch range. For a private-label extender with OEM logo options, WB-MN-04 is the simplest two-USB-C layout.",
+          "Whatever you choose, the port set is the constraint to check first. Compare the listed ports with the laptops in your program before you compare sizes or logos."
+        ]
+      }
+    ],
+    faq: [
+      ["Which portable monitor layouts have USB-A?", "WB-MN-02, WB-MN-05 and WB-MN-06 list USB 3.0. The product data for WB-MN-05 and WB-MN-06 also says USB-A options vary by build, so confirm the exact port set."],
+      ["Do these monitors list a power rating?", "No. The product pages state that battery and power details are not stated, so confirm the final configuration and test with your cable and laptop."],
+      ["What sizes are available?", "WB-MN-01, WB-MN-03 and WB-MN-04 come in 14, 15.6 and 16 inches. WB-MN-02 is listed in 13.3, 14, 15.6 and 16 inches. WB-MN-05 and WB-MN-06 are 13.3 inches."],
+      ["Do the monitors include speakers?", "The product data lists no built-in speakers. Audio comes from the source laptop or another device."],
+      ["What is the minimum order?", "The listings show 10 pieces for WB-MN-01, WB-MN-03 and WB-MN-04, and 1 piece for WB-MN-02, WB-MN-05 and WB-MN-06. Confirm current terms for your quantity."]
+    ],
+    links: [
+      ["Portable Monitors", "/portable-monitors/"],
+      ["WB-MN-01 Multi-Size Portable Monitor", "/portable-monitors/wb-mn-01/"],
+      ["WB-MN-02 USB-C Portable Monitor", "/portable-monitors/wb-mn-02/"],
+      ["WB-MN-03 Triple Laptop Portable Monitor", "/portable-monitors/wb-mn-03/"],
+      ["WB-MN-04 OEM Portable Monitor Extender", "/portable-monitors/wb-mn-04/"],
+      ["What to Look for in a USB-C Portable Monitor", "/blog/usb-c-portable-monitor-buying-guide/"]
+    ],
+    sources: [
+      ["Weiboer Portable Monitor Product Specifications", "/portable-monitors/"],
+      ["Weiboer WB-MN-02 Product Specifications", "/portable-monitors/wb-mn-02/"]
+    ]
   }
 };
