@@ -4,6 +4,8 @@ import { useState } from "react";
 import "../laptops/laptops.css";
 import "../laptops/nav.css";
 import "../product-nav.css";
+import "../laptops/product-grid.css";
+import "../laptops/product-typography.css";
 import "../laptops/mobile.css";
 import "./industrial-equipment.css";
 import { industrialProducts } from "./product-data";
@@ -47,12 +49,24 @@ export default function IndustrialEquipmentPage() {
         <a className="industrialQuote" href="/#email-quote">Send a project inquiry by email ↗</a>
       </div>
     </section>
-    <section className="industrialProducts" id="industrial-products" aria-labelledby="industrial-products-title">
-      <div className="industrialProductsHead"><p>RUGGED HANDHELD COLLECTION</p><h2 id="industrial-products-title">Explore the models.</h2><span>Seven distinct models from the supplied listings. Supplier imagery may show original branding; final hardware and specifications are confirmed by configuration.</span></div>
-      <div className="industrialProductGrid">{industrialProducts.map((product) => <a className="industrialProductCard" href={`/industrial-equipment/${product.slug}/`} key={product.slug}>
-        <div className="industrialProductVisual"><img src={`/assets/images/industrial-equipment/${product.slug}-01.webp`} alt={`${product.code} supplier listing artwork`} loading="lazy" /></div>
-        <div className="industrialProductMeta"><span>{product.segment}</span><h3>{product.code}</h3><p>{product.summary}</p><strong>View product details <b>↗</b></strong></div>
-      </a>)}</div>
+    <section className="laptopCatalog industrialProducts" id="industrial-products" aria-labelledby="industrial-products-title">
+      <div className="catalogHeading"><p>RUGGED HANDHELD COLLECTION</p><h2 id="industrial-products-title">Explore the models.<br/><span>Seven distinct models.</span></h2><span className="catalogIntro">Seven distinct models from the supplied listings. Supplier imagery may show original branding; final hardware and specifications are confirmed by configuration.</span></div>
+      <div className="laptopProductGrid">{industrialProducts.map((product, index) => {
+        const cardInquiry = `https://api.whatsapp.com/send/?phone=8613556351212&text=${encodeURIComponent(`Hello Weiboer, I would like a quotation for ${product.code}.`)}`;
+        return <article className="modelCard modelCardClickable" key={product.slug}>
+          <a className="modelImage" href={`/industrial-equipment/${product.slug}/`} aria-label={`View ${product.code} details`}>
+            <img src={`/assets/images/industrial-equipment/${product.slug}-01.webp`} alt={`${product.code} supplier listing artwork`} loading="lazy" decoding="async" />
+            <span>{String(index + 1).padStart(2, "0")}</span>
+          </a>
+          <div className="modelInfo">
+            <p className="modelCode">{product.code} · {product.segment}</p>
+            <h2>{product.name}</h2>
+            <p className="productSummary">{product.summary}</p>
+            <a className="viewDetails" href={`/industrial-equipment/${product.slug}/`}>View product details ↗</a>
+            <a className="modelWhatsApp" href={cardInquiry} target="_blank" rel="noreferrer">Quote This Product on WhatsApp <b>↗</b></a>
+          </div>
+        </article>;
+      })}</div>
       <p className="industrialCollectionNote">For industrial tablets and laptops, send a project brief. No tablet or laptop SKU is represented by the illustrative category images above.</p>
     </section>
   </main>;
