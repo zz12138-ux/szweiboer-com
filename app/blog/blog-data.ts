@@ -3574,6 +3574,75 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer F6-ST Product Specifications", "/all-in-one-pcs/f6-st/"]
     ]
   },
+  "mini-pc-ports-display-output-buyer-guide": {
+    slug: "mini-pc-ports-display-output-buyer-guide",
+    title: "Mini PC Ports and Display Output: What to Check Before You Order",
+    description: "How to read the port and display lines on Weiboer's four mini PC platforms: HDMI and DisplayPort outputs, dual LAN, USB-C and USB 3.0 counts, and what to confirm before sampling.",
+    published: "2026-11-12",
+    updated: "2026-11-12",
+    intro: "Four mini PC platforms on Weiboer's catalog look alike from the front, but their rear panels differ in the number of video outputs, LAN ports and USB types. Those differences decide whether a box can drive your screens and reach your network, so they are the first thing to compare on a quotation.",
+    sections: [
+      {
+        heading: "Video outputs are listed differently on each platform",
+        paragraphs: [
+          "The WB-MC-01 AMD Ryzen platform lists two HDMI 2.1 outputs and one USB-C port. The WB-MC-02 Intel N-series platform lists two HDMI ports and one DisplayPort 1.4 port, and its product data describes triple-screen 4K output. The WB-MC-03 N150 platform lists two HDMI 2.0 outputs. The WB-MC-04 discrete-GPU platform lists two HDMI 2.1 and two DisplayPort 1.4 outputs.",
+          "Count the outputs you need before you choose a platform. A two-output box and a three-screen program are different purchases, and the output count is listed on each product page."
+        ],
+        bullets: [
+          "Two displays: WB-MC-01, WB-MC-03 or WB-MC-04 meet the output count.",
+          "Three 4K displays: the WB-MC-02 page describes this configuration; confirm the exact display combination before sampling.",
+          "Four or more displays: none of the four pages lists this layout, so ask for a configuration in writing."
+        ]
+      },
+      {
+        heading: "Network ports separate office and signage projects",
+        paragraphs: [
+          "Networking is listed as 2.5G RJ45 on WB-MC-01, dual RJ45 on WB-MC-02 and WB-MC-04, and a single RJ45 on WB-MC-03. Dual LAN lets an integrator keep content traffic and management traffic apart, which matters in venues where a signage network is isolated from guest Wi-Fi.",
+          "If the deployment needs wired speed above gigabit, the WB-MC-01 listing is the only one of the four that states 2.5G."
+        ]
+      },
+      {
+        heading: "USB types and counts differ by platform",
+        paragraphs: [
+          "The listed USB counts are not the same. WB-MC-01 lists five USB 3.2 ports; WB-MC-02 lists USB 3.2 ×3 plus two Type-C; WB-MC-03 lists USB 3.2 ×4; WB-MC-04 lists USB 3.0 ×4 and USB 2.0 ×4. Check the peripherals in your program against these lists, including barcode scanners, receipt printers and dongles, before you compare prices.",
+          "For a fleet that uses USB-C to drive a display, confirm which port carries video on the final configuration. The listings do not describe that detail for every platform."
+        ]
+      },
+      {
+        heading: "Confirm these items on the sample",
+        paragraphs: [
+          "Port layout is printed on the spec table, but the physical result is only visible on a sample. Test each output with the cable and monitor you will ship, and record the resolution and refresh rate that the sample reaches on every screen.",
+          "Logo, boot logo and packaging can be customised on all four platforms, so set the port and display layout first, then add branding to the approved configuration."
+        ],
+        bullets: [
+          "Record the resolution and refresh rate on every output with the shipping cable.",
+          "Confirm the exact GPU and board layout on the WB-MC-04 platform before production.",
+          "Check the LAN and USB count against the peripherals your customers use."
+        ]
+      }
+    ],
+    faq: [
+      ["How many video outputs do the Weiboer mini PCs list?", "WB-MC-01 lists two HDMI 2.1 ports and one USB-C. WB-MC-02 lists two HDMI and one DisplayPort 1.4. WB-MC-03 lists two HDMI 2.0. WB-MC-04 lists two HDMI 2.1 and two DisplayPort 1.4."],
+      ["Which mini PC has the fastest wired network?", "WB-MC-01 lists 2.5G RJ45 Ethernet. WB-MC-02 and WB-MC-04 list dual RJ45, and WB-MC-03 lists one RJ45 port."],
+      ["Can a mini PC drive three 4K screens?", "The WB-MC-02 page describes triple-screen 4K output. Confirm the exact display combination and refresh rate before sampling."],
+      ["Are the port layouts identical across the four platforms?", "No. The HDMI, DisplayPort, LAN and USB counts differ by platform, so compare the listed ports before comparing CPU or price."]
+    ],
+    links: [
+      ["Mini PCs", "/mini-pcs/"],
+      ["AMD Ryzen Mini PC (WB-MC-01)", "/mini-pcs/wb-mc-01/"],
+      ["Intel N-Series Mini PC (WB-MC-02)", "/mini-pcs/wb-mc-02/"],
+      ["Intel N150 Mini PC (WB-MC-03)", "/mini-pcs/wb-mc-03/"],
+      ["RTX 5070 Mini Gaming PC (WB-MC-04)", "/mini-pcs/wb-mc-04/"],
+      ["Mini PC OEM Picks by Use Case", "/blog/mini-pc-picks-by-use-case/"]
+    ],
+    sources: [
+      ["Weiboer Mini PC Product Specifications", "/mini-pcs/"],
+      ["Weiboer WB-MC-01 Product Specifications", "/mini-pcs/wb-mc-01/"],
+      ["Weiboer WB-MC-02 Product Specifications", "/mini-pcs/wb-mc-02/"],
+      ["Weiboer WB-MC-03 Product Specifications", "/mini-pcs/wb-mc-03/"],
+      ["Weiboer WB-MC-04 Product Specifications", "/mini-pcs/wb-mc-04/"]
+    ]
+  },
   "portable-monitor-port-size-layout-guide": {
     slug: "portable-monitor-port-size-layout-guide",
     title: "Portable Monitor Port Layouts Compared: Two USB-C vs USB-C Plus USB 3.0",
