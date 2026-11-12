@@ -227,7 +227,7 @@ export default function Home() {
           <h2>Tell us what you need.<br /><span>Get a tailored quote.</span></h2>
           <p>Share your target product, quantity and customization requirements. Our B2B team will reply by email with suitable configurations and quotation details.</p>
           <div className="emailQuoteBenefits"><span>Low MOQ</span><span>OEM / ODM</span><span>Factory direct</span></div>
-          <a href="mailto:l474419569@gmail.com">l474419569@gmail.com <b>↗</b></a>
+          <a href="mailto:jack@szweiboer.com">jack@szweiboer.com <b>↗</b></a>
         </div>
         <form className="emailQuoteForm" onSubmit={submitEmailQuote}>
           <label style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }} aria-hidden="true"><span>Website</span><input name="website" type="text" tabIndex={-1} autoComplete="off" /></label>
@@ -241,7 +241,7 @@ export default function Home() {
           {quoteState === "sent" ? (
             <p className="emailQuoteNote">Received{quoteRef ? ` (${quoteRef})` : ""} — our B2B team will reply to your business email within one working day. Need it faster? <a href={whatsapp} target="_blank" rel="noreferrer">Chat on WhatsApp</a>.</p>
           ) : quoteState === "error" ? (
-            <p className="emailQuoteNote">Submission failed. Please retry, or reach us via <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a> or <a href="mailto:l474419569@gmail.com">l474419569@gmail.com</a>.</p>
+            <p className="emailQuoteNote">Submission failed. Please retry, or reach us via <a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a> or <a href="mailto:jack@szweiboer.com">jack@szweiboer.com</a>.</p>
           ) : (
             <p className="emailQuoteNote">Your requirements go straight to our B2B team; we reply by email within one working day.</p>
           )}
@@ -289,7 +289,7 @@ export default function Home() {
       <div className="footerColumns">
         <div><p className="footerLabel">EXPLORE</p><a href="#top">Home</a><a href="#about">About Weiboer</a><a href="/laptops">Products</a><a href="#quality">Quality control</a></div>
         <div><p className="footerLabel">PRODUCTS</p><a href="/laptops">Laptops</a><a href="#products">Android tablets</a><a href="#products">LED projectors</a><a href="#products">Portable monitors</a></div>
-        <div><p className="footerLabel">CONTACT</p><a className="footerWhatsApp" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a><a href="mailto:l474419569@gmail.com">l474419569@gmail.com</a><a href="#email-quote">Get a quotation</a><span>Shenzhen, Guangdong, China</span></div>
+        <div><p className="footerLabel">CONTACT</p><a className="footerWhatsApp" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a><a href="mailto:jack@szweiboer.com">jack@szweiboer.com</a><a href="#email-quote">Get a quotation</a><span>Shenzhen, Guangdong, China</span></div>
       </div>
       <div className="footerActionRow"><a className="footerWaButton" href={whatsapp} target="_blank" rel="noreferrer"><span>Chat on WhatsApp</span><b>↗</b></a><a className="footerQuoteButton" href="#email-quote"><span>Get a Quote by Email</span><b>↗</b></a></div>
       <div className="footerBottom"><small>© 2026 Weiboer · Shenzhen Weiboer Digital Co., Ltd.</small><a href="#top">Back to top ↑</a></div>
