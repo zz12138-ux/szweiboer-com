@@ -7,6 +7,8 @@ import "../product-nav.css";
 import "../laptops/product-grid.css";
 import "../laptops/product-typography.css";
 import "../laptops/mobile.css";
+import "../category-seo.css";
+import CategorySeoContent from "../CategorySeoContent";
 import "./industrial-equipment.css";
 import { industrialProducts } from "./product-data";
 
@@ -69,6 +71,7 @@ export default function IndustrialEquipmentPage() {
       })}</div>
       <p className="industrialCollectionNote">For industrial tablets and laptops, send a project brief. No tablet or laptop SKU is represented by the illustrative category images above.</p>
     </section>
+    <CategorySeoContent category="industrial" />
     <section className="catalogCta" data-track-scope="industrial-catalog"><p>CAN&apos;T FIND THE EXACT CONFIGURATION?</p><h2>Tell us your target.<br/><span>We will match the platform.</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a></section>
   </main>;
 }
