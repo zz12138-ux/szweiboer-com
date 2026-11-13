@@ -10,7 +10,7 @@
   border-top:1px solid #dbe5ef;
 }
 .footerLead{max-width:640px;}
-.homeMain .siteFooter .footerLogoWrap{display:inline-flex;margin-bottom:42px;background:#fff;border-radius:8px;padding:11px 16px;}
+.homeMain .siteFooter .footerLogoWrap{display:inline-flex;margin-bottom:42px;background:transparent;border-radius:0;padding:0;}
 .homeMain .siteFooter .siteLogoFooter{width:180px;height:auto;}
 .footerLead h2{margin:0;font-size:clamp(44px,4.6vw,76px);line-height:.98;letter-spacing:-.065em;font-weight:700;}
 .footerLead h2 span{color:#49a4ff;}
