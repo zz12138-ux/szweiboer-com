@@ -20,7 +20,7 @@ export default function IndustrialEquipmentPage() {
       <button className="laptopMenuToggle" type="button" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="industrial-navigation" onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
       <nav id="industrial-navigation" className="laptopNav" aria-label="Main navigation">
         <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
-        <div className="productMenu"><button className="productMenuTrigger" type="button">Products</button><div className="productMenuList"><a href="/laptops/">Laptops</a><a href="/gaming-laptops/">Gaming Laptops</a><a href="/mini-pcs/">Mini PCs</a><a href="/tablets/">Android Tablets</a><a href="/projectors/">Projectors</a><a href="/portable-monitors/">Portable Monitors</a><a href="/phones/">Phones</a><a href="/all-in-one-pcs/">All-in-One PCs</a><a href="/industrial-equipment/" onClick={() => setMenuOpen(false)} aria-current="page">Industrial equipment</a><a href="/blog/">Buyer Guides</a></div></div>
+        <div className="productMenu"><button className="productMenuTrigger" type="button">Products</button><div className="productMenuList"><a href="/laptops/">Laptops</a><a href="/phones/">Phones</a><a href="/all-in-one-pcs/">All-in-One PCs</a><a href="/industrial-equipment/" onClick={() => setMenuOpen(false)} aria-current="page">Industrial equipment</a><a href="/gaming-laptops/">Gaming Laptops</a><a href="/mini-pcs/">Mini PCs</a><a href="/tablets/">Android Tablets</a><a href="/projectors/">Projectors</a><a href="/portable-monitors/">Portable Monitors</a><a href="/blog/">Buyer Guides</a></div></div>
         <a href="/#about" onClick={() => setMenuOpen(false)}>OEM / ODM</a>
         <a href="/#factory" onClick={() => setMenuOpen(false)}>Factory</a>
         <a className="laptopMobileQuote" href={inquiry} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)}>Ask on WhatsApp ↗</a>
@@ -69,5 +69,6 @@ export default function IndustrialEquipmentPage() {
       })}</div>
       <p className="industrialCollectionNote">For industrial tablets and laptops, send a project brief. No tablet or laptop SKU is represented by the illustrative category images above.</p>
     </section>
+    <section className="catalogCta" data-track-scope="industrial-catalog"><p>CAN&apos;T FIND THE EXACT CONFIGURATION?</p><h2>Tell us your target.<br/><span>We will match the platform.</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a></section>
   </main>;
 }
