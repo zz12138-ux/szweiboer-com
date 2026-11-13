@@ -24,6 +24,7 @@ import "./hero-video-v136.css";
 import "./factory-tour-v137.css";
 import "./headline-spacing-v142.css";
 import "./hero-copy-v145.css";
+import "./floating-whatsapp.css";
 
 const whatsapp = "https://wa.me/8613556351212?text=Hello%20Weiboer%2C%20I%20would%20like%20a%20quotation.";
 
@@ -293,6 +294,7 @@ export default function Home() {
       </div>
       <div className="footerActionRow"><a className="footerWaButton" href={whatsapp} target="_blank" rel="noreferrer"><span>Chat on WhatsApp</span><b>↗</b></a><a className="footerQuoteButton" href="#email-quote"><span>Get a Quote by Email</span><b>↗</b></a></div>
       <div className="footerBottom"><small>© 2026 Weiboer · Shenzhen Weiboer Digital Co., Ltd.</small><a href="#top">Back to top ↑</a></div>
-    </footer>
+     </footer>
+    <a className="floatingWhatsApp" href={whatsapp} target="_blank" rel="noreferrer" aria-label="Chat with Weiboer on WhatsApp"><span className="floatingWhatsAppIcon" aria-hidden="true">✆</span><span>Chat on WhatsApp</span></a>
   </main>;
 }
