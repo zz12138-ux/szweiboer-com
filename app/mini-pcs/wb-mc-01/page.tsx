@@ -11,7 +11,6 @@ const productCode = "EXR1";
 const gallery = [
   { image: "/mini-pcs/wb-mc-01/gallery/01-main.webp", thumb: "/mini-pcs/wb-mc-01/gallery/01-main.webp" },
   { image: "/mini-pcs/wb-mc-01/gallery/02-front.webp", thumb: "/mini-pcs/wb-mc-01/gallery/02-front.webp" },
-  { image: "/mini-pcs/wb-mc-01/gallery/03-rear-ports.webp", thumb: "/mini-pcs/wb-mc-01/gallery/03-rear-ports.webp" },
   { image: "/mini-pcs/wb-mc-01/gallery/04-side.webp", thumb: "/mini-pcs/wb-mc-01/gallery/04-side.webp" },
   { image: "/mini-pcs/wb-mc-01/gallery/05-top.webp", thumb: "/mini-pcs/wb-mc-01/gallery/05-top.webp" },
   { image: "/mini-pcs/wb-mc-01/gallery/06-angle.webp", thumb: "/mini-pcs/wb-mc-01/gallery/06-angle.webp" },

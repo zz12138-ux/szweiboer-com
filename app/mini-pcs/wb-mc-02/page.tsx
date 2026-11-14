@@ -11,7 +11,6 @@ const title = "Intel N150 Mini PC — OEM / ODM Ready";
 const gallery = [
   "/mini-pcs/wb-mc-02/gallery/01-main.webp",
   "/mini-pcs/wb-mc-02/gallery/02-front.webp",
-  "/mini-pcs/wb-mc-02/gallery/03-rear-ports.webp",
   "/mini-pcs/wb-mc-02/gallery/04-side.webp",
   "/mini-pcs/wb-mc-02/gallery/05-top.webp",
   "/mini-pcs/wb-mc-02/gallery/06-angle.webp",
