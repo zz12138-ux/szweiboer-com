@@ -35,22 +35,6 @@ export default function IndustrialEquipmentPage() {
       <span>Browse our rugged handheld models below. Industrial tablets and laptops are also in scope for project inquiries. The hero device is an illustrative category visual, not a listed model.</span>
     </section>
     <section className="customBar"><b>RUGGED HANDHELDS</b><b>CONFIGURATION CHECK</b><b>BRANDING OPTIONS</b><b>PROJECT INQUIRIES</b></section>
-    <section className="industrialCatalog" aria-labelledby="industrial-title">
-      <div className="industrialVisual"><img src="/assets/images/industrial-equipment-pda.webp" alt="Illustrative rugged industrial PDA category visual" width="832" height="800" /></div>
-      <div className="industrialCopy">
-        <p className="industrialEyebrow">HANDHELD / TABLET / LAPTOP INQUIRIES</p>
-        <h2 id="industrial-title">Start with the workflow.<br /><span>Confirm the device.</span></h2>
-        <p>Whether you need a handheld, tablet or laptop, tell us how your team works and what it needs to connect. We will confirm the actual model and configuration before providing specifications or a quotation.</p>
-        <ul>
-          <li>Choose a handheld, industrial tablet or industrial laptop</li>
-          <li>Describe the environment, software and connectivity needs</li>
-          <li>Share target quantity, destination market and branding needs</li>
-        </ul>
-        <p className="industrialDisclosure">Concept image only. Device model, durability rating, certifications and accessories are not yet verified.</p>
-        <a className="industrialWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
-        <a className="industrialQuote" href="/#email-quote">Send a project inquiry by email ↗</a>
-      </div>
-    </section>
     <section className="laptopCatalog industrialProducts" id="industrial-products" aria-labelledby="industrial-products-title">
       <div className="catalogHeading"><p>RUGGED HANDHELD COLLECTION</p><h2 id="industrial-products-title">Explore the models.<br/><span>Seven distinct models.</span></h2><span className="catalogIntro">Seven distinct models from the supplied listings. Supplier imagery may show original branding; final hardware and specifications are confirmed by configuration.</span></div>
       <div className="laptopProductGrid">{industrialProducts.map((product, index) => {
