@@ -3574,6 +3574,55 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer F6-ST Product Specifications", "/all-in-one-pcs/f6-st/"]
     ]
   },
+  "ks20-rugged-phone-4g-5g-buyer-guide": {
+    slug: "ks20-rugged-phone-4g-5g-buyer-guide",
+    title: "KS20 Rugged Phone: Choosing Between the 4G and 5G Versions",
+    description: "How to choose between the 4G and 5G versions of the KS20 rugged phone: chipset, Android version, network bands, and the specs both versions share. Pricing is by quotation.",
+    published: "2026-11-16",
+    updated: "2026-11-16",
+    intro: "The KS20 rugged phone comes in a 4G and a 5G version. The two share a 6.8-inch display, 6GB plus 128GB storage, a 9600mAh battery and an IP68 rating, but they differ in chipset and Android version. This guide sets out the difference so you can choose the right version before you request a quotation.",
+    sections: [
+      {
+        heading: "The two versions differ in chipset and Android version",
+        paragraphs: [
+          "The 4G version uses a MediaTek MT6789 octa-core processor up to 2.2GHz and runs Android 12. The 5G version uses a MediaTek MT6877 octa-core processor up to 2.4GHz and runs Android 13. Both are listed with 6GB RAM and 128GB storage, with TF card support.",
+          "Network support follows the same split. Both versions have dual SIM, Wi-Fi 6, Bluetooth 5.0 and GPS/BeiDou. The 5G version adds 5G dual-SIM support, and the 4G version supports 4G dual-SIM only."
+        ]
+      },
+      {
+        heading: "The specs both versions share",
+        paragraphs: [
+          "Both versions have a 6.8-inch display at 2048 x 1020, a 9600mAh battery with 66W fast charging over USB Type-C, and a body measuring 190 x 90 x 25mm at 450g. The rear camera is listed as 64MP with 8MP and 5MP sensors, and the front camera as 16MP.",
+          "Durability and sensors are also shared: IP68 rating, 1.5m drop resistance, NFC, a compass and a gravity sensor."
+        ],
+        bullets: [
+          "Choose 5G if your customers' networks need 5G connectivity.",
+          "Choose 4G if you need the lower-cost configuration and Android 12 is acceptable for your software.",
+          "Confirm the Android version and network bands on the approved sample before production."
+        ]
+      },
+      {
+        heading: "Pricing is by quotation",
+        paragraphs: [
+          "Weiboer lists tiered pricing for the KS20 by quantity, and the tiers are published in the product quotation. This article does not state prices. Request a quotation for your quantity and the version you need, and confirm the sample price, the bulk tiers and the lead time before you commit.",
+          "Confirm the final configuration, packaging and logo arrangement in writing with Weiboer before ordering a sample."
+        ]
+      }
+    ],
+    faq: [
+      ["Which KS20 version should I choose?", "Choose the 5G version if your customers need 5G networks and Android 13. Choose the 4G version for Android 12 and a lower-cost configuration. Confirm the exact version on the sample."],
+      ["Are the battery and charging the same in both versions?", "Both versions are listed with a 9600mAh battery and 66W fast charging over USB Type-C."],
+      ["What is the price?", "Pricing is by quotation. Request a quote for your quantity and version from Weiboer."]
+    ],
+    links: [
+      ["Phones", "/phones/"],
+      ["Mini PCs", "/mini-pcs/"],
+      ["Dual-Screen Laptops", "/laptops/dual-screen/"]
+    ],
+    sources: [
+      ["Weiboer Rugged Equipment Catalog (KS20 specifications, 4G and 5G)", "/phones/"]
+    ]
+  },
   "mini-pc-ports-display-output-buyer-guide": {
     slug: "mini-pc-ports-display-output-buyer-guide",
     title: "Mini PC Ports and Display Output: What to Check Before You Order",

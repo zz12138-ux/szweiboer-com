@@ -146,6 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/all-in-one-pc-configuration-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/portable-monitor-port-size-layout-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/mini-pc-ports-display-output-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/ks20-rugged-phone-4g-5g-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
