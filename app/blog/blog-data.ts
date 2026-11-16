@@ -3602,7 +3602,7 @@ export const blogPosts: Record<string, BlogPost> = {
         ]
       },
       {
-        heading: "Pricing is by quotation",
+        heading: "Pricing is by quotation (询价)",
         paragraphs: [
           "Weiboer lists tiered pricing for the KS20 by quantity, and the tiers are published in the product quotation. This article does not state prices. Request a quotation for your quantity and the version you need, and confirm the sample price, the bulk tiers and the lead time before you commit.",
           "Confirm the final configuration, packaging and logo arrangement in writing with Weiboer before ordering a sample."
