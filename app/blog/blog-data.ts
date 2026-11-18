@@ -3759,5 +3759,64 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer Portable Monitor Product Specifications", "/portable-monitors/"],
       ["Weiboer WB-MN-02 Product Specifications", "/portable-monitors/wb-mn-02/"]
     ]
+  },
+  "hy320-projector-throw-distance-buyer-guide": {
+    slug: "hy320-projector-throw-distance-buyer-guide",
+    title: "HY320 Projector Throw Distance: Confirm Screen Size and Room Layout Before You Order",
+    description: "How to plan screen size and room layout for the HY320 720P Android mini projector, and which listed throw-distance values to confirm before production.",
+    published: "2026-11-18",
+    updated: "2026-11-18",
+    intro: "Projection size and throw distance decide whether a portable projector fits a room. The HY320 is listed with a 720P native panel, 200 ANSI lumens and a projection range of 30 to 150 inches, but its throw-distance values differ between tables. This guide shows how to plan the room layout from the listed figures and what to confirm before you approve a sample.",
+    sections: [
+      {
+        heading: "Start with the screen size you need",
+        paragraphs: [
+          "The HY320 is listed with a projection size of 30 to 150 inches. For a bedroom or a small living room, a 60 to 100 inch image is a practical working range. For a larger wall or outdoor screen, plan for the upper end of the listed range and check that the room can still deliver enough light for the image.",
+          "The 720P native resolution (1280 x 720) means that large images will look softer at close viewing distances. Choose the screen size with the viewing position in mind, not only the maximum listed size."
+        ]
+      },
+      {
+        heading: "Confirm the throw distance before you fix the room layout",
+        paragraphs: [
+          "The current HY320 listing gives two different projection distances: 0.8 to 2 metres in one table and 1 to 4 metres in another. Because the two values do not match, do not fix the placement of the projector or the furniture layout on either value alone.",
+          "Ask Weiboer to confirm the distance for the exact lens version you intend to order, and measure the room against that confirmed range. Record the distance from the lens to the wall, not from the back of the housing."
+        ],
+        bullets: [
+          "Measure the wall-to-seat distance and the wall-to-projector distance separately.",
+          "Check the confirmed throw distance against both values before you choose a mounting position.",
+          "Keep a margin for a table or shelf placement, which may differ from a ceiling mount."
+        ]
+      },
+      {
+        heading: "Plan image quality, light and rotation",
+        paragraphs: [
+          "The listing gives 200 ANSI lumens and a 50,000-hour light life. Brightness is most noticeable in rooms with lights on, so a dimmer room gives a better image. The 180 degree rotation lets the projector face a wall from a shelf or a low table without moving the body.",
+          "Automatic keystone correction helps when the projector is not perfectly level. Keep the projector square to the screen where possible, because correction can reduce the sharpness of the image."
+        ]
+      },
+      {
+        heading: "Check the sample and the connection set-up before production",
+        paragraphs: [
+          "The listing shows HDMI, USB, audio and AC ports, dual-band Wi-Fi 6 and Bluetooth 5.0, a built-in 3W speaker and a weight of 1kg. Confirm the port layout and the Android 11 build on the approved sample, especially if the product will be used with a streaming stick or a media player.",
+          "For private-label programs, the listing offers logo, packaging and language options. Confirm the final logo position and packaging artwork in writing before the sample is approved."
+        ]
+      }
+    ],
+    faq: [
+      ["What is the HY320 projection size range?", "The listing gives a projection size of 30 to 150 inches."],
+      ["Which throw distance should I use?", "The listing shows 0.8 to 2 metres in one table and 1 to 4 metres in another. Confirm the distance for your lens version with Weiboer before you fix the room layout."],
+      ["Is the HY320 native 1080P?", "No. The listed native resolution is 1280 x 720 (720P)."],
+      ["What is the MOQ?", "The listing shows an MOQ of 1 set. Confirm current terms for your quantity."]
+    ],
+    links: [
+      ["HY320 Portable Android Projector", "/projectors/wb-pj-03/"],
+      ["Projectors", "/projectors/"],
+      ["Projector Native Resolution Guide", "/blog/projector-native-resolution-screen-size-guide/"],
+      ["How Bright Should a Portable Projector Be?", "/blog/projector-brightness-guide/"],
+      ["Projector Picks by Room", "/blog/projector-picks-by-room/"]
+    ],
+    sources: [
+      ["Weiboer HY320 Product Specifications", "/projectors/wb-pj-03/"]
+    ]
   }
 };
