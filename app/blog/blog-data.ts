@@ -12,6 +12,64 @@ export type BlogPost = {
 };
 
 export const blogPosts: Record<string, BlogPost> = {
+  "mini-pc-vs-all-in-one-pc-front-desk-guide": {
+    slug: "mini-pc-vs-all-in-one-pc-front-desk-guide",
+    title: "Mini PC vs All-in-One PC for Front Desk and Display Use: How to Choose",
+    description: "How to choose between a mini PC and an all-in-one PC for reception, POS, digital signage and office desks, using the listed CPU, memory, storage, port and size specifications.",
+    published: "2026-11-19",
+    updated: "2026-11-19",
+    intro: "A front desk, showroom or shared office workstation can be served by either a mini PC or an all-in-one PC. The choice depends on where the computer sits, whether the screen is part of the product and how many ports the peripherals need. This guide compares the two formats using the specifications listed for Weiboer's mini PC and all-in-one PC platforms.",
+    sections: [
+      {
+        heading: "Decide whether the screen is part of the product",
+        paragraphs: [
+          "A mini PC is a compact box that connects to a monitor, TV or customer display. It is useful when the display is already installed or when the buyer wants to choose the screen separately. An all-in-one PC integrates the computer into the display, which reduces cable count and gives a single-unit footprint on the counter or desk.",
+          "If the screen size, touch option or mounting position will change between sites, a mini PC keeps the computing unit separate from the display. If the front desk needs one clean unit, an all-in-one is the simpler choice."
+        ]
+      },
+      {
+        heading: "Compare the listed size and weight",
+        paragraphs: [
+          "The WB-MC-01 mini PC is listed at 323 × 219 × 85 mm and about 1.5 kg, which fits under a counter, behind a display or on a VESA-style bracket if the buyer adds one. The T3 all-in-one family is listed in 22, 24 and 27-inch sizes with a fixed or height-adjustable stand and VESA mounting options.",
+          "Measure the mounting space before choosing a size. A 27-inch unit needs more counter depth and height than a 22-inch unit, and a mini PC needs only room for its cable run and the external display."
+        ]
+      },
+      {
+        heading: "Check ports against the peripherals",
+        paragraphs: [
+          "The WB-MC-01 mini PC lists five USB 3.2 ports, two HDMI 2.1 outputs, one USB-C port and one 3.5 mm audio port. This suits setups with several scanners, card readers or a second display.",
+          "The T3 all-in-one lists HDMI, VGA or COM, LAN and six USB ports, while the exact I/O mix should be confirmed on the approved sample. Count every peripheral that will connect, including payment terminals and printers, before you choose a model."
+        ]
+      },
+      {
+        heading: "Set the configuration before you order",
+        paragraphs: [
+          "Both platforms are listed as configurable. The mini PC offers Ryzen 5 7640HS or Ryzen 7 8745HS CPU options, DDR5 memory up to 64 GB and up to 2 TB of M.2 storage. The all-in-one offers Intel Core i3, i5 or i7 options, DDR4 memory up to 32 GB and SSD storage up to 2 TB.",
+          "Confirm the CPU tier, memory, storage and operating system against the workload, then approve one sample configuration before bulk production."
+        ],
+        bullets: [
+          "Choose a mini PC when the display, mounting and screen size must be flexible.",
+          "Choose an all-in-one when one unit with an integrated screen is the requirement.",
+          "Confirm port count and final configuration on the approved sample."
+        ]
+      }
+    ],
+    faq: [
+      ["Is a mini PC cheaper than an all-in-one PC?", "Price depends on configuration, display size and quantity. Request a quotation for the exact specification rather than comparing formats on price alone."],
+      ["What is the MOQ?", "The mini PC page lists 1 piece for samples and 100 pieces for bulk pricing. The all-in-one supplier pages list 1 piece. Confirm current terms for your order."]
+    ],
+    links: [
+      ["Mini PC WB-MC-01", "/mini-pcs/wb-mc-01/"],
+      ["T3 All-in-One PC", "/all-in-one-pcs/t3/"],
+      ["All-in-One PCs", "/all-in-one-pcs/"],
+      ["All-in-One PC Picks by Workspace", "/blog/all-in-one-pc-picks-by-workspace/"],
+      ["Mini PC Ports and Display Output", "/blog/mini-pc-ports-display-output-buyer-guide/"]
+    ],
+    sources: [
+      ["Weiboer WB-MC-01 Mini PC", "/mini-pcs/wb-mc-01/"],
+      ["Weiboer T3 All-in-One PC", "/all-in-one-pcs/t3/"]
+    ]
+  },
   "choose-oem-gaming-laptop-manufacturer": {
     slug: "choose-oem-gaming-laptop-manufacturer",
     title: "Gaming Laptop OEM Manufacturer Checklist: GPU, Cooling & Sampling",
