@@ -12,6 +12,80 @@ export type BlogPost = {
 };
 
 export const blogPosts: Record<string, BlogPost> = {
+  "rugged-handheld-terminal-oem-buyer-guide": {
+    slug: "rugged-handheld-terminal-oem-buyer-guide",
+    title: "Rugged Handheld Terminals for Warehouse and Field Programs: What to Confirm Before Sampling",
+    description: "How to read the scanner, keypad, network, battery and Android lines on Weiboer's KP-18, KP-26, KP-36 and KP-58 rugged handheld listings, and which details to confirm before a sample order.",
+    published: "2026-11-20",
+    updated: "2026-11-20",
+    intro: "Warehouse, logistics and field-service programs usually choose a rugged handheld by its input method first: a scan key, a full keypad or a touch-only design. Weiboer's industrial equipment listings describe several handheld formats, but most scanner, battery and processor details are marked for confirmation on quote. This guide shows how to read those lines and what to lock down before you approve a sample.",
+    sections: [
+      {
+        heading: "Choose the input method before the specification sheet",
+        paragraphs: [
+          "The KP-26 is listed as an industrial handheld with a physical scan key and a scanner-equipped configuration. The KP-36 is listed as a keypad PDA for data entry, scanning and delivery work, with a full physical keypad. The KP-58 is listed as a compact rugged Android handheld with a dock and physical controls, and the KP-18 is listed as a rugged mobile computer for field tasks.",
+          "If the crew scans all day, start with the scan-key or scanner-equipped models. If the job is mostly typed data entry, a keypad model is the closer fit. Confirm the scanner module on the selected configuration, because the listings name different modules."
+        ]
+      },
+      {
+        heading: "Read the scanner and radio lines as configuration options",
+        paragraphs: [
+          "Scanner and network options are not uniform across the family. The KP-26 listing names a CM60 scanner in its title but asks buyers to confirm the module. The KP-36 lists scanner modules that depend on configuration. The KP-18 listing mentions NFC and a scanner, but the exact module and implementation still need confirmation. The KP-18 title also mentions both 4G and 5G, while its product artwork shows 4G LTE, so the radio version must be fixed in writing.",
+          "For the KP-58, the listing names a T20 scanner in its title and shows an NFC zone. Confirm which scanner and radio version come with the quoted unit."
+        ],
+        bullets: [
+          "Name the scanner module (for example CM60 or T20) on the purchase specification",
+          "Fix the network version (4G or 5G) before sampling",
+          "Confirm NFC is included in the selected configuration"
+        ]
+      },
+      {
+        heading: "Check the battery, protection and processor claims with test records",
+        paragraphs: [
+          "Several headline figures appear only in supplier titles. The KP-36 title mentions a removable 5000mAh battery, the KP-58 title mentions 5000mAh, and the KP-26 title mentions IP67. These should be treated as supplier claims until the test documentation is supplied. The KP-26 listing also states that its processor options do not map reliably to a variant, so the processor must be confirmed on the approved sample.",
+          "Ask for the battery, drop and ingress test records that apply to the exact model, and record the results against the sample you approve."
+        ]
+      },
+      {
+        heading: "Use the Android version and memory as sourcing filters",
+        paragraphs: [
+          "The listings show Android 12 on the KP-18 and KP-26, Android 14 on the KP-36 and KP-58. The KP-26 offers 4GB or 6GB RAM with 64GB, 128GB or 256GB storage, and the KP-58 processor and memory are not confirmed in the accessible specifications. Choose the Android version by the software your application needs, then check the memory and storage options against your data volume and app footprint."
+        ]
+      },
+      {
+        heading: "Set a sample acceptance list for the handheld",
+        paragraphs: [
+          "Before approving a rugged handheld sample, test the scan key or scanner, the keypad, the NFC reader, the dock if one is included, wireless connection in the buyer's network, battery runtime under a real shift, and the branding and packaging proof. Record the Android build and the configuration code on the approved sample so the production run matches it."
+        ],
+        bullets: [
+          "Scanner read rate on the buyer's labels",
+          "Keypad feel and key legend after branding",
+          "Wireless connection in the target building or site",
+          "Battery runtime under a full shift",
+          "Approved Android build and configuration code"
+        ]
+      }
+    ],
+    faq: [
+      ["Is the price listed on the rugged handheld pages?", "The listings show MOQ and lead time as 'confirm on quote'. Request a quotation with the exact configuration, quantity and destination."],
+      ["Which Weiboer handheld has a physical scan key?", "The KP-26 listing describes a physical scan key and a scanner-equipped configuration. Confirm the scanner module for the selected version."],
+      ["Which model has a full keypad?", "The KP-36 is listed as a keypad industrial PDA with a full physical keypad. Scanner options depend on the configuration."],
+      ["Can I rely on the IP rating in the listing title?", "No. The KP-26 title mentions IP67, but the page asks for test documentation. Request the test records for the exact model before you rely on the rating."]
+    ],
+    links: [
+      ["Industrial Equipment", "/industrial-equipment/"],
+      ["KP-26 Industrial Handheld", "/industrial-equipment/kp-26/"],
+      ["KP-36 Keypad Industrial PDA", "/industrial-equipment/kp-36/"],
+      ["KP-58 Rugged Handheld", "/industrial-equipment/kp-58/"],
+      ["Rugged Android Phone OEM Buying Guide", "/blog/rugged-android-phone-oem-buying-guide/"]
+    ],
+    sources: [
+      ["Weiboer KP-26 Industrial Handheld", "/industrial-equipment/kp-26/"],
+      ["Weiboer KP-36 Keypad Industrial PDA", "/industrial-equipment/kp-36/"],
+      ["Weiboer KP-18 Rugged Mobile Computer", "/industrial-equipment/kp-18/"],
+      ["Weiboer KP-58 Rugged Handheld", "/industrial-equipment/kp-58/"]
+    ]
+  },
   "mini-pc-vs-all-in-one-pc-front-desk-guide": {
     slug: "mini-pc-vs-all-in-one-pc-front-desk-guide",
     title: "Mini PC vs All-in-One PC for Front Desk and Display Use: How to Choose",
