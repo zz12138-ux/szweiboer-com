@@ -12,6 +12,67 @@ export type BlogPost = {
 };
 
 export const blogPosts: Record<string, BlogPost> = {
+  "projector-ports-android-wireless-buyer-guide": {
+    slug: "projector-ports-android-wireless-buyer-guide",
+    title: "Projector Ports, Android Version and Wireless: What to Check Before You Order",
+    description: "How to read the port, Android and wireless lines on Weiboer's HY300 Pro, HY320, M6 and YG300 projector listings, and what to confirm before a sample order.",
+    published: "2026-11-20",
+    updated: "2026-11-20",
+    intro: "A projector is only as useful as the devices it connects to. Before comparing brightness or size, check which inputs the projector has, which Android version runs the smart features, and whether wireless is part of the product. Weiboer's projector listings publish these details unevenly, so this guide shows which lines are confirmed in the specification tables and which need to be verified on the sample.",
+    sections: [
+      {
+        heading: "Match the ports to your source devices",
+        paragraphs: [
+          "The M6 listing shows HDMI 1.4, VGA, AV, USB 2.0, a TF card slot and a 3.5mm audio output. The HY320 listing shows USB, HDMI, audio and AC power. The HY300 Pro specification table does not list a separate port set, so confirm its inputs before you rely on them.",
+          "If your source is a modern laptop or streaming stick, check the HDMI version and the adapter you plan to use. HDMI 1.4 is the version named on the M6 listing."
+        ],
+        bullets: [
+          "List every source device and its output port before choosing a model",
+          "Confirm the HDMI version on the M6 for your source devices",
+          "Confirm the port set of the HY300 Pro on the approved sample"
+        ]
+      },
+      {
+        heading: "Read the Android version as a software decision",
+        paragraphs: [
+          "The HY300 Pro is listed with Android 13, and the HY320 with Android 11. The M6 title describes a smart Android model, but its specification table does not state an Android version. The YG300 listing does not give an operating system in its specification table.",
+          "Choose the Android version by the apps and firmware update path your program needs. For a private-label program, ask for the exact build that will ship, not only the marketing name."
+        ]
+      },
+      {
+        heading: "Treat wireless as a model-specific line item",
+        paragraphs: [
+          "Only the HY320 listing states its wireless specification: dual-band WiFi 6 and Bluetooth 5.0. The other projector tables do not list wireless, so do not assume a Bluetooth or WiFi function is included until the spec sheet confirms it for the model you are buying.",
+          "If the projector will stream from phones or tablets, test the connection in the room where it will be used, with the same network and the same source device."
+        ]
+      },
+      {
+        heading: "Set a sample acceptance list",
+        paragraphs: [
+          "Before approving a projector sample, record the ports, the Android build, the wireless connection, the remote control, and the logo and packaging proof. Record the final configuration on the approved sample so the production run matches it."
+        ]
+      }
+    ],
+    faq: [
+      ["Do all Weiboer projectors have Bluetooth?", "The HY320 listing states Bluetooth 5.0. The other projector specification tables do not list Bluetooth, so confirm it for the exact model."],
+      ["Which projector has Android 13?", "The HY300 Pro listing specifies Android 13. Confirm the build on the approved sample."],
+      ["Does the M6 have an HDMI port?", "Yes. The M6 specification table lists HDMI 1.4 along with VGA, AV and USB 2.0 ports."],
+      ["Can I rely on the M6 title for the Android version?", "No. The title says Smart Android, but the specification table does not list the version. Request the exact version in writing."]
+    ],
+    links: [
+      ["Projectors", "/projectors/"],
+      ["Smart mini projector HY300 Pro", "/projectors/wb-pj-01/"],
+      ["HY320 portable Android projector", "/projectors/wb-pj-03/"],
+      ["M6 pocket projector", "/projectors/wb-pj-04/"],
+      ["Projector Picks by Room", "/blog/projector-picks-by-room/"]
+    ],
+    sources: [
+      ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"],
+      ["Weiboer HY320 Portable Android Projector", "/projectors/wb-pj-03/"],
+      ["Weiboer M6 Pocket Projector", "/projectors/wb-pj-04/"],
+      ["Weiboer YG300 Mini Smart Projector", "/projectors/wb-pj-05/"]
+    ]
+  },
   "rugged-handheld-terminal-oem-buyer-guide": {
     slug: "rugged-handheld-terminal-oem-buyer-guide",
     title: "Rugged Handheld Terminals for Warehouse and Field Programs: What to Confirm Before Sampling",

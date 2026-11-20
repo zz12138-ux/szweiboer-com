@@ -150,6 +150,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/hy320-projector-throw-distance-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/mini-pc-vs-all-in-one-pc-front-desk-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/rugged-handheld-terminal-oem-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/projector-ports-android-wireless-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }
