@@ -70,7 +70,7 @@ export default function DualScreenLaptopOemPage() {
       <section className="dualOemHero" data-track-event="whatsapp-dual-screen-oem">
         <div>
           <p className="dualOemEyebrow">DUAL-SCREEN LAPTOP OEM MANUFACTURER</p>
-          <h1>Build a differentiated<br /><span>dual-screen laptop line.</span></h1>
+          <h1>Dual-Screen Laptop Platforms<br /><span>for OEM Projects.</span></h1>
           <p className="dualOemLead">Compare current dual-screen platforms, confirm the sample configuration and turn a two-screen workflow into a branded product program for your market.</p>
           <div className="dualOemActions">
             <a className="dualOemPrimary" href={inquiry} target="_blank" rel="noreferrer">Get Specs &amp; OEM Quote <b>↗</b></a>
@@ -131,8 +131,8 @@ export default function DualScreenLaptopOemPage() {
               ))}
               <tr>
                 <th scope="row">Request</th>
-                <td><a href={modelInquiry("FD16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms (FD16)</a></td>
-                <td><a href={modelInquiry("DS16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms (DS16)</a></td>
+                <td><a href="/laptops/dual-screen/wb-lt-09/">View Platform Details (FD16)</a> · <a href={modelInquiry("FD16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms</a></td>
+                <td><a href="/laptops/dual-screen/wb-lt-10/">View Platform Details (DS16)</a> · <a href={modelInquiry("DS16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms</a></td>
 
               </tr>
             </tbody>
