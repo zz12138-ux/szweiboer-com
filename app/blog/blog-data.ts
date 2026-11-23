@@ -4083,4 +4083,67 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer KM03 7-Inch Kids Android Tablet", "/tablets/wb-tb-05/"]
     ]
   },
+  "mini-pc-cooling-sustained-performance-guide": {
+    slug: "mini-pc-cooling-sustained-performance-guide",
+    title: "Mini PC Cooling and Sustained Performance: Active Cooling vs Fanless Design",
+    description: "How cooling design affects the performance a mini PC can hold over a working day, and what to confirm on a sample before you approve an OEM design.",
+    published: "2026-11-23",
+    updated: "2026-11-23",
+    intro: "A mini PC is rated by its processor, but the work it can finish depends on how long it can hold that speed. In a small chassis, heat has less room to leave the device, so cooling design decides whether the processor keeps its clock during long office sessions, signage loops or point-of-sale use. Weiboer's mini PC listings show two cooling approaches. This guide explains how to read each one and what to test before you approve a sample.",
+    sections: [
+      {
+        heading: "Understand what sustained performance means",
+        paragraphs: [
+          "A processor often runs at its highest clock for a short burst, then reduces speed when its temperature rises. For a single web page or a spreadsheet, the burst is enough. For a device that runs all day, the reduced speed in the second hour matters more than the peak value on the spec sheet.",
+          "Ask for the sustained behaviour of the exact model, under the same workload you expect in the field, rather than relying only on the maximum frequency in the processor name."
+        ]
+      },
+      {
+        heading: "Compare active cooling and fanless designs",
+        paragraphs: [
+          "The EXR1 AMD Ryzen mini PC uses an aluminum-alloy chassis with active cooling. Its listing offers Ryzen 5 7640HS or Ryzen 7 8745HS processors and is aimed at office, digital signage, POS and general business computing. A fan lets the device move heat out of the enclosure, which supports a steadier clock under load, with the trade-off of fan noise and the need to keep air vents clear.",
+          "The fanless industrial mini PC (I7-8550U) is described as a fanless industrial design with 6 x RS232 serial ports. A fanless enclosure removes moving parts and dust intake, which suits dusty, quiet or sealed environments. The trade-off is that heat must leave through the chassis, so the usable workload and the ambient temperature range need to be confirmed for the target site."
+        ],
+        bullets: [
+          "Active cooling: fan noise, dust filtering and vent clearance need to be specified",
+          "Fanless: heat dissipation relies on the chassis, so ambient temperature and workload limits need to be confirmed",
+          "Neither design removes the need to test the exact processor and memory configuration you order"
+        ]
+      },
+      {
+        heading: "Match the cooling design to the workplace",
+        paragraphs: [
+          "A reception desk or classroom cart is usually quiet, enclosed and used for steady office tasks. A factory cabinet or a kiosk may have dust, heat and vibration. The right cooling design follows from the room, not from the processor name alone.",
+          "If the device will run a heavy workload for many hours, such as multiple displays or continuous video, ask the supplier to name the processor and memory pair that was tested in that configuration, and keep that pair in the quotation."
+        ]
+      },
+      {
+        heading: "Set a sample thermal check",
+        paragraphs: [
+          "Before approving a sample, run the workload you will ship the device for over a long period, and record the surface temperature, the fan behaviour where present, and whether the performance stays steady after the first half hour. Repeat the test in the room temperature you expect at the customer site. Keep the results with the approved sample so the production run uses the same configuration."
+        ],
+        bullets: [
+          "Record the processor, memory and storage on the sample label",
+          "Log temperature and clock behaviour over a long run, not only a short benchmark",
+          "Test in the expected ambient temperature and airflow of the destination"
+        ]
+      }
+    ],
+    faq: [
+      ["Is a fanless mini PC slower than one with a fan?", "Not necessarily in a short test. The difference appears under sustained load, where a fanless chassis depends on heat leaving the enclosure. Test the exact model under your workload."],
+      ["Which Weiboer mini PC uses active cooling?", "The EXR1 AMD Ryzen mini PC listing describes an aluminum-alloy chassis with active cooling. Confirm the cooling details for the exact configuration you order."],
+      ["Does the fanless industrial model suit dusty sites?", "A fanless design avoids intake fans, which can help in dusty settings. Confirm the operating temperature range and enclosure protection with the supplier before you commit to a site."],
+      ["What should I ask a supplier about cooling?", "Ask for the cooling design, the processor and memory pair tested, the ambient temperature range, and the sample results from a long-duration run."]
+    ],
+    links: [
+      ["AMD Ryzen Mini PC EXR1 (wb-mc-01)", "/mini-pcs/wb-mc-01/"],
+      ["Fanless Industrial Mini PC I7-8550U (wb-mc-05)", "/mini-pcs/wb-mc-05/"],
+      ["Mini PC RAM and Storage Upgrade Guide", "/blog/mini-pc-ram-storage-upgrade-guide/"],
+      ["Mini PC vs All-in-One PC for the Front Desk", "/blog/mini-pc-vs-all-in-one-pc-front-desk-guide/"]
+    ],
+    sources: [
+      ["Weiboer EXR1 AMD Ryzen Mini PC", "/mini-pcs/wb-mc-01/"],
+      ["Weiboer Fanless Industrial Mini PC I7-8550U", "/mini-pcs/wb-mc-05/"]
+    ]
+  },
 };
