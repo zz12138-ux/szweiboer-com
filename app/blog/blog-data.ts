@@ -4146,4 +4146,81 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer Fanless Industrial Mini PC I7-8550U", "/mini-pcs/wb-mc-05/"]
     ]
   },
+  "kp-68-rugged-mobile-computer-field-buyer-guide": {
+    slug: "kp-68-rugged-mobile-computer-field-buyer-guide",
+    title: "KP-68 Rugged Mobile Computer: Scanner, Memory and Storage Options for Field Programs",
+    description: "Where Weiboer's KP-68 rugged mobile computer fits a field or inventory program, and which scanner, memory, storage and battery lines to confirm before a sample order.",
+    published: "2026-11-23",
+    updated: "2026-11-23",
+    intro: "A rugged mobile computer for inventory, delivery or field service has to do three jobs well: read barcodes quickly, hold up to daily handling, and stay connected to the back office. The KP-68 is Weiboer's 6.5-inch rugged mobile computer listing, with a scanner option, NFC, a 5500mAh battery and several memory and storage configurations. This guide shows what the listing supports and what the buyer should lock down on a sample before approving a program.",
+    sections: [
+      {
+        heading: "Fit the 6.5-inch format to the job",
+        paragraphs: [
+          "The KP-68 listing describes a 6.5-inch display at 720 x 1600. A larger screen than a pocket scanner gives crews room for order lists, pick screens and form fields, but it is also heavier to hold for a full shift. For a crew that mostly scans and taps a short list of items, the larger format is the stronger choice. For a crew that spends most of the day on typed data entry, check whether a keypad model such as the KP-36 is the better fit.",
+          "Compare the 6.5-inch KP-68 with the handheld models covered in the rugged handheld guide before you commit to one format for the whole program."
+        ],
+        bullets: [
+          "Confirm the screen size and resolution against the workflow on the sample",
+          "Test one-handed use with the battery and scanner fitted, not on the bench",
+          "Decide whether crews need a keypad or can work from the touch screen alone"
+        ]
+      },
+      {
+        heading: "Confirm the scanner module before you quote",
+        paragraphs: [
+          "The KP-68 supplier title names a CM60 scanner. The listing does not show a fixed scanner for every configuration, so the scanner module should be written into the quotation rather than assumed from the title. Ask for the scanning range, supported barcode symbologies and the scan trigger position on the exact unit you will ship.",
+          "NFC is listed on the KP-68. If the program uses NFC for check-in or asset tags, test the reader with the tags the program will actually use."
+        ]
+      },
+      {
+        heading: "Choose memory and storage by the apps you will run",
+        paragraphs: [
+          "The listing shows 4GB, 6GB and 8GB RAM options, with 64GB, 128GB and 256GB storage. The processor is also shown in more than one variant, including MT6877 and 7863 entries. These figures are not yet a single confirmed build, so the processor, RAM and storage combination should be fixed in writing for each order.",
+          "Heavier warehouse apps, photo capture and large offline databases need more RAM and storage. Test the app that the crew will use all day, with a full data set, before you choose the lowest memory option to reduce cost."
+        ],
+        bullets: [
+          "Fix the processor variant, RAM and storage as one configuration in the quotation",
+          "Run the production app with a realistic data load on the sample",
+          "Check free storage after the apps and logs have been installed"
+        ]
+      },
+      {
+        heading: "Check battery, charging and Android version for a shift",
+        paragraphs: [
+          "The listing shows a 5500mAh battery with 66W charging, and lists Android 13 or Android 14 depending on the version. A battery figure only matters after a full shift of scanning and screen use, so measure runtime on the sample rather than relying on the capacity figure. Ask for the Android version that will ship, and confirm how security updates will be delivered after delivery.",
+          "If the program uses a fleet charging station, confirm the charging connector and whether the 66W adapter is included in the quoted package."
+        ]
+      },
+      {
+        heading: "Set a field sample checklist",
+        paragraphs: [
+          "Before approving a KP-68 sample, test the scan trigger in the lighting the crew works in, run a full shift of scanning and screen use to log battery drop, check NFC with the program tags, and drop the unit from the height your crews will face. Record the processor, memory, storage, scanner module and Android build on the sample label so the production run matches the approved unit.",
+          "Ask for the IP rating test records for the exact model. The listing does not state a confirmed protection grade for the KP-68 in its specification table."
+        ],
+        bullets: [
+          "Log scan success rate and battery drop across a full shift",
+          "Test NFC with the tags, badges or labels the program uses",
+          "Request written drop and protection test records for the quoted configuration"
+        ]
+      }
+    ],
+    faq: [
+      ["Is the KP-68 a scanner handheld or a mobile computer?", "The listing describes it as a rugged mobile computer with a scanner option and NFC. Confirm the scanner fitted to the exact configuration you order."],
+      ["Which memory and storage options are listed?", "The listing shows 4GB, 6GB and 8GB RAM, and 64GB, 128GB and 256GB storage. Fix the exact combination in the quotation, because the listing does not confirm every pairing."],
+      ["Does the KP-68 have NFC?", "NFC is listed on the KP-68. Test it with the tags or cards the program uses before production."],
+      ["What should I ask a supplier before ordering a KP-68 program?", "Ask for the processor variant, RAM and storage combination, scanner module, Android version, battery runtime test, IP rating test records and the MOQ and lead time for the chosen configuration."]
+    ],
+    links: [
+      ["KP-68 Rugged Mobile Computer (KP-68)", "/industrial-equipment/kp-68/"],
+      ["KP-58 Rugged Handheld", "/industrial-equipment/kp-58/"],
+      ["KP-36 Keypad Industrial PDA", "/industrial-equipment/kp-36/"],
+      ["Rugged Handheld Terminals for Warehouse and Field Programs", "/blog/rugged-handheld-terminal-oem-buyer-guide/"]
+    ],
+    sources: [
+      ["Weiboer KP-68 Rugged Mobile Computer", "/industrial-equipment/kp-68/"],
+      ["Weiboer KP-58 Rugged Handheld", "/industrial-equipment/kp-58/"],
+      ["Weiboer KP-36 Keypad Industrial PDA", "/industrial-equipment/kp-36/"]
+    ]
+  },
 };
