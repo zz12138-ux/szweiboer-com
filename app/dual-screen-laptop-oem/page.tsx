@@ -1,26 +1,49 @@
 import type { Metadata } from "next";
 import "./page.css";
+import DualOemInquiryForm from "./DualOemInquiryForm";
 
 const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 
 export const metadata: Metadata = {
-  title: "Dual-Screen Laptop OEM Manufacturer | Sample, Branding & Configuration | Weiboer",
-  description: "Source dual-screen laptop OEM platforms from Weiboer. Compare FD16 and DS16, confirm sample configuration, display behavior, branding, keyboard language and packaging before bulk production.",
-  alternates: { canonical: "/dual-screen-laptop-oem" },
+  title: "Dual-Screen Laptop OEM & ODM Platforms | Weiboer",
+  description: "Compare Weiboer dual-screen laptop platforms, configurations and branding options. Request current specifications, sample terms and an OEM quote.",
+  alternates: { canonical: "/dual-screen-laptop-oem/" },
   openGraph: {
-    title: "Dual-Screen Laptop OEM Manufacturer | Weiboer",
-    description: "A B2B sourcing page for dual-screen laptop samples, configuration, branding and production planning.",
-    url: "/dual-screen-laptop-oem",
+    title: "Dual-Screen Laptop OEM & ODM Platforms | Weiboer",
+    description: "Compare dual-screen laptop platforms, sample terms and branding options for OEM projects.",
+    url: "/dual-screen-laptop-oem/",
     type: "website",
   },
+
 };
 
 const inquiry = `${whatsapp}${encodeURIComponent("Hello Weiboer, I need a dual-screen laptop OEM quote.\n\nTarget market: \nEstimated quantity: \nPreferred platform: FD16 / DS16 / Need recommendation\nNeed logo, keyboard language or packaging: ")}`;
+const modelInquiry = (model: string) => `${whatsapp}${encodeURIComponent(`Hello Weiboer, I would like the current specifications and sample terms for ${model}.\n\nTarget market: \nEstimated quantity: \nProduct page: https://www.szweiboer.com/dual-screen-laptop-oem/`)}`;
+
 
 const steps = [
   ["1", "Share the buyer brief", "Tell us the target market, quantity, use case, required Windows workflow and preferred display arrangement."],
   ["2", "Confirm the sample", "Lock the CPU, memory, storage, display behavior, ports, keyboard language, logo and packaging before sampling."],
   ["3", "Approve for production", "Use the approved sample, configuration sheet and branding proof as the reference for the bulk order."],
+];
+
+const sampleToBulk = [
+  ["Sample configuration confirmation", "Agree the platform, CPU, memory, storage, display and branding scope in writing."],
+  ["Sample evaluation", "Test display layout, Windows extended-display behavior, ports and packaging on the physical sample."],
+  ["Frozen order specification", "Freeze the approved configuration, keyboard language and packaging as the bulk reference."],
+  ["Production inspection", "Inspect production units against the frozen specification before shipment."],
+  ["After-sales handling", "Report defects with model, batch and photos to the B2B contact for warranty review."],
+];
+
+const comparison = [
+  ["Model", "FD16", "DS16"],
+  ["Screen layout", "Dual 16-inch touch displays", "16.1-inch main + 14-inch secondary"],
+  ["Confirmed CPU", "Intel Core i5-12450H (listed)", "Intel platform options (confirm on sample)"],
+  ["Memory / storage", "DDR4 up to 64GB; M.2 SSD (capacity to confirm)", "DDR4 8GB–64GB; dual SSD slots (confirm on sample)"],
+  ["Display behavior", "IPS, 1920 × 1200, 65Hz listed", "IPS touch, 1920 × 1200 main display"],
+  ["Ports", "USB 3.0 ×3, Type-C, HDMI listed", "Confirm on sample"],
+  ["Customization", "Logo, boot logo, configuration, packaging", "Logo, configuration, keyboard language, packaging"],
+  ["Sample MOQ / bulk", "Sample from 1 pc; bulk MOQ confirmed per configuration", "Sample from 1 pc; bulk MOQ confirmed per configuration"],
 ];
 
 const faqs: Array<[string, string]> = [
@@ -97,6 +120,24 @@ export default function DualScreenLaptopOemPage() {
           </article>
         </div>
         <p className="dualOemNote">Final CPU, panel, memory, storage, display behavior and accessory configuration should be confirmed on the selected sample before production.</p>
+        <div className="dualOemCompare" role="region" aria-label="Dual-screen platform comparison">
+          <table>
+            <thead>
+              <tr>{comparison[0].map((cell) => <th key={cell} scope="col">{cell}</th>)}</tr>
+            </thead>
+            <tbody>
+              {comparison.slice(1).map(([label, fd16, ds16]) => (
+                <tr key={label}><th scope="row">{label}</th><td>{fd16}</td><td>{ds16}</td></tr>
+              ))}
+              <tr>
+                <th scope="row">Request</th>
+                <td><a href={modelInquiry("FD16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms (FD16)</a></td>
+                <td><a href={modelInquiry("DS16")} target="_blank" rel="noreferrer">Request Specs &amp; Sample Terms (DS16)</a></td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="dualOemSection dualOemProcess">
@@ -104,6 +145,20 @@ export default function DualScreenLaptopOemPage() {
         <h2>Move from requirement<br /><span>to approved configuration.</span></h2>
         <div className="dualOemSteps">{steps.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
+
+      <section className="dualOemSection dualOemBulk">
+        <p className="dualOemEyebrow">FROM SAMPLE TO BULK ORDER</p>
+        <h2>Sample quantity is not<br /><span>the bulk MOQ.</span></h2>
+        <p className="dualOemNote">Sample orders can start from 1 pc. Bulk MOQ and customization scope are confirmed separately for each configuration.</p>
+        <ol>{sampleToBulk.map(([title, text]) => <li key={title}><h3>{title}</h3><p>{text}</p></li>)}</ol>
+      </section>
+
+      <section className="dualOemSection dualOemForm" id="inquiry-form">
+        <p className="dualOemEyebrow">REQUEST SPECS, SAMPLE OR QUOTE</p>
+        <h2>Send your project brief.<br /><span>We will confirm the platform.</span></h2>
+        <DualOemInquiryForm />
+      </section>
+
 
       <section className="dualOemSection dualOemChecklist">
         <div>

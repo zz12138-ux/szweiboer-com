@@ -87,7 +87,7 @@ export default function MiniPcsPage() {
       <section className="laptopHero">
         <p>MINI PCS / B2B PRODUCT CATALOG</p>
         <h1>Compact power.<br /><em>Built for your brand.</em></h1>
-        <span>Low-MOQ AMD Ryzen mini PC platforms for distributors, retailers and private-label programs. All models support OEM / ODM customization.</span>
+        <span>Explore Intel and AMD mini PC platforms for distributors, private-label brands and business deployments. Compare configuration, connectivity and customization options.</span>
       </section>
 
       <section className="customBar">

@@ -46,10 +46,24 @@ const specs: Array<[string, string]> = [
   ["Package", "32.3 × 21.9 × 8.5 cm · approx. 1.5 kg gross"],
   ["Warranty", "1 year"],
   ["Certifications", "CE, RoHS"],
-  ["Customization", "Logo +$2/unit, custom packaging +$2/unit, language and boot logo"],
+  ["Customization", "Logo and custom packaging add-ons per unit (currency and quantity scope confirmed in your quote); language and boot logo available"],
   ["MOQ", "1 pc for samples · bulk pricing available"],
-  ["Lead Time", "7 days shown for standard orders"],
+  ["Lead Time", "7 days applies to confirmed standard orders only; customization and bulk schedules are quoted separately"],
 ];
+const sampleBulkTerms: Array<[string, string]> = [
+  ["Sample", "Sample orders from 1 unit. Confirm the configuration sheet before ordering samples."],
+  ["Bulk order", "Bulk pricing and production schedule are quoted for your target configuration, quantity and branding scope."],
+  ["Lead time", "7 days applies to confirmed standard orders only. Customization and bulk schedules are confirmed in your quote."],
+  ["Approval", "Approve the sample configuration in writing before bulk production begins."],
+];
+const supportTerms: Array<[string, string]> = [
+  ["Warranty", "1 year standard warranty for the listed configuration. Confirm the warranty terms for your selected configuration in writing."],
+  ["Certifications", "CE and RoHS listed for this platform."],
+  ["How to start a claim", "Contact the Weiboer B2B team with your order reference, model, serial number and a description or photo of the fault."],
+  ["Responsibility", "Freight, return and remedy terms for any claim are confirmed in writing with your project quotation."],
+];
+const specInquiry = `${whatsapp}${encodeURIComponent(`Hello Weiboer, please send the current configuration sheet for ${productCode}.`)}`;
+
 const faqs: Array<[string, string]> = [
   [
     "Which Intel processor options are available?",
@@ -96,7 +110,7 @@ export default function WBMC02Page() {
           <h1>{title}</h1>
           <p className="detailLead">A compact Intel mini PC for office deployment, remote workstations, digital signage, learning and multi-screen projects. Choose N95, N100 or N150 with custom branding and packaging.</p>
           <div className="detailHighlights"><span>Intel N95 / N100 / N150</span><span>12GB LPDDR5</span><span>Up to 2TB M.2 SSD</span><span>WiFi 6 + dual LAN</span><span>Triple-screen 4K</span></div>
-          <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>LEAD TIME</b><strong>7 days</strong></div></div>
+          <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>LEAD TIME</b><strong>Confirmed in quote</strong></div></div>
           <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
           <p className="customizationNote">Product logo · Boot logo · OS language · Hardware configuration · Retail packaging</p>
         </div>
@@ -108,6 +122,10 @@ export default function WBMC02Page() {
       <section className="detailSpecs"><div className="specHead"><p>TECHNICAL SPECIFICATIONS · {productCode}</p><h2>Flexible configurations for<br /><span>every compact workstation.</span></h2></div><div className="specGrid">{specs.map(([label, value]) => <dl key={label}><dt>{label}</dt><dd>{value}</dd></dl>)}</div></section>
       <section className="detailFaq"><div className="faqHead"><p>FAQ · N5 OEM / ODM</p><h2>Buyer questions,<br /><span>answered before sampling.</span></h2></div><div className="faqList">{faqs.map(([question, answer]) => <article className="faqItem" key={question}><h3>{question}</h3><p>{answer}</p></article>)}</div></section>
       <section className="detailBottomCta" data-track-event="whatsapp-wb-mc-02-cta"><p>LOW MOQ · OEM / ODM · FACTORY DIRECT</p><h2>Ready to launch your<br /><span>mini PC product line?</span></h2><a href={inquiry} target="_blank" rel="noreferrer">Ask for {productCode} specifications on WhatsApp <b>↗</b></a></section>
+      <section className="detailSpecs" aria-label="Sample and bulk order terms"><div className="specHead"><p>SAMPLE &amp; BULK ORDER TERMS · {productCode}</p><h2>How to move from sample<br /><span>to bulk order.</span></h2></div><div className="specGrid">{sampleBulkTerms.map(([label, value]) => <dl key={label}><dt>{label}</dt><dd>{value}</dd></dl>)}</div></section>
+      <section className="detailSpecs" aria-label="Warranty and support"><div className="specHead"><p>WARRANTY &amp; SUPPORT · {productCode}</p><h2>Who to contact<br /><span>if something goes wrong.</span></h2></div><div className="specGrid">{supportTerms.map(([label, value]) => <dl key={label}><dt>{label}</dt><dd>{value}</dd></dl>)}</div></section>
+      <section className="detailBottomCta" data-track-event="whatsapp-wb-mc-02-request"><p>SPECIFICATION SHEET · {productCode}</p><h2>Request the current<br /><span>configuration sheet.</span></h2><a href={specInquiry} target="_blank" rel="noreferrer">Request the Current Configuration Sheet <b>↗</b></a></section>
+
     </main>
     </>
   );
