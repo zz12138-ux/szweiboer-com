@@ -63,7 +63,7 @@ const faqs = [
     number: "04",
     label: "LEAD TIME",
     question: "How long does sampling and production take?",
-    answer: "Standard projects can be prepared quickly, with selected models supporting a seven-day lead time. The final schedule depends on quantity and customization scope.",
+    answer: "Standard orders are typically ready in about seven days. The final schedule depends on the selected model, quantity and customization scope, and is confirmed in your quotation.",
   },
   {
     number: "05",
@@ -146,9 +146,9 @@ export default function Home() {
       <div className="factoryTourShade" aria-hidden="true" />
       <div className="factoryTourInner">
         <div className="factoryTourCopy">
-          <p className="factoryTourKicker">FACTORY-BACKED TRADING PARTNER · SHENZHEN, CHINA</p>
+          <p className="factoryTourKicker">OWN FACTORY · OEM / ODM MANUFACTURER · SHENZHEN, CHINA</p>
           <h2 id="factory-tour-title">Direct from our factory.<br /><span>Built for your brand.</span></h2>
-          <p className="factoryTourLead">Weiboer combines manufacturing capability with export-trade experience, giving global buyers one reliable partner from product selection to final delivery. With our own factory and flexible production lines, we accept extremely low minimum order quantities and support growing brands, distributors, retailers and project buyers.</p>
+          <p className="factoryTourLead">Weiboer manufactures all of its products in its own Shenzhen factory, giving global buyers one reliable partner from product selection to final delivery. With flexible production lines, we accept extremely low minimum order quantities and support growing brands, distributors, retailers and project buyers.</p>
           <p className="factoryTourDetail">Choose the platform and specifications that fit your market. We can customize product logos, boot screens, hardware configurations, operating systems, keyboard languages, accessories, manuals and retail packaging—then manage quality inspection, production, packing and export shipment for you.</p>
           <div className="factoryTourServices" aria-label="Weiboer customization services">
             <span>OEM / ODM development</span><span>Low-MOQ orders</span><span>Logo &amp; packaging</span><span>Hardware configuration</span>

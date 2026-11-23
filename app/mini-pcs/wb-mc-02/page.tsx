@@ -48,7 +48,7 @@ const specs: Array<[string, string]> = [
   ["Certifications", "CE, RoHS"],
   ["Customization", "Logo and custom packaging add-ons per unit (currency and quantity scope confirmed in your quote); language and boot logo available"],
   ["MOQ", "1 pc for samples · bulk pricing available"],
-  ["Lead Time", "7 days applies to confirmed standard orders only; customization and bulk schedules are quoted separately"],
+  ["Lead Time", "About 7 days for standard orders; customization and bulk schedules are confirmed in your quotation"],
 ];
 const sampleBulkTerms: Array<[string, string]> = [
   ["Sample", "Sample orders from 1 unit. Confirm the configuration sheet before ordering samples."],
@@ -110,7 +110,7 @@ export default function WBMC02Page() {
           <h1>{title}</h1>
           <p className="detailLead">A compact Intel mini PC for office deployment, remote workstations, digital signage, learning and multi-screen projects. Choose N95, N100 or N150 with custom branding and packaging.</p>
           <div className="detailHighlights"><span>Intel N95 / N100 / N150</span><span>12GB LPDDR5</span><span>Up to 2TB M.2 SSD</span><span>WiFi 6 + dual LAN</span><span>Triple-screen 4K</span></div>
-          <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>LEAD TIME</b><strong>Confirmed in quote</strong></div></div>
+          <div className="detailFacts"><div><b>MOQ</b><strong>1 pc</strong></div><div><b>LEAD TIME</b><strong>About 7 days (standard)</strong></div></div>
           <a className="detailWhatsapp" href={inquiry} target="_blank" rel="noreferrer">Chat on WhatsApp <b>↗</b></a>
           <p className="customizationNote">Product logo · Boot logo · OS language · Hardware configuration · Retail packaging</p>
         </div>
