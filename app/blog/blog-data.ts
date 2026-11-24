@@ -4223,4 +4223,67 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer KP-36 Keypad Industrial PDA", "/industrial-equipment/kp-36/"]
     ]
   },
+  "hy300-pro-ansi-lumens-room-light-buyer-guide": {
+    slug: "hy300-pro-ansi-lumens-room-light-buyer-guide",
+    title: "HY300 Pro ANSI Lumens and Room Light: How to Read Projector Brightness Before You Order",
+    description: "How to read the 130 ANSI lumen, 1500:1 contrast and 30-120 inch figures on Weiboer's HY300 Pro, and how room light changes the picture before you approve a sample.",
+    published: "2026-11-24",
+    updated: "2026-11-24",
+    intro: "Brightness is the first projector number most buyers compare, and it is also the easiest to misread. The HY300 Pro listing specifies 130 ANSI lumens, a 1500:1 contrast ratio and a projection size of 30 to 120 inches. Those three figures describe what the projector can produce under a standard test, not how the picture will look in a bright office or a dim bedroom. This guide explains how to use them together and what to check on a sample.",
+    sections: [
+      {
+        heading: "Understand what 130 ANSI lumens measures",
+        paragraphs: [
+          "ANSI lumens is a standardised brightness measurement that averages light across a projected image. It gives buyers a fair basis for comparing projectors, but it does not describe the peak light in one spot or the brightness a viewer will perceive after the room is lit.",
+          "The HY300 Pro listing states 130 ANSI lumens. Treat this as the rated output for the model, and confirm the same test method with the supplier when comparing it with other projectors in a quotation."
+        ]
+      },
+      {
+        heading: "Pair brightness with contrast and screen size",
+        paragraphs: [
+          "Brightness and contrast work together. A projector with strong output but weak contrast can look washed out in dark scenes, while good contrast with low output can look dim on a large image. The HY300 Pro lists 1500:1 contrast, which is useful for film and gaming in a dimmed room.",
+          "The image also spreads as it gets larger. The listing gives a 30 to 120 inch projection range and a 1 to 2.5 metre throw. A larger image shares the same light over more area, so a screen near the top of the range should be judged in the room where it will be used, not only from the rated lumen figure."
+        ],
+        bullets: [
+          "Dim bedroom or home theatre: contrast matters most, so judge dark scenes on the sample",
+          "Living room with daylight: test the image at the time of day it will be watched",
+          "Large screen above 100 inches: check that the picture still reads clearly from the seating position"
+        ]
+      },
+      {
+        heading: "Plan the room before you approve a design",
+        paragraphs: [
+          "Room light is usually the biggest factor in perceived brightness. Blinds, a window opposite the screen, or a light-coloured wall will reduce contrast. Projecting in a dim, controlled space gives the most consistent result for this class of portable projector.",
+          "For a private-label programme, record the room conditions used for the sample approval. This keeps the production run tied to a tested viewing setup rather than to the rated figure alone."
+        ]
+      },
+      {
+        heading: "Run a sample brightness check",
+        paragraphs: [
+          "Before approving a sample, project a dark film scene and a bright document or interface at the screen size you plan to sell. Check the picture at the throw distance you will recommend to customers, and note how much room light the image tolerates. Keep the result with the approved sample.",
+          "The light source is rated for 30,000 hours. Ask the supplier for the test method behind that figure, and confirm the warranty terms before production."
+        ],
+        bullets: [
+          "Record the screen size, throw distance and room light level used in the test",
+          "Compare a dark scene and a bright interface on the same sample",
+          "Confirm the ANSI test method and the 30,000 hour light life rating in writing"
+        ]
+      }
+    ],
+    faq: [
+      ["Is 130 ANSI lumens bright enough for a bright room?", "The listing states 130 ANSI lumens, which suits a dim or controlled room. In a bright room, test the exact image size and screen surface on a sample before recommending it to customers."],
+      ["What does the 1500:1 contrast figure tell a buyer?", "It describes the ratio between the brightest and darkest parts of the image under the listed test. It helps judge dark scenes, but it should be checked on the sample in the target room."],
+      ["What projection size does the HY300 Pro cover?", "The listing gives a 30 to 120 inch projection range with a 1 to 2.5 metre throw. Confirm the size you plan to sell against the room layout."],
+      ["What should I ask a supplier about projector brightness?", "Ask for the ANSI test method, the contrast test conditions, the throw distance and screen size used for the figure, and the light life test record."]
+    ],
+    links: [
+      ["HY300 Pro Smart Mini Projector (wb-pj-01)", "/projectors/wb-pj-01/"],
+      ["HY320 Portable Android Projector (wb-pj-03)", "/projectors/wb-pj-03/"],
+      ["Projector Brightness Guide", "/blog/projector-brightness-guide/"],
+      ["Projector Native Resolution Guide: Match 720P and 1080P to Screen Size", "/blog/projector-native-resolution-screen-size-guide/"]
+    ],
+    sources: [
+      ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"]
+    ]
+  },
 };
