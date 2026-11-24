@@ -470,8 +470,8 @@ export const blogPosts: Record<string, BlogPost> = {
   },
   "dual-screen-laptop-hinge-durability-oem-guide": {
     slug: "dual-screen-laptop-hinge-durability-oem-guide",
-    title: "Dual-Screen Laptop Hinge Durability & Mechanical Design: OEM Sourcing Guide",
-    description: "A practical B2B guide for sourcing dual-screen laptops: 360° Yoga hinges, torque degradation, FPC cable flex cycling, drop resistance and sample sign-off.",
+    title: "Dual-Screen Laptop Hinge Durability: OEM Buyer Checklist",
+    description: "What OEM buyers should check in dual-screen laptop hinges: cycle tests, torque retention, FPC flex life and sample sign-off.",
     published: "2026-10-14",
     updated: "2026-10-14",
     intro: "In dual-screen laptops, the mechanical hinge assembly does far more than hold a lid open: it must route high-speed display and touch signals, maintain precise viewing angles under finger taps, prevent glass-on-glass abrasion when folded, and survive tens of thousands of opening cycles. B2B buyers must audit hinge torque retention, flexible printed circuit (FPC) routing, chassis rigidity, and multi-posture stability before approving an OEM production batch.",
@@ -2572,8 +2572,8 @@ export const blogPosts: Record<string, BlogPost> = {
   },
   "projector-native-resolution-screen-size-guide": {
     slug: "projector-native-resolution-screen-size-guide",
-    title: "Projector Native Resolution Guide: Match 720P and 1080P to Screen Size",
-    description: "Native vs supported resolution explained for LED projectors, and how to match 320x240, 720P and 1080P platforms to screen sizes and venues using Weiboer's listed specs.",
+    title: "Projector Resolution for Screen Size: 720P vs 1080P Buyer Guide",
+    description: "Native vs supported resolution for LED projectors, and how to match 320x240, 720P and 1080P models to screen sizes and venues.",
     published: "2026-10-29",
     updated: "2026-10-29",
     intro: "Two projectors with the same brightness can look completely different on the same wall, and the reason is usually native resolution. It defines how many physical pixels the projector can actually throw, while the screen size decides how large each pixel becomes. This guide explains the difference between native and supported resolution and maps Weiboer's four listed projector platforms, from the 320x240 YG300 to the 1080P HY300 Pro, to the venues and screen sizes where each one makes sense.",
