@@ -17,7 +17,7 @@ const models = [
     {
     code: "EXR1",
     displayName: "AMD Ryzen Mini PC",
-    title: "High-Performance AMD Ryzen Mini Desktop with DDR5, WiFi 6 and 2.5G LAN",
+    title: "AMD Ryzen Mini PC OEM & ODM Supplier | Weiboer",
     main: "/mini-pcs/wb-mc-01/gallery/01-main.webp",
     tags: ["AMD Ryzen 5 7640HS / Ryzen 7 8745HS", "DDR5 up to 64GB", "WiFi 6 + 2.5G LAN", "Dual M.2 NVMe storage"],
     detail: "/mini-pcs/wb-mc-01",
@@ -25,7 +25,7 @@ const models = [
   {
     code: "N5",
     displayName: "Intel N-Series Mini PC",
-    title: "Intel N95 / N100 / N150 Mini PC with DDR5, WiFi 6 and Dual LAN",
+    title: "Intel N95 / N100 / N150 Mini PC OEM & ODM | Weiboer",
     main: "/mini-pcs/wb-mc-02/gallery/01-main.webp",
     tags: ["Intel N95 / N100 / N150", "12GB LPDDR5", "WiFi 6 + dual RJ45", "Triple-screen 4K output"],
     detail: "/mini-pcs/wb-mc-02",
@@ -33,7 +33,7 @@ const models = [
   {
     code: "N1",
     displayName: "Intel N150 Mini PC",
-    title: "Compact Intel N150 Mini PC with DDR4, WiFi 6 and Dual HDMI",
+    title: "Compact Intel Mini PC OEM & ODM Supplier | Weiboer",
     main: "/mini-pcs/wb-mc-03/gallery/01-main.webp",
     tags: ["Intel N150 4C/4T", "DDR4 up to 64GB", "WiFi 6 + dual HDMI", "M.2 up to 2TB"],
     detail: "/mini-pcs/wb-mc-03",
@@ -41,7 +41,7 @@ const models = [
   {
     code: "Mini Desktop",
     displayName: "RTX 5070 Mini Gaming PC",
-    title: "Intel Core i5 / i7 / i9 Mini PC with RTX 4060 Ti / RTX 5070",
+    title: "Intel Core & RTX Mini PC OEM & ODM Supplier | Weiboer",
     main: "/mini-pcs/wb-mc-04/gallery/01-main.webp",
     tags: ["Core i5 / i7 / i9", "RTX 4060 Ti / RTX 5070", "DDR5 up to 64GB", "Dual LAN"],
     detail: "/mini-pcs/wb-mc-04",
@@ -86,7 +86,7 @@ export default function MiniPcsPage() {
 
       <section className="laptopHero">
         <p>MINI PCS / B2B PRODUCT CATALOG</p>
-        <h1>Compact power.<br /><em>Built for your brand.</em></h1>
+        <h1>Mini PC OEM &amp; ODM<br /><em>Built for your brand.</em></h1>
         <span>Explore Intel and AMD mini PC platforms for distributors, private-label brands and business deployments. Compare configuration, connectivity and customization options.</span>
       </section>
 

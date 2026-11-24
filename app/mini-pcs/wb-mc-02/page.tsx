@@ -7,7 +7,7 @@ import { ProductStructuredData } from "../../components/StructuredData";
 
 const whatsapp = "https://api.whatsapp.com/send/?phone=8613556351212&text=";
 const productCode = "N5";
-const title = "Intel N150 Mini PC — OEM / ODM Ready";
+const title = "Intel N95 / N100 / N150 Mini PC — OEM / ODM Supplier";
 const gallery = [
   "/mini-pcs/wb-mc-02/gallery/01-main.webp",
   "/mini-pcs/wb-mc-02/gallery/02-front.webp",
