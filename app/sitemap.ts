@@ -156,6 +156,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/kp-68-rugged-mobile-computer-field-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/hy300-pro-ansi-lumens-room-light-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/yg10-touch-yoga-laptop-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/projector-contrast-light-life-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }

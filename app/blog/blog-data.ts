@@ -4349,4 +4349,70 @@ export const blogPosts: Record<string, BlogPost> = {
     sources: [
       ["Weiboer YG10 11-inch Yoga Touch Laptop", "/laptops/yg10/"]
     ]
-  },};
+  },
+  "projector-contrast-light-life-buyer-guide": {
+    slug: "projector-contrast-light-life-buyer-guide",
+    title: "Projector Contrast Ratio and Light Life: How to Read Both Numbers Before You Order",
+    description: "What contrast ratio and light life mean on a portable projector, why the listed figures differ between Weiboer models, and what to confirm on a sample before production.",
+    published: "2026-11-25",
+    updated: "2026-11-25",
+    intro: "Contrast ratio and light life are two of the most quoted projector specifications, and both are easy to misread. Contrast describes how far the darkest and brightest parts of an image are apart. Light life describes how long the light source is rated to run. Neither number tells you the whole picture on its own, so this guide explains what each one measures and how to compare them across Weiboer's projector listings.",
+    sections: [
+      {
+        heading: "Contrast ratio describes the range of an image, not its brightness",
+        paragraphs: [
+          "A contrast ratio compares the brightest white a projector can show with the darkest black it can show. A higher figure usually means dark scenes look deeper and shadow detail is easier to see. Brightness, measured in ANSI lumens, is a separate property: a projector can be bright and still show grey blacks in a dark room.",
+          "The Weiboer listings show different contrast figures across the range. The HY300 Pro is listed at 1500:1, the M6 platform at 2000:1, and the YG300 at 1000:1. These figures are useful for ranking within one test method, but they are not directly comparable between suppliers that test differently."
+        ],
+        bullets: [
+          "Compare contrast only when the supplier states the test method",
+          "Check whether the figure is a native or a dynamic contrast value",
+          "Judge contrast on the sample, in the room where the projector will be used"
+        ]
+      },
+      {
+        heading: "Room light matters more than the contrast number",
+        paragraphs: [
+          "Projected contrast falls quickly when ambient light reaches the screen. A projector rated for high contrast in a dark room can look washed out in a living room with the lights on. For a bedroom or home theatre use case, a dark-room test is the right reference. For a classroom, office or outdoor setting, the room light is the first thing to test, before the contrast figure."
+        ]
+      },
+      {
+        heading: "Light life is a rated hour count for the light source",
+        paragraphs: [
+          "Light life is the number of hours the light source is rated to run before its output falls to a defined level. The Weiboer listings show 30,000 hours for the HY300 Pro and M6 platform, and 50,000 hours for the HY320. A longer rating does not mean the projector will stay at full brightness for that whole period, so ask for the end-of-life definition in writing.",
+          "For a private-label programme, light life also affects the warranty. Agree on the test condition, the brightness threshold and the warranty period for the light source before the first order, and record them in the quotation."
+        ],
+        bullets: [
+          "Ask for the brightness level that defines end of life",
+          "Confirm whether the light source is covered by the warranty",
+          "Compare light life only between models tested under the same method"
+        ]
+      },
+      {
+        heading: "Use both numbers together on the approved sample",
+        paragraphs: [
+          "Before you approve a sample, measure the image in the dark room and in the normal room, and note how the image looks at the distance and screen size you plan to sell. Record the contrast and light-life details the supplier confirms in writing, so the production unit matches the approved sample."
+        ]
+      }
+    ],
+    faq: [
+      ["Is a higher contrast ratio always better?", "Usually for dark scenes, but only when the test method is the same. A higher figure from a different test method does not prove a better image."],
+      ["Does 30,000 hours mean the projector lasts 30,000 hours at full brightness?", "Not necessarily. Light life is a rated figure to a defined brightness threshold. Ask the supplier for the end-of-life definition."],
+      ["Which Weiboer projector has the longest listed light life?", "The HY320 is listed at 50,000 hours. The HY300 Pro and the M6 platform are listed at 30,000 hours."],
+      ["Should I choose a projector by contrast alone?", "No. Brightness, room light, throw distance, resolution and the sample test matter at least as much as the contrast figure."]
+    ],
+    links: [
+      ["Projectors", "/projectors/"],
+      ["Smart mini projector HY300 Pro", "/projectors/wb-pj-01/"],
+      ["HY320 portable Android projector", "/projectors/wb-pj-03/"],
+      ["M6 pocket projector", "/projectors/wb-pj-04/"],
+      ["How Bright Should a Portable Projector Be?", "/blog/projector-brightness-guide/"]
+    ],
+    sources: [
+      ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"],
+      ["Weiboer HY320 Portable Android Projector", "/projectors/wb-pj-03/"],
+      ["Weiboer M6 Pocket Projector", "/projectors/wb-pj-04/"],
+      ["Weiboer M6 LED Projector", "/projectors/wb-pj-06/"]
+    ]
+  },
+};
