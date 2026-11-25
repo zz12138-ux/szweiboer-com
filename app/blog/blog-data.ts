@@ -4286,4 +4286,67 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"]
     ]
   },
-};
+  "yg10-touch-yoga-laptop-buyer-guide": {
+    slug: "yg10-touch-yoga-laptop-buyer-guide",
+    title: "11-Inch Yoga Touch Laptops: What to Check Before You Order the YG10",
+    description: "How to read the touch, Intel N100, memory, storage and warranty lines on Weiboer's YG10 11-inch Yoga laptop, and what to confirm before a sample order.",
+    published: "2026-11-25",
+    updated: "2026-11-25",
+    intro: "A small Yoga-style laptop with a touchscreen can serve students, field staff and retail demo use, but the touch function and the configuration only matter if they match the workflow. The Weiboer YG10 listing gives a clear set of figures: an 11-inch Yoga touch panel at 1920 × 1280, an Intel N100 processor, DDR4 memory up to 32GB and M.2 storage up to 2TB. This guide explains how to read those lines and which items to confirm on the approved sample.",
+    sections: [
+      {
+        heading: "Read the touchscreen as a workflow feature",
+        paragraphs: [
+          "The YG10 is listed as an 11-inch Yoga touch laptop with a 1920 × 1280 display. The touch panel makes it useful for browsing, forms, classroom check-ins and point-of-sale style tasks. The listing does not confirm stylus support, so do not promise pen input to a customer until the exact model has been tested.",
+          "Ask for the display brightness and the touch response on the sample, and test the screen at the angles the product will be used at."
+        ],
+        bullets: [
+          "Confirm whether pen or stylus input is part of the product for your program",
+          "Test touch response across the full screen, including the corners",
+          "Check the screen in the room where the device will be used"
+        ]
+      },
+      {
+        heading: "Match the Intel N100 to the software you will run",
+        paragraphs: [
+          "The listing identifies an Intel N100 processor with integrated Intel UHD Graphics. This platform suits office documents, web applications, video calls and light everyday work. It is not a gaming or heavy creative platform, so confirm the software load before you commit to a configuration.",
+          "Memory is listed as DDR4 in 8GB, 16GB or 32GB options, and storage as M.2 in 128GB, 256GB, 512GB, 1TB or 2TB options. Choose the memory and storage for the applications and files your users will keep on the device."
+        ]
+      },
+      {
+        heading: "Set the operating system and configuration in writing",
+        paragraphs: [
+          "The listing shows Windows 10 and Windows 11 as options. For a branded or private-label programme, specify the exact operating system image, the keyboard language and the logo and boot screen before sampling, so the approved unit matches the production run.",
+          "The YG10 is listed with a 2-year warranty, a 1 piece MOQ and a 7 to 15 day lead time. Confirm the lead time against the final configuration and quantity in your quotation, because it can change with customization."
+        ],
+        bullets: [
+          "Operating system image and language pack",
+          "Memory and storage combination",
+          "Keyboard language and power adapter",
+          "Logo, boot screen and retail packaging",
+          "Warranty terms and lead time in the written quotation"
+        ]
+      },
+      {
+        heading: "Use a sample acceptance checklist",
+        paragraphs: [
+          "Before approving a sample, record the touch behaviour, the memory and storage actually installed, the operating system build, the battery and weight, and the ports the device exposes. Keep the signed record with the approved sample so the production units can be checked against it."
+        ]
+      }
+    ],
+    faq: [
+      ["Does the YG10 have a touchscreen?", "Yes. The YG10 listing describes an 11-inch Yoga touch display at 1920 × 1280 resolution."],
+      ["Which processor does the YG10 use?", "The listing identifies an Intel N100 with integrated Intel UHD Graphics."],
+      ["Does the YG10 support a stylus?", "The listing does not confirm stylus support. Confirm it on the exact model before promising pen input."],
+      ["What is the minimum order quantity?", "The listing shows an MOQ of 1 piece. Final terms depend on the configuration and customization you request."]
+    ],
+    links: [
+      ["YG10 11-inch Yoga Touch Laptop", "/laptops/yg10/"],
+      ["Weiboer Laptop Lineup", "/laptops/"],
+      ["Laptop Screen Resolution and Panel Guide", "/blog/laptop-screen-resolution-panel-guide/"],
+      ["Student Laptop Picks by Budget", "/blog/student-laptop-picks-by-budget/"]
+    ],
+    sources: [
+      ["Weiboer YG10 11-inch Yoga Touch Laptop", "/laptops/yg10/"]
+    ]
+  },};
