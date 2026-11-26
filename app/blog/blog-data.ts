@@ -4415,4 +4415,61 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer M6 LED Projector", "/projectors/wb-pj-06/"]
     ]
   },
+  "hy320-projector-rotation-placement-buyer-guide": {
+    slug: "hy320-projector-rotation-placement-buyer-guide",
+    title: "HY320 Projector Rotation and Placement: What to Check Before You Order",
+    description: "How to read the 180 degree rotation, 720P native resolution and Android 11 lines on Weiboer's HY320 projector listing, and what to confirm on a sample before ordering.",
+    published: "2026-11-26",
+    updated: "2026-11-26",
+    intro: "A portable projector is often placed where a fixed projector cannot go: on a shelf, a desk corner or a bedside table. The HY320 listing highlights a 180 degree rotation feature alongside its 720P native resolution, 200 ANSI lumens and Android 11. This guide explains how to read those lines and what to confirm on a sample before you commit to a production order.",
+    sections: [
+      {
+        heading: "Read the 180 degree rotation as a placement feature",
+        paragraphs: [
+          "The HY320 listing names 180 degree rotation in its title and feature tags. That makes the projector easier to aim when it sits on a low surface or in a corner, without moving the whole unit. It does not change the image size or brightness, so placement still decides how large and how bright the picture will look.",
+          "Plan the placement first: measure the distance from the lens to the wall or screen, then check the projection size against the listed 30 to 120 inch range for the HY300 Pro family. For the HY320 itself, confirm the size range on the approved sample rather than assuming it matches another model."
+        ],
+        bullets: [
+          "Measure the lens-to-screen distance for each room where the projector will be used",
+          "Confirm the usable image size on the sample, not only on the listing",
+          "Test the rotation with the projector in its final position"
+        ]
+      },
+      {
+        heading: "Set expectations for 720P native resolution",
+        paragraphs: [
+          "The HY320 is listed at 720P native resolution. A 720P panel shows fewer pixels than a 1080P panel, so text and fine detail look softer on large screens. For video, movies and casual streaming this is usually the intended trade-off. For document reading or spreadsheets, a higher-resolution model is the better fit.",
+          "Compare the native resolution with the source content your buyers will use. Confirm the figure on the approved sample and record it in the acceptance list."
+        ]
+      },
+      {
+        heading: "Confirm the Android 11 build and brightness on the sample",
+        paragraphs: [
+          "The HY320 listing states Android 11 and 200 ANSI lumens. Brightness depends on the room: a dim room will show the picture more clearly than a room with ambient light. Ask for the exact Android build that will ship, not only the version name, because apps and firmware updates depend on it.",
+          "Before approving a sample, record the rotation range, the native resolution, the Android build and the brightness in the room where the projector will be used."
+        ],
+        bullets: [
+          "Record the rotation range on the sample",
+          "Record the Android build version that ships",
+          "Test brightness in the real room lighting"
+        ]
+      }
+    ],
+    faq: [
+      ["Does the HY320 rotate 180 degrees?", "The HY320 listing names 180 degree rotation. Confirm the range on the approved sample before ordering."],
+      ["Is the HY320 a 1080P projector?", "No. The HY320 listing states 720P native resolution."],
+      ["Which Android version does the HY320 use?", "The HY320 listing states Android 11. Request the exact build that will ship."],
+      ["Does rotation change the image size?", "No. Rotation changes how the projector is aimed. Image size depends on the lens-to-screen distance."]
+    ],
+    links: [
+      ["HY320 portable Android projector", "/projectors/wb-pj-03/"],
+      ["Projectors", "/projectors/"],
+      ["M6 pocket projector", "/projectors/wb-pj-04/"],
+      ["How Bright Should a Portable Projector Be?", "/blog/projector-brightness-guide/"]
+    ],
+    sources: [
+      ["Weiboer HY320 Portable Android Projector", "/projectors/wb-pj-03/"],
+      ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"]
+    ]
+  },
 };
