@@ -4529,4 +4529,114 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer Android Tablets catalog", "/tablets/"]
     ]
   },
+  "gaming-laptop-picks-by-program-tier": {
+    slug: "gaming-laptop-picks-by-program-tier",
+    title: "Gaming Laptop Picks by Program Tier: Entry, Mid and Flagship OEM Platforms",
+    description: "Which Weiboer gaming laptop fits an entry-price program, a 2K mainstream line or a flagship 4K program, compared on the CPU, GPU, display, cooling and port lines each listing publishes.",
+    published: "2026-11-27",
+    updated: "2026-11-27",
+    intro: "A gaming laptop line is usually not one product. A distributor opening a new category, a retailer refreshing a mid-range shelf and a brand building a halo model each need a different balance of display, GPU tier and chassis. Weiboer publishes seven gaming platforms on the site, and their specification tables make it possible to sort them into three program tiers before any sample is booked. This guide groups the platforms that way, using only the lines the listings state.",
+    sections: [
+      {
+        heading: "Sort the platforms by program tier before you compare GPUs",
+        paragraphs: [
+          "The seven gaming platforms on the site are NH60, JZ58, BYD16, X16, P16 Pro, G16 Pro and X18 MAX. Read together, their display and GPU lines fall into three groups: a 17.3-inch and 16-inch entry group built around RTX 4050 and RTX 3060, a 16-inch 2K group built around RTX 5050 to RTX 5070, and a high-refresh group built around RTX 5070 Ti and RTX 5090, ending with an 18-inch 4K model.",
+          "The tier you pick decides the retail price band, the shelf story and the sample cost. Comparing a 1080p 144Hz chassis against a 4K 240Hz chassis on GPU badge alone hides that difference, so start from the display and cooling lines the listing publishes, then confirm the GPU."
+        ],
+        bullets: [
+          "Entry group: NH60 and JZ58, listed with RTX 4050 and RTX 3060",
+          "Mid group: BYD16, X16 and P16 Pro, listed with RTX 5050 to RTX 5070 Ti",
+          "High group: G16 Pro and X18 MAX, listed with RTX 5070 Ti and RTX 5090"
+        ]
+      },
+      {
+        heading: "Entry tier: NH60 at 17.3-inch 1080p 144Hz",
+        paragraphs: [
+          "The NH60 is the largest screen in the entry group. Its listing states a 17.3-inch IPS display at 1920 x 1080 and 144Hz, an Intel Core i7-12650H processor and an NVIDIA RTX 4050 6GB GPU. Memory is listed from 8GB to 64GB DDR5 and storage from 128GB to 2TB SSD, with Wi-Fi 6, Bluetooth 5.1 and a Windows 11 image.",
+          "A 17.3-inch chassis is a practical anchor for a first gaming SKU: the screen size separates it from 15.6-inch office models on the shelf, and the 1080p 144Hz panel keeps the panel cost out of the flagship band. The listing shows an MOQ of 1 piece, so a program can test the shape before committing volume.",
+          "Before sampling, confirm the memory and storage configuration, the keyboard and the final barebone build, because the listing presents these as selectable lines rather than a single fixed SKU."
+        ]
+      },
+      {
+        heading: "Entry tier: JZ58 RTX 3060 with a 2K panel",
+        paragraphs: [
+          "The JZ58 sits in the same commercial band but reads differently on the spec sheet. It lists a 16.1-inch IPS panel at 2560 x 1600 in 16:10, an Intel Core i9-11900H, an RTX 3060 6GB GPU, DDR4 memory from 8GB to 64GB, an M.2 SSD from 256GB to 2TB and an 88.16Wh battery, with a listed weight of 2.1kg and a 2MP camera.",
+          "Two lines are worth noting for a buyer. The battery at 88.16Wh is the largest in the entry group, which matters for programs where the laptop leaves the desk. The listing also states a 2-year warranty, so the warranty term can be quoted from the product page instead of being agreed separately.",
+          "The JZ58 specification table does not state a refresh rate. Treat the panel as 2K resolution until the refresh rate is confirmed in writing, and do not put a refresh figure on retail copy before the sample confirms it."
+        ]
+      },
+      {
+        heading: "Mid tier: BYD16 RTX 5060 and X16 RTX 5070 at 115W",
+        paragraphs: [
+          "The mid group is where most mainstream programs land, and the two 115W platforms split it cleanly. The BYD16 lists a 16.1-inch 2560 x 1600 panel at 165Hz, 3ms and 400 nits with 100% sRGB, an Intel Core i7-13620H, an RTX 5060 8GB GDDR7 at 115W TGP, DDR5 from 16GB to 96GB, dual M.2 slots, an 80Wh battery, a 230W adapter and a VC heat plate with dual fans and four vents. Its port set includes Thunderbolt 4, an SD reader and RJ45, and the OS line lists Windows 10, Windows 11 or Linux.",
+          "The X16 lists a 16-inch 2560 x 1600 panel at 180Hz with 100% sRGB, an Intel Core i9-13900HK, an RTX 5070 8GB GDDR7 at 115W TGP, DDR5 memory, an approximate 70Wh battery, a listed weight of about 2.1kg and two full-function Type-C ports.",
+          "Read the difference as positioning rather than rank. The BYD16 carries the wider memory ceiling of 96GB, the only adapter rating in this group (230W) and the SD reader; the X16 carries the higher refresh rate at 180Hz. Its heat-pipe count is listed as to confirm, so the cooling configuration belongs on the sample checklist."
+        ]
+      },
+      {
+        heading: "Mid tier with depth: P16 Pro multi-configuration platform",
+        paragraphs: [
+          "The P16 Pro is the platform to pick when one chassis has to cover several price points. Its listing presents RTX 5050 8GB, RTX 5070 8GB and RTX 5070 Ti 12GB options, Intel Core i7-13650HX or i9-13900HX options, a 16-inch 2560 x 1600 panel at 165Hz and 300Hz options, DDR5 memory in two slots, two M.2 slots and an Intel HM770 chipset, with a 53.35Wh battery and a 1.0M camera.",
+          "For a program that wants a single tooling with a stepped ladder, that structure avoids launching three separate chassis. The trade-off is configuration control: the listing states that the matching panel has to be confirmed for the selected CPU and GPU, and the heat-pipe count appears as 5 in the attribute table against 6 in the supplier feature images.",
+          "Treat the P16 Pro as a configuration project. Fix the CPU and GPU pairing, the panel refresh for that pairing and the heat-pipe build on the quotation, then lock them on the approved sample."
+        ]
+      },
+      {
+        heading: "High tier: G16 Pro at 300Hz with RTX 5070 Ti or RTX 5090",
+        paragraphs: [
+          "The G16 Pro is the high-refresh platform. It lists a 16-inch 2560 x 1600 panel at 300Hz, 500 nits and 100% sRGB, Intel Core i9-13900HX or i9-14900HX options, and two GPU options: RTX 5070 Ti 12GB GDDR7 at 140W or RTX 5090 24GB GDDR7 at 175W. Cooling is listed as dual-fan Hurricane Cooling 2.0 with 6 heat pipes, with a battery of approximately 61-63Wh, a weight of about 2.5kg, a 15-color backlit keyboard and a 1MP camera.",
+          "The 500-nit panel and the 300Hz refresh are the lines that separate this platform from the mid group on a retail page, and the 140W to 175W GPU step gives the same chassis two price points.",
+          "The listing does not state an adapter rating for the G16 Pro, so the adapter belongs on the quotation for both GPU options."
+        ]
+      },
+      {
+        heading: "Flagship tier: X18 MAX at 18-inch 4K 240Hz",
+        paragraphs: [
+          "The X18 MAX is the halo platform. It lists an 18-inch IPS panel at 3840 x 2400, 240Hz, 100% sRGB and 16:10, an Intel Core Ultra 9 275HX at 24C/24T up to 5.4GHz, an RTX 5090 24GB GDDR7 at 175W TGP, DDR5 5600MHz memory from 16GB to 64GB, M.2 NVMe storage from 512GB to 4TB and a 98Wh 8-cell battery.",
+          "Its port set is the widest in the range: two Thunderbolt 5 ports, two USB 3.2 ports, two 2.5G RJ45 ports, HDMI 2.1, a MicroSD slot and audio, plus a 5MP dual camera with a privacy switch. The listed weight is approximately 3.6kg.",
+          "A 4K 240Hz 18-inch panel and a 98Wh battery make this a demonstration and flagship SKU rather than a volume model. The listing marks the heat-pipe configuration and exact dimensions as to confirm, so both belong on the sample sheet before launch material is produced."
+        ]
+      },
+      {
+        heading: "Turn the tier choice into a sample checklist",
+        paragraphs: [
+          "Once the tier is chosen, the remaining work is configuration control. The gaming platforms list an MOQ of 1 piece with OEM/ODM logo, BIOS and packaging options, which allows a program to approve a sample before placing volume.",
+          "Write the GPU model, VRAM and TGP, the processor, the panel resolution and refresh, the memory and storage configuration and the cooling description on the quotation, and check the lines each listing marks as to confirm rather than filling them in from the marketing title."
+        ],
+        bullets: [
+          "NH60: confirm memory, storage, keyboard and final barebone build",
+          "JZ58: refresh rate is not listed; confirm the panel and refresh in writing",
+          "BYD16: confirm the PCIe generation of the dual M.2 slots",
+          "X16: confirm the final heat-pipe configuration",
+          "P16 Pro: confirm the panel matched to the chosen CPU and GPU, and the heat-pipe build",
+          "G16 Pro: confirm the adapter rating for the 140W and 175W options",
+          "X18 MAX: confirm the heat-pipe configuration and final dimensions"
+        ]
+      }
+    ],
+    faq: [
+      ["How many gaming laptop platforms does Weiboer list?", "The site lists seven: NH60, JZ58, BYD16, X16, P16 Pro, G16 Pro and X18 MAX, each with its own specification table."],
+      ["Which gaming laptop is the entry option?", "The NH60 lists a 17.3-inch 1920 x 1080 144Hz panel with an RTX 4050 6GB, and the JZ58 lists a 16.1-inch 2560 x 1600 panel with an RTX 3060 6GB. Both sit below the RTX 5050 to RTX 5090 platforms."],
+      ["Which platform has the highest refresh rate?", "The G16 Pro lists 300Hz at 2560 x 1600. The P16 Pro also lists a 300Hz display option, matched to the selected CPU and GPU."],
+      ["Does the JZ58 list a refresh rate?", "No. The JZ58 specification table states a 16.1-inch 2560 x 1600 16:10 IPS panel but does not state a refresh rate, so confirm it before publishing a figure."],
+      ["What is the MOQ for these gaming laptops?", "The gaming platforms list an MOQ of 1 piece with OEM/ODM logo, BIOS and packaging options. Confirm bulk pricing and timing for the selected configuration."],
+      ["Can one chassis cover several price points?", "The P16 Pro lists RTX 5050, RTX 5070 and RTX 5070 Ti options with i7-13650HX or i9-13900HX and 165Hz or 300Hz panel options. The pairing has to be confirmed per configuration."]
+    ],
+    links: [
+      ["Gaming Laptops", "/gaming-laptops/"],
+      ["NH60 RTX 4050 17.3-inch", "/laptops/nh60/"],
+      ["BYD16 RTX 5060", "/laptops/wb-lt-08/"],
+      ["G16 Pro RTX 5070 Ti / 5090", "/laptops/wb-lt-06/"],
+      ["Colorful X18 MAX RTX 5090", "/laptops/wb-lt-05/"]
+    ],
+    sources: [
+      ["Weiboer NH60 Product Specifications", "/laptops/nh60/"],
+      ["Weiboer JZ58 Product Specifications", "/laptops/jz58/"],
+      ["Weiboer BYD16 Product Specifications", "/laptops/wb-lt-08/"],
+      ["Weiboer X16 Product Specifications", "/laptops/wb-lt-07/"],
+      ["Weiboer P16 Pro Product Specifications", "/laptops/p16-pro/"],
+      ["Weiboer G16 Pro Product Specifications", "/laptops/wb-lt-06/"],
+      ["Weiboer X18 MAX Product Specifications", "/laptops/wb-lt-05/"]
+    ]
+  },
 };
