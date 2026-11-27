@@ -87,3 +87,14 @@
   margin-top: 18px;
   text-transform: uppercase;
 }
+
+/* Two entry links in the products section header: dual-screen OEM and shortlist request. */
+.sectionHeadLinks { align-items: flex-end; display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: flex-end; }
+.sectionHeadLinks .textLink { white-space: nowrap; }
+@media (max-width: 860px) {
+  .sectionHeadLinks { justify-content: flex-start; }
+}
+@media (max-width: 560px) {
+  .sectionHeadLinks { gap: 10px 18px; }
+  .sectionHeadLinks .textLink { font-size: 11px; }
+}
