@@ -158,6 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: `${base}/blog/yg10-touch-yoga-laptop-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/projector-contrast-light-life-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   { url: `${base}/blog/hy320-projector-rotation-placement-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
+  { url: `${base}/blog/kids-learning-tablet-oem-buyer-guide`, changeFrequency: "monthly", priority: 0.75 },
   ];
   return urls.map((entry) => ({ ...entry, url: entry.url.endsWith("/") ? entry.url : `${entry.url}/` }));
 }

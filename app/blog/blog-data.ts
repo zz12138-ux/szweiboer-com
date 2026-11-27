@@ -4472,4 +4472,61 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer HY300 Pro Smart Mini Projector", "/projectors/wb-pj-01/"]
     ]
   },
+  "kids-learning-tablet-oem-buyer-guide": {
+    slug: "kids-learning-tablet-oem-buyer-guide",
+    title: "Kids Learning Tablet OEM: What to Confirm Before You Order",
+    description: "What to check on a 7-inch kids learning tablet platform: display, Android build, memory, battery, shell, wireless module and private-label packaging before sampling.",
+    published: "2026-11-27",
+    updated: "2026-11-27",
+    intro: "A kids learning tablet is judged on a few specifics: screen size, the Android build, memory and storage, battery and how durable the shell is. Weiboer's KM03 platform is a 7-inch kids educational tablet listed with a 1 pc sample MOQ. This guide shows which listed specifications to confirm on a sample and which ones still need confirmation from the factory.",
+    sections: [
+      {
+        heading: "Confirm the display and Android build",
+        paragraphs: [
+          "The KM03 listing states a 7-inch display at 1280 × 800 and Android 9.0. For a children's product, the screen size sets how content and controls fit the hand, and the resolution sets how sharp text and pictures look. Ask for the exact Android build that will ship, because app compatibility and firmware updates depend on it, not only the version name.",
+          "The listing also names the MediaTek MTK6735 quad-core CPU, 1GB RAM and 16GB storage. Check these numbers on the sample against the quote, and confirm how much storage is free after the system is installed before you plan the learning apps."
+        ],
+        bullets: [
+          "Record the screen size and resolution on the approved sample",
+          "Record the Android build version that ships",
+          "Check free storage after the system image is installed"
+        ]
+      },
+      {
+        heading: "Check the battery and the shell",
+        paragraphs: [
+          "The KM03 listing gives a 3000mAh battery and describes a dustproof, drop-resistant shell with NFC listed. A shell rating does not replace testing: run a drop test and a battery runtime test on the sample with the content your buyers will actually use, and keep the results in the acceptance record.",
+          "Children's products are used roughly and often, so confirm the drop-test method and the battery runtime result before the bulk order is approved."
+        ],
+        bullets: [
+          "Run a drop test on the sample shell",
+          "Measure battery runtime with the learning apps you plan to ship",
+          "Confirm NFC is on the final module if the feature is needed"
+        ]
+      },
+      {
+        heading: "Resolve the wireless module before production",
+        paragraphs: [
+          "The KM03 title mentions Bluetooth, while the specification list shows WiFi. Treat the wireless module as an open item: ask the factory to confirm the final WiFi and Bluetooth module in writing before the production configuration is locked.",
+          "Private-label programs also need branded boot screens, packaging and the language set for each market. Confirm these together with the module so the approved sample matches the final production run."
+        ]
+      }
+    ],
+    faq: [
+      ["Is the KM03 a kids learning tablet?", "Yes. The KM03 is listed as a 7-inch kids educational tablet for home learning, entertainment and children-focused programs."],
+      ["What is the sample MOQ?", "The listing shows a 1 pc MOQ for samples, with bulk pricing available on request. Lead time is listed as Confirm, so ask for the schedule in your quotation."],
+      ["Does it support Bluetooth?", "Bluetooth appears in the product title. Confirm the final wireless module with the factory before production."]
+    ],
+    links: [
+      ["KM03 7-inch kids educational tablet", "/tablets/wb-tb-05/"],
+      ["Android tablets", "/tablets/"],
+      ["How to Choose an Android Tablet Supplier", "/blog/choose-android-tablet-supplier/"],
+      ["Tablet RAM and storage buyer guide", "/blog/tablet-ram-storage-buyer-guide/"],
+      ["Tablet battery runtime OEM guide", "/blog/tablet-battery-runtime-oem-guide/"]
+    ],
+    sources: [
+      ["Weiboer KM03 Kids Educational Tablet", "/tablets/wb-tb-05/"],
+      ["Weiboer Android Tablets catalog", "/tablets/"]
+    ]
+  },
 };
