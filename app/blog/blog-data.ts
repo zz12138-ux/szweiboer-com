@@ -4639,4 +4639,72 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer X18 MAX Product Specifications", "/laptops/wb-lt-05/"]
     ]
   },
+  "portable-monitor-panel-specs-buyer-guide": {
+    slug: "portable-monitor-panel-specs-buyer-guide",
+    title: "Portable Monitor Panel Specs Explained: Resolution, Brightness and Contrast Before You Order",
+    description: "How to read the resolution, panel, brightness, contrast and port lines on Weiboer's WB-MN-01 portable monitor, and which lines to confirm on the sample.",
+    published: "2026-11-28",
+    updated: "2026-11-28",
+    intro: "A portable monitor spec sheet is short, and the numbers that matter most for a program are easy to misread. Resolution alone does not tell you how sharp the image will look on a 14-inch screen, and brightness and contrast are listed separately for a reason. This guide walks through the lines Weiboer publishes for the WB-MN-01 multi-size platform, so a buyer can tell which values are stated and which still need to be checked on a sample.",
+    sections: [
+      {
+        heading: "Read the resolution against the screen size",
+        paragraphs: [
+          "The WB-MN-01 platform is listed in 14, 15.6 and 16-inch options with a 1920 x 1200 IPS panel. Because the pixel count stays the same across sizes, a 14-inch unit packs the same pixels into a smaller area than a 16-inch unit, so the pixel density is higher on the smaller screen. Choose the size first for the desk or travel use case, then check that the resolution suits the work on that size.",
+          "The 16:10 aspect ratio of 1920 x 1200 gives more vertical space than a 16:9 panel of the same width, which suits document and spreadsheet work when the monitor sits beside a laptop."
+        ],
+        bullets: [
+          "Confirm the display size for each SKU before production",
+          "Compare the 16:10 layout with your target users' typical workflow",
+          "Check the sharpness on the approved sample at the intended size"
+        ]
+      },
+      {
+        heading: "Brightness and contrast are separate numbers",
+        paragraphs: [
+          "The listing states 250 cd/m² brightness and a 1000:1 contrast ratio on the IPS LED panel, with a 60Hz refresh rate and a 1ms response time. These are the values to quote from the specification table. Brightness governs how the screen performs in a bright room or a shared office, while contrast governs how deep the blacks appear in a dim room.",
+          "A 250 cd/m² panel is a practical level for indoor desk use. For a sales floor or a window-lit office, judge the screen on the sample under the actual lighting rather than on the figure alone."
+        ],
+        bullets: [
+          "Brightness on the listing: 250 cd/m²",
+          "Contrast on the listing: 1000:1",
+          "Refresh rate on the listing: 60Hz; response time listed as 1ms"
+        ]
+      },
+      {
+        heading: "Check the color and port lines against the source devices",
+        paragraphs: [
+          "The WB-MN-01 table lists RGB, Rec.709 and BT.709 coverage together with Rec.2020 coverage. Colour coverage claims are easy to over-read, so ask for the measured coverage figures on the sample rather than treating a listed standard as a guarantee of the panel's accuracy.",
+          "The platform has two USB-C ports. The listing shows USB-C laptop use, but it does not state every port function, so confirm power delivery and video input on the source laptops you plan to support."
+        ],
+        bullets: [
+          "Two USB-C ports are listed; confirm the function of each port",
+          "Speakers: none listed, so audio runs through the source device",
+          "Touch, battery and OS compatibility are not stated on the listing; confirm them for the chosen configuration"
+        ]
+      },
+      {
+        heading: "Plan the sample and the minimum order",
+        paragraphs: [
+          "The listed MOQ for the WB-MN-01 is 10 pieces, and the package is listed at 46.5 x 34 x 12 cm with a gross weight of 3.4kg. Use those figures for the freight and shelf plan, and confirm the final packaging and logo placement before the first production run.",
+          "Before you approve a sample, record the exact display size, port layout, touch and battery options, case finish and packaging. Those are the lines the listing presents as configurable, so the approved sample becomes the reference for production."
+        ]
+      }
+    ],
+    faq: [
+      ["What resolution does the WB-MN-01 use?", "The listing states a 1920 x 1200 IPS panel at 60Hz, available in 14, 15.6 and 16-inch sizes."],
+      ["What brightness and contrast are listed?", "The listing states 250 cd/m² brightness and a 1000:1 contrast ratio."],
+      ["Does the WB-MN-01 have speakers?", "The product data lists no built-in speakers, so audio should be taken from the source device."],
+      ["What is the MOQ?", "The WB-MN-01 lists an MOQ of 10 pieces. Contact the team for final quantity and customization scope."],
+      ["What should I confirm before sampling?", "Confirm the exact display size, USB-C port layout, touch and battery options, OS compatibility, case finish and final packaging."]
+    ],
+    links: [
+      ["Weiboer WB-MN-01 Portable Monitor Specifications", "/portable-monitors/wb-mn-01/"],
+      ["Weiboer Portable Monitor Category", "/portable-monitors/"],
+      ["Weiboer Dual-Screen Laptop OEM Platforms", "/dual-screen-laptop-oem/"]
+    ],
+    sources: [
+      ["Weiboer WB-MN-01 Product Specifications", "/portable-monitors/wb-mn-01/"]
+    ]
+  },
 };
