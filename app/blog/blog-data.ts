@@ -4707,4 +4707,70 @@ export const blogPosts: Record<string, BlogPost> = {
       ["Weiboer WB-MN-01 Product Specifications", "/portable-monitors/wb-mn-01/"]
     ]
   },
+  "4g-android-tablet-buyer-guide-gt70-ip17": {
+    slug: "4g-android-tablet-buyer-guide-gt70-ip17",
+    title: "4G Android Tablets for Field Work: GT70 vs IP17 Buyer Guide Before You Order",
+    description: "Compare Weiboer's GT70 and IP17 4G Android tablets on OS, memory, storage, camera, battery and network lines, and confirm bands and final OS image before sampling.",
+    published: "2026-11-28",
+    updated: "2026-11-28",
+    intro: "Two 4G Android tablets can look similar on a sales sheet while serving different programs. The GT70 is a large 11.97-inch field tablet with a higher memory ceiling, while the IP17 is a 10.1-inch business unit with expandable storage. Use the listed specifications as the starting point, then confirm the items that the listing marks for final confirmation.",
+    sections: [
+      {
+        heading: "Decide the field use before comparing screen size",
+        paragraphs: [
+          "A tablet used for site reporting, photo capture or document review has different needs from one carried in a bag all day. The GT70 lists an 11.97-inch 1200 × 2000 display and a 13MP rear camera, which suits forms, photos and video calls on a larger screen. The IP17 lists a 10.1-inch 1280 × 800 IPS display, a lighter 1.2kg net weight and a 6000mAh battery in the primary data, which fits a smaller field kit.",
+        ],
+        bullets: [
+          "Form filling and document review: check screen size and resolution",
+          "Photo and site capture: check rear camera module and storage",
+          "Carrying weight and daily handling: check net weight and dimensions",
+        ],
+      },
+      {
+        heading: "Compare memory, storage and Android version",
+        paragraphs: [
+          "The GT70 is listed with Android 13, 6GB RAM and 128GB or 256GB storage. The IP17 is listed with 4GB RAM and 32GB, 64GB or 128GB storage, with TF expansion up to 128GB. The IP17 primary product data lists Android 12, but one embedded description table shows Android 11, so the final OS image must be confirmed in writing before production.",
+        ],
+        bullets: [
+          "GT70: Android 13, 6GB RAM, 128GB / 256GB storage",
+          "IP17: Android 12 in primary data (Android 11 in one embedded table), 4GB RAM, 32GB / 64GB / 128GB, TF up to 128GB",
+        ],
+      },
+      {
+        heading: "Confirm the 4G network and bands for each market",
+        paragraphs: [
+          "Both models are listed with 4G connectivity, but the listing does not state the LTE bands for each destination market. The GT70 lists WiFi and 4G with Bluetooth, while the IP17 lists 2G / 3G / 4G network configurations. Ask the supplier for the band list, SIM type and voice support for the exact model and the countries where the devices will be used.",
+        ],
+      },
+      {
+        heading: "Verify the final camera, battery and enclosure on the sample",
+        paragraphs: [
+          "The GT70 lists a 13MP rear camera, 8000mAh battery with a 6-10 hour runtime estimate, dustproof and drop-resistant shell, and NFC. The IP17 primary data lists 5MP front and 13MP rear cameras and a 6000mAh battery, but these lines are marked for confirmation against the final module. Record the approved camera, battery and enclosure on the sample before bulk production.",
+        ],
+      },
+      {
+        heading: "Plan the sample and the order",
+        paragraphs: [
+          "Both listings state a sample MOQ of 1 piece with bulk pricing available. Use the sample to test calls, data on the target network, camera capture, battery runtime under your workload and the final OS build. Request the bulk quote only after the approved sample matches the program specification.",
+        ],
+      },
+    ],
+    faq: [
+      ["Which tablet is better for field reporting?", "The GT70 has the larger 11.97-inch screen, 6GB RAM and an 8000mAh battery listing. The IP17 is a lighter 10.1-inch unit. Choose by screen size, weight and workload, then confirm on a sample."],
+      ["Do both tablets support 4G?", "Both are listed with 4G connectivity. Confirm the LTE bands and SIM requirements for each destination market before ordering."],
+      ["Which Android version does the IP17 use?", "Its primary product data lists Android 12, while one embedded description table shows Android 11. Confirm the final OS image before production."],
+      ["Can I order a sample first?", "Yes. Both listings state a sample MOQ of 1 piece with bulk pricing available."],
+      ["Can the tablets be branded?", "Logo, packaging, language and selected hardware configurations can be discussed for OEM programs. Confirm the final scope with the team."],
+    ],
+    links: [
+      ["4G Camera Tablet GT70", "/tablets/wb-tb-02/"],
+      ["10.1-inch 4G Android Tablet IP17", "/tablets/wb-tb-03/"],
+      ["Android Tablet Supplier Guide", "/blog/choose-android-tablet-supplier/"],
+      ["Android Tablet Category", "/tablets/"],
+    ],
+    sources: [
+      ["Weiboer GT70 Tablet Specifications", "/tablets/wb-tb-02/"],
+      ["Weiboer IP17 Tablet Specifications", "/tablets/wb-tb-03/"],
+    ],
+  },
 };
